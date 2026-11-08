@@ -1,0 +1,203 @@
+{
+ "reihen": 9,
+ "stuecke": [
+  {
+   "id": "haus-gruen",
+   "r": 1,
+   "c": 1,
+   "w": 3,
+   "h": 2,
+   "art": "foto",
+   "bild": "_werkbank/feed_quellen/haus-gruen.png"
+  },
+  {
+   "id": "schrift-ofestuebli",
+   "r": 3,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "e-roesti",
+   "r": 3,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-roesti"
+  },
+  {
+   "id": "garten-gitter",
+   "r": 3,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "garten-gitter"
+  },
+  {
+   "id": "hz-detail",
+   "r": 4,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "hz-detail"
+  },
+  {
+   "id": "lh-fenster",
+   "r": 4,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "lh-fenster"
+  },
+  {
+   "id": "schrift-z-hochzeit",
+   "r": 4,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "stube-rund",
+   "r": 5,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-rund"
+  },
+  {
+   "id": "schrift-haus-daemmerung",
+   "r": 5,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "e-terrine",
+   "r": 5,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-terrine"
+  },
+  {
+   "id": "schrift-z-liebeslaube",
+   "r": 6,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "ll-detail",
+   "r": 6,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "ll-detail"
+  },
+  {
+   "id": "stube-lang",
+   "r": 6,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-lang"
+  },
+  {
+   "id": "hymmelrich-haus",
+   "r": 7,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "hymmelrich-haus"
+  },
+  {
+   "id": "schrift-hy-bett",
+   "r": 7,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "e-zopf",
+   "r": 7,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-zopf"
+  },
+  {
+   "id": "d-bilder",
+   "r": 8,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "d-bilder"
+  },
+  {
+   "id": "stube-kerze",
+   "r": 8,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-kerze"
+  },
+  {
+   "id": "schrift-z-landhaus",
+   "r": 8,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "terrasse",
+   "r": 9,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "terrasse"
+  },
+  {
+   "id": "kaffee",
+   "r": 9,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "kaffee"
+  },
+  {
+   "id": "balkon",
+   "r": 9,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "balkon"
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prüfung · Der Schreibtisch · Landgasthof Ruedihus</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f1209">
+<link rel="icon" href="/assets/logo/zeichen.svg">
+<style>
+/* Prüfung des Schreibtischs (R23, 17.10.2026; aus der Kontrolle des Studios vom 09.10.2026). Braucht nichts vom übrigen Werkzeug: kein bureau.js, kein bureau.css,
+   kein studio.js. Sie muss auch dann gehen, wenn diese kaputt sind. Gestaltung wie das Haus (Russ, Papier, Gelasio), Schriften mit Rückfall auf Georgia und das System. */
+@font-face{font-family:'Gelasio';font-weight:700;font-display:swap;src:url('/assets/fonts/gelasio-700.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+:root{--russ:#1f1209;--tinte:#2a1a0e;--papier:#efe4d3;--blatt:#fbf5ea;--balken:#6d431f;--leise:#7a6350;--linie:rgba(42,26,14,.12);--rot:#c42e13;--gelb:#c98a1b;--gruen:#3f6b3a;--blau:#4a6b8a;
+  --titel:'Gelasio',Georgia,'Times New Roman',serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,Menlo,monospace}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--papier)}
+body{margin:0;color:var(--tinte);font-family:var(--sans);font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased;background:var(--papier)}
+body.eingebettet .nur-seite{display:none}
+.in{max-width:1040px;margin:0 auto;padding:48px clamp(20px,4vw,56px) 110px}
+body.eingebettet .in{padding-top:34px}
+h1{font-family:var(--titel);font-weight:700;font-size:clamp(2.1rem,4vw,3.3rem);line-height:1.06;letter-spacing:-.005em;margin:0}
+h1 em{font-style:normal;color:var(--balken)}
+h2{font-family:var(--titel);font-weight:700;font-size:1.45rem;line-height:1.1;margin:44px 0 16px;display:flex;align-items:baseline;gap:12px}
+h2 span{font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+p{margin:0}
+.kopf{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.kopf p{margin-top:12px;max-width:60ch;color:rgba(42,26,14,.74);font-size:16px}
+.kopf__r{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 22px;border-radius:999px;font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;color:var(--tinte);box-shadow:inset 0 0 0 1px rgba(50,31,16,.35);background:none;transition:transform .35s,box-shadow .35s}
+.kn:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--tinte)}
+.kn--dunkel{color:var(--papier);background:linear-gradient(#55361c,#3a2412 55%,#2a180a);box-shadow:inset 0 1px 0 #846046}
+.kn--klein{height:38px;padding:0 16px;font-size:10px}
+.kn[disabled]{opacity:.4;pointer-events:none}
+.ampel{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;padding:24px 28px;border-radius:22px;background:var(--russ);color:var(--papier);margin-bottom:10px}
+.ampel i{width:54px;height:54px;border-radius:50%;display:block;box-shadow:inset 0 2px 4px rgba(0,0,0,.35),0 0 0 6px rgba(239,228,211,.08)}
+.ampel.gruen i{background:radial-gradient(circle at 35% 30%,#8fcf85,#3f6b3a 70%)}
+.ampel.gelb i{background:radial-gradient(circle at 35% 30%,#f3cd94,#c98a1b 70%)}
+.ampel.rot i{background:radial-gradient(circle at 35% 30%,#f09a86,#c42e13 70%)}
+.ampel.grau i{background:radial-gradient(circle at 35% 30%,#bbb,#666 70%)}
+.ampel b{display:block;font-family:var(--titel);font-weight:700;font-size:1.6rem;line-height:1.1}
+.ampel span{display:block;margin-top:6px;color:rgba(239,228,211,.72);font-size:14px}
+.zahlen{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.zahlen b{font-family:var(--titel);font-size:1.1rem;letter-spacing:0;text-transform:none;color:var(--tinte);margin-right:4px}
+.liste{display:grid;gap:10px}
+.punkt{display:grid;grid-template-columns:18px minmax(0,1fr) auto;gap:16px;align-items:start;padding:18px 22px;border-radius:18px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie)}
+.punkt i{width:12px;height:12px;border-radius:50%;margin-top:7px;display:block}
+.punkt.ok i{background:var(--gruen)}.punkt.info i{background:var(--blau)}.punkt.warn i{background:var(--gelb)}.punkt.fehler i{background:var(--rot)}
+.punkt b{display:block;font-size:15.5px;font-weight:600;line-height:1.3}
+.punkt p{margin-top:3px;font-size:14px;color:rgba(42,26,14,.78)}
+.punkt .abhilfe{margin-top:8px;font-size:13.5px;color:var(--leise);display:none}
+.punkt.warn .abhilfe,.punkt.fehler .abhilfe{display:block}
+.punkt .abhilfe b{display:inline;font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);margin-right:6px}
+.punkt details{margin-top:8px;font-size:13px;color:var(--leise)}
+.punkt summary{cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.punkt ul{margin:8px 0 0;padding-left:18px}
+.punkt li{margin:2px 0;overflow-wrap:anywhere}
+.punkt .r{display:grid;gap:8px;justify-items:end}
+.frage{grid-column:1/-1;display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 16px;border-radius:12px;background:rgba(201,138,27,.12);font-size:14px}
+.lex{display:grid;gap:8px}
+.lex details{scroll-margin-top:24px;background:var(--blatt);border-radius:16px;box-shadow:inset 0 0 0 1px var(--linie);padding:14px 20px}
+.lex summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none;display:flex;gap:10px;align-items:center}
+.lex summary::before{content:'';width:8px;height:8px;border-right:1.5px solid var(--leise);border-bottom:1.5px solid var(--leise);transform:rotate(-45deg);transition:transform .25s;flex:none}
+.lex details[open] summary::before{transform:rotate(45deg)}
+.lex details:target,.lex details.ziel{box-shadow:inset 0 0 0 2px var(--kerze,#c98543)}
+.lex .wort{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--balken)}
+.lex dl{margin:12px 0 2px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;font-size:14px}
+.lex dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);padding-top:3px}
+.lex dd{margin:0;color:rgba(42,26,14,.82)}
+.meld{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);padding:12px 18px;border-radius:999px;background:var(--russ);color:var(--papier);font-size:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);opacity:0;transition:opacity .3s;pointer-events:none;max-width:calc(100vw - 40px)}
+.meld.an{opacity:1}
+.hinweis{font-size:13.5px;color:rgba(42,26,14,.74);background:rgba(50,31,16,.06);border-radius:12px;padding:12px 16px}
+.hinweis a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.leer{text-align:center;padding:40px 20px;color:var(--leise)}
+code{font-family:var(--mono);font-size:12.5px}
+@media(max-width:680px){.punkt{grid-template-columns:18px minmax(0,1fr)}.punkt .r{grid-column:2;justify-items:start}.ampel{grid-template-columns:1fr}}
+</style>
+<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body>
+<div class="in">
+  <header class="kopf">
+    <div><h1>Prü<em>fung.</em></h1><p>Prüft den Schreibtisch von innen: Server, Dateien, Bau der Seite, Bilder, Zugang, Reste eines Veröffentlichens. Jeder Punkt sagt, was geprüft wurde und was zu tun ist. Diese Seite braucht nichts vom übrigen Werkzeug und läuft auch, wenn der Schreibtisch selbst nicht mehr lädt.</p></div>
+    <div class="kopf__r"><button class="kn" type="button" id="k-neu">Erneut prüfen</button><button class="kn" type="button" id="k-kopie">Bericht kopieren</button><a class="kn kn--dunkel nur-seite" href="/studio/">Zum Schreibtisch</a></div>
+  </header>
+  <div class="ampel grau" id="k-ampel"><i></i><div><b>Wird geprüft …</b><span>Einen Moment.</span></div></div>
+  <div class="zahlen" id="k-zahlen"></div>
+  <h2>Server und Daten <span id="k-n1"></span></h2>
+  <div class="liste" id="k-server"><p class="leer">Wird geprüft …</p></div>
+  <h2>Dieser Browser <span id="k-n2"></span></h2>
+  <div class="liste" id="k-browser"></div>
+  <h2>Lexikon aller bekannten Fehlerquellen <span id="k-n3"></span></h2>
+  <p class="hinweis" style="margin-bottom:12px">Jede Fehlerquelle, die der Schreibtisch kennt, mit dem Zeichen, an dem man sie erkennt, und dem Weg, sie zu beheben. Oben die Meldungen mit Stichwort (der Knopf «Was tun?» führt hierher), darunter die Punkte, die die Prüfung durchläuft.</p>
+  <div class="lex" id="lexikon"><div id="k-sw"></div><div id="k-lex"></div></div>
+</div>
+<div class="meld" id="k-meld" role="status"></div>
+<script src="pruefung.js?v=2"></script>
+<script src="/werkzeuge/demo-aus.js" defer></script></body>
+</html>

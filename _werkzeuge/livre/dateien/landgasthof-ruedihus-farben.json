@@ -1,0 +1,167 @@
+[
+ {
+  "name": "Blatt",
+  "hex": "#fbf5ea",
+  "rgb": [
+   251,
+   245,
+   234
+  ],
+  "rolle": "Karten, Blätter und Felder auf hellem Grund",
+  "gruppe": "papier"
+ },
+ {
+  "name": "Papier",
+  "hex": "#efe4d3",
+  "rgb": [
+   239,
+   228,
+   211
+  ],
+  "rolle": "helle Abschnitte, Grund der Werkzeuge",
+  "gruppe": "papier"
+ },
+ {
+  "name": "Leinen",
+  "hex": "#d8c2ad",
+  "rgb": [
+   216,
+   194,
+   173
+  ],
+  "rolle": "Linien, zweite helle Fläche",
+  "gruppe": "papier"
+ },
+ {
+  "name": "Balken",
+  "hex": "#6d431f",
+  "rgb": [
+   109,
+   67,
+   31
+  ],
+  "rolle": "Kapitelzeilen und Linien auf Hell",
+  "gruppe": "holz"
+ },
+ {
+  "name": "Wandholz",
+  "hex": "#321f10",
+  "rgb": [
+   50,
+   31,
+   16
+  ],
+  "rolle": "dunkle Flächen, Kopfleiste der Werkzeuge",
+  "gruppe": "holz"
+ },
+ {
+  "name": "Stube",
+  "hex": "#1f1209",
+  "rgb": [
+   31,
+   18,
+   9
+  ],
+  "rolle": "Grund der Seite",
+  "gruppe": "holz"
+ },
+ {
+  "name": "Licht",
+  "hex": "#f3cd94",
+  "rgb": [
+   243,
+   205,
+   148
+  ],
+  "rolle": "Betonung auf Dunkel, hellster Ton im Kerzenlicht",
+  "gruppe": "licht"
+ },
+ {
+  "name": "Kerze",
+  "hex": "#c98543",
+  "rgb": [
+   201,
+   133,
+   67
+  ],
+  "rolle": "Linien, Muster der Butzenscheiben",
+  "gruppe": "licht"
+ },
+ {
+  "name": "Gold",
+  "hex": "#b78f51",
+  "rgb": [
+   183,
+   143,
+   81
+  ],
+  "rolle": "das Zeichen, Kapitelzeilen auf Dunkel",
+  "gruppe": "licht"
+ },
+ {
+  "name": "Geranie",
+  "hex": "#c42e13",
+  "rgb": [
+   196,
+   46,
+   19
+  ],
+  "rolle": "nur als Punkt: Stempel, Markierung",
+  "gruppe": "punkt"
+ },
+ {
+  "name": "Tinte",
+  "hex": "#2a1a0e",
+  "rgb": [
+   42,
+   26,
+   14
+  ],
+  "rolle": "Schrift auf hellen Flächen",
+  "gruppe": "weitere"
+ },
+ {
+  "name": "Tief",
+  "hex": "#170d06",
+  "rgb": [
+   23,
+   13,
+   6
+  ],
+  "rolle": "dunkelster Grund: Fuss und Menü",
+  "gruppe": "weitere"
+ },
+ {
+  "name": "Hellgold",
+  "hex": "#d2b384",
+  "rgb": [
+   210,
+   179,
+   132
+  ],
+  "rolle": "das Zeichen in der Leiste der Website",
+  "gruppe": "weitere"
+ },
+ {
+  "name": "Creme",
+  "hex": "#f7ecdc",
+  "rgb": [
+   247,
+   236,
+   220
+  ],
+  "rolle": "Schrift auf der Platte (Leiste, Knöpfe)",
+  "gruppe": "weitere"
+ },
+ {
+  "name": "Kachelofen",
+  "hex": "#31380d",
+  "rgb": [
+   49,
+   56,
+   13
+  ],
+  "rolle": "nur als Punkt",
+  "gruppe": "weitere"
+ }
+]

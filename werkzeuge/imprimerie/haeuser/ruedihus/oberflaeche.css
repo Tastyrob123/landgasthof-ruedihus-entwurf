@@ -1,0 +1,85 @@
+/* Die Werkstatt des Landgasthof Ruedihus: Anschluss an die Werkzeug-Oberfläche «Die Bühne» (Werkbank-Chat 17.10.2026, oberflaeche.js daneben).
+   Kopf, Marke, runde Knöpfe, Rand und Startbilder sehen aus wie in den anderen Werkzeugen des Hauses (Werte aus grund.css, rahmen-buehne.css,
+   kleid/ruedihus.css); die Arbeitsfläche (Blatt, Werkzeugleiste, rechte Spalte) bleibt, wie sie ist. Nur transform und opacity bewegen. */
+
+/* Köpfe: Wandholz mit Tapete wie .wo-kopf */
+.kopf,.ms-kopf{background:var(--wo-nacht)!important;box-shadow:0 1px 0 var(--wo-linie-d),0 18px 30px -22px rgba(0,0,0,.6)!important;isolation:isolate;position:relative}
+.kopf::after,.ms-kopf::after{content:'';position:absolute;inset:0;z-index:-1;background:var(--wo-tapete);opacity:.55;pointer-events:none}
+.ms-kopf{border-bottom:0!important}
+/* Marke wie in jedem Werkzeug: Zeichen, Name in der Titelschrift, Unterzeile in Gold */
+button.wo-marke-w{border:0;background:none;padding:0;cursor:pointer;text-align:left;font:inherit}
+.kopf .wo-marke-w b,.ms-kopf .wo-marke-w b{font:var(--wo-titel-g) 19px/1.1 var(--wo-titel);letter-spacing:.02em;text-transform:none;color:var(--wo-weiss)}
+.kopf .wo-marke-w small,.ms-kopf .wo-marke-w small{font:400 13.5px/1.2 var(--wo-titel);letter-spacing:.01em;text-transform:none;color:#f3cd94}   /* Robert 18.10.2026 17:36 (M24): Unterzeile wie beim Schreibtisch */
+.ms-kopf .ws-marke{margin-right:auto;flex:none}
+.ms-kopf .ws-marke~.ms-suche{margin-left:0}
+/* Runde Knöpfe in beiden Köpfen wie .wo-kn--rund im Kopf des Pakets */
+.ms-kopf .rund.ws-rund,.kopf__werk .rund.ws-rund{padding:0;place-items:center;border:0;border-radius:50%;color:var(--wo-gold);
+  background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px var(--wo-linie-d),inset 0 1px 0 rgba(255,255,255,.1)}
+.ms-kopf .rund.ws-rund svg,.kopf__werk .rund.ws-rund svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.6}
+.ms-kopf .rund.ws-rund:hover,.kopf__werk .rund.ws-rund:hover{color:var(--wo-weiss)}
+.ms-kopf .ws-web{flex:none}
+
+/* Rand der Übersicht wie .wo-rand: weisse Platte, Einträge in der Grundschrift, der gewählte als dunkle Tafel in der Titelschrift */
+#start .ms-leiste{background:var(--wo-weiss)!important;border-radius:var(--wo-r1)!important;box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px var(--wo-linie),0 26px 40px -30px rgba(0,0,0,.4)!important}
+#start .ms-nav button span{font:500 14.5px/1.3 var(--wo-sans);letter-spacing:0;color:var(--wo-tinte)}
+#start .ms-nav button.an span{font:var(--wo-titel-g) 19px/1.2 var(--wo-titel);color:var(--wo-weiss)}
+#start .ms-nav button em{font:400 10px/1 var(--wo-mono);letter-spacing:.06em;color:var(--wo-leise)}
+#start .ms-marke{display:none}
+
+/* Startbilder: Werte von .wo-sb im Rahmen «Die Bühne» */
+#start .ws-sb{margin:0 0 30px;border-radius:var(--wo-r1);min-height:430px;display:flex;align-items:center;padding:56px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 0 0 1px var(--wo-linie-d),0 40px 60px -40px rgba(0,0,0,.75)}
+#start .ws-sb.wo-sb--buehne{min-height:250px;padding:38px 48px}
+#start .ws-sb h1.wo-sb__h{margin:18px 0 0;padding:0;font:var(--wo-titel-g) clamp(38px,4.1vw,62px)/1.04 var(--wo-titel);letter-spacing:var(--wo-titel-ls);color:var(--wo-weiss);text-wrap:balance;text-transform:none}
+#start .ws-sb.wo-sb--buehne h1.wo-sb__h{font-size:clamp(32px,3.2vw,48px)}
+#start .ws-sb .wo-sb__satz{display:block;margin:16px 0 0;max-width:56ch;font:400 15.5px/1.62 var(--wo-sans);letter-spacing:0;text-transform:none;color:rgba(255,255,255,.8)}
+#start .ws-sb .wo-sb__kn{width:100%}
+#start .ws-sb .ms-feld{flex:1 1 100%;max-width:620px}
+#start .ws-titel{display:block;margin:0 0 8px}
+@media (max-width:900px){
+  #start .ws-sb{display:block;min-height:0;padding:0}
+  #start .ws-sb h1.wo-sb__h{font-size:clamp(32px,9vw,40px)}
+  #start .ws-sb .wo-sb__satz{font-size:14.5px}
+}
+#start .ws-sb .ms-feld{width:100%}
+#start .ws-sb .ms-feld textarea{min-width:0;flex:1 1 auto}
+.wo-marke-w .ws-alt{display:none}
+#start .ws-sb.wo-sb--voll .wo-sb__text{max-width:min(58%,700px)}
+#start .ws-sb .ms-feld textarea{font-size:16px}
+#start .ws-sb .ms-feld{max-width:100%}
+#start .ws-sb .ms-lnk{color:var(--wo-gold)}
+@media (max-width:900px){
+  #start .ws-sb.wo-sb--voll .wo-sb__text{max-width:none}
+  .ms-kopf .ws-web,.ms-kopf .ws-marke small{display:none}
+  .ms-kopf .ws-marke{flex:0 1 auto;min-width:0}
+  .ms-kopf .ws-marke b{font-size:17px}
+}
+@media (max-width:600px){.ms-kopf .ws-marke>span{display:none}}
+#start .ws-sb .wo-sb__zier{max-width:100%}
+@media (min-width:901px){.ms-kopf .rund.ws-rund,.kopf__werk .rund.ws-rund{width:42px;height:42px}}
+.ms-kopf .ws-web,.ms-kopf .ws-web span{text-decoration:none}
+/* Robert 18.10.2026 ~13:36: «bei den imprimerien bitte darauf achten das die Monate nicht in die Kacheln ragen» (Master M18): jeder Monatsname,
+   auch «September», steht ganz in seiner linken Spalte; Spalte etwas breiter, Schrift so gross, wie die Spalte trägt */
+@media (min-width:901px){.ev-monat{grid-template-columns:minmax(190px,230px) minmax(0,1fr)}
+  .ev-monat__kopf b{font-size:clamp(28px,2.35vw,38px);white-space:nowrap}}
+
+/* Ruedihus Kacheln ruhig (Robert 18.10.2026, M21): kein Kippen, kein Sprung, die Kachel hebt sich langsam wenige Pixel, die Grundneigung bleibt */
+@media (hover:hover){
+.vk__bild,.art__bild,.wv__bild,.stueck__satz,.papier--hinten,.couvert,.sf__f span,.foto img{transition:transform 1.1s cubic-bezier(.22,1,.36,1),box-shadow 1.1s cubic-bezier(.22,1,.36,1)!important}
+.vk:hover .vk__bild,.wv__k:hover .wv__bild,.art:hover .art__bild,.art:focus-visible .art__bild{transform:translateY(-3px)!important}
+.vk:hover .vk__bild .blatt,.wv__k:hover .wv__bild .blatt,.art:hover .art__bild .blatt{transform:none!important}
+.stueck:hover .stueck__satz,.stueck:focus-visible .stueck__satz{transform:rotate(var(--r,0deg)) translateY(-3px)!important}
+.stueck:hover .papier--hinten{transform:translate(16px,-10px) rotate(4.5deg)!important}
+.stueck:hover .couvert{transform:translateX(-38%) translateY(-11px) rotate(5deg)!important}
+.stueck:hover .stueck__satz::before{opacity:1!important;transform:none!important}
+.sf:hover .sf__f span{transform:translateY(-2px)!important}
+.foto:hover img{transform:scale(1.02)!important}
+.art:hover .art__leer,.wv__k:hover .art__leer{transform:none!important}
+}
+
+/* Robert 18.10.2026 17:36 (M24): Ecke oben links wie beim Schreibtisch, gleiche Lage, Schrift und Farbe */
+.kopf__marke.wo-marke-w{margin:1px 0 0 2px}
+.kopf__marke.wo-marke-w small{font-family:'Titel RH',Georgia,serif!important;font-size:13.5px!important;font-weight:400!important;letter-spacing:.01em!important;text-transform:none!important;color:#f3cd94!important}
+
+/* Querprüfung 21.10.2026 (Fehlerbuch 10a, Schlössli/Schäfli): «Übersicht» ist immer eine dunkle Taste; ihre Schrift steht in jeder Ansicht hell, nicht nur wenn gewählt */
+html:not(#q1) .ms-nav--haupt>button[data-ansicht="start"],html:not(#q1) .ms-nav--haupt>button[data-ansicht="start"] span,html:not(#q1) .ms-nav--haupt>button[data-ansicht="start"] svg{color:rgb(251,244,228)}

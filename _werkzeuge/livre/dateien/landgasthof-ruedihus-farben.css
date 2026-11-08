@@ -1,0 +1,18 @@
+/* Landgasthof Ruedihus · Farben der Marke (Das Hausbuch, 19.10.2026), Werte aus der Website (assets/css/main.css) */
+:root{
+  --blatt:#fbf5ea; /* Blatt: Karten, Blätter und Felder auf hellem Grund */
+  --papier:#efe4d3; /* Papier: helle Abschnitte, Grund der Werkzeuge */
+  --leinen:#d8c2ad; /* Leinen: Linien, zweite helle Fläche */
+  --balken:#6d431f; /* Balken: Kapitelzeilen und Linien auf Hell */
+  --holz:#321f10; /* Wandholz: dunkle Flächen, Kopfleiste der Werkzeuge */
+  --russ:#1f1209; /* Stube: Grund der Seite */
+  --licht:#f3cd94; /* Licht: Betonung auf Dunkel, hellster Ton im Kerzenlicht */
+  --kerze:#c98543; /* Kerze: Linien, Muster der Butzenscheiben */
+  --gold:#b78f51; /* Gold: das Zeichen, Kapitelzeilen auf Dunkel */
+  --geranie:#c42e13; /* Geranie: nur als Punkt: Stempel, Markierung */
+  --tinte:#2a1a0e; /* Tinte: Schrift auf hellen Flächen */
+  --tief:#170d06; /* Tief: dunkelster Grund: Fuss und Menü */
+  --gold2:#d2b384; /* Hellgold: das Zeichen in der Leiste der Website */
+  --creme:#f7ecdc; /* Creme: Schrift auf der Platte (Leiste, Knöpfe) */
+  --ofen:#31380d; /* Kachelofen: nur als Punkt */
+}

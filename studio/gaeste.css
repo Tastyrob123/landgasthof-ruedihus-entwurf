@@ -1,0 +1,35 @@
+/* Gäste & Anfragen im Studio der Schwesterhäuser (gast_haeuser.py). Nutzt die Farben aus studio.css des Hauses. */
+body.gaeste{margin:0;background:var(--papier);color:var(--tinte);font-family:var(--sans,system-ui);-webkit-font-smoothing:antialiased}
+.g{max-width:980px;margin:0 auto;padding:clamp(24px,5vw,64px) clamp(16px,4vw,40px) 80px}
+.g__zurueck{font-size:14px;color:inherit;opacity:.7;text-decoration:none}
+.g__kopf h1{font-family:var(--titel,Georgia,serif);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.05;margin:18px 0 10px}
+.g__kopf h1 em{font-style:normal;opacity:.7}
+.g__kopf p{max-width:62ch;line-height:1.6;margin:0 0 26px}
+.g__reiter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.g__reiter button,.g__filter button{font:inherit;font-size:14px;padding:9px 16px;border-radius:999px;border:0;cursor:pointer;background:transparent;color:inherit;box-shadow:inset 0 0 0 1px rgba(var(--ld,20,20,20),.25)}
+.g__reiter button.an,.g__filter button.an{background:var(--tinte);color:var(--blatt,#fff);box-shadow:none}
+.g__zahlen{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.g__zahlen div,.g__blatt,.g__frage{background:var(--blatt,#fff);border-radius:20px;box-shadow:inset 0 0 0 1px rgba(var(--ld,20,20,20),.12)}
+.g__zahlen div{padding:16px 18px}
+.g__zahlen b{display:block;font-family:var(--titel,Georgia,serif);font-weight:400;font-size:2rem;line-height:1}
+.g__zahlen span{font-size:13px;opacity:.7}
+.g__filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.g__woche{font-family:var(--titel,Georgia,serif);font-weight:400;font-size:1.3rem;margin:24px 0 6px}
+.g__frage{padding:16px 20px;margin-top:10px}
+.g__frage b{font-weight:600;font-size:1.02rem;line-height:1.4}
+.g__marke{display:inline-block;margin-left:8px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:rgba(var(--ld,20,20,20),.08);vertical-align:2px}
+.g__marke--gold{background:var(--gold,#c9a45a);color:var(--tinte)}
+.g__frage small{display:block;margin-top:4px;font-size:12.5px;opacity:.65}
+.g__frage details{margin-top:8px}.g__frage summary{cursor:pointer;font-size:13px;opacity:.7}
+.g__frage details p{margin:8px 0 0;font-size:14.5px;line-height:1.6}
+.g__aktion{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.g__blatt{padding:22px}
+.g__feld{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.g__feld span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7}
+.g__feld input,.g__feld textarea{font:inherit;font-size:15px;line-height:1.6;color:inherit;background:var(--papier);border:0;border-radius:12px;padding:12px 14px;box-shadow:inset 0 0 0 1px rgba(var(--ld,20,20,20),.2)}
+.g__fehler{color:#a3261b;min-height:1em;margin:0 0 8px}
+.g__leise{font-size:13px;opacity:.7;margin:12px 0 0}
+.g__team{margin:6px 0 16px;padding:14px 16px;border-radius:14px;background:rgba(var(--ld,20,20,20),.06);font-size:14px;line-height:1.55}
+.g__leer{text-align:center;padding:50px 20px;opacity:.8}
+.g .kn{cursor:pointer}
+@media (max-width:700px){.g__zahlen{grid-template-columns:repeat(2,minmax(0,1fr))}}

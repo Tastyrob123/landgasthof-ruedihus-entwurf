@@ -1,0 +1,35 @@
+/* Was Gäste wissen wollen: vier Handys in einer Reihe (Robert 18.10.2026 20:38: «bei ALLEN HÄUSERN SOLLTEN DIE TELEFONE WIE IM RIVAGE DA SEIN … genau der selbe
+   effekt mit blender und dem entgegensetzen»). Wie beim Grand Beau-Rivage (assets/css/rezeption.css, nur gelesen): frontal, versetzt, gegenläufig beim Scrollen,
+   beim Überfahren wird eins etwas grösser, die anderen und der Abschnitt dunkler (assets/js/rezeption-galerie.js). Jedes Handy ist ein fertiges Bild
+   (_werkbank/handyreihe/bau.py), bewegt wird nur über transform und opacity. Dunkel im Holzton des Ruedihus statt Marine. */
+.rz-fragen{isolation:isolate;overflow-x:clip;position:relative}
+.rz-fragen>.wrap{position:relative;z-index:1}
+.rz-fragen::after{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:#140b05;opacity:0;transition:opacity 1s cubic-bezier(.19,1,.22,1)}
+.rz-fragen.hg-an::after{opacity:.42}
+.hg{display:flex;justify-content:center;align-items:flex-start;margin-top:clamp(36px,5vw,72px)}
+.hg__h{position:relative;flex:0 0 auto;width:clamp(210px,21.5vw,380px);margin:0 0 0 clamp(14px,2vw,34px);z-index:1}
+.hg__h:first-child{margin-left:0}
+.hg__h:nth-child(even){margin-top:clamp(40px,6vw,96px)}
+.hg__box{position:relative;transition:transform 1.1s cubic-bezier(.19,1,.22,1)}
+.hg__schatten{position:absolute;left:-46.862%;top:-22.927%;width:193.724%;height:145.855%;max-width:none;pointer-events:none}
+.hg__geraet{position:relative;display:block;width:100%;height:auto}
+.hg__dunkel{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:0;transition:opacity .9s cubic-bezier(.19,1,.22,1)}
+.hg__h.an{z-index:2}
+.hg__h.an .hg__box{transform:scale(1.055)}
+.hg.hg-an .hg__h:not(.an) .hg__dunkel{opacity:.62}
+@media (max-width:980px){
+  .hg{flex-wrap:wrap;gap:40px 6%}
+  .hg__h,.hg__h:first-child{width:min(44%,300px);margin:0}
+  .hg__h:nth-child(even){margin-top:56px}
+}
+@media (max-width:560px){
+  .hg{display:block}
+  .hg__h,.hg__h:first-child{width:66%;margin:0 0 30px}
+  .hg__h:nth-child(even){margin:0 0 30px auto}
+  .hg__h:last-child{margin-bottom:0}
+}
+@media (prefers-reduced-motion:reduce){.hg__box,.hg__dunkel,.rz-fragen::after{transition:none}}
+
+/* der Schatten erscheint erst mit seinem Telefon (Robert 18.10.2026 22:12: an Stelle der Telefone nur Schatten) */
+.hg__schatten{opacity:0;transition:opacity .5s ease}
+.hg__box.bereit .hg__schatten{opacity:1}

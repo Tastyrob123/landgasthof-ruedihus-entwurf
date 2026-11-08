@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gäste & Anfragen · Landgasthof Ruedihus</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="studio.css?v=gaeste1">
+<link rel="stylesheet" href="gaeste.css?v=1">
+<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body class="gaeste">
+<main class="g">
+  <a class="g__zurueck" href="./">← Zurück zum Studio</a>
+  <header class="g__kopf"><h1>Gäste <em>&amp; Anfragen.</em></h1>
+    <p>Was Gäste die Rezeption im Chat des Landgasthof Ruedihus fragen, und der Assistent für Antworten auf Anfragen per Mail.</p></header>
+  <nav class="g__reiter" aria-label="Bereiche"><button type="button" data-r="gefragt" class="an">Das wurde gefragt</button><button type="button" data-r="anfragen">Anfragen beantworten</button></nav>
+  <section id="gefragt" class="g__teil"></section>
+  <section id="anfragen" class="g__teil" hidden>
+    <div class="g__blatt">
+      <label class="g__feld"><span>Anfrage des Gastes</span><textarea id="an-mail" rows="9" placeholder="Die Mail des Gastes hier einfügen, mit Anrede und Unterschrift."></textarea></label>
+      <label class="g__feld"><span>Hinweis an den Assistenten (freiwillig)</span><input id="an-hinweis" maxlength="400" placeholder="z. B. Saal am 14. März ist frei"></label>
+      <p class="g__fehler" id="an-f" role="alert"></p>
+      <button class="kn" type="button" id="an-los">Entwurf schreiben</button>
+      <p class="g__leise">Der Assistent schreibt einen Entwurf im Ton des Hauses, mit Preisen und Leistungen aus Website und Unterlagen. Sie lesen, ändern und schicken selbst. Hier wird nichts verschickt.</p>
+    </div>
+    <div id="an-ergebnis"></div>
+  </section>
+</main>
+<script src="gaeste.js?v=1" defer></script>
+<script src="/werkzeuge/demo-aus.js" defer></script></body>
+</html>

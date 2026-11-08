@@ -1,0 +1,32 @@
+/* Das Besucherbuch · Landgasthof Ruedihus: Anschluss an das Paket der Werkzeuge des Hauses (assets/oberflaeche, Rahmen «Die Bühne», kleid/ruedihus.css),
+   gebaut von oberflaeche.py, Vorbild Besucherbuch Gasterntal. Hier steht nur, was das Besucherbuch darin eigen hat: Kennzahlen und Zeitraum im Startbild,
+   die Zahl im Kreis der Leiste, der Raum ohne eigene Scrollfläche. Lädt nach registre.css. Bewegung nur über transform und opacity (Regel 55). */
+.rg .flaeche{overflow:visible;position:relative;height:auto;min-height:0}
+.rg .flaeche:focus{outline:0}
+.rg .in{max-width:none;margin:0;padding:0 0 40px}
+.rg .wo-raum{min-height:60vh}
+.rg .rand__titel{margin:4px 8px 10px;font-size:9.5px}
+.rg .rand__titel::before{display:none}
+.rg .rand__haus{margin:14px 10px 2px;padding-top:12px;font:400 9.5px/1.5 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-leise)}
+/* Startbild: Kennzahlen als Holztafeln wie bisher, Zeitraum dunkel, Knöpfe in einer Reihe */
+.rg-sb{margin-bottom:34px}   /* Fehlerbuch 10a: mindestens 30 px unter der Bühne */
+.rg-sb .wo-sb__kn{align-items:center;flex-wrap:wrap}
+.rg-sb .buehne__chips{flex-basis:100%;order:2;margin:0;padding:0;animation:none}
+.rg-sb .buehne__chips li{list-style:none}
+.rg-sb .zeitraum{order:3;background:var(--karte);box-shadow:inset 0 0 0 1px rgba(243,205,148,.3)}
+.rg-sb .zeitraum button{color:rgba(255,250,241,.8)}
+.rg-sb .zeitraum button:hover{color:#fff}
+.rg-sb .zeitraum button.an{background:var(--hellgold);color:var(--tinte)}
+/* Leiste: die Zahl von heute (oder «B» für Beispiel) im Kreis, wie bisher */
+.wo-leiste .leiste__z{flex:none;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font:400 14px/1 var(--wo-mono);font-style:normal;color:var(--wo-tief);
+  background:linear-gradient(180deg,var(--wo-g1),var(--wo-g2) 50%,var(--wo-g3));box-shadow:inset 0 1px 0 rgba(255,255,255,.8),inset 0 -2px 0 rgba(0,0,0,.2)}
+.wo-leiste .leiste__z.bsp{background:var(--wo-nacht2);color:var(--wo-gold);box-shadow:inset 0 0 0 1px var(--wo-linie-d)}
+.wo-leiste .wo-kn[aria-pressed="true"]{box-shadow:inset 0 0 0 1.5px var(--wo-gold)}
+.tuer-zu__kn{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.rg .meldung{bottom:96px}
+@media (max-width:900px){
+  .rg .meldung{bottom:84px}
+  .rg-sb .buehne__chips li{padding:8px 13px}
+  .rg-sb .zeitraum{width:100%;display:flex}
+  .rg-sb .zeitraum button{flex:1}
+}

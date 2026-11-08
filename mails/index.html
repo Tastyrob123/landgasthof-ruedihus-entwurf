@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="de-CH"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, nofollow">
+<title>Drei Mails · Landgasthof Ruedihus</title>
+<link rel="icon" href="../assets/logo/zeichen.svg">
+<style>
+@font-face{font-family:'Gelasio';font-weight:700;font-display:swap;src:url('../assets/fonts/gelasio-700.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('../assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#1f1209;color:#fbf5ea;font:400 17px/1.6 'Instrument Sans',system-ui,sans-serif;--rand:clamp(20px,4.6vw,76px)}
+header.kopf{padding:clamp(56px,8vw,120px) var(--rand) clamp(30px,4vw,60px);text-align:center}
+header.kopf img{width:clamp(50px,5.9vw,92px);height:auto}
+h1{margin:clamp(14px,1.6vw,24px) 0 0;font:700 clamp(2.1rem,5.5vw,5.9rem)/1.04 'Gelasio',Georgia,serif}h1 em{font-style:normal;color:#c98543}
+header.kopf p{max-width:60ch;margin:clamp(18px,2.1vw,32px) auto 0;color:rgba(251,245,234,.86)}
+main{padding:0 0 clamp(60px,8vw,120px)}
+.band{display:flex;gap:clamp(20px,2.4vw,40px);align-items:flex-start;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-padding-inline:var(--rand);padding:4px var(--rand) 34px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.band::-webkit-scrollbar{display:none}
+.band:focus-visible{outline:2px solid #c98543;outline-offset:-2px}
+.mb{flex:0 0 clamp(300px,34vw,520px);scroll-snap-align:start}
+.mb:last-child{margin-inline-end:var(--rand)}
+.mb-ueber{display:flex;gap:16px;align-items:flex-start;margin:0 4px 18px}
+.mb-nr{font:700 2.3rem/.9 'Gelasio',Georgia,serif;color:#c98543}
+.mb-ueber__t{display:flex;flex-direction:column;gap:5px;min-width:0}
+.mb-ueber__t b{font:700 1.3rem/1.15 'Gelasio',Georgia,serif}
+.mb-ueber__t small{font-size:.86rem;line-height:1.4;color:rgba(251,245,234,.74)}
+.mb-ueber__t small span{display:inline-block;min-width:5.4em;font:400 10px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#c98543}
+.mb-blatt{position:relative;height:640px;border-radius:20px;overflow:hidden;background:#efe4d3;box-shadow:0 0 0 1px rgba(201,133,67,.3),0 40px 50px -30px rgba(0,0,0,.9);-webkit-mask-image:linear-gradient(#000 68%,transparent);mask-image:linear-gradient(#000 68%,transparent)}
+.mb.auf .mb-blatt{-webkit-mask-image:none;mask-image:none}
+.mb-in{position:relative}.mb-in table{max-width:100%}
+.mb-ganz{position:relative;margin:-30px 0 0;text-align:center}
+.mb.auf .mb-ganz{margin-top:22px}
+.mb-kn{display:inline-flex;align-items:center;gap:12px;padding:8px 8px 8px 22px;border:0;border-radius:999px;cursor:pointer;font:400 11.5px/1 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#fbf5ea;
+  background:linear-gradient(180deg,#4a2f18,#321f10 60%,#170d06);box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 0 0 1px rgba(201,133,67,.38),0 14px 22px -12px rgba(0,0,0,.8)}
+.mb-kn i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;color:#2a1a0e;background:linear-gradient(180deg,#f8dcaa,#f3cd94 55%,#c98543);box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.mb-kn svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.mb-kn .z,.mb.auf .mb-kn .a{display:none}.mb.auf .mb-kn .z{display:inline}.mb.auf .mb-kn svg{transform:rotate(180deg)}
+.mb-kn:focus-visible{outline:2px solid #f3cd94;outline-offset:3px}
+.pfeile{display:flex;justify-content:center;gap:14px;margin-top:4px}
+.pf{width:52px;height:52px;border:0;border-radius:50%;cursor:pointer;display:grid;place-items:center;color:#2a1a0e;background:linear-gradient(180deg,#f8dcaa,#f3cd94 55%,#c98543);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 12px 20px -10px rgba(0,0,0,.7)}
+.pf svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pf:disabled{opacity:.35;cursor:default}
+footer{padding:26px var(--rand) 40px;text-align:center;font-size:.92rem;color:rgba(251,245,234,.6);border-top:1px solid rgba(201,133,67,.2)}
+footer a{color:#f3cd94}
+@media (max-width:760px){.mb{flex-basis:calc(100vw - 2 * var(--rand))}.pfeile{display:none}}
+@media (hover:none){.pfeile{display:none}}
+</style><script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body>
+<header class="kopf"><img src="img/zeichen.png?v=3b37e388" alt="" width="92"><h1>Drei Mails,<br><em>im Ton Ihres Hauses.</em></h1>
+<p>Was ein Gast nach einer Anfrage oder vor der Reise von Ihnen bekommt, sieht aus wie die neue Seite. Drei Fälle als Idee. Namen, Daten und Stuben in den Mails sind Beispielwerte, Telefon, Adresse und Öffnungszeit sind Ihre.</p></header>
+<main><div class="band" id="mband" tabindex="0" aria-label="Die drei Mails, zum Blättern"><article class="mb">
+  <header class="mb-ueber"><span class="mb-nr">01</span><span class="mb-ueber__t"><b>Tisch in der Stube</b><small><span>Von</span> Landgasthof Ruedihus · info@doldenhorn.ch</small><small><span>Wann</span> Gleich nach der Tischanfrage</small><small><span>Betreff</span> Ihre Tischanfrage ist bei uns</small></span></header>
+  <div class="mb-blatt"><div class="mb-in">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#efe4d3"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fbf5ea;border-radius:22px;overflow:hidden">
+  <tr><td align="center" style="background:#321f10;padding:34px 30px 30px">
+    <img src="img/zeichen.png?v=3b37e388" width="58" alt="" style="display:block;border:0;width:58px;height:auto;margin:0 auto 14px">
+    <div style="font:700 15px/1.2 Georgia,'Times New Roman',serif;letter-spacing:.2em;color:#fbf5ea">LANDGASTHOF RUEDIHUS</div>
+    <div style="margin-top:7px;font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#c98543">Kandersteg · seit 1753</div>
+    <h1 style="margin:28px 0 0;font:700 clamp(30px,8.6vw,40px)/1.08 Georgia,'Times New Roman',serif;color:#fbf5ea">Ihr Tisch<br><span style="color:#c98543">in der Stube.</span></h1>
+  </td></tr>
+  <tr><td style="background:#321f10;padding:0 22px"><img src="img/fest-tafel.jpg?v=69a46e42" width="556" alt="Eine festlich gedeckte Tafel in einer Stube des Ruedihus" style="display:block;border:0;width:100%;height:auto;border-radius:16px 16px 0 0"></td></tr>
+  <tr><td style="padding:34px clamp(22px,6vw,40px) 8px"><p style="margin:0 0 14px;font:700 21px/1.3 Georgia,'Times New Roman',serif;color:#2a1a0e">Liebe Frau Keller</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Vielen Dank für Ihre Anfrage. Wir schauen in unser Buch und bestätigen Ihnen den Tisch persönlich.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">In den drei Stuben im Parterre kommen Fondue, Raclette und Rösti auf den Tisch. Die ganze Karte finden Sie schon jetzt auf unserer Seite.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Geht etwas schneller am Telefon, erreichen Sie uns unter +41 33 675 81 81.</p></td></tr>
+  <tr><td style="padding:10px 28px 6px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#321f10;border-radius:16px">
+    <tr><td style="padding:22px 26px 12px"><div style="font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c98543;padding-bottom:12px">Ihre Anfrage · Beispielwerte</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Stube</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">Chäs-u Wystube</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Tag</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">Samstag, 12. Dezember 2026</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Uhrzeit</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">19:00 Uhr</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Personen</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">2</td></tr></table></td></tr></table></td></tr>
+  <tr><td align="center" style="padding:26px 40px 8px"><a href="../essen.html" style="display:inline-block;padding:16px 30px;border-radius:999px;background:#321f10;font:700 12px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fbf5ea;text-decoration:none">Die Karte ansehen &nbsp;↗</a></td></tr>
+  <tr><td style="padding:14px 40px 30px"><p style="margin:0;font:400 15px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5a4532;text-align:center">Das Restaurant ist von 11:30 bis 21:00 Uhr geöffnet.</p>
+    <img src="img/familie.jpg?v=ec48498f" width="520" alt="Familie Maeder, Ihre Gastgeber" style="display:block;border:0;width:100%;max-width:520px;height:auto;margin:26px auto 0;border-radius:16px">
+    <p style="margin:16px 0 0;font:700 18px/1.3 Georgia,'Times New Roman',serif;color:#2a1a0e;text-align:center">Herzlich, Familie Maeder und ihr Team</p></td></tr>
+  <tr><td align="center" style="background:#1f1209;padding:26px 30px"><div style="font:700 13px/1.4 Georgia,'Times New Roman',serif;letter-spacing:.14em;color:#fbf5ea">LANDGASTHOF RUEDIHUS</div>
+    <div style="margin-top:8px;font:400 13px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#cbb393">Hinder de Büele 6 · 3718 Kandersteg<br><a href="tel:+41336758181" style="color:#cbb393;text-decoration:none">+41 33 675 81 81</a> · <span style="color:#cbb393">info@doldenhorn.ch</span></div></td></tr>
+</table>
+</td></tr></table>
+</div></div>
+  <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></i></button></p>
+</article><article class="mb">
+  <header class="mb-ueber"><span class="mb-nr">02</span><span class="mb-ueber__t"><b>Vor Ihrer Anreise</b><small><span>Von</span> Landgasthof Ruedihus · info@doldenhorn.ch</small><small><span>Wann</span> Eine Woche vor der Anreise</small><small><span>Betreff</span> Bald sind Sie bei uns</small></span></header>
+  <div class="mb-blatt"><div class="mb-in">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#efe4d3"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fbf5ea;border-radius:22px;overflow:hidden">
+  <tr><td align="center" style="background:#321f10;padding:34px 30px 30px">
+    <img src="img/zeichen.png?v=3b37e388" width="58" alt="" style="display:block;border:0;width:58px;height:auto;margin:0 auto 14px">
+    <div style="font:700 15px/1.2 Georgia,'Times New Roman',serif;letter-spacing:.2em;color:#fbf5ea">LANDGASTHOF RUEDIHUS</div>
+    <div style="margin-top:7px;font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#c98543">Kandersteg · seit 1753</div>
+    <h1 style="margin:28px 0 0;font:700 clamp(30px,8.6vw,40px)/1.08 Georgia,'Times New Roman',serif;color:#fbf5ea">Bald sind Sie<br><span style="color:#c98543">bei uns.</span></h1>
+  </td></tr>
+  <tr><td style="background:#321f10;padding:0 22px"><img src="img/haus-blueten.jpg?v=4414cc3a" width="556" alt="Das Ruedihus hinter Blüten, davor der Garten" style="display:block;border:0;width:100%;height:auto;border-radius:16px 16px 0 0"></td></tr>
+  <tr><td style="padding:34px clamp(22px,6vw,40px) 8px"><p style="margin:0 0 14px;font:700 21px/1.3 Georgia,'Times New Roman',serif;color:#2a1a0e">Liebe Frau Keller</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">In einer Woche dürfen wir Sie im Ruedihus begrüssen. Sagen Sie uns, wann Sie ankommen und was Sie sich wünschen: einen Tisch in der Stube am ersten Abend oder einen Termin im Spa des Waldhotels Doldenhorn gegenüber.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Wer mit dem Zug kommt, steigt in Kandersteg in den Bus um. Die Haltestelle «Kandersteg, Ruedi Hus» liegt beim Haus.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Wenn Sie ankommen, steht alles bereit.</p></td></tr>
+  <tr><td style="padding:10px 28px 6px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#321f10;border-radius:16px">
+    <tr><td style="padding:22px 26px 12px"><div style="font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c98543;padding-bottom:12px">Ihr Aufenthalt · Beispielwerte</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Anreise</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">Samstag, 12. Dezember 2026</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Abreise</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">Montag, 14. Dezember 2026</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Zimmer</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">Liebeslaube</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Personen</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">2</td></tr></table></td></tr></table></td></tr>
+  <tr><td align="center" style="padding:26px 40px 8px"><a href="../anreise.html" style="display:inline-block;padding:16px 30px;border-radius:999px;background:#321f10;font:700 12px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fbf5ea;text-decoration:none">Zu Ihren Wünschen &nbsp;↗</a></td></tr>
+  <tr><td style="padding:14px 40px 30px"><p style="margin:0;font:400 15px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5a4532;text-align:center">Der Parkplatz ist inbegriffen, das Frühstück steht als Buffet bereit.</p>
+    <img src="img/familie.jpg?v=ec48498f" width="520" alt="Familie Maeder, Ihre Gastgeber" style="display:block;border:0;width:100%;max-width:520px;height:auto;margin:26px auto 0;border-radius:16px">
+    <p style="margin:16px 0 0;font:700 18px/1.3 Georgia,'Times New Roman',serif;color:#2a1a0e;text-align:center">Herzlich, Familie Maeder und ihr Team</p></td></tr>
+  <tr><td align="center" style="background:#1f1209;padding:26px 30px"><div style="font:700 13px/1.4 Georgia,'Times New Roman',serif;letter-spacing:.14em;color:#fbf5ea">LANDGASTHOF RUEDIHUS</div>
+    <div style="margin-top:8px;font:400 13px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#cbb393">Hinder de Büele 6 · 3718 Kandersteg<br><a href="tel:+41336758181" style="color:#cbb393;text-decoration:none">+41 33 675 81 81</a> · <span style="color:#cbb393">info@doldenhorn.ch</span></div></td></tr>
+</table>
+</td></tr></table>
+</div></div>
+  <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></i></button></p>
+</article><article class="mb">
+  <header class="mb-ueber"><span class="mb-nr">03</span><span class="mb-ueber__t"><b>Ihr Gutschein</b><small><span>Von</span> Landgasthof Ruedihus · info@doldenhorn.ch</small><small><span>Wann</span> Nach dem Kauf des Gutscheins</small><small><span>Betreff</span> Ihr Gutschein für das Ruedihus</small></span></header>
+  <div class="mb-blatt"><div class="mb-in">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#efe4d3"><tr><td align="center" style="padding:24px 12px">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#fbf5ea;border-radius:22px;overflow:hidden">
+  <tr><td align="center" style="background:#321f10;padding:34px 30px 30px">
+    <img src="img/zeichen.png?v=3b37e388" width="58" alt="" style="display:block;border:0;width:58px;height:auto;margin:0 auto 14px">
+    <div style="font:700 15px/1.2 Georgia,'Times New Roman',serif;letter-spacing:.2em;color:#fbf5ea">LANDGASTHOF RUEDIHUS</div>
+    <div style="margin-top:7px;font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#c98543">Kandersteg · seit 1753</div>
+    <h1 style="margin:28px 0 0;font:700 clamp(30px,8.6vw,40px)/1.08 Georgia,'Times New Roman',serif;color:#fbf5ea">Ihr Gutschein<br><span style="color:#c98543">ist da.</span></h1>
+  </td></tr>
+  <tr><td style="background:#321f10;padding:0 22px"><img src="img/hz-bett.jpg?v=c6ca249b" width="556" alt="Das Himmelbett der Hochzeitsstube" style="display:block;border:0;width:100%;height:auto;border-radius:16px 16px 0 0"></td></tr>
+  <tr><td style="padding:34px clamp(22px,6vw,40px) 8px"><p style="margin:0 0 14px;font:700 21px/1.3 Georgia,'Times New Roman',serif;color:#2a1a0e">Liebe Frau Keller</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Vielen Dank. Ihr Gutschein hängt als PDF an dieser Mail, mit Ihrer Widmung. Drucken Sie ihn aus oder schicken Sie ihn weiter.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Eingelöst wird er bei uns im Haus. Für ein bestimmtes Zimmer nennen wir Ihnen den Preis gern am Telefon.</p><p style="margin:0 0 14px;font:400 16px/1.62 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a">Gerne stellen wir Ihnen auch einen Gutschein für eine Übernachtung mit Frühstück aus.</p></td></tr>
+  <tr><td style="padding:10px 28px 6px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#321f10;border-radius:16px">
+    <tr><td style="padding:22px 26px 12px"><div style="font:400 10.5px/1.2 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c98543;padding-bottom:12px">Ihr Gutschein · Beispielwerte</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Für</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">Ein Abend in der Stube</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Widmung</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">«Für Mama und Papa»</td></tr><tr><td style="padding:11px 0;border-top:1px solid #5a3a20;font:400 11px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#f3cd94;width:38%">Gekauft am</td><td style="padding:11px 0;border-top:1px solid #5a3a20;font:700 17px/1.3 Georgia,'Times New Roman',serif;color:#fbf5ea">12. Oktober 2026</td></tr></table></td></tr></table></td></tr>
+  <tr><td align="center" style="padding:26px 40px 8px"><a href="../essen.html" style="display:inline-block;padding:16px 30px;border-radius:999px;background:#321f10;font:700 12px/1 'Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fbf5ea;text-decoration:none">Einen Tisch anfragen &nbsp;↗</a></td></tr>
+  <tr><td style="padding:14px 40px 30px"><p style="margin:0;font:400 15px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#5a4532;text-align:center">Fragen dazu beantworten wir gern unter +41 33 675 81 81.</p>
+    <img src="img/familie.jpg?v=ec48498f" width="520" alt="Familie Maeder, Ihre Gastgeber" style="display:block;border:0;width:100%;max-width:520px;height:auto;margin:26px auto 0;border-radius:16px">
+    <p style="margin:16px 0 0;font:700 18px/1.3 Georgia,'Times New Roman',serif;color:#2a1a0e;text-align:center">Herzlich, Familie Maeder und ihr Team</p></td></tr>
+  <tr><td align="center" style="background:#1f1209;padding:26px 30px"><div style="font:700 13px/1.4 Georgia,'Times New Roman',serif;letter-spacing:.14em;color:#fbf5ea">LANDGASTHOF RUEDIHUS</div>
+    <div style="margin-top:8px;font:400 13px/1.6 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#cbb393">Hinder de Büele 6 · 3718 Kandersteg<br><a href="tel:+41336758181" style="color:#cbb393;text-decoration:none">+41 33 675 81 81</a> · <span style="color:#cbb393">info@doldenhorn.ch</span></div></td></tr>
+</table>
+</td></tr></table>
+</div></div>
+  <p class="mb-ganz"><button type="button" class="mb-kn" aria-expanded="false"><span class="a">Ganze Mail</span><span class="z">Weniger zeigen</span><i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></i></button></p>
+</article></div>
+<div class="pfeile"><button type="button" class="pf" data-r="-1" aria-label="Vorige Mail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg></button><button type="button" class="pf" data-r="1" aria-label="Nächste Mail"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5"/></svg></button></div></main>
+<footer>Entwurf von Robert Reff, Tasty Studios. Stand 12.10.2026. <a href="../werkbank/index.html#mails">Zurück zu «Alles auf einen Blick»</a></footer>
+<script>
+(function () {
+  /* die Mail steht in der Seite; zu sieht man den oberen Teil, auf die ganze Mail, sofort */
+  var ms = [].slice.call(document.querySelectorAll('.mb'));
+  function lage(m) { var bl = m.querySelector('.mb-blatt'), i = bl.querySelector('.mb-in'); bl.style.height = (m.classList.contains('auf') ? i.scrollHeight : Math.min(640, i.scrollHeight)) + 'px'; }
+  ms.forEach(function (m) {
+    var k = m.querySelector('.mb-kn');
+    [].forEach.call(m.querySelectorAll('img'), function (im) { if (!im.complete) im.addEventListener('load', function () { lage(m); }, { once: true }); });
+    lage(m);
+    k.addEventListener('click', function () { var auf = m.classList.toggle('auf'); k.setAttribute('aria-expanded', auf); lage(m); if (!auf) m.scrollIntoView({ block: 'nearest' }); });
+  });
+  var rt = 0; addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(function () { ms.forEach(lage); kl(); }, 120); });
+  /* Pfeile am Laptop blättern das Band um eine Mail */
+  var b = document.getElementById('mband'), p = document.querySelectorAll('.pf');
+  function schritt() { return ms[0].getBoundingClientRect().width + parseFloat(getComputedStyle(b).columnGap || 0); }
+  function kl() { p[0].disabled = b.scrollLeft < 4; p[1].disabled = b.scrollLeft > b.scrollWidth - b.clientWidth - 4; }
+  [].forEach.call(p, function (x) { x.addEventListener('click', function () { b.scrollBy({ left: +x.dataset.r * schritt(), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); }); });
+  b.addEventListener('scroll', kl, { passive: true }); kl();
+})();
+</script>
+</body></html>

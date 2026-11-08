@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Der Schreibtisch · Listen des Hauses · Landgasthof Ruedihus</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f1209">
+<link rel="icon" href="/assets/logo/zeichen.svg">
+<link rel="preload" href="/assets/fonts/gelasio-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="studio.css?v=5">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="zeichen"></g></defs></svg>
+<div id="tor" class="tor" hidden></div>
+<div id="app" class="app" hidden>
+  <aside class="rand" id="rand"></aside>
+  <div class="haupt">
+    <main class="flaeche" id="sicht" tabindex="-1"></main>
+    <div class="leiste" id="leiste" aria-live="polite"></div>
+  </div>
+</div>
+<div id="lade" class="lade" hidden></div>
+<div id="vergleich" class="vgl" hidden></div>
+<div id="fenster" class="fenster" hidden></div>
+<div id="meldung" class="meldung" aria-live="polite"></div>
+<input type="file" id="datei" accept="image/jpeg,image/png,image/webp" hidden>
+<script src="fehlermelder.js?v=1"></script>
+<script src="studio.js?v=4"></script>
+<script src="/studio/vorschau.js?v=1" defer></script>
+</body>
+</html>

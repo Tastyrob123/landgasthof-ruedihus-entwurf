@@ -1,0 +1,1800 @@
+{
+ "haus": "Landgasthof Ruedihus",
+ "ort": "Kandersteg",
+ "fotos": [
+  {
+   "k": "haus-daemmerung",
+   "t": {
+    "de": "Das Haus im Schnee zur blauen Stunde, alle Fenster erleuchtet"
+   },
+   "b": "aussen",
+   "s": "winter",
+   "f": "quer",
+   "w": 3008,
+   "h": 1960,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-daemmerung-l.webp",
+   "fs": "../../assets/img/haus-daemmerung-s.webp"
+  },
+  {
+   "k": "haus-sommer",
+   "t": {
+    "de": "Fassade hinter Laub, davor die Terrasse mit Schirmen"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 5616,
+   "h": 3744,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-sommer-l.webp",
+   "fs": "../../assets/img/haus-sommer-s.webp"
+  },
+  {
+   "k": "haus-baum",
+   "t": {
+    "de": "Das Haus zwischen zwei Bäumen, dahinter die Berge"
+   },
+   "b": "aussen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1685,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-baum-l.webp",
+   "fs": "../../assets/img/haus-baum-s.webp"
+  },
+  {
+   "k": "haus-wiese",
+   "t": {
+    "de": "Das Haus über der Blumenwiese, dahinter der Wasserfall"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/P1142493-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-wiese-l.webp",
+   "fs": "../../assets/img/haus-wiese-s.webp"
+  },
+  {
+   "k": "haus-fassade",
+   "t": {
+    "de": "Die ganze Fassade mit Fensterreihen, Geranien und Garten"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4000,
+   "h": 3000,
+   "art": "frei",
+   "q": "Pingufan13, CC BY-SA 3.0, Wikimedia Commons, aufgenommen 30.07.2011",
+   "u": "https://commons.wikimedia.org/wiki/File%3ARuedihus_01.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/haus-fassade-l.webp",
+   "fs": "../../assets/img/haus-fassade-s.webp"
+  },
+  {
+   "k": "giebel",
+   "t": {
+    "de": "Bemalter Giebel mit Wappen, Inschriften und Friesen"
+   },
+   "b": "aussen",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 3000,
+   "h": 4000,
+   "art": "frei",
+   "q": "Pingufan13, CC BY-SA 3.0, Wikimedia Commons, aufgenommen 30.07.2011",
+   "u": "https://commons.wikimedia.org/wiki/File%3ARuedihus_04.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/giebel-l.webp",
+   "fs": "../../assets/img/giebel-s.webp"
+  },
+  {
+   "k": "butzen",
+   "t": {
+    "de": "Fensterreihe mit Butzenscheiben, darunter Geranien"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 4000,
+   "h": 3000,
+   "art": "frei",
+   "q": "Pingufan13, CC BY-SA 3.0, Wikimedia Commons, aufgenommen 30.07.2011",
+   "u": "https://commons.wikimedia.org/wiki/File%3ARuedihus_02.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/butzen-l.webp",
+   "fs": "../../assets/img/butzen-s.webp"
+  },
+  {
+   "k": "schild",
+   "t": {
+    "de": "Holzschild «Landgasthof Ruedihus» in Fraktur über der Tür"
+   },
+   "b": "aussen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1692,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/schild-l.webp",
+   "fs": "../../assets/img/schild-s.webp"
+  },
+  {
+   "k": "garten-gitter",
+   "t": {
+    "de": "Blick durch das Fenstergitter auf den Ziergarten"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 5616,
+   "h": 3744,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/garten-gitter-l.webp",
+   "fs": "../../assets/img/garten-gitter-s.webp"
+  },
+  {
+   "k": "terrasse",
+   "t": {
+    "de": "Gartentische unter Schirmen, Blick ins Tal"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2528,
+   "h": 1685,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/terrasse-l.webp",
+   "fs": "../../assets/img/terrasse-s.webp"
+  },
+  {
+   "k": "hymmelrich-haus",
+   "t": {
+    "de": "Das kleine Holzhaus «Hymmelrich»"
+   },
+   "b": "aussen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1706,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hymmelrich_Aussen_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hymmelrich-haus-l.webp",
+   "fs": "../../assets/img/hymmelrich-haus-s.webp"
+  },
+  {
+   "k": "stube-rund",
+   "t": {
+    "de": "Stube im Parterre: runder Tisch, Petrollampen, Eckbank"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1700,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/DSC_2801-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-rund-l.webp",
+   "fs": "../../assets/img/stube-rund-s.webp"
+  },
+  {
+   "k": "stube-lang",
+   "t": {
+    "de": "Stube im Parterre über die ganze Länge, gedeckte Tische"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/BE_Doldenhorn-KanderstegHUG_1505-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-lang-l.webp",
+   "fs": "../../assets/img/stube-lang-s.webp"
+  },
+  {
+   "k": "ofestuebli",
+   "t": {
+    "de": "Ofestübli mit grünem Kachelofen"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1702,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/Ofenstuebli-DSC_0497-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ofestuebli-l.webp",
+   "fs": "../../assets/img/ofestuebli-s.webp"
+  },
+  {
+   "k": "stube-kerze",
+   "t": {
+    "de": "Stube mit weiss gedeckten Tischen bei Kerzenlicht, Butzenscheiben"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 3872,
+   "h": 2592,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-kerze-l.webp",
+   "fs": "../../assets/img/stube-kerze-s.webp"
+  },
+  {
+   "k": "stube-tuer",
+   "t": {
+    "de": "Blick durch die geschnitzte Tür in die Stube"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1681,
+   "h": 2528,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-tuer-l.webp",
+   "fs": "../../assets/img/stube-tuer-s.webp"
+  },
+  {
+   "k": "stube-hoch",
+   "t": {
+    "de": "Tisch unter der Lampe, Stühle mit Herz in der Lehne"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1767,
+   "h": 2400,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/stube-hoch-l.webp",
+   "fs": "../../assets/img/stube-hoch-s.webp"
+  },
+  {
+   "k": "z-landhaus",
+   "t": {
+    "de": "Zimmer mit Holzbetten und Fensterreihe"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 5616,
+   "h": 3744,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-landhaus-l.webp",
+   "fs": "../../assets/img/z-landhaus-s.webp"
+  },
+  {
+   "k": "z-hochzeit",
+   "t": {
+    "de": "Salonzimmer mit Himmelbett, Tisch und Sofa"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 5616,
+   "h": 3744,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-hochzeit-l.webp",
+   "fs": "../../assets/img/z-hochzeit-s.webp"
+  },
+  {
+   "k": "z-hochzeit-2",
+   "t": {
+    "de": "Hochzeitsstube mit Himmelbett und Stubenwagen"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hochzeitsstube_Uebersicht_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-hochzeit-2-l.webp",
+   "fs": "../../assets/img/z-hochzeit-2-s.webp"
+  },
+  {
+   "k": "z-liebeslaube",
+   "t": {
+    "de": "Liebeslaube mit blaugrauem Himmelbett"
+   },
+   "b": "zimmer",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Liebenslaube_Uebersicht_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-liebeslaube-l.webp",
+   "fs": "../../assets/img/z-liebeslaube-s.webp"
+  },
+  {
+   "k": "z-hymmelrich",
+   "t": {
+    "de": "Hymmelrich unter dem offenen Dachstuhl"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hymmelrich_Uebersicht_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-hymmelrich-l.webp",
+   "fs": "../../assets/img/z-hymmelrich-s.webp"
+  },
+  {
+   "k": "z-himmelbett",
+   "t": {
+    "de": "Himmelbett mit bemalten Füllungen und Sprüchen"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/2012-08-29-10.02.29-2-scaled.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/z-himmelbett-l.webp",
+   "fs": "../../assets/img/z-himmelbett-s.webp"
+  },
+  {
+   "k": "z-bauernstube",
+   "t": {
+    "de": "Landhaus-Zimmer unter dem Dach"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Bauernstube_Uebersicht_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-bauernstube-l.webp",
+   "fs": "../../assets/img/z-bauernstube-s.webp"
+  },
+  {
+   "k": "z-morgen",
+   "t": {
+    "de": "Morgen im Bett, Blick zum Fenster"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1685,
+   "h": 2528,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-morgen-l.webp",
+   "fs": "../../assets/img/z-morgen-s.webp"
+  },
+  {
+   "k": "e-roesti",
+   "t": {
+    "de": "Rösti mit Kalbsleber auf dem Teller des Hauses"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/086Q8820-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-roesti-l.webp",
+   "fs": "../../assets/img/e-roesti-s.webp"
+  },
+  {
+   "k": "e-terrine",
+   "t": {
+    "de": "Härdöpfelterrine mit Schnittlauchblüte"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/Kartoffelterrine-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-terrine-l.webp",
+   "fs": "../../assets/img/e-terrine-s.webp"
+  },
+  {
+   "k": "e-plaettli",
+   "t": {
+    "de": "Fleisch und Wurst auf dem Holzbrett, Senf und Meerrettich"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1685,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-plaettli-l.webp",
+   "fs": "../../assets/img/e-plaettli-s.webp"
+  },
+  {
+   "k": "e-zopf",
+   "t": {
+    "de": "Zopf, Butter, Konfitüre und ein altes Familienfoto"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1685,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-zopf-l.webp",
+   "fs": "../../assets/img/e-zopf-s.webp"
+  },
+  {
+   "k": "e-brot",
+   "t": {
+    "de": "Zwei Laibe Brot"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2528,
+   "h": 1685,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-brot-l.webp",
+   "fs": "../../assets/img/e-brot-s.webp"
+  },
+  {
+   "k": "e-suppe",
+   "t": {
+    "de": "Suppenteller auf dem alten Stuhl"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1685,
+   "h": 2528,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/e-suppe-l.webp",
+   "fs": "../../assets/img/e-suppe-s.webp"
+  },
+  {
+   "k": "d-knauf",
+   "t": {
+    "de": "Türknauf, daneben Butzenscheiben"
+   },
+   "b": "einzelheiten",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1620,
+   "h": 1080,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/d-knauf-l.webp",
+   "fs": "../../assets/img/d-knauf-s.webp"
+  },
+  {
+   "k": "d-bilder",
+   "t": {
+    "de": "Alte Fotografien an der Holzwand"
+   },
+   "b": "einzelheiten",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 720,
+   "h": 1080,
+   "art": "haus",
+   "q": "Booking.com, vom Haus eingestellt · booking.com, Seite des Hauses",
+   "u": "https://www.booking.com/hotel/ch/landgasthof-ruedihus.de.html",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/d-bilder-l.webp",
+   "fs": "../../assets/img/d-bilder-s.webp"
+  },
+  {
+   "k": "familie",
+   "t": {
+    "de": "Familie Maeder, Foto Adrian Ehrbar Photography"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1918,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek, Foto: Adrian Ehrbar · doldenhorn-ruedihus.ch, hochgeladen 13.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Mini-mini-1-gts_waldhotel_doldenhorn©Adrian_Ehrbar_Photography-scaled.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/familie-l.webp",
+   "fs": "../../assets/img/familie-s.webp"
+  },
+  {
+   "k": "spa",
+   "t": {
+    "de": "Hallenbad im Waldhotel Doldenhorn"
+   },
+   "b": "spa",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 22.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Waldhotel_Doldenhorn_SPA_13.12.23_BG_mini_500_9-scaled.webp",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/spa-l.webp",
+   "fs": "../../assets/img/spa-s.webp"
+  },
+  {
+   "k": "lh-zwei",
+   "t": {
+    "de": "Landhaus-Zimmer, Blick vom Bett zum Fenster"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Bauernstube_Uebersicht_Voll_1-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/lh-zwei-l.webp",
+   "fs": "../../assets/img/lh-zwei-s.webp"
+  },
+  {
+   "k": "lh-fenster",
+   "t": {
+    "de": "Blick aus dem Fenster ins verschneite Tal"
+   },
+   "b": "zimmer",
+   "s": "winter",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Bauernstube_Fenster_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/lh-fenster-l.webp",
+   "fs": "../../assets/img/lh-fenster-s.webp"
+  },
+  {
+   "k": "lh-bad",
+   "t": {
+    "de": "Bad eines Landhaus-Zimmers"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Bauernstube_Bad_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/lh-bad-l.webp",
+   "fs": "../../assets/img/lh-bad-s.webp"
+  },
+  {
+   "k": "hz-bett",
+   "t": {
+    "de": "Himmelbett der Hochzeitsstube"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hochzeitsstube_Bett_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hz-bett-l.webp",
+   "fs": "../../assets/img/hz-bett-s.webp"
+  },
+  {
+   "k": "hz-detail",
+   "t": {
+    "de": "Altes Telefon und Lampe in der Hochzeitsstube"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hochzeitsstube_Detail_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hz-detail-l.webp",
+   "fs": "../../assets/img/hz-detail-s.webp"
+  },
+  {
+   "k": "hz-bad",
+   "t": {
+    "de": "Bad der Hochzeitsstube"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hochzeitsstube_Bad_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hz-bad-l.webp",
+   "fs": "../../assets/img/hz-bad-s.webp"
+  },
+  {
+   "k": "ll-detail",
+   "t": {
+    "de": "Wandbrett mit Lampe, Ähren und Radio in der Liebeslaube"
+   },
+   "b": "zimmer",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Liebenslaube_Bad_Voll_1-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ll-detail-l.webp",
+   "fs": "../../assets/img/ll-detail-s.webp"
+  },
+  {
+   "k": "ll-bad",
+   "t": {
+    "de": "Bad der Liebeslaube mit freistehender Wanne"
+   },
+   "b": "zimmer",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Liebenslaube_Bad_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/ll-bad-l.webp",
+   "fs": "../../assets/img/ll-bad-s.webp"
+  },
+  {
+   "k": "hy-bett",
+   "t": {
+    "de": "Bett im Hymmelrich, dahinter die Wanne"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hymmelrich_Bett_Voll_1-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hy-bett-l.webp",
+   "fs": "../../assets/img/hy-bett-s.webp"
+  },
+  {
+   "k": "hy-bad",
+   "t": {
+    "de": "Freistehende Wanne und Dusche im Hymmelrich"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 28.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Ruedihus_Hymmelrich_Bad_neu_Voll-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/hy-bad-l.webp",
+   "fs": "../../assets/img/hy-bad-s.webp"
+  },
+  {
+   "k": "kaffee",
+   "t": {
+    "de": "Tasse des Hauses mit Glace und Nüssen, aus einer Flasche wird eingeschenkt"
+   },
+   "b": "essen",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1707,
+   "h": 2560,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/086Q8722-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/kaffee-l.webp",
+   "fs": "../../assets/img/kaffee-s.webp"
+  },
+  {
+   "k": "haus-blueten",
+   "t": {
+    "de": "Das Haus hinter Blüten, davor Garten und Schirme"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2560,
+   "h": 1707,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 21.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/2012-08-29-09.17.47-scaled.webp",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-blueten-l.webp",
+   "fs": "../../assets/img/haus-blueten-s.webp"
+  },
+  {
+   "k": "z-bett-front",
+   "t": {
+    "de": "Himmelbett mit bemalten Tafeln, von vorn"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2731,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/2-1.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/z-bett-front-l.webp",
+   "fs": "../../assets/img/z-bett-front-s.webp"
+  },
+  {
+   "k": "balkon",
+   "t": {
+    "de": "Laube mit Sesseln und Geranien, Blick ins Tal"
+   },
+   "b": "zimmer",
+   "s": "sommer",
+   "f": "quer",
+   "w": 2731,
+   "h": 1536,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/3-1.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/balkon-l.webp",
+   "fs": "../../assets/img/balkon-s.webp"
+  },
+  {
+   "k": "z-sofa",
+   "t": {
+    "de": "Zimmer mit blaugrauem Sofa und Himmelbett"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1920,
+   "h": 1080,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 05.10.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/10/4.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/z-sofa-l.webp",
+   "fs": "../../assets/img/z-sofa-s.webp"
+  },
+  {
+   "k": "garten-luft",
+   "t": {
+    "de": "Haus und Ziergarten von oben"
+   },
+   "b": "aussen",
+   "s": "sommer",
+   "f": "quer",
+   "w": 1200,
+   "h": 900,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 01.12.2024",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2024/12/2012-08-08-11.13.16.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/garten-luft-l.webp",
+   "fs": "../../assets/img/garten-luft-s.webp"
+  },
+  {
+   "k": "haus-winter",
+   "t": {
+    "de": "Das Haus im Schnee, dahinter die Berge"
+   },
+   "b": "aussen",
+   "s": "winter",
+   "f": "quer",
+   "w": 2389,
+   "h": 1792,
+   "art": "haus",
+   "q": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert · myswitzerland.com, Seite des Hauses",
+   "u": "https://www.myswitzerland.com/de-ch/unterkuenfte/landgasthof-ruedihus/",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-winter-l.webp",
+   "fs": "../../assets/img/haus-winter-s.webp"
+  },
+  {
+   "k": "holz",
+   "t": {
+    "de": "Balkenkopf mit Jahresringen an der Fassade"
+   },
+   "b": "aussen",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4000,
+   "h": 3000,
+   "art": "frei",
+   "q": "Pingufan13, CC BY-SA 3.0, Wikimedia Commons, aufgenommen 30.07.2011",
+   "u": "https://commons.wikimedia.org/wiki/File%3ARuedihus_03.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/holz-l.webp",
+   "fs": "../../assets/img/holz-s.webp"
+  },
+  {
+   "k": "fest-tafel",
+   "t": {
+    "de": "Festlich gedeckte Tafel in einer Stube des Ruedihus"
+   },
+   "b": "stuben",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2560,
+   "h": 1920,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · doldenhorn-ruedihus.ch, hochgeladen 27.09.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/09/Hochzeit-Ruedihus-scaled.jpg",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/fest-tafel-l.webp",
+   "fs": "../../assets/img/fest-tafel-s.webp"
+  },
+  {
+   "k": "film-zimmer",
+   "t": {
+    "de": "Standbild aus dem Film des Hauses: ein Zimmer wird hergerichtet"
+   },
+   "b": "zimmer",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1920,
+   "h": 1080,
+   "art": "haus",
+   "q": "Website des Hauses, Mediathek · Standbild bei 7,2 s aus dem Film «Video-Zimmer-Ruedihus», doldenhorn-ruedihus.ch, hochgeladen 27.12.2023",
+   "u": "https://doldenhorn-ruedihus.ch/wp-content/uploads/2023/12/Video-Zimmer-Ruedihus.mp4",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/film-zimmer.webp",
+   "fs": "../../assets/img/film-zimmer.webp"
+  },
+  {
+   "k": "gast-annan",
+   "t": {
+    "de": "Kofi Annan, Porträt von 2012"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 1920,
+   "h": 2405,
+   "art": "frei",
+   "q": "US Mission in Geneva, Lizenz «Public domain», Wikimedia Commons (Kofi Annan 2012 (cropped 2).jpg). Auf der Website im warmen Schwarzweiss und beschnitten, das Original ist farbig",
+   "u": "https://commons.wikimedia.org/wiki/File:Kofi_Annan_2012_(cropped_2).jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/gast-annan.webp",
+   "fs": "../../assets/img/gast-annan.webp"
+  },
+  {
+   "k": "gast-belgien",
+   "t": {
+    "de": "Königin Paola und König Albert II. von Belgien, 2010"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "quer",
+   "w": 748,
+   "h": 512,
+   "art": "frei",
+   "q": "European Union, Lizenz «European Parliament», Wikimedia Commons (King Albert II and Queen Paola of Belgium ceremony belgian presid laeken.jpg). Auf der Website im warmen Schwarzweiss und beschnitten, das Original ist farbig",
+   "u": "https://commons.wikimedia.org/wiki/File:King_Albert_II_and_Queen_Paola_of_Belgium_ceremony_belgian_presid_laeken.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/gast-belgien.webp",
+   "fs": "../../assets/img/gast-belgien.webp"
+  },
+  {
+   "k": "gast-bundesrat",
+   "t": {
+    "de": "Der Schweizer Bundesrat auf dem Bundesratsfoto des Jahres 2000"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 937,
+   "h": 1300,
+   "art": "frei",
+   "q": "Unknown; presumably services of the Swiss Federal Chancellery., Lizenz «Attribution», Wikimedia Commons (Bundesrat der Schweiz 2000.jpg). Auf der Website im warmen Schwarzweiss und beschnitten, das Original ist farbig",
+   "u": "https://commons.wikimedia.org/wiki/File:Bundesrat_der_Schweiz_2000.jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/gast-bundesrat.webp",
+   "fs": "../../assets/img/gast-bundesrat.webp"
+  },
+  {
+   "k": "gast-charles",
+   "t": {
+    "de": "Prinz Charles, Porträt von 2015"
+   },
+   "b": "geschichte",
+   "s": "jahr",
+   "f": "hoch",
+   "w": 857,
+   "h": 1044,
+   "art": "frei",
+   "q": "Arnaud Bouissou, Lizenz «CC0», Wikimedia Commons (Charles, Prince of Wales at COP21 (cropped).jpg). Auf der Website im warmen Schwarzweiss und beschnitten, das Original ist farbig",
+   "u": "https://commons.wikimedia.org/wiki/File:Charles,_Prince_of_Wales_at_COP21_(cropped).jpg",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/gast-charles.webp",
+   "fs": "../../assets/img/gast-charles.webp"
+  },
+  {
+   "k": "haus-carlton",
+   "t": {
+    "de": "Carlton-Europe Vintage Adults Hotel in Interlaken"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 1821,
+   "h": 864,
+   "art": "haus",
+   "q": "Website des Carlton-Europe, Foto des Hauses",
+   "u": "",
+   "ue": false,
+   "alt": false,
+   "vn": false,
+   "fl": "../../assets/img/haus-carlton.webp",
+   "fs": "../../assets/img/haus-carlton.webp"
+  },
+  {
+   "k": "haus-doldenhorn",
+   "t": {
+    "de": "Waldhotel Doldenhorn in Kandersteg"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 2391,
+   "h": 1792,
+   "art": "haus",
+   "q": "Website des Carlton-Europe, Seite «Unsere Partner», Foto des Waldhotel Doldenhorn",
+   "u": "",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-doldenhorn.webp",
+   "fs": "../../assets/img/haus-doldenhorn.webp"
+  },
+  {
+   "k": "haus-gasterntal",
+   "t": {
+    "de": "Berghotel Gasterntal in Selden bei Kandersteg"
+   },
+   "b": "familie",
+   "s": "jahr",
+   "f": "quer",
+   "w": 4032,
+   "h": 3024,
+   "art": "haus",
+   "q": "Website des Berghotels Gasterntal",
+   "u": "",
+   "ue": true,
+   "alt": false,
+   "vn": true,
+   "fl": "../../assets/img/haus-gasterntal.webp",
+   "fs": "../../assets/img/haus-gasterntal.webp"
+  }
+ ],
+ "dateien": [
+  {
+   "k": "zeichen",
+   "var": [
+    {
+     "k": "gold",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-zeichen-gold.svg",
+      "landgasthof-ruedihus-zeichen-gold.png"
+     ],
+     "px": [
+      750,
+      1004
+     ]
+    },
+    {
+     "k": "hellgold",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-zeichen-hellgold.svg",
+      "landgasthof-ruedihus-zeichen-hellgold.png"
+     ],
+     "px": [
+      750,
+      1004
+     ]
+    },
+    {
+     "k": "holz",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-zeichen-holz.svg",
+      "landgasthof-ruedihus-zeichen-holz.png"
+     ],
+     "px": [
+      750,
+      1004
+     ]
+    },
+    {
+     "k": "weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-zeichen-weiss.svg",
+      "landgasthof-ruedihus-zeichen-weiss.png"
+     ],
+     "px": [
+      750,
+      1004
+     ]
+    }
+   ]
+  },
+  {
+   "k": "logo",
+   "var": [
+    {
+     "k": "weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-logo-weiss.svg",
+      "landgasthof-ruedihus-logo-weiss.png"
+     ],
+     "px": [
+      1800,
+      646
+     ]
+    },
+    {
+     "k": "hellgold",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-logo-hellgold.svg",
+      "landgasthof-ruedihus-logo-hellgold.png"
+     ],
+     "px": [
+      1800,
+      646
+     ]
+    },
+    {
+     "k": "holz",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-logo-holz.svg",
+      "landgasthof-ruedihus-logo-holz.png"
+     ],
+     "px": [
+      1800,
+      646
+     ]
+    },
+    {
+     "k": "gold",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-logo-gold.svg",
+      "landgasthof-ruedihus-logo-gold.png"
+     ],
+     "px": [
+      1800,
+      646
+     ]
+    }
+   ]
+  },
+  {
+   "k": "name",
+   "var": [
+    {
+     "k": "holz",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-name-holz.svg",
+      "landgasthof-ruedihus-name-holz.png"
+     ],
+     "px": [
+      1800,
+      79
+     ]
+    },
+    {
+     "k": "weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-name-weiss.svg",
+      "landgasthof-ruedihus-name-weiss.png"
+     ],
+     "px": [
+      1800,
+      79
+     ]
+    },
+    {
+     "k": "hellgold",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-name-hellgold.svg",
+      "landgasthof-ruedihus-name-hellgold.png"
+     ],
+     "px": [
+      1800,
+      79
+     ]
+    },
+    {
+     "k": "kurz-holz",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-name-kurz-holz.svg",
+      "landgasthof-ruedihus-name-kurz-holz.png"
+     ],
+     "px": [
+      1000,
+      105
+     ]
+    },
+    {
+     "k": "kurz-weiss",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-name-kurz-weiss.svg",
+      "landgasthof-ruedihus-name-kurz-weiss.png"
+     ],
+     "px": [
+      1000,
+      105
+     ]
+    },
+    {
+     "k": "kurz-hellgold",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-name-kurz-hellgold.svg",
+      "landgasthof-ruedihus-name-kurz-hellgold.png"
+     ],
+     "px": [
+      1000,
+      105
+     ]
+    }
+   ]
+  },
+  {
+   "k": "website",
+   "var": [
+    {
+     "k": "original",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-logo-website-heute.png"
+     ],
+     "px": [
+      392,
+      140
+     ]
+    }
+   ]
+  },
+  {
+   "k": "tapete",
+   "var": [
+    {
+     "k": "holz",
+     "grund": "dunkel",
+     "dateien": [
+      "landgasthof-ruedihus-tapete-holz.png",
+      "landgasthof-ruedihus-tapete-holz.svg",
+      "landgasthof-ruedihus-tapete-holz.webp"
+     ],
+     "px": [
+      56,
+      56
+     ],
+     "farbe": "#c98543",
+     "deck": 0.07
+    },
+    {
+     "k": "fuss",
+     "grund": "tief",
+     "dateien": [
+      "landgasthof-ruedihus-tapete-fuss.png",
+      "landgasthof-ruedihus-tapete-fuss.svg",
+      "landgasthof-ruedihus-tapete-fuss.webp"
+     ],
+     "px": [
+      56,
+      56
+     ],
+     "farbe": "#c98543",
+     "deck": 0.09
+    },
+    {
+     "k": "papier",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-tapete-papier.png",
+      "landgasthof-ruedihus-tapete-papier.svg",
+      "landgasthof-ruedihus-tapete-papier.webp"
+     ],
+     "px": [
+      56,
+      56
+     ],
+     "farbe": "#7d4f27",
+     "deck": 0.075
+    }
+   ]
+  },
+  {
+   "k": "farben",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-farben.css",
+      "landgasthof-ruedihus-farben.json",
+      "landgasthof-ruedihus-farben.ase"
+     ]
+    }
+   ]
+  },
+  {
+   "k": "schriften",
+   "var": [
+    {
+     "k": "alle",
+     "grund": "hell",
+     "dateien": [
+      "landgasthof-ruedihus-schriften.zip"
+     ]
+    }
+   ]
+  }
+ ],
+ "farben": [
+  {
+   "k": "blatt",
+   "n": "Blatt",
+   "h": "#FBF5EA",
+   "rgb": [
+    251,
+    245,
+    234
+   ],
+   "r": "Karten, Blätter und Felder auf hellem Grund",
+   "g": "papier",
+   "woher": ""
+  },
+  {
+   "k": "papier",
+   "n": "Papier",
+   "h": "#EFE4D3",
+   "rgb": [
+    239,
+    228,
+    211
+   ],
+   "r": "helle Abschnitte, Grund der Werkzeuge",
+   "g": "papier",
+   "woher": "aufgehellt aus der hellen Wand der Liebeslaube #d8c2ad"
+  },
+  {
+   "k": "leinen",
+   "n": "Leinen",
+   "h": "#D8C2AD",
+   "rgb": [
+    216,
+    194,
+    173
+   ],
+   "r": "Linien, zweite helle Fläche",
+   "g": "papier",
+   "woher": ""
+  },
+  {
+   "k": "balken",
+   "n": "Balken",
+   "h": "#6D431F",
+   "rgb": [
+    109,
+    67,
+    31
+   ],
+   "r": "Kapitelzeilen und Linien auf Hell",
+   "g": "holz",
+   "woher": "Balken im Lampenlicht"
+  },
+  {
+   "k": "holz",
+   "n": "Wandholz",
+   "h": "#321F10",
+   "rgb": [
+    50,
+    31,
+    16
+   ],
+   "r": "dunkle Flächen, Kopfleiste der Werkzeuge",
+   "g": "holz",
+   "woher": "Stube, dunkles Wandholz"
+  },
+  {
+   "k": "russ",
+   "n": "Stube",
+   "h": "#1F1209",
+   "rgb": [
+    31,
+    18,
+    9
+   ],
+   "r": "Grund der Seite",
+   "g": "holz",
+   "woher": "Stube, Schatten am Boden"
+  },
+  {
+   "k": "licht",
+   "n": "Licht",
+   "h": "#F3CD94",
+   "rgb": [
+    243,
+    205,
+    148
+   ],
+   "r": "Betonung auf Dunkel, hellster Ton im Kerzenlicht",
+   "g": "licht",
+   "woher": "hellster Ton im Kerzenlicht"
+  },
+  {
+   "k": "kerze",
+   "n": "Kerze",
+   "h": "#C98543",
+   "rgb": [
+    201,
+    133,
+    67
+   ],
+   "r": "Linien, Muster der Butzenscheiben",
+   "g": "licht",
+   "woher": "Kerzenlicht auf dem Tischtuch"
+  },
+  {
+   "k": "gold",
+   "n": "Gold",
+   "h": "#B78F51",
+   "rgb": [
+    183,
+    143,
+    81
+   ],
+   "r": "das Zeichen, Kapitelzeilen auf Dunkel",
+   "g": "licht",
+   "woher": "Gold des Zeichens auf den Karten des Hauses"
+  },
+  {
+   "k": "geranie",
+   "n": "Geranie",
+   "h": "#C42E13",
+   "rgb": [
+    196,
+    46,
+    19
+   ],
+   "r": "nur als Punkt: Stempel, Markierung",
+   "g": "punkt",
+   "woher": "Geranien an der Fassade: nur als Punkt"
+  },
+  {
+   "k": "tinte",
+   "n": "Tinte",
+   "h": "#2A1A0E",
+   "rgb": [
+    42,
+    26,
+    14
+   ],
+   "r": "Schrift auf hellen Flächen",
+   "g": "weitere",
+   "woher": ""
+  },
+  {
+   "k": "tief",
+   "n": "Tief",
+   "h": "#170D06",
+   "rgb": [
+    23,
+    13,
+    6
+   ],
+   "r": "dunkelster Grund: Fuss und Menü",
+   "g": "weitere",
+   "woher": "dunkelster Grund: Fuss, Menü"
+  },
+  {
+   "k": "gold2",
+   "n": "Hellgold",
+   "h": "#D2B384",
+   "rgb": [
+    210,
+    179,
+    132
+   ],
+   "r": "das Zeichen in der Leiste der Website",
+   "g": "weitere",
+   "woher": ""
+  },
+  {
+   "k": "creme",
+   "n": "Creme",
+   "h": "#F7ECDC",
+   "rgb": [
+    247,
+    236,
+    220
+   ],
+   "r": "Schrift auf der Platte (Leiste, Knöpfe)",
+   "g": "weitere",
+   "woher": ""
+  },
+  {
+   "k": "ofen",
+   "n": "Kachelofen",
+   "h": "#31380D",
+   "rgb": [
+    49,
+    56,
+    13
+   ],
+   "r": "nur als Punkt",
+   "g": "weitere",
+   "woher": "Kachelofen im Ofestübli: nur als Punkt"
+  }
+ ],
+ "gruppen": [
+  {
+   "k": "papier",
+   "n": "Papier und Leinen",
+   "s": "Drei warme Weiss aus der hellen Wand der Liebeslaube. Hier wird gelesen."
+  },
+  {
+   "k": "holz",
+   "n": "Holz",
+   "s": "Das Wandholz der Stuben, vom Balken im Lampenlicht bis zum Schatten am Boden. Es trägt die dunklen Flächen, immer mit den Butzenscheiben als Tapete."
+  },
+  {
+   "k": "licht",
+   "n": "Licht",
+   "s": "Kerzenlicht auf dem Tischtuch und das Gold des Zeichens auf den Karten des Hauses. Zeichnet und betont, schreibt nie den Lesetext."
+  },
+  {
+   "k": "punkt",
+   "n": "Nur als Punkt",
+   "s": "Das Rot der Geranien unter den Fenstern. Nie als Fläche, nur als Punkt."
+  },
+  {
+   "k": "weitere",
+   "n": "Weitere Töne der Website",
+   "s": "Die übrigen Werte der Gestaltung: die Schrift, der dunkelste Grund, das Zeichen in der Leiste, die Schrift auf den Platten und der Kachelofen als Punkt."
+  }
+ ],
+ "glanz": [],
+ "groessen": {
+  "landgasthof-ruedihus-farben.ase": 610,
+  "landgasthof-ruedihus-farben.css": 1136,
+  "landgasthof-ruedihus-farben.json": 2302,
+  "landgasthof-ruedihus-logo-gold.png": 187101,
+  "landgasthof-ruedihus-logo-gold.svg": 73386,
+  "landgasthof-ruedihus-logo-hellgold.png": 187027,
+  "landgasthof-ruedihus-logo-hellgold.svg": 73386,
+  "landgasthof-ruedihus-logo-holz.png": 186947,
+  "landgasthof-ruedihus-logo-holz.svg": 73386,
+  "landgasthof-ruedihus-logo-website-heute.png": 33278,
+  "landgasthof-ruedihus-logo-weiss.png": 186452,
+  "landgasthof-ruedihus-logo-weiss.svg": 73386,
+  "landgasthof-ruedihus-marke.zip": 2165694,
+  "landgasthof-ruedihus-name-hellgold.png": 32360,
+  "landgasthof-ruedihus-name-hellgold.svg": 33930,
+  "landgasthof-ruedihus-name-holz.png": 32362,
+  "landgasthof-ruedihus-name-holz.svg": 33930,
+  "landgasthof-ruedihus-name-kurz-hellgold.png": 16876,
+  "landgasthof-ruedihus-name-kurz-hellgold.svg": 11597,
+  "landgasthof-ruedihus-name-kurz-holz.png": 16868,
+  "landgasthof-ruedihus-name-kurz-holz.svg": 11597,
+  "landgasthof-ruedihus-name-kurz-weiss.png": 16803,
+  "landgasthof-ruedihus-name-kurz-weiss.svg": 11597,
+  "landgasthof-ruedihus-name-weiss.png": 32358,
+  "landgasthof-ruedihus-name-weiss.svg": 33930,
+  "landgasthof-ruedihus-schriften.zip": 196518,
+  "landgasthof-ruedihus-tapete-fuss.png": 6365,
+  "landgasthof-ruedihus-tapete-fuss.svg": 235,
+  "landgasthof-ruedihus-tapete-fuss.webp": 2336,
+  "landgasthof-ruedihus-tapete-holz.png": 6298,
+  "landgasthof-ruedihus-tapete-holz.svg": 235,
+  "landgasthof-ruedihus-tapete-holz.webp": 2232,
+  "landgasthof-ruedihus-tapete-papier.png": 1921,
+  "landgasthof-ruedihus-tapete-papier.svg": 236,
+  "landgasthof-ruedihus-tapete-papier.webp": 946,
+  "landgasthof-ruedihus-zeichen-gold.png": 195980,
+  "landgasthof-ruedihus-zeichen-gold.svg": 56103,
+  "landgasthof-ruedihus-zeichen-hellgold.png": 195748,
+  "landgasthof-ruedihus-zeichen-hellgold.svg": 56103,
+  "landgasthof-ruedihus-zeichen-holz.png": 195769,
+  "landgasthof-ruedihus-zeichen-holz.svg": 56103,
+  "landgasthof-ruedihus-zeichen-weiss.png": 194731,
+  "landgasthof-ruedihus-zeichen-weiss.svg": 56103
+ },
+ "bereiche": [
+  "zimmer",
+  "stuben",
+  "essen",
+  "aussen",
+  "einzelheiten",
+  "spa",
+  "geschichte",
+  "familie"
+ ],
+ "schriften": [
+  {
+   "k": "a",
+   "n": "Gelasio",
+   "d": "gelasio-700.woff2",
+   "r": "Grosse Zeilen, Titel, Namen und Preise",
+   "e": "fett 700, Name in Versalien",
+   "p": "Gemütliche Zimmer zum Teil mit Himmelbett",
+   "w": 700
+  },
+  {
+   "k": "a4",
+   "n": "Gelasio",
+   "d": "gelasio-400.woff2",
+   "r": "Längere Sätze in der Titelschrift",
+   "e": "normal 400",
+   "p": "Währschafte & geradlinige Küche, wie zu Grossmutters Zeiten.",
+   "w": 400
+  },
+  {
+   "k": "s",
+   "n": "Instrument Sans",
+   "d": "InstrumentSans-normal-400_600.woff2",
+   "r": "Lesetext",
+   "e": "400 bis 600, 18 px, Zeilenabstand 1,62",
+   "p": "Unsere drei rustikalen Stuben im Parterre",
+   "w": 400
+  },
+  {
+   "k": "m",
+   "n": "DM Mono",
+   "d": "DMMono-normal-400.woff2",
+   "r": "Kleine Angaben",
+   "e": "400, Versalien, 17 % gesperrt",
+   "p": "Hinder de Büele 6 · 3718 Kandersteg",
+   "w": 400
+  },
+  {
+   "k": "m5",
+   "n": "DM Mono",
+   "d": "DMMono-normal-500.woff2",
+   "r": "Knöpfe",
+   "e": "500, Versalien, 17 % gesperrt",
+   "p": "Zimmer buchen",
+   "w": 500
+  }
+ ],
+ "stand": {
+  "fotos": 62,
+  "haus": 54,
+  "frei": 8,
+  "ki": 0,
+  "partner": 0,
+  "ue": 46,
+  "vn": 46,
+  "original": 62,
+  "dateien": 43,
+  "datum": "19.10.2026"
+ }
+}

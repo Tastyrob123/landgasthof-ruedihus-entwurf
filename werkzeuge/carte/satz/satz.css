@@ -1,0 +1,459 @@
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:400;src:url('../fonts/Gelasio-Bold.ttf') format('truetype')}
+@font-face{font-family:'Gelasio';font-style:normal;font-weight:700;src:url('../fonts/Gelasio-Bold.ttf') format('truetype')}
+@font-face{font-family:'Gelasio Text';font-style:normal;font-weight:400;src:url('../fonts/Gelasio-Regular.ttf') format('truetype')}
+@font-face{font-family:'Instrument Sans';font-style:italic;font-weight:400;src:url('../fonts/InstrumentSans-Italic.ttf') format('truetype')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:400;src:url('../fonts/InstrumentSans-Regular.ttf') format('truetype')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:500;src:url('../fonts/InstrumentSans-Medium.ttf') format('truetype')}
+@font-face{font-family:'Instrument Sans';font-style:normal;font-weight:600;src:url('../fonts/InstrumentSans-SemiBold.ttf') format('truetype')}
+@font-face{font-family:'DM Mono';font-style:normal;font-weight:400;src:url('../fonts/DMMono-Regular.ttf') format('truetype')}
+:root{--titel:'Gelasio',Georgia,'Times New Roman',serif;--tg:700;--muster:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cg fill='none' stroke='%23c98543' stroke-opacity='.08' stroke-width='1.4'%3E%3Ccircle cx='28' cy='28' r='21'/%3E%3Ccircle cx='28' cy='28' r='5'/%3E%3Cpath d='M0 0h56v56H0z'/%3E%3C/g%3E%3C/svg%3E");--musterb:9mm}
+/* Satz der Unterlagen. Masse in mm, Schrift in pt über --s (wird je Seite angepasst, damit nichts überläuft).
+   Farben sind die Bezugsfarben der Vorlage und werden beim Schreiben auf das Haus umgerechnet. Keine weichen Schatten. */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#6a5f53;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.blatt{--s:1;position:relative;overflow:hidden;margin:8mm auto;background:#f9f1e5;color:#1c130d;display:flex;flex-direction:column;font-family:'Instrument Sans',Arial,sans-serif;font-size:calc(9.4pt*var(--s));line-height:1.42;page-break-after:always;break-after:page}
+/* :where() wiegt nichts, sonst löscht diese Zeile die Abstände von .rubrik, .ut, .ab, .zw und .ul */
+:where(.blatt) :where(h1,h2,h3,h4,p,ul){margin:0;padding:0}
+.uband{flex:none;display:flex;align-items:center;gap:7mm;padding:9mm 15mm 8mm;background:#2a180a var(--muster) 50% 0/var(--musterb) auto;color:#efe4d3;border-bottom:.7mm solid #7f5731}
+.uband--klein{padding:6mm 15mm 5mm}
+.uband__z{flex:none;width:17mm;color:#c98543;display:block}
+.uband__z svg,.udeck__z svg,.uz svg,.uw svg{display:block;width:100%;height:auto}
+.uband h1{font-family:var(--titel);font-weight:var(--tg);font-size:25pt;line-height:1.08;letter-spacing:0}
+.uband--klein h1{font-size:19pt}
+.uband p{font-family:'DM Mono',Menlo,monospace;font-size:7pt;letter-spacing:.2em;text-transform:uppercase;color:#c98543;margin-top:1.6mm}
+.inhalt{flex:1;min-height:0;padding:9mm 15mm 5mm;display:flex;flex-direction:column}
+.ufuss2{flex:none;margin:0 15mm;padding:3.2mm 0 6.5mm;border-top:.25mm solid #7f5731;font-family:'DM Mono',Menlo,monospace;font-size:6.2pt;letter-spacing:.17em;text-transform:uppercase;text-align:center;color:rgba(28,19,13,.74)}
+.spalten{flex:1;min-height:0;display:grid;gap:0 11mm}
+.spalten--2{grid-template-columns:1fr 1fr}.spalten--3{grid-template-columns:1fr 1fr 1fr}.spalten--1{grid-template-columns:1fr}
+.sp{min-width:0;min-height:0}
+.spalten--2 .sp+.sp,.spalten--3 .sp+.sp{border-left:.25mm solid rgba(127,87,49,.5);padding-left:11mm;margin-left:-5.5mm}
+/* Rubrik: Titelschrift, gut doppelt so gross wie der Lesetext, kurze Linie darunter */
+.rubrik{display:flex;align-items:flex-end;justify-content:space-between;gap:4mm;font-family:var(--titel);font-weight:var(--tg);font-size:calc(19pt*var(--s));line-height:1.1;color:#2a180a;margin:calc(5.4mm*var(--s)) 0 calc(2.4mm*var(--s));padding-bottom:calc(2.9mm*var(--s));position:relative}
+.rubrik::after{content:'';position:absolute;left:0;bottom:0;width:14mm;height:.5mm;background:#7f5731}
+.sp>.rubrik:first-child,.inhalt>.rubrik:first-child{margin-top:0}
+.rubrik small{font-family:'Instrument Sans',Arial,sans-serif;font-weight:400;font-size:calc(8.6pt*var(--s));color:rgba(28,19,13,.72);margin-left:2.4mm}
+.rk{display:flex;gap:0;flex:none}
+.rk b{flex:none;width:calc(12.5mm*var(--s));min-width:0;text-align:right;font-family:var(--titel);font-weight:400;font-size:calc(7.6pt*var(--s));letter-spacing:.02em;color:#674c31;white-space:nowrap}
+.rk b:empty::before{content:'\00a0'}
+.re .rk b em{font-family:'Instrument Sans',Arial,sans-serif;font-style:normal;font-weight:400;font-size:calc(8pt*var(--s));color:rgba(28,19,13,.72)}
+.zw{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(6.8pt*var(--s));letter-spacing:.22em;text-transform:uppercase;color:#674c31;margin:calc(3.2mm*var(--s)) 0 calc(1.2mm*var(--s))}
+.po{display:flex;justify-content:space-between;align-items:baseline;gap:4mm;padding:calc(1.5mm*var(--s)) 0;break-inside:avoid}
+.po__t{min-width:0}
+.po h4{font-family:'Instrument Sans',Arial,sans-serif;font-weight:600;font-size:calc(10pt*var(--s));line-height:1.28;color:#1c130d}
+.po h4 small{font-weight:400;font-size:calc(8.2pt*var(--s));color:rgba(28,19,13,.72)}
+.po p{font-size:calc(8.6pt*var(--s));line-height:1.36;color:rgba(28,19,13,.86)}
+.po p.fr{font-style:italic;color:rgba(28,19,13,.62);font-size:calc(8pt*var(--s))}
+.po__p{flex:none;text-align:right;display:flex;flex-direction:column;gap:.4mm}
+.pz{display:flex;justify-content:flex-end;align-items:baseline;gap:2.4mm;white-space:nowrap}
+.pz b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(11pt*var(--s));color:#2a180a;min-width:calc(11mm*var(--s));text-align:right}
+.pz em{font-style:normal;font-size:calc(8pt*var(--s));color:rgba(28,19,13,.72)}
+.re{display:flex;justify-content:space-between;align-items:baseline;gap:3mm;padding:calc(.72mm*var(--s)) 0}
+.re__n{font-weight:600;font-size:calc(9.4pt*var(--s));min-width:0}
+.re__n small{font-weight:400;font-size:calc(8.2pt*var(--s));color:rgba(28,19,13,.72)}
+.re .rk b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(9.6pt*var(--s));letter-spacing:0;text-transform:none;color:#2a180a}
+.ab{font-size:calc(9.4pt*var(--s));line-height:1.5;margin-bottom:calc(2.4mm*var(--s))}
+.ab.gross{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13pt*var(--s));line-height:1.3;color:#2a180a}
+.ab.fr{font-style:italic;color:rgba(28,19,13,.66);font-size:calc(8.8pt*var(--s))}
+.ab.mitte,.ut.mitte{text-align:center}
+.ab.klein{font-size:calc(8pt*var(--s));color:rgba(28,19,13,.76)}
+.ut{font-family:var(--titel);font-weight:var(--tg);font-size:calc(19pt*var(--s));line-height:1.12;color:#2a180a;margin:calc(5mm*var(--s)) 0 calc(2.4mm*var(--s))}
+.ut.klein{font-size:calc(14pt*var(--s))}
+.ukasten{border:.3mm solid #7f5731;border-radius:3mm;padding:calc(4mm*var(--s)) calc(5mm*var(--s));margin:calc(3mm*var(--s)) 0;break-inside:avoid}
+.ukasten h3{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13pt*var(--s));color:#2a180a;margin-bottom:calc(1.6mm*var(--s))}
+.ukasten.dunkel{background:#2a180a;border-color:#2a180a;color:#efe4d3}
+.ukasten.dunkel h3{color:#c98543}.ukasten.dunkel .ab{color:#efe4d3}
+.ul{list-style:none}
+.ul li{position:relative;padding-left:5mm;font-size:calc(9.2pt*var(--s));line-height:1.45;margin-bottom:calc(1.2mm*var(--s))}
+/* Strich als Kante statt Fläche: eine Fläche von .35mm rundet je nach Lage auf 1 oder 2 Bildpunkte, die Striche wurden ungleich dick */
+.ul li::before{content:'';position:absolute;left:0;top:.62em;width:2.6mm;height:0;border-top:.35mm solid #7f5731}
+.ulin{display:block;width:14mm;height:.5mm;background:#7f5731;margin:calc(3mm*var(--s)) 0}
+.mitte .ulin,.ulin.mitte{margin-left:auto;margin-right:auto}
+.ubild{display:block;width:100%;object-fit:cover;border-radius:2.4mm}
+.udeck{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#2a180a var(--muster) 50% 0/var(--musterb) auto;color:#efe4d3;margin:-9mm -15mm -5mm;padding:14mm}
+.udeck__z{width:34mm;color:#c98543;margin-bottom:9mm}
+.udeck h1{font-family:var(--titel);font-weight:var(--tg);font-size:44pt;line-height:1.06}
+.udeck i{display:block;width:20mm;height:.6mm;background:#c98543;margin:7mm 0}
+.udeck p{font-size:10.5pt;line-height:1.5;max-width:120mm}
+.udeck__u{font-family:'DM Mono',Menlo,monospace;font-size:8pt!important;letter-spacing:.22em;text-transform:uppercase;color:#c98543;margin-bottom:5mm}
+.uz{display:block;width:26mm;color:#7f5731}.uz.mitte,.uw.mitte{margin-left:auto;margin-right:auto}
+.uw{display:block;width:70mm;color:#2a180a}
+@page{margin:0}
+@media print{html,body{background:#ffffff}.blatt{margin:0}}
+/* aus dem Original gelesene Karten (satz_auto.py): Zeilen unter dem Gericht, Übersetzungen kursiv und heller */
+.po p.fr{font-style:italic;color:rgba(28,19,13,.6);font-size:calc(7.9pt*var(--s))}
+.po--frei p{font-size:calc(9pt*var(--s))}
+.po__p--reihe{flex-direction:row;gap:calc(3mm*var(--s))}
+.oder{font-family:'DM Mono',Menlo,monospace;font-size:calc(6.2pt*var(--s));letter-spacing:.2em;text-transform:uppercase;color:#674c31;margin:calc(.6mm*var(--s)) 0!important}
+.po p.mp{display:flex;justify-content:space-between;gap:3mm;align-items:baseline}
+.po p.mp b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(10pt*var(--s));color:#2a180a;white-space:nowrap;margin-left:2.4mm}
+.po:has(p.mp) .po__t{flex:1}
+.tmreihe{display:grid;gap:0 6mm;margin-bottom:calc(5mm*var(--s))}
+.tmsp{min-width:0;border-top:.5mm solid #7f5731;padding-top:calc(2mm*var(--s))}
+.tmsp h4.tag{font-family:var(--titel);font-weight:var(--tg);font-size:calc(12.5pt*var(--s));line-height:1.15;color:#2a180a;margin-bottom:calc(1.6mm*var(--s))}
+.tmsp p{margin:0}
+.tmsp p.gang{font-weight:600;font-size:calc(9pt*var(--s));line-height:1.3;margin-top:calc(.5mm*var(--s))}
+.tmsp p.fr{font-style:italic;font-size:calc(7.2pt*var(--s));line-height:1.3;color:rgba(28,19,13,.62)}
+.tmsp p.stern{font-size:calc(6pt*var(--s));letter-spacing:.3em;color:#7f5731;margin:calc(.8mm*var(--s)) 0}
+.uleiste{flex:none;display:flex;align-items:center;justify-content:center;gap:4mm;padding:8mm 15mm 0;color:#7f5731}
+.uleiste span{display:block;width:11mm}.uleiste span svg{display:block;width:100%;height:auto}
+.uleiste b{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:6.6pt;letter-spacing:.24em;text-transform:uppercase}
+.uleiste+.inhalt{padding-top:6mm}
+.po p.halb{font-weight:600;color:#1c130d}
+.po p.stern,.inhalt>p.stern,.sp>p.stern{font-size:calc(6pt*var(--s));letter-spacing:.3em;color:#7f5731;margin:calc(.6mm*var(--s)) 0}
+/* Aussenseite einer gefalzten Karte: eine Spalte ist der Deckel in der dunklen Farbe des Hauses */
+.karte .inhalt{padding:10mm 12mm 8mm}
+.karte--aussen .inhalt{padding:0}
+.karte--aussen .spalten{gap:0}
+.karte--aussen .sp{padding:10mm 9mm 8mm 12mm}
+.karte--aussen .sp:last-child{padding:0}
+.karte--aussen .sp+.sp{border-left:0;margin-left:0}
+.karte--aussen .sp+.sp:not(:last-child){padding-left:6mm}
+.deckel{height:100%;background:#2a180a var(--muster) 50% 0/var(--musterb) auto;color:#efe4d3;padding:17mm 11mm 12mm;display:flex;flex-direction:column;align-items:center;text-align:center}
+.deckel .uz{width:30mm;color:#c98543}
+.deckel h1{font-family:var(--titel);font-weight:var(--tg);font-size:34pt;line-height:1.08;margin-top:9mm}
+.deckel>i{display:block;width:16mm;height:.5mm;background:#c98543;margin:8mm 0;flex:none}
+.deckel__z{font-family:var(--titel);font-weight:var(--tg);font-size:14pt;line-height:1.36;color:#c98543;max-width:78mm}
+.deckel__q{font-family:'DM Mono',Menlo,monospace;font-size:6.6pt;letter-spacing:.22em;text-transform:uppercase;margin-top:4mm!important}
+.deckel__a{font-size:8.4pt;line-height:1.6;margin-top:auto!important;padding-top:8mm;opacity:.9}
+.gutschein{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 4mm}
+.gutschein .uz{width:22mm;margin-bottom:8mm}
+.gutschein .ab{font-size:calc(11pt*var(--s));line-height:1.7}
+.gutschein .unten{margin-top:14mm!important;opacity:.7}
+.menupreis{text-align:right;margin:-11mm 0 5mm!important}
+.menupreis b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(15pt*var(--s));color:#2a180a}
+.rubrik .rp{font-size:calc(13pt*var(--s));white-space:nowrap}
+.po p.mp span{flex:1}
+.po p.mp b{min-width:calc(15mm*var(--s));text-align:right}
+.gutschein .ab{font-size:calc(9.4pt*var(--s))}
+.pz--k{flex-direction:column;align-items:flex-end;gap:0}
+.pz--k em,.po__p .pz>em:only-child{font-family:'DM Mono',Menlo,monospace;font-size:calc(5.6pt*var(--s));letter-spacing:.14em;text-transform:uppercase;color:#674c31}
+.uraster{margin-top:calc(2mm*var(--s))}
+.uraster .rz{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:0 6mm;padding:calc(1.5mm*var(--s)) 0;border-bottom:.2mm solid rgba(127,87,49,.4);font-size:calc(9.4pt*var(--s))}
+.uraster .rz.kopf{font-family:'DM Mono',Menlo,monospace;font-size:calc(6.4pt*var(--s));letter-spacing:.2em;text-transform:uppercase;color:#674c31;border-bottom:.4mm solid #7f5731}
+.uraster .rz span.fr{font-style:italic;color:rgba(28,19,13,.66)}
+.mitte .po,.po.mitte{justify-content:center;text-align:center}
+.mittig .po{flex-direction:column;align-items:center;text-align:center}
+.mittig .po__p{flex-direction:row}
+.mittig .rubrik{justify-content:center}.mittig .rubrik::after{left:50%;margin-left:-7mm}
+.mittig p.stern{text-align:center}
+
+/* Umbrüche: keine einzelnen Wörter auf der letzten Zeile, Titel ausgeglichen */
+.blatt p,.blatt h4,.blatt li{text-wrap:pretty}
+.blatt h1,.blatt h2,.blatt h3,.po h4,.po p{text-wrap:balance}
+
+.a3 .inhalt{padding:11mm 13mm 9mm}
+.a3 .spalten{gap:0 12mm}
+.karte--aussen.a3 .spalten{grid-template-columns:1fr 1.05fr .9fr}
+.karte--aussen.a3 .sp{padding:12mm 7mm 9mm 13mm}
+.karte--aussen.a3 .sp:last-child{padding:0}
+.karte--aussen.a3 .ab{font-size:calc(8.6pt*var(--s));line-height:1.46;margin-bottom:calc(2mm*var(--s))}
+.karte--aussen.a3 .ukasten .ab{margin-bottom:calc(1mm*var(--s))}
+.tagesmenu .rubrik{margin-bottom:6mm}
+.dessert .po{padding:calc(1.9mm*var(--s)) 0}
+.dessert .po__p--reihe .pz b{min-width:calc(15mm*var(--s))}
+.dessert .rk b{width:calc(18mm*var(--s))}
+.tagesteller .po{border-bottom:.2mm solid rgba(183,143,81,.4);padding:calc(2.4mm*var(--s)) 0}
+.tagesteller .po h4{font-family:var(--titel);font-weight:700;font-size:calc(13pt*var(--s));color:#321f10}
+.deck .udeck h1{font-size:50pt;letter-spacing:.02em}
+
+/* ===== Unterlagen Fassung 2 (09.10.2026) ===== */
+.blatt .rubrik{align-items:baseline;margin:calc(6mm*var(--s)) 0 calc(1.5mm*var(--s));padding-bottom:calc(2.3mm*var(--s));font-size:calc(17pt*var(--s))}
+.blatt .sp>.rubrik:first-child,.blatt .inhalt>.rubrik:first-child,.blatt .ukasten>.rubrik:first-child{margin-top:0}
+.blatt .rubrik small{font-size:calc(7.6pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:#674c31;margin-left:3mm}
+.blatt .rubrik .rp{font-size:calc(15pt*var(--s))}
+.kopfz{display:flex;flex:none}
+.kopfz b{width:calc(var(--pb,13.5mm)*var(--s));text-align:right;font-family:'Instrument Sans',Arial,sans-serif;font-weight:500;font-size:calc(6.6pt*var(--s));color:#674c31;white-space:nowrap}
+.g{padding:calc(1.5mm*var(--s)) 0;break-inside:avoid}
+.gz{display:flex;justify-content:space-between;align-items:baseline;gap:4mm}
+.gz>h4,.gz>p{flex:1;min-width:0;text-wrap:pretty}
+.g .gz>p:only-child{padding-right:calc(var(--pb,13.5mm)*var(--s))}
+.blatt .ab,.blatt .ul li,.blatt p.hinweis,.blatt .tmsp p{text-wrap:pretty}
+.blatt p.hinweis{text-wrap:balance}
+.blatt .g h4{font-family:'Instrument Sans',Arial,sans-serif;font-weight:600;font-size:calc(10pt*var(--s));line-height:1.3;color:#1c130d}
+.blatt .g h4 small{font-weight:400;font-size:calc(8.4pt*var(--s));color:rgba(28,19,13,.76);margin-left:.5mm}
+.marke{display:inline-block;vertical-align:.12em;margin-left:1.6mm;padding:.1mm 1.5mm;border:.25mm solid #7f5731;border-radius:1mm;font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(5.6pt*var(--s));letter-spacing:.14em;text-transform:uppercase;color:#674c31;white-space:nowrap}
+.blatt .g p,.blatt .tt p{font-size:calc(8.7pt*var(--s));line-height:1.4;color:rgba(28,19,13,.9)}
+.blatt .g p.f,.blatt .tt p.f,.gz span.f{font-style:italic;font-size:calc(8pt*var(--s));color:rgba(28,19,13,.64)}
+.gz span.f{font-size:.92em}
+.blatt .g p.h,.blatt .tt p.h,.gz span.h{font-weight:600;color:#1c130d}
+.blatt .g p.k{font-size:calc(7.6pt*var(--s));color:#674c31}
+.ld{font-style:normal;font-weight:500;font-size:.9em;letter-spacing:.05em;color:rgba(28,19,13,.78)}
+.prs{flex:none;display:flex}
+.prs b{width:calc(var(--pb,13.5mm)*var(--s));text-align:right;font-family:var(--titel);font-weight:var(--tg);font-size:calc(11pt*var(--s));line-height:1;color:#2a180a;white-space:nowrap}
+.gz:not(.gz--n) .prs b{font-size:calc(9.4pt*var(--s))}
+.blatt p.stern{font-size:calc(6pt*var(--s));letter-spacing:.3em;color:#7f5731;margin:calc(.9mm*var(--s)) 0;line-height:1}
+.blatt p.oder{margin:calc(.9mm*var(--s)) 0!important}
+.blatt p.unterzeile{font-style:italic;font-size:calc(8pt*var(--s));color:rgba(28,19,13,.64);margin:0 0 calc(1mm*var(--s))}
+.blatt p.hinweis{margin-top:auto;padding-top:calc(3mm*var(--s));border-top:.25mm solid rgba(127,87,49,.5);font-size:calc(7.6pt*var(--s));line-height:1.45;color:rgba(28,19,13,.8)}
+.blatt p.hinweis--frei{margin-top:calc(5mm*var(--s));border-top:0;padding-top:0;font-size:calc(8pt*var(--s))}
+.dicht .g{padding:calc(1.05mm*var(--s)) 0}
+.dicht p.stern{margin:calc(.3mm*var(--s)) 0!important}
+.dicht .rubrik{margin-top:calc(4.6mm*var(--s))!important}
+.dicht .inhalt>.rubrik:first-child{margin-top:0!important}
+.dicht .ulin--breit{margin:calc(2.6mm*var(--s)) 0 calc(1.4mm*var(--s))!important}
+.ulin--breit{width:100%!important;height:.25mm!important;background:rgba(127,87,49,.5)!important;margin:calc(4mm*var(--s)) 0 calc(2.5mm*var(--s))!important}
+.blatt .ab{margin-bottom:calc(2.4mm*var(--s))}
+.blatt .ab.stark{font-weight:600;color:#1c130d}
+.blatt .ut{margin:0 0 calc(3mm*var(--s))}
+.blatt .ukasten .ab:last-child{margin-bottom:0}
+.blatt .ukasten h3{margin-bottom:calc(1.8mm*var(--s))}
+.ukasten.mitte{text-align:center}
+.ukasten.gebot{background:rgba(127,87,49,.07);border-color:rgba(127,87,49,.55)}
+.blatt .ul li{font-size:calc(8.6pt*var(--s));line-height:1.42;margin-bottom:calc(.9mm*var(--s))}
+/* Egger- und Stettlerstube */
+.egger .inhalt{padding:9mm 17mm 11mm}
+.ukasten.speziell{margin-top:calc(6mm*var(--s));padding:calc(4.5mm*var(--s)) calc(5mm*var(--s)) calc(3mm*var(--s))}
+.dessert{--pb:17mm}
+.dessert .g{padding:calc(1.7mm*var(--s)) 0}
+.tagesmenu .rubrik{margin-bottom:calc(6mm*var(--s))}
+.tmreihe{grid-template-columns:repeat(4,1fr);gap:0 6mm;margin-bottom:calc(8mm*var(--s))}
+.tmreihe:last-child{margin-bottom:0}
+.blatt .tmsp h4.tag{font-size:calc(14pt*var(--s));line-height:1.1;margin-bottom:0}
+.blatt .tmsp p.tagu{font-family:'DM Mono',Menlo,monospace;font-size:calc(6.4pt*var(--s));letter-spacing:.06em;text-transform:uppercase;color:#674c31;margin:calc(1.2mm*var(--s)) 0 calc(3mm*var(--s))}
+.blatt .tmsp p.gang{font-weight:600;font-size:calc(9.2pt*var(--s));line-height:1.28;margin:0 0 calc(.5mm*var(--s))}
+.blatt .tmsp p.fr{font-style:italic;font-size:calc(7.4pt*var(--s));line-height:1.34;color:rgba(28,19,13,.64)}
+.blatt .tmsp p.stern{margin:calc(1.7mm*var(--s)) 0}
+/* Chäs- und Wystube */
+.karte--aussen.a3 .inhalt{padding:0}
+.karte--aussen.a3 .spalten{grid-template-columns:1fr 1.02fr .86fr}
+.karte--aussen.a3 .sp{padding:13mm 8mm 11mm 14mm}
+.karte--aussen.a3 .sp+.sp:not(:last-child){padding-left:8mm;padding-right:10mm}
+.karte--aussen.a3 .sp:last-child{padding:0}
+.karte--aussen.a3 .ab{font-size:calc(8.6pt*var(--s));line-height:1.5;margin-bottom:calc(2.4mm*var(--s))}
+.karte--aussen.a3 .ab.zitat{font-style:italic;color:rgba(28,19,13,.82);padding-left:4mm;border-left:.4mm solid #7f5731}
+.blatt p.vorzeile{font-family:'DM Mono',Menlo,monospace;font-size:calc(6.8pt*var(--s));letter-spacing:.24em;color:#674c31;margin-bottom:calc(1.6mm*var(--s))}
+.blatt p.quelle{font-family:'DM Mono',Menlo,monospace;font-size:calc(6.2pt*var(--s));letter-spacing:.16em;text-transform:uppercase;color:#674c31;padding-left:4mm;margin:calc(-.6mm*var(--s)) 0 calc(3mm*var(--s))}
+.blatt p.gruss{font-size:calc(8.6pt*var(--s));line-height:1.5;margin:calc(3mm*var(--s)) 0 0}
+.blatt p.gruss--2{font-family:var(--titel);font-weight:var(--tg);font-size:calc(10.5pt*var(--s));color:#2a180a;margin:calc(1.6mm*var(--s)) 0 calc(4mm*var(--s))}
+.gruss--2 span{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(6.2pt*var(--s));letter-spacing:.18em;text-transform:uppercase;color:#674c31;margin-left:2mm}
+.blatt p.gzeile{font-size:calc(8.6pt*var(--s));line-height:1.55}
+.gzeile b{font-weight:600;color:#f3cd94}
+.blatt .ukasten h3.gz2{margin:calc(3mm*var(--s)) 0 calc(1.4mm*var(--s));font-size:calc(11pt*var(--s))}
+.ukasten.dunkel .ab,.ukasten.dunkel p{color:#efe4d3}
+.ukasten.dunkel .ab{margin-bottom:calc(1.6mm*var(--s))}
+.a3.innen .inhalt{padding:13mm 14mm 11mm}
+.a3.innen .g{padding:calc(1.15mm*var(--s)) 0}
+.a3.innen .rubrik{margin-top:calc(4.6mm*var(--s));margin-bottom:calc(1mm*var(--s));font-size:calc(16pt*var(--s))}
+.a3.innen .g p{line-height:1.34}
+.a3.innen .spalten{gap:0 14mm}
+.a3.innen .spalten--3 .sp+.sp{padding-left:14mm;margin-left:-7mm}
+.a3.innen .sp{display:flex;flex-direction:column}
+.blatt .ukasten.menu{margin:calc(5mm*var(--s)) 0 calc(4mm*var(--s));padding:calc(5mm*var(--s)) calc(5mm*var(--s))}
+.blatt .ukasten.menu h3{font-size:calc(13pt*var(--s));margin-bottom:calc(3mm*var(--s))}
+.blatt .menu p.mg{font-weight:600;font-size:calc(9.4pt*var(--s));line-height:1.3;color:#efe4d3}
+.blatt .menu p.mf{font-style:italic;font-size:calc(7.8pt*var(--s));color:rgba(239,228,211,.78)}
+.blatt .menu p.stern{color:#c98543;margin:calc(1.5mm*var(--s)) 0}
+.blatt .menu p.mpreis{font-family:var(--titel);font-weight:var(--tg);font-size:calc(15pt*var(--s));color:#c98543;margin-top:calc(3mm*var(--s));line-height:1}
+.blatt .ukasten.gebot{margin:calc(4mm*var(--s)) 0}
+.g--stark h4 small{font-weight:600!important;color:#1c130d!important}
+/* Tagesteller */
+.tagesteller .inhalt{padding:7mm 13mm 11mm}
+.tagesteller .sp{display:flex;flex-direction:column}
+.tt{padding:calc(3.2mm*var(--s)) 0;border-bottom:.2mm solid rgba(127,87,49,.45)}
+.sp>.tt:first-child{padding-top:0}
+.tt__k{display:flex;justify-content:space-between;align-items:baseline;gap:4mm;margin-bottom:calc(1.2mm*var(--s))}
+.blatt .tt__k h3{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13.5pt*var(--s));line-height:1.15;color:#2a180a}
+.tt__k h3 small{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(5.8pt*var(--s));letter-spacing:.08em;text-transform:uppercase;color:#674c31;margin-left:2mm}
+.tt__k>b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13.5pt*var(--s));color:#2a180a}
+.blatt .tt p.h{font-size:calc(9.2pt*var(--s))}
+.tt .gz+.gz .h{margin-top:0}
+.tagesteller .ukasten.gebot{margin:calc(3.5mm*var(--s)) 0 0;padding:calc(3.6mm*var(--s)) calc(4.5mm*var(--s))}
+.gutschein .ab b{font-family:var(--titel);font-weight:var(--tg);font-size:1.12em;color:#2a180a;white-space:nowrap}
+.blatt .gutschein{padding:0 2mm}
+.blatt .gutschein .ab{font-size:calc(9.6pt*var(--s));line-height:1.65;margin-bottom:calc(3.2mm*var(--s))}
+.blatt .gutschein .ut{margin-bottom:0}
+/* ===== QA-Durchgang 09.10.2026 abends ===== */
+/* Linien in ganzen Bildpunkten: 0,5 mm (1,89 px) rundete beim Drucken je nach Lage auf 1 oder 2 px, die Linie unter CHÄS war dünner als die anderen */
+.blatt .rubrik::after,.blatt .ulin,.deckel>i{height:2px}
+.blatt .tmsp{border-top-width:2px}
+.ulin--breit{height:1px!important}
+/* Spaltenlinie mitten im Zwischenraum, Spalten gleich breit (vorher 7 mm links und 14 mm rechts der Linie, die erste Spalte 7 mm breiter) */
+.a3.innen .spalten--3 .sp+.sp{padding-left:7mm;margin-left:-7mm}
+.tagesteller .spalten--2 .sp+.sp{padding-left:5.5mm;margin-left:-5.5mm}
+/* Dessertnamen der Schpis Charte einheitlich in Versalien (Coupe Ruedi, Zwetschgenlisi standen klein) */
+.g.vers h4{text-transform:uppercase}
+.a3.innen .sp:last-child{--pb:15.5mm}
+.nb{white-space:nowrap}
+.marke--satz{margin:0 .6mm 0 0;vertical-align:.1em}
+
+/* ===== «Nos Menus» 2023 (nos_menus_satz.py, 13.10.2026): A4, Lesetext 11 pt und grösser ===== */
+.nm .inhalt{padding:8mm 22mm 8mm}
+.nm .ufuss2{margin:0 22mm}
+.nm .uleiste{padding-top:9mm}
+.nm-leiste b{font-size:7pt;letter-spacing:.26em;color:#7f5731}
+.nm.mittig .inhalt{text-align:center}
+.blatt.nm .ab{font-size:calc(11pt*var(--s));line-height:1.5;margin-bottom:calc(2.8mm*var(--s));color:#1c130d}
+.blatt.nm .ul li{font-size:calc(11pt*var(--s));line-height:1.45;margin-bottom:calc(1.2mm*var(--s));text-align:left}
+.blatt.nm p.stern{font-size:calc(7pt*var(--s));margin:calc(1.5mm*var(--s)) 0}
+.nm i{font-style:normal}
+.nm-kopf{margin-bottom:calc(5mm*var(--s))}
+.nm-kopf .ulin{margin:calc(4mm*var(--s)) 0 0}
+.mittig .nm-kopf .ulin{margin-left:auto;margin-right:auto}
+.blatt .nm-t{font-family:var(--titel);font-weight:var(--tg);font-size:calc(29pt*var(--s));line-height:1.1;color:#2a180a;text-wrap:balance}
+.blatt .nm-u{font-size:calc(11pt*var(--s));color:#674c31;margin-top:calc(2mm*var(--s))}
+.blatt.nm .rubrik{font-size:calc(21pt*var(--s));margin:calc(7mm*var(--s)) 0 calc(3mm*var(--s));padding-bottom:calc(2.8mm*var(--s))}
+.blatt.nm .inhalt>.rubrik:first-child,.blatt.nm .nm-mitte>.rubrik:first-child,.blatt.nm .nm-zwei--liste>div>.rubrik:first-child{margin-top:0}
+.nm-mitte{margin:auto 0}
+.nm--karte .nm-t{font-size:calc(23pt*var(--s))}
+.blatt.nm .rubrik+.rubrik{margin-top:calc(5mm*var(--s))}
+/* Briefkopf */
+.nm-haus{text-align:center;margin-bottom:calc(6mm*var(--s));padding-bottom:calc(4mm*var(--s));border-bottom:.25mm solid rgba(127,87,49,.5)}
+.blatt .nm-haus h2{font-family:var(--titel);font-weight:var(--tg);font-size:calc(21pt*var(--s));line-height:1.1;color:#2a180a}
+.blatt .nm-haus__o{font-family:'DM Mono',Menlo,monospace;font-size:calc(8pt*var(--s));letter-spacing:.3em;text-transform:uppercase;color:#7f5731;margin:calc(1.6mm*var(--s)) 0 calc(2.6mm*var(--s))}
+.blatt .nm-haus__k{font-size:calc(11pt*var(--s));color:#1c130d}
+.nm-haus__k i,.nm-anl i,.nm-g__b i{color:#c98543;margin:0 .35em}
+.nm--brief .nm-kopf{text-align:center}.nm--brief .nm-kopf .ulin{margin-left:auto;margin-right:auto}
+.blatt .nm-anl{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13.5pt*var(--s));line-height:1.3;color:#2a180a;text-align:center;margin:calc(1mm*var(--s)) 0 calc(3.4mm*var(--s))}
+/* Zeile mit Preis */
+.nm-z{display:flex;justify-content:space-between;align-items:baseline;gap:5mm;text-align:left;font-size:calc(11pt*var(--s));line-height:1.4;padding:calc(1.5mm*var(--s)) 0;border-bottom:.2mm solid rgba(127,87,49,.38);color:#1c130d}
+.nm-z>span{flex:1;min-width:0;text-wrap:pretty}
+.nm-z>span small{font-size:1em;color:rgba(28,19,13,.68)}
+.nm-z>b{flex:none;font-family:var(--titel);font-weight:var(--tg);font-size:calc(12.5pt*var(--s));color:#2a180a;white-space:nowrap;text-align:right}
+.nm-z--e>b{width:calc(25mm*var(--s))}
+.nm-z--e>i{flex:none;width:calc(37mm*var(--s));font-size:calc(11pt*var(--s));line-height:1.25;color:rgba(28,19,13,.76)}
+/* Räume */
+.nm-tab{text-align:left;margin:0 0 calc(7mm*var(--s))}
+.nm-tab__k,.nm-tab__g{display:grid;grid-template-columns:1.15fr 1.5fr;gap:0 8mm}
+.nm-tab__k{grid-template-columns:1.15fr 1fr .5fr;padding-bottom:calc(2mm*var(--s));border-bottom:.5mm solid #7f5731}
+.nm-tab__k b{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(7.4pt*var(--s));letter-spacing:.2em;text-transform:uppercase;color:#674c31}
+.nm-tab__k b:last-child{text-align:right;white-space:nowrap}
+.nm-tab__g{padding:calc(2.2mm*var(--s)) 0;border-bottom:.2mm solid rgba(127,87,49,.45);align-items:baseline}
+.blatt .nm-tab__g h4{font-family:var(--titel);font-weight:var(--tg);font-size:calc(15pt*var(--s));line-height:1.2;color:#2a180a}
+.nm-tab__g p{display:flex;justify-content:space-between;align-items:baseline;font-size:calc(11pt*var(--s));line-height:1.5}
+.nm-tab__g p b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13pt*var(--s));color:#2a180a}
+.blatt .nm-tab__e{font-family:'DM Mono',Menlo,monospace;font-weight:400;font-size:calc(8pt*var(--s));letter-spacing:.26em;text-transform:uppercase;color:#7f5731;margin:calc(5mm*var(--s)) 0 0}
+.nm-bild{display:block;width:100%;flex:1;min-height:0;height:20mm;object-fit:cover;border-radius:3mm}
+.nm-pl{margin:0 auto calc(4mm*var(--s));width:62%}
+.nm-s16 .inhalt{padding-top:5mm;padding-bottom:6mm}.blatt.nm.nm-s16 .ab{line-height:1.42;margin-bottom:calc(2.2mm*var(--s))}
+.nm-pl p{display:flex;justify-content:space-between;align-items:baseline;font-size:calc(11pt*var(--s));line-height:1.3;padding:calc(1.3mm*var(--s)) 0;border-bottom:.2mm solid rgba(127,87,49,.38)}
+.nm-pl p span{font-weight:600}
+.nm-pl p b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(12pt*var(--s));color:#2a180a}
+/* Pauschalen */
+.nm-p{margin:calc(5mm*var(--s)) 0;padding:calc(5mm*var(--s)) calc(7mm*var(--s)) calc(3.5mm*var(--s));border:.3mm solid rgba(127,87,49,.55);border-radius:3mm;background:rgba(127,87,49,.06)}
+.blatt .nm-p h3{font-family:var(--titel);font-weight:var(--tg);font-size:calc(19pt*var(--s));line-height:1.15;color:#2a180a;margin-bottom:calc(2mm*var(--s))}
+.nm-p .nm-z:last-child{border-bottom:0}
+.nm-p .nm-z>b{font-size:calc(14pt*var(--s))}
+/* Auswahl «selbst zusammenstellen» */
+.blatt .ukasten.nm-wahl{margin:0 auto calc(2mm*var(--s));padding:calc(4.5mm*var(--s)) calc(8mm*var(--s)) calc(3mm*var(--s));width:78%}
+.blatt .nm-wahl h3{font-size:calc(15pt*var(--s));line-height:1.2;margin-bottom:calc(2.4mm*var(--s));text-align:center}
+.nm-wahl>div{width:74%;margin:0 auto}
+.nm-wahl .nm-z{padding:calc(1mm*var(--s)) 0}
+.nm-wahl .nm-z:last-child{border-bottom:0}
+.nm-wahl .nm-z>span{font-weight:600;letter-spacing:.02em}
+/* Gericht */
+.nm-g{padding:calc(1.9mm*var(--s)) 0;break-inside:avoid}
+.blatt .nm-g h4{font-family:'Instrument Sans',Arial,sans-serif;font-weight:600;font-size:calc(12pt*var(--s));line-height:1.3;letter-spacing:.05em;text-transform:uppercase;color:#1c130d;text-wrap:balance}
+.blatt .nm-g h4 small{font-weight:400;font-size:calc(11pt*var(--s));letter-spacing:0;text-transform:none;color:rgba(28,19,13,.72)}
+.blatt .nm-g__z{font-size:calc(11pt*var(--s));line-height:1.4;color:rgba(28,19,13,.84);margin-top:calc(.4mm*var(--s));text-wrap:balance}
+.blatt .nm-g__b{font-size:calc(11pt*var(--s));line-height:1.4;letter-spacing:.04em;color:#674c31;margin-top:calc(.4mm*var(--s));text-wrap:balance}
+/* festes Menu */
+.nm-m{margin:calc(5mm*var(--s)) 0 0;padding:calc(5mm*var(--s)) calc(6mm*var(--s));border:.3mm solid rgba(127,87,49,.55);border-radius:3mm;text-align:center;break-inside:avoid}
+.nm-m__k{margin-bottom:calc(3mm*var(--s))}
+.blatt .nm-m__k h3{font-family:var(--titel);font-weight:var(--tg);font-size:calc(18pt*var(--s));line-height:1.15;color:#2a180a}
+.nm-m__k b{display:block;font-family:var(--titel);font-weight:var(--tg);font-size:calc(14pt*var(--s));color:#a8260f;margin-top:calc(1.2mm*var(--s))}
+.blatt .nm-m__g{font-size:calc(11pt*var(--s));line-height:1.42;color:#1c130d;text-wrap:balance}
+.nm--karte .nm-m__g,.nm--grand .nm-m__g{font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.nm-zwei{display:grid;grid-template-columns:1fr 1fr;gap:0 7mm;align-items:stretch}
+.nm-zwei--liste{grid-template-columns:1.45fr 1fr;align-items:start;margin-top:calc(6mm*var(--s))}
+.nm-raster{display:grid;grid-template-columns:1fr 1fr;gap:calc(5mm*var(--s)) 7mm}
+.nm-raster .nm-m{margin:0;display:flex;flex-direction:column;justify-content:center}
+.nm-raster .nm-m:last-child:nth-child(odd){grid-column:1/-1;width:calc(50% - 3.5mm);justify-self:center}
+.nm--buffets .nm-m{margin-top:calc(4mm*var(--s));padding:calc(4mm*var(--s)) calc(7mm*var(--s))}
+.nm--buffets .nm-m__k{display:flex;justify-content:center;align-items:baseline;gap:5mm;margin-bottom:calc(2.4mm*var(--s))}
+.nm--buffets .nm-m__k b{margin:0}
+/* Grand Menu: dunkle Tafel */
+.nm-m--gross{background:#2a180a var(--muster) 50% 0/var(--musterb) auto;border-color:#2a180a;padding:calc(13mm*var(--s)) calc(11mm*var(--s))}
+.blatt .nm-m--gross .nm-m__k h3{font-size:calc(25pt*var(--s));color:#efe4d3}
+.nm-m--gross .nm-m__k b{font-size:calc(17pt*var(--s));color:#c98543;margin-top:calc(2.4mm*var(--s))}
+.nm-m--gross .nm-m__k{margin-bottom:calc(8mm*var(--s))}
+.blatt .nm-m--gross .nm-m__g{color:#efe4d3;line-height:1.5}
+.blatt .nm-m--gross p.stern{color:#c98543;margin:calc(3mm*var(--s)) 0}
+.blatt.nm .ab.nm-wunsch{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13pt*var(--s));line-height:1.36;color:#2a180a;margin:calc(9mm*var(--s)) auto 0;max-width:120mm;text-wrap:balance}
+/* Hochzeit */
+.nm--hochzeit .nm-kopf{text-align:center}.nm--hochzeit .nm-kopf .ulin{margin-left:auto;margin-right:auto}
+.blatt .ukasten.nm-pk{margin:calc(2.6mm*var(--s)) 0 0;padding:calc(3.6mm*var(--s)) calc(5.5mm*var(--s)) calc(3mm*var(--s))}
+.blatt .nm-pk h3{font-size:calc(14pt*var(--s));letter-spacing:.03em;margin-bottom:calc(1.4mm*var(--s))}
+.blatt.nm .nm-pk .ab{line-height:1.4;margin-bottom:calc(1.8mm*var(--s))}
+.blatt .nm-pk__p{display:flex;justify-content:space-between;align-items:baseline;gap:6mm;font-size:calc(11pt*var(--s));padding-top:calc(1.6mm*var(--s));border-top:.2mm solid rgba(127,87,49,.45)}
+.nm-pk__p b{font-family:var(--titel);font-weight:var(--tg);color:#2a180a;white-space:nowrap}
+.nm-pk__p span:first-child b{font-size:calc(16pt*var(--s));color:#a8260f;margin-left:1mm}
+.nm-pk__p span:last-child b{font-size:calc(13pt*var(--s));margin-left:1mm}
+.blatt .nm-pk__z{display:flex;flex-wrap:wrap;gap:0 5mm;font-size:calc(11pt*var(--s));line-height:1.4;color:rgba(28,19,13,.84);margin-top:calc(1mm*var(--s))}
+.nm-pk__z em{font-style:normal;font-weight:600;color:#1c130d}
+.nm--hochzeit .inhalt{padding:6mm 18mm 6mm}.nm--hochzeit .ufuss2{margin:0 18mm}
+.nm--hochzeit .nm-kopf{margin-bottom:calc(3mm*var(--s))}.nm--hochzeit .nm-kopf .ulin{margin-top:calc(2.6mm*var(--s))}
+.nm--hochzeit .nm-t{font-size:calc(25pt*var(--s))}
+.blatt.nm.nm--hochzeit .ab{line-height:1.38;margin-bottom:calc(1.6mm*var(--s))}
+.nm-pk__z b{font-family:var(--titel);font-weight:var(--tg);color:#2a180a}
+.nm-fuss2{flex:1;min-height:calc(31mm*var(--s));display:grid;grid-template-columns:1fr 1fr;gap:0 6mm;margin-top:calc(3mm*var(--s))}
+.nm-fuss2 .ukasten{margin:0;display:flex;flex-direction:column;justify-content:center}
+.nm-fuss2 .nm-bild{height:100%;min-height:0}
+.blatt .nm-ka h3{font-size:calc(14pt*var(--s))}
+/* Textseiten */
+.nm-as{margin-top:calc(3.6mm*var(--s))}
+.nm--text .inhalt{padding:6mm 20mm 6mm}.nm--text .ufuss2{margin:0 20mm}
+.nm--text .rubrik{margin-top:calc(5mm*var(--s))!important;margin-bottom:0!important}
+.blatt .nm-as h3{font-family:var(--titel);font-weight:var(--tg);font-size:calc(14.5pt*var(--s));line-height:1.2;color:#2a180a;margin-bottom:calc(1.4mm*var(--s))}
+.blatt.nm .nm-as .ab{margin:calc(1.6mm*var(--s)) 0}
+.blatt .nm-zwt{font-family:var(--titel);font-weight:var(--tg);font-size:calc(16pt*var(--s));line-height:1.2;color:#2a180a;margin:calc(5mm*var(--s)) 0 calc(2mm*var(--s))}
+.nm-li>div{margin-bottom:calc(4mm*var(--s))}
+.nm-li .nm-z{padding:calc(1.15mm*var(--s)) 0}
+/* Pique-Nique */
+.blatt .nm-motto{font-family:var(--titel);font-weight:var(--tg);font-size:calc(14pt*var(--s));line-height:1.3;color:#a8260f;text-align:center;margin:calc(1mm*var(--s)) 0 calc(5mm*var(--s))}
+.nm--pique .nm-kopf{text-align:center}.nm--pique .nm-kopf .ulin{margin-left:auto;margin-right:auto}
+.nm--pique .nm-bild{flex:1;min-height:calc(38mm*var(--s))}
+.nm-prg{display:grid;grid-template-columns:1.1fr 1fr;gap:0 10mm;margin-top:calc(5mm*var(--s))}
+.nm-pr{margin-bottom:calc(3.4mm*var(--s))}
+.blatt .nm-pr h3{font-family:var(--titel);font-weight:var(--tg);font-size:calc(13pt*var(--s));letter-spacing:.04em;color:#2a180a;margin-bottom:calc(.8mm*var(--s))}
+.blatt .nm-pr p{font-size:calc(11pt*var(--s));line-height:1.36;color:#1c130d}
+.blatt.nm .nm-pr p.stern{margin:calc(.8mm*var(--s)) 0}
+.blatt .nm-preis{display:flex;align-items:baseline;gap:4mm;padding:calc(3mm*var(--s)) 0;margin:calc(1mm*var(--s)) 0 calc(2.4mm*var(--s));border-top:.5mm solid #7f5731;border-bottom:.2mm solid rgba(127,87,49,.45);font-size:calc(11pt*var(--s))}
+.nm-preis b{font-family:var(--titel);font-weight:var(--tg);font-size:calc(21pt*var(--s));line-height:1;color:#a8260f;white-space:nowrap}
+.blatt.nm.nm--pique .nm-preis~.ab{margin-bottom:calc(.6mm*var(--s))}
+/* Devise, Zitat */
+.blatt .ukasten.nm-dev{margin:calc(3mm*var(--s)) 0 0;padding:calc(4mm*var(--s)) calc(7mm*var(--s));text-align:center}
+.blatt .nm-dev h3{font-size:calc(15pt*var(--s));margin-bottom:calc(2mm*var(--s))}
+.blatt.nm .nm-dev .ab{color:#efe4d3;margin-bottom:calc(1.6mm*var(--s))}
+.blatt.nm .nm-dev .ul{display:table;margin:0 auto calc(1.6mm*var(--s))}
+.blatt.nm .nm-dev .ul li{color:#efe4d3;font-weight:600}
+.nm-dev .ul li::before{border-color:#c98543}
+.blatt .ukasten.nm-zit{margin:calc(7mm*var(--s)) 0 0;padding:calc(7mm*var(--s)) calc(9mm*var(--s));text-align:center;background:#2a180a var(--muster) 50% 0/var(--musterb) auto}
+.blatt .nm-zit__t{font-family:var(--titel);font-weight:var(--tg);font-size:calc(14.5pt*var(--s));line-height:1.36;color:#f3cd94;text-wrap:balance}
+.blatt .nm-zit__v{font-family:'DM Mono',Menlo,monospace;font-size:calc(7.4pt*var(--s));letter-spacing:.24em;text-transform:uppercase;color:#efe4d3;margin-top:calc(3.4mm*var(--s))}
+/* Deckel */
+/* dichte Seiten (Stuben des Ruedihus, Catering-Menus, Hochzeit): Abstände knapper, damit der Lesetext 11 pt hält */
+.nm-s18 .nm-g,.nm-s19 .nm-g{padding:calc(1.15mm*var(--s)) 0}
+.blatt.nm.nm-s18 .rubrik,.blatt.nm.nm-s19 .rubrik{margin:calc(4.6mm*var(--s)) 0 calc(1.6mm*var(--s));padding-bottom:calc(2.2mm*var(--s));font-size:calc(19pt*var(--s))}
+.blatt.nm.nm-s19 .nm-zwei--liste>div>.rubrik:first-child{margin-top:0}
+.nm-s18 .nm-kopf,.nm-s19 .nm-kopf{margin-bottom:calc(3.4mm*var(--s))}.nm-s18 .nm-kopf .ulin,.nm-s19 .nm-kopf .ulin{margin-top:calc(2.6mm*var(--s))}
+.blatt.nm-s18 .ukasten.nm-wahl,.blatt.nm-s19 .ukasten.nm-wahl{padding:calc(3mm*var(--s)) calc(8mm*var(--s)) calc(2mm*var(--s));margin-bottom:0}
+.blatt.nm-s18 .nm-wahl h3,.blatt.nm-s19 .nm-wahl h3{font-size:calc(13.5pt*var(--s));margin-bottom:calc(1.4mm*var(--s))}
+.nm-s18 .nm-wahl .nm-z,.nm-s19 .nm-wahl .nm-z{padding:calc(.6mm*var(--s)) 0}
+.nm-s18 .inhalt,.nm-s19 .inhalt{padding-top:5mm;padding-bottom:5mm}
+.nm-s19 .nm-zwei--liste{margin-top:calc(4.6mm*var(--s))}
+.nm--menus .nm-kopf{margin-bottom:calc(4mm*var(--s))}
+.nm--menus .nm-m{padding:calc(3.6mm*var(--s)) calc(5mm*var(--s))}
+.nm--menus .nm-m__k{margin-bottom:calc(1.8mm*var(--s))}
+.nm--menus .nm-raster{gap:calc(3.6mm*var(--s)) 6mm}
+.blatt.nm.nm--menus p.stern{margin:calc(1mm*var(--s)) 0}
+.blatt.nm--menus .nm-m__k h3{font-size:calc(16pt*var(--s))}.nm--menus .nm-m__k b{font-size:calc(13pt*var(--s));margin-top:calc(.6mm*var(--s))}
+.nm--menus .inhalt{padding-top:5mm;padding-bottom:5mm}
+.nm--hochzeit .inhalt{padding:4mm 15mm 5mm}.nm--hochzeit .ufuss2{margin:0 15mm}
+.blatt.nm--hochzeit .ukasten.nm-pk{margin-top:calc(2.2mm*var(--s));padding:calc(2.8mm*var(--s)) calc(5mm*var(--s)) calc(2.2mm*var(--s))}
+.blatt.nm.nm--hochzeit .ab{line-height:1.34;margin-bottom:calc(1.4mm*var(--s))}
+.blatt.nm--hochzeit .nm-pk__p{padding-top:calc(1mm*var(--s))}
+.nm--hochzeit .nm-fuss2{min-height:calc(29mm*var(--s));margin-top:calc(2.4mm*var(--s))}
+.blatt.nm--hochzeit .nm-fuss2 .ukasten{padding:calc(2.4mm*var(--s)) calc(5mm*var(--s))}
+.blatt.nm--hochzeit .nm-ka h3{font-size:calc(12.5pt*var(--s));margin-bottom:calc(1mm*var(--s))}
+.blatt.nm.nm--hochzeit .ul li{line-height:1.32;margin-bottom:calc(.6mm*var(--s))}
+.nm-deck{background:#2a180a}
+.nm-deck__b{position:absolute;left:0;top:0;width:100%;height:199mm;flex:none;border-radius:0}
+.nm-deck__p{position:absolute;left:0;right:0;bottom:0;height:99mm;background:#2a180a var(--muster) 50% 0/var(--musterb) auto;border-top:.8mm solid #c98543;color:#efe4d3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 18mm 2mm}
+.nm-deck__z{display:block;width:19mm;color:#c98543;margin-bottom:6mm}
+.nm-deck__z svg{display:block;width:100%;height:auto}
+.nm-deck .nm-deck__p h1{font-family:var(--titel);font-weight:var(--tg);font-size:50pt;line-height:1.02;color:#efe4d3}
+.nm-deck__p>i{display:block;width:18mm;height:2px;background:#c98543;margin:6mm 0 5mm}
+.nm-deck .nm-deck__p .nm-deck__u{font-family:'DM Mono',Menlo,monospace;font-size:9pt;letter-spacing:.26em;text-transform:uppercase;color:#f3cd94}
+.nm-deck .nm-deck__p .nm-deck__h{font-family:var(--titel);font-weight:var(--tg);font-size:17pt;letter-spacing:.12em;color:#f3cd94;margin-bottom:3mm}
+.nm-deck .nm-deck__p .nm-deck__h--k{font-family:'Instrument Sans',Arial,sans-serif;font-weight:400;font-size:10pt;letter-spacing:.04em;color:rgba(239,228,211,.86);margin:3.4mm 0 0}
+.nm-deck--15 .nm-deck__p>i{margin-bottom:0}

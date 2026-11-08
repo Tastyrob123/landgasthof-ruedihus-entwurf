@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="de-CH">
+<head><!--demo-weiche--><script src="/_demo/karte.js"></script><script src="/_demo/shim.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontrolle · Studio · Landgasthof Ruedihus</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1f1209">
+<link rel="icon" href="/assets/logo/zeichen.svg">
+<style>
+/* Die Kontrolle braucht nichts vom übrigen Werkzeug: kein studio.css, kein studio.js. Sie muss auch dann gehen, wenn die beiden kaputt sind.
+   Gestaltung wie das Studio (Russ, Papier, Gelasio), Schriften mit Rückfall auf Georgia und das System. */
+@font-face{font-family:'Gelasio';font-weight:700;font-display:swap;src:url('/assets/fonts/gelasio-700.woff2') format('woff2')}
+@font-face{font-family:'Instrument Sans';font-weight:400 600;font-display:swap;src:url('/assets/fonts/InstrumentSans-normal-400_600.woff2') format('woff2')}
+@font-face{font-family:'DM Mono';font-weight:400;font-display:swap;src:url('/assets/fonts/DMMono-normal-400.woff2') format('woff2')}
+:root{--russ:#1f1209;--tinte:#2a1a0e;--papier:#efe4d3;--blatt:#fbf5ea;--balken:#6d431f;--leise:#7a6350;--linie:rgba(42,26,14,.12);--rot:#c42e13;--gelb:#c98a1b;--gruen:#3f6b3a;--blau:#4a6b8a;
+  --titel:'Gelasio',Georgia,'Times New Roman',serif;--sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;--mono:'DM Mono',ui-monospace,Menlo,monospace}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--papier)}
+body{margin:0;color:var(--tinte);font-family:var(--sans);font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased;background:var(--papier)}
+body.eingebettet .nur-seite{display:none}
+.in{max-width:1040px;margin:0 auto;padding:48px clamp(20px,4vw,56px) 110px}
+body.eingebettet .in{padding-top:34px}
+h1{font-family:var(--titel);font-weight:700;font-size:clamp(2.1rem,4vw,3.3rem);line-height:1.06;letter-spacing:-.005em;margin:0}
+h1 em{font-style:normal;color:var(--balken)}
+h2{font-family:var(--titel);font-weight:700;font-size:1.45rem;line-height:1.1;margin:44px 0 16px;display:flex;align-items:baseline;gap:12px}
+h2 span{font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+p{margin:0}
+.kopf{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
+.kopf p{margin-top:12px;max-width:60ch;color:rgba(42,26,14,.74);font-size:16px}
+.kopf__r{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 22px;border-radius:999px;font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;color:var(--tinte);box-shadow:inset 0 0 0 1px rgba(50,31,16,.35);background:none;transition:transform .35s,box-shadow .35s}
+.kn:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--tinte)}
+.kn--dunkel{color:var(--papier);background:linear-gradient(#55361c,#3a2412 55%,#2a180a);box-shadow:inset 0 1px 0 #846046}
+.kn--klein{height:38px;padding:0 16px;font-size:10px}
+.kn[disabled]{opacity:.4;pointer-events:none}
+.ampel{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;padding:24px 28px;border-radius:22px;background:var(--russ);color:var(--papier);margin-bottom:10px}
+.ampel i{width:54px;height:54px;border-radius:50%;display:block;box-shadow:inset 0 2px 4px rgba(0,0,0,.35),0 0 0 6px rgba(239,228,211,.08)}
+.ampel.gruen i{background:radial-gradient(circle at 35% 30%,#8fcf85,#3f6b3a 70%)}
+.ampel.gelb i{background:radial-gradient(circle at 35% 30%,#f3cd94,#c98a1b 70%)}
+.ampel.rot i{background:radial-gradient(circle at 35% 30%,#f09a86,#c42e13 70%)}
+.ampel.grau i{background:radial-gradient(circle at 35% 30%,#bbb,#666 70%)}
+.ampel b{display:block;font-family:var(--titel);font-weight:700;font-size:1.6rem;line-height:1.1}
+.ampel span{display:block;margin-top:6px;color:rgba(239,228,211,.72);font-size:14px}
+.zahlen{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.zahlen b{font-family:var(--titel);font-size:1.1rem;letter-spacing:0;text-transform:none;color:var(--tinte);margin-right:4px}
+.liste{display:grid;gap:10px}
+.punkt{display:grid;grid-template-columns:18px minmax(0,1fr) auto;gap:16px;align-items:start;padding:18px 22px;border-radius:18px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie)}
+.punkt i{width:12px;height:12px;border-radius:50%;margin-top:7px;display:block}
+.punkt.ok i{background:var(--gruen)}.punkt.info i{background:var(--blau)}.punkt.warn i{background:var(--gelb)}.punkt.fehler i{background:var(--rot)}
+.punkt b{display:block;font-size:15.5px;font-weight:600;line-height:1.3}
+.punkt p{margin-top:3px;font-size:14px;color:rgba(42,26,14,.78)}
+.punkt .abhilfe{margin-top:8px;font-size:13.5px;color:var(--leise);display:none}
+.punkt.warn .abhilfe,.punkt.fehler .abhilfe{display:block}
+.punkt .abhilfe b{display:inline;font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);margin-right:6px}
+.punkt details{margin-top:8px;font-size:13px;color:var(--leise)}
+.punkt summary{cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.punkt ul{margin:8px 0 0;padding-left:18px}
+.punkt li{margin:2px 0;overflow-wrap:anywhere}
+.punkt .r{display:grid;gap:8px;justify-items:end}
+.frage{grid-column:1/-1;display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:12px 16px;border-radius:12px;background:rgba(201,138,27,.12);font-size:14px}
+.lex{display:grid;gap:8px}
+.lex details{background:var(--blatt);border-radius:16px;box-shadow:inset 0 0 0 1px var(--linie);padding:14px 20px}
+.lex summary{cursor:pointer;font-weight:600;font-size:15px;list-style:none;display:flex;gap:10px;align-items:center}
+.lex summary::before{content:'';width:8px;height:8px;border-right:1.5px solid var(--leise);border-bottom:1.5px solid var(--leise);transform:rotate(-45deg);transition:transform .25s;flex:none}
+.lex details[open] summary::before{transform:rotate(45deg)}
+.lex dl{margin:12px 0 2px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;font-size:14px}
+.lex dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);padding-top:3px}
+.lex dd{margin:0;color:rgba(42,26,14,.82)}
+.meld{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);padding:12px 18px;border-radius:999px;background:var(--russ);color:var(--papier);font-size:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);opacity:0;transition:opacity .3s;pointer-events:none;max-width:calc(100vw - 40px)}
+.meld.an{opacity:1}
+.hinweis{font-size:13.5px;color:rgba(42,26,14,.74);background:rgba(50,31,16,.06);border-radius:12px;padding:12px 16px}
+.hinweis a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.leer{text-align:center;padding:40px 20px;color:var(--leise)}
+code{font-family:var(--mono);font-size:12.5px}
+@media(max-width:680px){.punkt{grid-template-columns:18px minmax(0,1fr)}.punkt .r{grid-column:2;justify-items:start}.ampel{grid-template-columns:1fr}}
+</style>
+<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+<body>
+<div class="in">
+  <header class="kopf">
+    <div><h1>Kon<em>trolle.</em></h1><p>Prüft das Studio von innen: Server, Dateien, Bau der Seite, Bilder, Zugang. Jeder Punkt sagt, was geprüft wurde und was zu tun ist. Diese Seite braucht nichts vom übrigen Werkzeug und läuft auch, wenn das Studio selbst nicht mehr lädt.</p></div>
+    <div class="kopf__r"><button class="kn" type="button" id="k-neu">Erneut prüfen</button><button class="kn" type="button" id="k-kopie">Bericht kopieren</button><a class="kn kn--dunkel nur-seite" href="/studio/">Zum Studio</a></div>
+  </header>
+  <div class="ampel grau" id="k-ampel"><i></i><div><b>Wird geprüft …</b><span>Einen Moment.</span></div></div>
+  <div class="zahlen" id="k-zahlen"></div>
+  <h2>Server und Daten <span id="k-n1"></span></h2>
+  <div class="liste" id="k-server"><p class="leer">Wird geprüft …</p></div>
+  <h2>Dieser Browser <span id="k-n2"></span></h2>
+  <div class="liste" id="k-browser"></div>
+  <h2>Lexikon aller bekannten Fehlerquellen <span id="k-n3"></span></h2>
+  <p class="hinweis" style="margin-bottom:12px">Jede Fehlerquelle, die das Studio kennt, mit dem Zeichen, an dem man sie erkennt, und dem Weg, sie zu beheben. Die Prüfung oben läuft genau diese Liste durch.</p>
+  <div class="lex" id="k-lex"></div>
+</div>
+<div class="meld" id="k-meld" role="status"></div>
+<script>
+(() => {
+'use strict';
+const $ = s => document.querySelector(s);
+const h = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const EINGEBETTET = /[?&]eingebettet=1/.test(location.search);
+if (EINGEBETTET) document.body.classList.add('eingebettet');
+// Die eine Fehlerquelle, die der Server nicht selbst melden kann: dass er nicht antwortet. Deshalb steht sie hier, nicht nur im Lexikon des Servers.
+const OHNE_SERVER = { id: 'server', titel: 'Server antwortet nicht', text: 'Die Kontrolle erreicht das Studio nicht. Dann lädt auch die Website nicht.',
+  abhilfe: 'Lokal: im Projektordner «python3 serve.py 8917» starten (oder den Rechner neu starten, der Dienst kommt wieder). Online: einige Minuten warten, dann neu laden. Bleibt es so, Robert Bescheid geben.' };
+const FRAGEN = { dateien: 'Beschädigte Dateien werden ersetzt (eine Kopie bleibt als .kaputt liegen). Ein beschädigter Entwurf wird vom Stand neu angelegt, unveröffentlichte Änderungen darin gehen verloren.',
+  verwaist: 'Einträge des Entwurfs, die auf der Seite keine Stelle mehr haben, werden entfernt. Sie wirken ohnehin nirgends.',
+  aufraeumen: 'Hochgeladene Fotos, die weder der Stand, noch der Entwurf, noch ein Eintrag im Verlauf nennt, werden vom Laufwerk gelöscht.',
+  verlauf: 'Beschädigte Einträge des Verlaufs werden in den Ordner _kaputt verschoben. Sie lassen sich danach nicht mehr zurückholen (vorher ging das auch nicht).',
+  live: 'Die veröffentlichte Website wird aus dem veröffentlichten Stand neu geschrieben. Inhaltlich ändert sich nichts.' };
+let ZT = null, LEBT = null, BR = [], LEX = null;
+
+function meld(t) { const m = $('#k-meld'); m.textContent = t; m.classList.add('an'); clearTimeout(meld.t); meld.t = setTimeout(() => m.classList.remove('an'), 3200); }
+async function hole(weg, o) {
+  const r = await fetch(weg, Object.assign({ cache: 'no-store' }, o || {}));
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.fehler || ('Antwort ' + r.status));
+  return j;
+}
+const punktH = (p, lex) => `<div class="punkt ${p.stand}" data-id="${h(p.id)}"><i></i><div><b>${h(p.titel)}</b><p>${h(p.text)}</p>
+  ${lex ? `<p class="abhilfe"><b>Abhilfe</b>${h(lex.abhilfe)}</p>` : (p.abhilfe ? `<p class="abhilfe"><b>Abhilfe</b>${h(p.abhilfe)}</p>` : '')}
+  ${p.mehr && p.mehr.length ? `<details><summary>${p.mehr.length} Einzelheiten</summary><ul>${p.mehr.map(x => `<li>${h(x)}</li>`).join('')}</ul></details>` : ''}</div>
+  <div class="r">${p.aktion ? `<button class="kn kn--klein" type="button" data-aktion="${h(p.aktion)}">${h(p.aktion_name || p.aktion)}</button>` : ''}</div></div>`;
+function ampel(stand, titel, text) { const a = $('#k-ampel'); a.className = 'ampel ' + stand; a.innerHTML = `<i></i><div><b>${h(titel)}</b><span>${h(text)}</span></div>`; }
+const WORT = { gruen: 'Alles in Ordnung.', gelb: 'Läuft, mit Hinweisen.', rot: 'Etwas ist kaputt.' };
+
+function zeichne() {
+  const lexVon = {};
+  (ZT ? ZT.lexikon : []).forEach(l => { lexVon[l.id] = l; });
+  const server = $('#k-server');
+  if (ZT) {
+    server.innerHTML = ZT.punkte.map(p => punktH(p, lexVon[p.id])).join('');
+    $('#k-n1').textContent = String(ZT.punkte.length).padStart(2, '0');
+    const z = ZT.zahl;
+    $('#k-zahlen').innerHTML = `<span><b>${z.ok}</b> in Ordnung</span><span><b>${z.info}</b> Hinweise</span><span><b>${z.warn}</b> Warnungen</span><span><b>${z.fehler}</b> Fehler</span><span>Geprüft ${h(ZT.zeit.slice(11, 16))} Uhr · Fassung ${h(ZT.fassung)}</span>`;
+  }
+  const br = $('#k-browser');
+  br.innerHTML = BR.map(p => punktH(p)).join('');
+  $('#k-n2').textContent = String(BR.length).padStart(2, '0');
+  const alle = (ZT ? ZT.punkte : []).concat(BR).map(p => p.stand);
+  const stand = alle.includes('fehler') ? 'rot' : alle.includes('warn') ? 'gelb' : 'gruen';
+  if (ZT) ampel(stand, WORT[stand], stand === 'gruen' ? 'Jeder Punkt wurde geprüft, nichts hakt.' : 'Die betroffenen Punkte stehen unten mit Abhilfe. Was sich gefahrlos richten lässt, hat einen Knopf.');
+  const lex = $('#k-lex');
+  const ohne = Object.assign({ was: 'Antwortet der Server überhaupt.', woran: OHNE_SERVER.text }, OHNE_SERVER);
+  const eintraege = ZT ? ZT.lexikon : LEX ? [ohne].concat(LEX) : [ohne];
+  lex.innerHTML = eintraege.map(l => `<details><summary>${h(l.titel)}</summary><dl><dt>Geprüft wird</dt><dd>${h(l.was)}</dd><dt>Woran man es merkt</dt><dd>${h(l.woran)}</dd><dt>Abhilfe</dt><dd>${h(l.abhilfe)}</dd></dl></details>`).join('');
+  $('#k-n3').textContent = String(eintraege.length).padStart(2, '0');
+}
+
+async function browserPruefen() {
+  BR = [];
+  const p = (id, stand, titel, text, abhilfe) => BR.push({ id, stand, titel, text, abhilfe });
+  let t0 = performance.now();
+  try {
+    LEBT = await hole('/studio/api/lebt');
+    if (!LEX) hole('/studio/api/lexikon').then(j => { LEX = j.lexikon || null; zeichne(); }).catch(() => {});
+    const ms = Math.round(performance.now() - t0);
+    p('verbindung', ms > 2000 ? 'warn' : 'ok', 'Verbindung zum Studio', `Antwort in ${ms} ms · Studio-Fassung ${LEBT.fassung} · Python ${LEBT.python}${LEBT.probe ? ' · Probe-Instanz' : ''}`, 'Dauert es lange: Rechner oder Leitung ausgelastet, oder der Entwurf wird gerade gebaut.');
+    if (LEBT.zugang === 'kaputt') p('zugang', 'fehler', 'Zugang', 'Die Passwort-Datei ist beschädigt. Anmelden ist unmöglich.', 'Robert löscht inhalt/zugang.json, danach wird beim nächsten Öffnen ein neues Passwort festgelegt.');
+    if (LEBT.zugang === 'offen') p('zugang', 'warn', 'Zugang', 'Das Studio ist gerade ohne Passwort offen.', 'Die Datei «offen» im Datenordner löschen, dann ist der Schutz wieder an.');
+    if (LEBT.bau_fehler) p('bau', 'fehler', 'Bau der Seite', 'Der letzte Bau des Entwurfs ist fehlgeschlagen.', 'Anmelden und oben die Einzelheiten lesen; Aktion «Neu bauen» versuchen.');
+    const uhr = Math.abs(new Date(LEBT.zeit) - new Date()) / 60000;
+    p('uhr', uhr > 5 ? 'warn' : 'ok', 'Uhr von Browser und Server', uhr > 5 ? `Die Uhren gehen ${Math.round(uhr)} Minuten auseinander.` : 'Beide Uhren stimmen überein.', 'Datum und Uhrzeit des Rechners prüfen; der Hinweis für Gäste richtet sich nach dem Datum.');
+  } catch (e) {
+    p('verbindung', 'fehler', OHNE_SERVER.titel, OHNE_SERVER.text + ' (' + e.message + ')', OHNE_SERVER.abhilfe);
+  }
+  const datei = async (weg, name, test) => {
+    try {
+      const r = await fetch(weg, { cache: 'no-store' });
+      const t = await r.text();
+      if (!r.ok) return p(name, 'fehler', name, `${weg} antwortet ${r.status}.`, 'Datei aus der Sicherung (_sicherung/) zurückkopieren.');
+      const m = test(t);
+      p(name, m ? 'fehler' : 'ok', name, m || `${weg} · ${Math.round(t.length / 1024)} kB, in Ordnung.`, m ? 'Datei aus der Sicherung (_sicherung/) zurückkopieren.' : '');
+    } catch (e) { p(name, 'fehler', name, `${weg} lädt nicht (${e.message}).`, OHNE_SERVER.abhilfe); }
+  };
+  await datei('/studio/studio.js', 'Werkzeug (studio.js)', t => { try { new Function(t); return ''; } catch (e) { if (e instanceof EvalError) return t.length > 20000 && /\}\)\(\);?\s*$|\}\s*$/.test(t.trim()) ? '' : 'Das Skript ist unvollständig.'; return 'Das Skript hat einen Fehler: ' + e.message; } });
+  await datei('/studio/studio.css', 'Gestaltung (studio.css)', t => t.includes(':root{') ? '' : 'Die Datei ist nicht die Gestaltung des Studios.');
+  await datei('/assets/logo/zeichen.svg', 'Zeichen des Hauses', t => t.includes('<svg') ? '' : 'Die Datei ist kein Zeichen.');
+  await datei('/index.html', 'Website (Startseite)', t => t.includes('data-e="') || t.includes('data-q="') ? 'Die veröffentlichte Seite trägt Kennzeichen des Entwurfs.' : (t.includes('<html') ? '' : 'Die Antwort ist keine Seite.'));
+  if (LEBT && LEBT.angemeldet) await datei('/entwurf/index.html', 'Entwurf (Startseite)', t => t.includes('data-e="') ? '' : 'Der Entwurf trägt keine Kennzeichen: die Stellen lassen sich im Werkzeug nicht anklicken.');
+  p('browser', navigator.cookieEnabled ? 'ok' : 'fehler', 'Browser', `${navigator.userAgent.replace(/Mozilla\/5\.0 \(|\) .*$/g, '').slice(0, 60)} · ${innerWidth || document.documentElement.clientWidth}×${innerHeight || document.documentElement.clientHeight} · ${navigator.language}${navigator.onLine ? '' : ' · offline'}${navigator.cookieEnabled ? '' : ' · Cookies gesperrt'}`, 'Ohne Cookies bleibt die Anmeldung nicht bestehen. Cookies für diese Adresse erlauben.');
+  let fehler = [];
+  try { fehler = JSON.parse(localStorage.getItem('rh-studio-fehler') || '[]'); } catch (e) {}
+  const heute = new Date().toISOString().slice(0, 10), frisch = fehler.filter(f => (f.zeit || '').slice(0, 10) === heute);
+  p('js-fehler', frisch.length ? 'warn' : 'ok', 'Fehler im Werkzeug (dieser Browser)', frisch.length ? `${frisch.length} heute, zuletzt: ${frisch[frisch.length - 1].wo} · ${frisch[frisch.length - 1].text}` : (fehler.length ? `${fehler.length} ältere Einträge, heute keiner.` : 'Keine Fehler festgehalten.'), 'Seite neu laden. Bleibt es, den Eintrag Robert nennen (Knopf «Bericht kopieren»).');
+  if (fehler.length) BR[BR.length - 1].mehr = fehler.slice().reverse().map(f => `${(f.zeit || '').slice(0, 16).replace('T', ' ')} · ${f.wo} · ${f.text}`);
+  if (fehler.length) BR[BR.length - 1].aktion = 'js-log';
+  if (fehler.length) BR[BR.length - 1].aktion_name = 'Liste leeren';
+}
+
+async function pruefen() {
+  $('#k-neu').disabled = true;
+  ampel('grau', 'Wird geprüft …', 'Einen Moment.');
+  await browserPruefen();
+  ZT = null;
+  if (LEBT && LEBT.angemeldet) {
+    try { ZT = await hole('/studio/api/pruefung'); }
+    catch (e) { $('#k-server').innerHTML = `<p class="hinweis">Die Prüfung auf dem Server ist fehlgeschlagen: ${h(e.message)}</p>`; }
+  } else if (LEBT) {
+    $('#k-server').innerHTML = `<p class="hinweis">Für die vollständige Prüfung der Dateien und des Baus bitte <a href="/studio/">im Studio anmelden</a> und die Kontrolle dann noch einmal öffnen. ${LEBT.zugang === 'fehlt' ? 'Es ist noch kein Passwort festgelegt: das geschieht beim ersten Öffnen des Studios.' : ''}</p>`;
+    ampel(BR.some(x => x.stand === 'fehler') ? 'rot' : BR.some(x => x.stand === 'warn') ? 'gelb' : 'gelb', LEBT.zugang === 'kaputt' ? 'Zugang ist kaputt.' : 'Nicht angemeldet.', 'Der Server antwortet. Die Prüfung der Dateien braucht die Anmeldung.');
+  } else {
+    $('#k-server').innerHTML = `<p class="hinweis">Ohne Server lässt sich hier nichts prüfen. ${h(OHNE_SERVER.abhilfe)}</p>`;
+    ampel('rot', 'Server antwortet nicht.', OHNE_SERVER.text);
+  }
+  zeichne();
+  if (!ZT && LEBT) { /* Ampel bleibt wie oben gesetzt */ } else if (!ZT) ampel('rot', 'Server antwortet nicht.', OHNE_SERVER.text);
+  $('#k-neu').disabled = false;
+}
+
+document.addEventListener('click', async ev => {
+  const b = ev.target.closest('[data-aktion]');
+  if (!b) return;
+  const was = b.dataset.aktion, zeile = b.closest('.punkt');
+  if (was === 'js-log') { try { localStorage.removeItem('rh-studio-fehler'); } catch (e) {} meld('Liste geleert.'); return pruefen(); }
+  if (FRAGEN[was] && !b.dataset.ja) {
+    const alt = zeile.querySelector('.frage');
+    if (alt) alt.remove();
+    zeile.insertAdjacentHTML('beforeend', `<div class="frage"><span>${h(FRAGEN[was])}</span><button class="kn kn--klein kn--dunkel" type="button" data-aktion="${h(was)}" data-ja="1">Ja, ausführen</button><button class="kn kn--klein" type="button" data-weg>Abbrechen</button></div>`);
+    return;
+  }
+  b.disabled = true;
+  try {
+    const r = await hole('/studio/api/reparieren', { method: 'POST', headers: { 'X-Studio': '1', 'Content-Type': 'application/json' }, body: JSON.stringify({ was }) });
+    ZT = r;
+    meld(r.getan || 'Erledigt.');
+    await browserPruefen();
+    zeichne();
+  } catch (e) { meld('Das ging nicht: ' + e.message); b.disabled = false; }
+});
+document.addEventListener('click', ev => { const w = ev.target.closest('[data-weg]'); if (w) w.closest('.frage').remove(); });
+$('#k-neu').addEventListener('click', pruefen);
+$('#k-kopie').addEventListener('click', async () => {
+  const zeilen = ['Kontrolle Studio Landgasthof Ruedihus · ' + new Date().toLocaleString('de-CH') + ' · ' + location.origin];
+  (ZT ? ZT.punkte : []).concat(BR).forEach(p => { zeilen.push(`[${p.stand}] ${p.titel}: ${p.text}`); (p.mehr || []).forEach(m => zeilen.push('    - ' + m)); });
+  const text = zeilen.join('\n');
+  try { await navigator.clipboard.writeText(text); meld('Bericht kopiert. Zum Einfügen in eine Nachricht an Robert.'); }
+  catch (e) { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); try { document.execCommand('copy'); meld('Bericht kopiert.'); } catch (x) { meld('Kopieren ging nicht; der Bericht steht unten zum Markieren.'); t.style.cssText = 'width:100%;height:200px;margin-top:20px'; return; } t.remove(); }
+});
+pruefen();
+})();
+</script>
+<script src="/werkzeuge/demo-aus.js" defer></script></body>
+</html>
