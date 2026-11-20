@@ -34,7 +34,7 @@
 <script>/* Rückfall, falls das Studio nicht startet: die Startseite zeigt sich spätestens nach 5 s (start.js setzt «bereit» sonst selbst, sobald die Fotos da sind) */
 addEventListener('DOMContentLoaded',function(){setTimeout(function(){var s=document.getElementById('start');if(s)s.classList.add('bereit')},5000)});</script>
 <link rel="stylesheet" href="lib/auswahl.css?v=36-rh1">
-<link rel="stylesheet" href="studio.css?v=63-rh1">
+<link rel="stylesheet" href="studio.css?v=64-rh1">
 <link rel="stylesheet" href="ms-bureau.css?v=6-rh1">
 <script>/* Hauseigene Stilschicht (Robert 15./16.10.2026: GBR hell mit Bühne und Schweben wie die übrigen Werkzeuge des Hauses). Ein Haus ohne Eintrag bleibt beim Kern. */
 (function(){var HAUS_STIL={ruedihus:1},h=new URLSearchParams(location.search).get('haus')||'ruedihus';if(!HAUS_STIL[h])return;var b='haeuser/'+h+'/';var o=location.port==='9026'?'/assets/oberflaeche/':'../../assets/oberflaeche/';
@@ -42,7 +42,7 @@ document.write('<link rel="stylesheet" href="'+b+'hell.css?v=14-rh1-qp"><link re
  +'<script src="'+b+'buehne.js?v=3-rh1" defer><\/script>'
  +'<script src="'+b+'feder.js?v=2-rh1" defer><\/script>'
  /* Werkzeug-Oberfläche «Die Bühne» (Werkbank-Chat 17.10.2026): Paket des Hauses, dann die Hausschicht oberflaeche.* (Kopf, Rand, Startbilder wie in den anderen Werkzeugen) */
- +'<link rel="stylesheet" href="'+o+'grund.css?v=1-rh1"><link rel="stylesheet" href="'+o+'rahmen-buehne.css?v=1-rh1"><link rel="stylesheet" href="'+o+'kleid/ruedihus.css?v=5-rh1"><link rel="stylesheet" href="'+b+'oberflaeche.css?v=6-rh1">'
+ +'<link rel="stylesheet" href="'+o+'grund.css?v=1-rh1"><link rel="stylesheet" href="'+o+'rahmen-buehne.css?v=1-rh1"><link rel="stylesheet" href="'+o+'kleid/ruedihus.css?v=7-rh1"><link rel="stylesheet" href="'+b+'oberflaeche.css?v=6-rh1">'
  +'<script src="'+o+'kleid/ruedihus.js?v=2-rh1" defer><\/script><script src="'+o+'oberflaeche.js?v=1-rh1" defer><\/script><script src="'+b+'oberflaeche.js?v=1-rh1" defer><\/script>');})();</script>
 </head>
 <body>

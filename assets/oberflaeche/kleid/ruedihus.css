@@ -100,3 +100,11 @@ wie von Hand geschrieben */
 
 /* Prüfung 20.11.2026: Einträge wurden mit … gekürzt. Sie brechen jetzt um. */
 .wo-rk__t small,.wo-rk__t b{white-space:normal;overflow:visible;text-overflow:clip}.wo-rk__t small{font-size:13px}
+
+/* Prüfung 20.11.2026, Punkt 17: Zähler und Hinweise in der Seitenleiste mindestens 13 px */
+html body .wo-re .wo-zahl{font-size:13px;min-width:26px}html body .wo-re em.wo-rand__z{font-size:13px;letter-spacing:.08em}
+
+/* Prüfung 20.11.2026: Zeile über dem Titel, Kurztexte der Kacheln und Bereichstafeln wurden gekürzt bzw. waren am Handy unter 13 px. */
+html body .wo-sb__zier span{white-space:normal;overflow:visible;text-overflow:clip}
+html body .wo-bk__t>span{display:block;-webkit-line-clamp:unset;overflow:visible}
+html body .wo-ag__t>span{font-size:13px}
