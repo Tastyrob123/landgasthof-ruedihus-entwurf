@@ -1011,3 +1011,6 @@ h2.zw{font-size:28px}
 
 /* Bilder in jeder Liste (Robert 19.10.2026): Google-Texte zeigen das Bild ihrer Seite */
 .karte[data-s] > .kh{margin-bottom:16px}
+
+/* Prüfung 20.11.2026: Unter der schwebenden Leiste unten lief Text als halbe Zeile durch. Ein Streifen in der Farbe der Seite hält den Spalt bis zum Bildrand frei (wie Carlton-Europe). */
+.wo-leiste::after{content:"";position:absolute;left:0;right:-40px;top:100%;height:48px;background:rgb(242,233,220);pointer-events:none}

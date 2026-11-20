@@ -26,3 +26,6 @@
 .re-qliste{position:relative;z-index:1}
 .gs-hinweis .gs-werk__stand{font-size:13px!important;font-weight:600;letter-spacing:.14em;color:#6b4a28!important}
 .gs-hinweis .gs-werk__stand.laeuft{color:#2a1a0e!important}
+
+/* Prüfung 20.11.2026: Unter der schwebenden Leiste unten lief Text als halbe Zeile durch. Ein Streifen in der Farbe der Seite hält den Spalt bis zum Bildrand frei (wie Carlton-Europe). */
+.wo-leiste::after{content:"";position:absolute;left:0;right:-40px;top:100%;height:48px;background:rgb(239,228,211);pointer-events:none}
