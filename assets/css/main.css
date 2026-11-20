@@ -2649,3 +2649,6 @@ html:not(#q1):not(#q2):not(#q3) .schluss h2.d1{font-size:clamp(2rem,3.9vw,3.5rem
   html:not(#q1):not(#q2):not(#q3) .fk__k h3{align-self:center}
   html:not(#q1):not(#q2):not(#q3) .kfrage h3{min-height:2lh;display:flex;align-items:center}
 }
+
+/* Prüfung 20.11.2026: Beim Hereinschweben von der Seite lief die Seite kurz seitlich über den Rand. Seitlich wird jetzt abgeschnitten, ohne Bildlauf. */
+html{overflow-x:clip}
