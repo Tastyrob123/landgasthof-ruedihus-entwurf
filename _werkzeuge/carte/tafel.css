@@ -119,3 +119,6 @@
 
 /* Prüfung 20.11.2026: Unter der schwebenden Leiste unten lief Text als halbe Zeile durch. Ein Streifen in der Farbe der Seite hält den Spalt bis zum Bildrand frei (wie Carlton-Europe). */
 .wo-leiste::after{content:"";position:absolute;left:0;right:-40px;top:100%;height:48px;background:rgb(239,228,211);pointer-events:none}
+
+/* Prüfung 20.11.2026: Einträge wurden mit … gekürzt. Sie brechen jetzt um. */
+html body .r__t span{white-space:normal;overflow:visible;text-overflow:clip}

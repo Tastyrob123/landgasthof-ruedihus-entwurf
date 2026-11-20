@@ -97,3 +97,6 @@ wie von Hand geschrieben */
 .wo-kn--klein{font-size:13px}
 .wo-kn{font-size:13px}
 .wo-kopf .wo-kopf__ber{font-size:13px}
+
+/* Prüfung 20.11.2026: Einträge wurden mit … gekürzt. Sie brechen jetzt um. */
+.wo-rk__t small,.wo-rk__t b{white-space:normal;overflow:visible;text-overflow:clip}.wo-rk__t small{font-size:13px}
