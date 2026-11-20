@@ -1,4 +1,4 @@
-/* Der Gastgeber (La Réception) · Landgasthof Ruedihus. Das Werkzeug des Teams hinter der Rezeption im Chat (Robert 12.10.2026).
+/* Anfragen & Chat · Landgasthof Ruedihus. Das Werkzeug des Teams hinter der Rezeption im Chat (Robert 12.10.2026).
    Eingang: Anfragen, die Gäste im Chat stellen (Zimmer, Tisch, Feier, Tagung), mit Antwortentwurf im Ton des Hauses aus den Mail-Vorlagen.
    Das wurde gefragt: jede Frage an den Chat, nach Themen; wo der Chat keine Antwort hatte, trägt das Team sie einmal nach, ab dann antwortet er damit.
    Server-Teil: _gast/rezeption.py über serve.py (/reception/api/…). Hier wird nichts verschickt. */
@@ -9,7 +9,7 @@ const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&a
 const PF = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg>';
 const ZU = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg>';
 const ZEICHEN = '<img src="zeichen-gold.svg" width="312" height="418" alt="">';
-const STUBE = /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';   // Die Stube: lokal _werkzeuge/maison/, online /maison/ (Falle Doldenhorn 17.10.2026)
+const STUBE = /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';   // Kontrollpanel: lokal _werkzeuge/maison/, online /maison/ (Falle Doldenhorn 17.10.2026)
 const SYM = {
   buch: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.2c2-.8 3.8-.6 5.5.6 1.7-1.2 3.5-1.4 5.5-.6v9.6c-2-.8-3.8-.6-5.5.6-1.7-1.2-3.5-1.4-5.5-.6z"/><path d="M8 3.8v9.6"/></svg>',
   haus: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 7.2 8 2.8l5.5 4.4V13a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/><path d="M6.5 13.5v-4h3v4"/></svg>',
@@ -95,7 +95,7 @@ function rand() {
     { titel: 'Für das Team', eintraege: [e('eingang', 'Eingang', u.anfragen_neu), e('gefragt', 'Das wurde gefragt', u.ohne_antwort), e('nachgetragen', 'Vom Team nachgetragen')]
       .concat(S.wissenDa ? [e('wissen', 'Das weiss der Chat', S.wissenNeu || 0)] : []) }], WEGE);
   const w = $('#rand .wo-rand__wege'), pf = WO.ic('pfeil');
-  if (w) {   // die bisherigen Wege: Chat auf der Website, Zimmermappe, So arbeitet der Chat, Anleitung, Prüfung, Die Stube; dazu «Chat ausprobieren» fürs Handy
+  if (w) {   // die bisherigen Wege: Chat auf der Website, Zimmermappe, So arbeitet der Chat, Anleitung, Prüfung, Kontrollpanel; dazu «Chat ausprobieren» fürs Handy
     w.insertAdjacentHTML('afterbegin', `<a href="../../index.html" target="_blank" rel="noopener">Chat auf der Website${pf}</a><a href="../../mappe.html" target="_blank" rel="noopener">Zimmermappe${pf}</a><a href="../../rezeption/" target="_blank" rel="noopener">So arbeitet der Chat${pf}</a>`);
     w.insertAdjacentHTML('beforeend', `<a href="${STUBE}">${esc(WO.name('zentrale'))}${pf}</a><button class="wo-rand__probe" type="button" data-probe>Chat ausprobieren${WO.ic('chat')}</button>`);
   }
@@ -275,10 +275,10 @@ const BRIEFBILDER = [['haus-fassade', 'Die Fassade mit Geranien'], ['haus-winter
   ['z-himmelbett', 'Himmelbett'], ['z-liebeslaube', 'Liebeslaube'], ['z-hochzeit', 'Hochzeitsstube'], ['z-hymmelrich', 'Hymmelrich'], ['fest-tafel', 'Gedeckt für ein Fest'], ['terrasse', 'Die Terrasse']];
 const SCHRIFT = { serif: 'font-family:var(--serif)', sans: 'font-family:var(--sans)', mono: 'font-family:var(--mono)', cinzel: 'font-family:var(--caps)', versal: 'font-family:var(--caps);letter-spacing:.16em;text-transform:uppercase' };
 const TEXTART = { normal: 'font-style:normal;font-weight:400;text-transform:none;letter-spacing:0', kursiv: 'font-style:italic', versal: 'text-transform:uppercase;letter-spacing:.16em', medium: 'font-weight:500' };
-/* Hauspalette, gleich in La Carte, La Réception und L’Imprimerie (Absprache 16.10.2026) */
+/* Hauspalette, gleich in «Karten & Preislisten», Anfragen & Chat und Drucksachen & Feed (Absprache 16.10.2026) */
 const HFARBE = { navy: '#321f10', blau: '#6d431f', tinte: '#2a1a0e', papier: '#efe4d3', creme: '#d8c2ad', weiss: '#fbf5ea', sand: '#c98543', gold: '#f3cd94', messing: '#b78f51', taupe: '#84603c', rot: '#c42e13' };
 const HNAME = { navy: 'Wandholz', blau: 'Balken', tinte: 'Tinte', papier: 'Papier', creme: 'Leinen', weiss: 'Blatt', sand: 'Kerze', gold: 'Licht', messing: 'Gold', taupe: 'Holz hell', rot: 'Geranie' };
-/* Quelle der Hauspalette: marke.json von L’Imprimerie (gebaut von bau.py des Hauses, nicht von Hand ändern); die Werte oben sind die Abschrift für den Fall, dass sie nicht lädt */
+/* Quelle der Hauspalette: marke.json von «Drucksachen & Feed» (gebaut von bau.py des Hauses, nicht von Hand ändern); die Werte oben sind die Abschrift für den Fall, dass sie nicht lädt */
 if (!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) fetch('../imprimerie/haeuser/ruedihus/marke.json', { cache: 'no-store' }).then(r => r.ok ? r.json() : null).then(m => { if (m && m.farben) { Object.assign(HFARBE, m.farben); Object.assign(HNAME, m.farbnamen || {}); } }).catch(() => {});
 const LFARBE = { taupe: 'rgba(132,96,60,.42)', gold: '#b78f51', navy: '#321f10' };
 const GNAME = { linie1: 'Linie unter dem Kopf', linie2: 'Linie über dem Betreff', linie3: 'Linie über der Fusszeile', zeichen: 'Zeichen', haus: 'Hausname', zeile: 'Unterzeile', an: 'Empfänger', von: 'Absender', betreff: 'Betreff', fuss: 'Fusszeile' };
@@ -373,7 +373,7 @@ function briefMail(a, e) {
   const fotos = nach => bilder.filter(b => b.nach === nach).map(b => { const g = G[b.id] || {}; const w = Math.round(Math.min(560, (g.w || 560) * (g.s || 1)));
     return `<tr><td style="padding:6px 0 18px;${g.al ? 'text-align:' + g.al : 'text-align:center'}"><img src="${basis}assets/img/${b.k}-m.webp" width="${w}" alt="${esc(b.n || '')}" style="display:inline-block;width:${w}px;max-width:100%;height:auto;border:0"></td></tr>`; }).join('');
   const mLinie = (k, pad) => { const g = G[k] || {}; if (g.aus) return ''; const w = g.w ? Math.min(504, g.w) + 'px' : '100%', al = g.al || 'center', farbe = { taupe: '#e2d6bf', gold: '#b78f51', navy: '#321f10' }[g.fb || 'taupe'] || HFARBE[g.fb];
-    return `<tr><td style="padding:${pad};text-align:${al}"><div style="display:inline-block;width:${w};height:${g.st || 1}px;background:${farbe};line-height:1px;font-size:1px">&nbsp;</div></td></tr>`; };
+    return `<tr><td style="padding:${pad};text-align:${al}"><div style="display:inline-block;width:${w};height:${g.st || 1}px;background:${farbe};line-height:1px;font-size:13px">&nbsp;</div></td></tr>`; };
   const serif = "font-family:Gelasio,Georgia,serif;color:#2a1a0e";
   const ab = e.text.split(/\n{2,}/);
   return `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f6ecdc"><tr><td align="center" style="padding:24px 12px">
@@ -387,7 +387,7 @@ function briefMail(a, e) {
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
 ${mLinie('linie1', '22px 0 24px')}
 ${mLinie('linie2', '0 0 14px')}
-<tr><td style="font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#84603c">Betreff</td></tr>
+<tr><td style="font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#84603c">Betreff</td></tr>
 <tr><td style="${st('betreff', 22, serif + ';font-weight:700;color:#2a1a0e;padding:6px 0 22px;line-height:1.2')}">${t(e.betreff)}</td></tr>
 ${fotos('kopf')}
 ${ab.map((x, n) => `<tr><td dir="auto" style="${st('p' + n, 16, "font-family:'Instrument Sans','Helvetica Neue',Helvetica,Arial,sans-serif;color:#3d2a1a;line-height:1.62;padding-bottom:" + (14 + Math.max(0, (G['p' + n] || {}).mb || 0)) + 'px' + (ab.length > 2 && n === ab.length - 1 ? ';padding-top:8px' : ''))}">${t(x)}</td></tr>${fotos('p' + n)}`).join('\n')}
@@ -478,7 +478,7 @@ function verbindeBrief(a) {
     const sel = getSelection(); if (sel && !el.contains(sel.anchorNode)) { const r = document.createRange(); r.selectNodeContents(el); r.collapse(false); sel.removeAllRanges(); sel.addRange(r); }
   };
   const schluss = () => { $$('.gs--schreib', br).forEach(x => { x.contentEditable = 'false'; x.classList.remove('gs--schreib'); }); if (vorher) { lies(); merke(vorher); vorher = null; } };
-  /* Hilfslinien und Einrasten (wie L’Imprimerie: Kanten und Mitten von Papier und anderen Teilen, 7 px; Alt hält das Einrasten aus) */
+  /* Hilfslinien und Einrasten (wie Drucksachen & Feed: Kanten und Mitten von Papier und anderen Teilen, 7 px; Alt hält das Einrasten aus) */
   const linien = l => { $$('.hl', br).forEach(n => n.remove()); const b = br.getBoundingClientRect();
     l.forEach(x => { const n = document.createElement('i'); n.className = 'hl ' + (x.x != null ? 'hl--x' : 'hl--y'); n.style.transform = x.x != null ? `translateX(${x.x - b.left}px)` : `translateY(${x.y - b.top}px)`; br.appendChild(n); }); };
   const fang = (el, r) => {
@@ -595,7 +595,7 @@ function verbindeBrief(a) {
     if ((ev.key === 'Backspace' || ev.key === 'Delete') && (wahl.classList.contains('gs--bild') || wahl.classList.contains('gs--linie'))) { ev.preventDefault(); $('.gs-werk [data-g="weg"]').click(); }
     if (ev.key === 'Enter' && wahl.hasAttribute('data-schreib')) { ev.preventDefault(); schreib(wahl); }
   });
-  /* Seitenleiste «Gestalten» rechts (Robert 16.10.2026: «so ein kleines Side-Menü … was sich öffnet»; gleich in La Carte und L’Imprimerie):
+  /* Seitenleiste «Gestalten» rechts (Robert 16.10.2026: «so ein kleines Side-Menü … was sich öffnet»; gleich in «Karten & Preislisten» und Drucksachen & Feed):
      öffnet sich beim Wählen, schliesst mit × oder Esc, das Dokument rückt nach links. Detail-Einstellungen hier, die Leiste oben bleibt. */
   let altS = null;
   const seite = () => {
@@ -613,7 +613,7 @@ function verbindeBrief(a) {
     const cs = getComputedStyle(wahl), fs = parseFloat(cs.fontSize) || 16, lh = g.lh || Math.round((parseFloat(cs.lineHeight) / fs || 1.4) * 20) / 20;
     const pt = Math.round(fs * .75 * 2) / 2, ls = g.ls != null ? g.ls : Math.round((parseFloat(cs.letterSpacing) || 0) / fs * 100) / 100, op = g.op != null ? g.op : 1;
     const r = wahl.getBoundingClientRect();
-    /* Aufbau wie die Gestalten-Platte in L’Imprimerie (studio.js zeichneEigenschaften): Titel = Art, Gruppen mit Mono-Label, Segmente, runde Marine-Knöpfe, Regler mit Wert */
+    /* Aufbau wie die Gestalten-Platte in «Drucksachen & Feed» (studio.js zeichneEigenschaften): Titel = Art, Gruppen mit Mono-Label, Segmente, runde Marine-Knöpfe, Regler mit Wert */
     const an = x => x ? ' an' : '';
     const kn = (z, v, inhalt, aktiv, tip = '', aus = false) => `<button type="button" class="${aktiv ? 'an' : ''}" data-s="${z}" data-v="${v}" aria-pressed="${!!aktiv}"${tip ? ` title="${tip}" aria-label="${tip}"` : ''}${aus ? ' disabled' : ''}>${inhalt}</button>`;
     const gruppe = (t, inhalt) => `<div class="gs-gruppe"><span class="gs-gruppe__t">${t}</span>${inhalt}</div>`;
@@ -1315,7 +1315,7 @@ function wachen() {   // solange ein Link gelesen wird, alle drei Sekunden nachs
 }
 
 /* ---------- Chat ausprobieren (Robert 16.10.2026: «landet auf der Website und hat keine Ahnung, was man machen soll») ----------
-   Fenster in La Réception: links, was zu tun ist, mit antippbaren Gast-Fragen; rechts eine Seite der Website mit offenem Chat (?probe=1).
+   Fenster in «Anfragen & Chat»: links, was zu tun ist, mit antippbaren Gast-Fragen; rechts eine Seite der Website mit offenem Chat (?probe=1).
    gast.js bleibt unverändert (Vorlage für mehrere Häuser); bedient wird es von hier aus, die Seite liegt auf derselben Adresse.
    Anfragen und Fragen aus der Probe markiert der Server als Beispiel (rezeption.py, Referer ?probe=1). */
 const PROBEFRAGEN = ['Was gibt es bei Ihnen zu essen?', 'Welche Zimmer haben Sie?', 'Kann ich als Gast das Spa benutzen?', 'Habt ihr Fondue?'];
@@ -1380,7 +1380,7 @@ document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#fenst
   catch (e) { $('#tuer').hidden = false; $('#tuer-t').textContent = /^VERBINDUNG · /.test(e.message || '') ? 'Keine Verbindung zum Server-Teil. Bitte gleich neu laden.' : String(e.message || e).replace(/^[A-ZÄÖÜ]+ · /, ''); return; }
   const h = location.hash.slice(1);
   if (/^(localhost|127\.0\.0\.1)$/.test(location.hostname)) try { const l = await api('wissen_links'); S.wissenDa = true; S.wissenNeu = 0; if (l.links.some(x => x.status === 'liest')) wachen(); } catch (e) { S.wissenDa = false; }   // «Das weiss der Chat» gibt es bisher nur lokal (serve.py); online wird gar nicht erst gefragt, sonst steht ein 400 in der Konsole
-  try { S.ansicht = ['start', 'eingang', 'gefragt', 'nachgetragen', 'wissen'].includes(h) ? h : ((/\/maison\/?(index\.html)?([?#].*)?$/.test(document.referrer) && ((performance.getEntriesByType('navigation')[0] || {}).type !== 'reload')) ? (localStorage.removeItem('reception-ansicht'), 'start') : localStorage.getItem('reception-ansicht') || 'start'); }   /* Aus La Maison geöffnet: immer auf der Übersicht anfangen (Robert 16.10.2026), beim Neuladen bleibt die letzte Ansicht */ catch (e) { S.ansicht = 'start'; }
+  try { S.ansicht = ['start', 'eingang', 'gefragt', 'nachgetragen', 'wissen'].includes(h) ? h : ((/\/maison\/?(index\.html)?([?#].*)?$/.test(document.referrer) && ((performance.getEntriesByType('navigation')[0] || {}).type !== 'reload')) ? (localStorage.removeItem('reception-ansicht'), 'start') : localStorage.getItem('reception-ansicht') || 'start'); }   /* Aus «Kontrollpanel» geöffnet: immer auf der Übersicht anfangen (Robert 16.10.2026), beim Neuladen bleibt die letzte Ansicht */ catch (e) { S.ansicht = 'start'; }
   if (!TITEL[S.ansicht] || (S.ansicht === 'wissen' && !S.wissenDa)) S.ansicht = 'start';
   rand(); leiste(); await zeichne();
   window.addEventListener('hashchange', () => { const z = location.hash.slice(1); if (TITEL[z] && z !== S.ansicht) gehe(z); });

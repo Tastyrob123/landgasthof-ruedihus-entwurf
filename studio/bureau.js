@@ -1,4 +1,4 @@
-/* Der Schreibtisch (Le Bureau) · Landgasthof Ruedihus (17.10.2026). Nachbau von Le Bureau des Grand Beau-Rivage (studio/studio.js v25 dort, lokale Fassung,
+/* Website bearbeiten · Landgasthof Ruedihus (17.10.2026). Nachbau von «Website bearbeiten» des Grand Beau-Rivage (studio/studio.js v25 dort, lokale Fassung,
    nur gelesen) über die Fassung des Waldhotels Doldenhorn (gleicher Tag, nur gelesen): jede Funktion und jeder Handgriff gleich, dazu die Zusätze des
    Carlton-Europe (zwei Fenster, Grösse im Browser, Kleine Handys). Das Kleid ist das des Ruedihus (bureau.css). Server-Teil: studio_bureau.py
    (Wege /studio/api/b/…) über studio.py. Was nur das Ruedihus hat (Listen des Hauses: Zimmer, Karten der Website, Anlässe, Stellen und Team,
@@ -17,9 +17,9 @@ const SPRW = { en: 'English', fr: 'Français', it: 'Italiano' };
 const SPR = () => [['', 'Deutsch']].concat(((S.ue && S.ue.sprachen) || []).map(k => [k, SPRW[k] || k]));   // die Website hat zurzeit nur Deutsch
 const ZAHLWORT = { 1: 'Eine', 2: 'Zwei', 3: 'Drei', 4: 'Vier', 5: 'Fünf', 6: 'Sechs', 7: 'Sieben', 8: 'Acht' };
 const WEG = k => (S.ue && S.ue.wege && S.ue.wege[k]) || { website: '/', pruefung: '/studio/pruefung.html', anleitung: '/studio/anleitung/' }[k] || '';
-const CARTE = () => WEG('carte');   // Die Tafel (La Carte) des Hauses: Adresse aus dem Server (anschluss.json), nie geraten
+const CARTE = () => WEG('carte');   // Karten & Preislisten des Hauses: Adresse aus dem Server (anschluss.json), nie geraten
 /* Namen der Werkzeuge in der Welt Landhaus (_Werkzeuge/stamm/welt.js). Für das Ruedihus von Robert noch nicht festgelegt: hier und in studio_bureau.py NAME ändern. */
-const NB = 'Der Schreibtisch', NM = 'Die Stube', NC = 'Die Tafel';
+const NB = 'Website bearbeiten', NM = 'Kontrollpanel', NC = 'Karten & Preislisten';
 /* Listen des Hauses und die frühere Ansicht, in der sie gepflegt werden (alt.html, studio/studio.js LISTEN) */
 const LV = { zimmer: 'zimmer', anlaesse: 'anlaesse', stellen: 'stellen', team: 'stellen', jahre: 'zahlen', gut: 'zahlen', gourmet: 'zahlen', umgebung: 'zahlen', tagesmenu: 'karte', 'bew.balken': 'haus' };
 /* Listen des Hauses je Bereich: stehen im Reiter «Listen» des Bereichs, bearbeitet in der eingebetteten Ansicht des früheren Studios (alt.html) */
@@ -35,7 +35,7 @@ async function api(was, daten) {
   try {
     r = await fetch('/studio/api/b/' + was, daten === undefined ? { cache: 'no-store', credentials: 'same-origin' } : { method: 'POST', credentials: 'same-origin', headers: { 'Content-Type': 'application/json', 'X-Studio': '1' }, body: JSON.stringify(daten) });
   } catch (e) {
-    throw new Error('VERBINDUNG · Keine Verbindung zum Schreibtisch. Ihre Eingaben sind noch da: Verbindung prüfen und noch einmal speichern.');
+    throw new Error('VERBINDUNG · Keine Verbindung zu «Website bearbeiten». Ihre Eingaben sind noch da: Verbindung prüfen und noch einmal speichern.');
   }
   let d = {};
   try { d = await r.json(); } catch (e) { throw new Error('SERVER · Antwort nicht lesbar (' + r.status + ').'); }
@@ -198,7 +198,7 @@ const IC = {
   zurueck: '<path d="M3.4 6.2h6.4a3.4 3.4 0 0 1 0 6.8H6"/><path d="M5.8 3.6 3.2 6.2l2.6 2.6"/>'
 };
 const ic = k => `<svg viewBox="0 0 16 16" aria-hidden="true">${IC[k] || IC.text}</svg>`;
-function kopfLeiste() {   /* Werkzeug-Oberfläche: Kopf aus WO.kopf (Zeichen, die sechs Werkzeuge, Die Stube, Prüfung, Anleitung, Website) */
+function kopfLeiste() {   /* Werkzeug-Oberfläche: Kopf aus WO.kopf (Zeichen, die sechs Werkzeuge, Kontrollpanel, Prüfung, Anleitung, Website) */
   const b = S.ansicht === 'bereich' ? bereich() : null;
   const t = b ? b.name : (TITEL[S.ansicht] || NB);
   const u = S.ue, z = u && u.zuletzt;
@@ -234,7 +234,7 @@ const EXTRA = {
   bilder: ['Für alle Seiten', 'Die <em>Bilder.</em>', 'Jedes Foto der Website an einem Ort, auch Startbild, Seitenköpfe, Fenster und Schlussbild: tauschen, überall wo es steht, und die Beschreibung für Blinde und Google.'],
   karte: ['Karten', 'Karten <em>der Website.</em>', 'Schpiszettel der Chäs- und Wystube, Schpis Charte der Egger- und Stettlerstube und Tagesteller, wie sie auf der Seite «Essen» stehen: Rubrik für Rubrik, Gericht für Gericht mit Preis.'],
   besuche: ['Im Betrieb', 'Besuche <em>& Anfragen.</em>', 'Was Gäste auf der Website anklicken: Zimmer, Tischanfragen, Gutscheine, Buchen. Ohne Kekse, ohne Namen.'],
-  zugang: ['Sicher', 'Ihr <em>Zugang.</em>', 'Passwort und Anmeldung. Bei der Auslieferung an das Haus wird der Schreibtisch mit Anmeldung und Passwort geschützt.'],
+  zugang: ['Sicher', 'Ihr <em>Zugang.</em>', 'Passwort und Anmeldung. Bei der Auslieferung an das Haus wird «Website bearbeiten» mit Anmeldung und Passwort geschützt.'],
   zimmer: ['Listen des Hauses', 'Zimmer <em>& Preise.</em>', 'Die vier Zimmer mit Satz, Preis, Belegung und Fotos.'],
   anlaesse: ['Listen des Hauses', '<em>Anlässe.</em>', 'Die Anlässe im Jahreslauf, auf «Durchs Jahr» und auf «Essen».'],
   stellen: ['Listen des Hauses', 'Stellen <em>& Team.</em>', 'Die offenen Stellen und die Zahlen zum Team auf «Das Haus».'],
@@ -243,7 +243,7 @@ const EXTRA = {
 };
 function zeichneExtra(name, listen) {
   const x = EXTRA[name] || [NB, esc(name), ''];
-  const tafel = CARTE() && (name === 'karte' || ALT_B(listen) === 'karte') ? '&tafel=1' : '';   // Die Tafel angeschlossen: dort nur noch das Tagesmenu (studio.js TAFEL)
+  const tafel = CARTE() && (name === 'karte' || ALT_B(listen) === 'karte') ? '&tafel=1' : '';   // Karten & Preislisten angeschlossen: dort nur noch das Tagesmenu (studio.js TAFEL)
   const ziel = listen ? `/studio/alt.html?eingebettet=1${tafel}#/${ALT_B(listen)}` : `/studio/alt.html?eingebettet=1${tafel}#/${name}`;
   const html = `<div class="einbett"><iframe id="ein-f" title="${esc(TITEL['x:' + name] || name || 'Listen')}" src="${ziel}"></iframe><div class="lade-schleier">Wird geladen …</div></div>`;
   if (listen) return html;
@@ -280,7 +280,7 @@ function start() {
     `<div class="wo-lage">
       <div class="wo-lg"><i class="wo-lg__z">${ic('stift')}</i><span class="wo-mk">Entwurf</span><b>${u.aenderungen ? u.aenderungen + ' Änderung' + (u.aenderungen > 1 ? 'en warten' : ' wartet') : 'Nichts offen'}</b><p>${u.aenderungen ? 'Gespeichert, noch nicht auf der Website.' : 'Was Sie speichern, sammelt sich hier.'}</p>${u.aenderungen ? '<button class="wo-lk" type="button" data-gehe="entwurf">Ansehen und veröffentlichen</button>' : ''}</div>
       <div class="wo-lg"><i class="wo-lg__z">${ic('welt')}</i><span class="wo-mk">Website</span><b>${u.zuletzt ? 'Veröffentlicht ' + datum(u.zuletzt.zeit).split(',')[0] : 'Wie gebaut'}</b><p>${u.seiten} Seiten auf Deutsch.${u.zuletzt && u.zuletzt.notiz ? ' Zuletzt: ' + esc(u.zuletzt.notiz) : ''}</p><a class="wo-lk" href="${WEG('website')}" target="_blank" rel="noopener">Website öffnen</a></div>
-      <div class="wo-lg"><i class="wo-lg__z">${ic('karte')}</i><span class="wo-mk">Karten</span><b>${mc.filter(k => k.entwurf).length ? mc.filter(k => k.entwurf).length + ' Karte im Entwurf' : mc.length ? (ZAHLWORT[mc.length] || mc.length) + ' Karten in der Tafel' : (ZAHLWORT[kw.length] || kw.length) + ' Karten auf der Website'}</b><p>Schpiszettel, Schpis Charte und Tagesteller, Zeile für Zeile mit Preis.</p><button class="wo-lk" type="button" data-gehe="karten">Zu den Karten</button></div>
+      <div class="wo-lg"><i class="wo-lg__z">${ic('karte')}</i><span class="wo-mk">Karten</span><b>${mc.filter(k => k.entwurf).length ? mc.filter(k => k.entwurf).length + ' Karte im Entwurf' : mc.length ? (ZAHLWORT[mc.length] || mc.length) + ' Karten' : (ZAHLWORT[kw.length] || kw.length) + ' Karten auf der Website'}</b><p>Schpiszettel, Schpis Charte und Tagesteller, Zeile für Zeile mit Preis.</p><button class="wo-lk" type="button" data-gehe="karten">Zu den Karten</button></div>
     </div>
     <h2 class="wo-zw">Häufig <em>gebraucht</em></h2>
     <div class="wo-aufg">${AUFG.map(([z, t, s, k, f]) => `<button class="wo-ag" type="button" data-gehe="${z}"><span class="wo-ag__b"><img src="/assets/img/${f}-s.webp" alt="" loading="lazy" decoding="async"></span><span class="wo-ag__t"><i class="wo-ag__z">${ic(k)}</i><b>${t}</b><span>${s}</span></span></button>`).join('')}</div>
@@ -686,7 +686,7 @@ async function zeichneZahlen() {
       } else vormerken(key, { art: 'text', seite: s.seite, h: s.h, n: s.n, neu: s.art === 'el' ? esc(t) : t, ueberall: ue, vorschau: t });
     };
   });
-  $$('[data-zur-liste]').forEach(b => b.onclick = () => b.dataset.zurListe === 'karte' && CARTE() ? window.open(CARTE(), '_blank') : gehe('x:' + b.dataset.zurListe));   // Karten: zur Tafel, sobald sie angeschlossen ist
+  $$('[data-zur-liste]').forEach(b => b.onclick = () => b.dataset.zurListe === 'karte' && CARTE() ? window.open(CARTE(), '_blank') : gehe('x:' + b.dataset.zurListe));   // Karten: zu «Karten & Preislisten», sobald sie angeschlossen ist
   $$('[data-zeig]').forEach(b => b.onclick = () => { const [seite, h, n] = b.dataset.zeig.split('|'); const be = bereichVon(seite); gehe('b:' + be.key, { seite, wahl: { h, n: +n } }); });
   blickVorschau();
 }
@@ -767,13 +767,13 @@ function ersetzeText(html, alt, neu) {
   return h;
 }
 
-/* ---------- Karten (La Carte) ---------- */
+/* ---------- Karten (Karten & Preislisten) ---------- */
 function karten() {
   const K = S.ue.karten || {}, mc = K.karten || [], kw = K.website || [];
   const BILD = { k1: 'e-plaettli', k2: 'e-roesti', k3: 'e-terrine' };
   return kopf('Karten', 'Die <em>Karten.</em>', 'Der Schpiszettel der Chäs- und Wystube, die Schpis Charte der Egger- und Stettlerstube und der Tagesteller stehen auf der Seite «Essen» als Listen mit Preis. Sie pflegen sie Zeile für Zeile unter «Karten der Website». Gedruckte Karten und PDFs macht ' + NC + '.',
     `${CARTE() ? `<a class="kn" href="${CARTE()}" target="_blank" rel="noopener">${NC} öffnen<i>${PF}</i></a>` : ''}<button class="kn${CARTE() ? ' kn--linie' : ''}" type="button" data-gehe="x:karte">Karten der Website<i>${PF}</i></button>`) +
-    (K.fehler ? `<div class="leer-hinweis"><b>${CARTE() ? NC + ' antwortet nicht.' : NC + ' ist noch nicht angeschlossen.'}</b>${CARTE() ? esc(K.fehler) : 'Die gedruckten Karten und ihre PDFs bekommen ein eigenes Werkzeug. Bis es am Schreibtisch angeschlossen ist, pflegen Sie die Karten der Website hier, die PDFs stehen unter «Angaben des Hauses».'}</div>` : '') +
+    (K.fehler ? `<div class="leer-hinweis"><b>${CARTE() ? NC + ' antwortet nicht.' : NC + ' ist noch nicht angeschlossen.'}</b>${CARTE() ? esc(K.fehler) : 'Die gedruckten Karten und ihre PDFs bekommen ein eigenes Werkzeug. Bis es an «Website bearbeiten» angeschlossen ist, pflegen Sie die Karten der Website hier, die PDFs stehen unter «Angaben des Hauses».'}</div>` : '') +
     (mc.length ? `<div class="kt-flaeche">${mc.map((k, i) => `<a class="kt" style="--i:${i};--r:${[-2.5, 1.8, -1.2, 2.4, -1.8][i % 5]}deg" href="${CARTE()}#${esc(k.ziel)}" target="_blank" rel="noopener"><span class="kt__b"><img src="/assets/img/stube-kerze-s.webp" alt="" loading="lazy" decoding="async"></span><b>${esc(k.name)}</b><small>${esc(k.gruppe || 'Karte')} · PDF vom ${esc((k.pdf_zeit || '–').split(' ')[0])}</small>${k.entwurf ? '<em>Entwurf wartet</em>' : ''}</a>`).join('')}</div>` : '') +
     `<h2 class="zw">Auf der <em>Website</em></h2>
     <div class="kt-flaeche">${kw.map((k, i) => `<button class="kt" type="button" data-gehe="x:karte" style="--i:${i};--r:${[-2.5, 1.8, -1.2, 2.4, -1.8][i % 5]}deg"><span class="kt__b"><img src="/assets/img/${BILD[k.key] || 'stube-kerze'}-s.webp" alt="" loading="lazy" decoding="async"></span><b>${esc(k.titel)}</b><small>${esc(k.unter || 'Essen')} · ${k.rubriken} Rubrik${k.rubriken === 1 ? '' : 'en'} · ${k.zeilen} Zeile${k.zeilen === 1 ? '' : 'n'}</small></button>`).join('')}</div>
@@ -864,7 +864,7 @@ async function zeichneSprachen() {
         return `<div class="ue__sp"><label for="ue-${i}-${sp}">${SPNAME[sp] || sp}</label><input id="ue-${i}-${sp}" type="text" data-sp="${sp}" value="${esc(op ? op.ue : x.wert)}" placeholder="${x.haus ? esc(x.haus) : 'steht deutsch, bis hier etwas steht'}">${x.haus ? '<small>Schon übersetzt (aus dem Wörterbuch der Website).</small>' : x.alt ? `<small>Bisher: ${esc(x.alt)}</small>` : ''}</div>`;
       }).join('')}</section>`).join('')
       : `<div class="leer-hinweis"><b>${SP.length ? 'Nichts zu übersetzen.' : 'Nur Deutsch, nichts zu übersetzen.'}</b>${SP.length ? 'Sobald Sie einen Text auf Deutsch ändern und speichern, steht er hier mit einem Feld je Sprache.' : 'Kommt Englisch oder Französisch dazu, läuft es so:'}</div>
-      <div class="ue-weg">${[['stift', 'Auf Deutsch ändern', 'Im Schreibtisch einen Satz der Website neu schreiben und speichern.'],
+      <div class="ue-weg">${[['stift', 'Auf Deutsch ändern', 'In «Website bearbeiten» einen Satz der Website neu schreiben und speichern.'],
         ['sprache', 'Hier übersetzen', 'Der Satz erscheint hier, mit einem Feld je Sprache der Website.'],
         ['welt', 'Gäste lesen ihn', 'Wer die Website in einer anderen Sprache öffnet, liest Ihre Übersetzung.']].map(([k, t, x], i) => `<div class="ue-weg__s" style="--i:${i}"><i>${ic(k)}</i><b>${t}</b><span>${x}</span></div>`).join('')}</div>
       <section class="karte ue ue--bsp" aria-label="Beispiel"><div class="ue-wo"><img src="/assets/img/stube-lang-s.webp" alt=""><div><small>Steht auf der Website</small><b>Essen · Restaurant</b><span>Gäste, die die Seite in einer anderen Sprache öffnen, lesen die Zeile aus dem Feld ihrer Sprache.</span></div></div><span class="mono">Beispiel · Essen · Restaurant</span><div class="ue__de">Das Restaurant ist von 11:30 bis 22:00 Uhr geöffnet.</div><div class="ue__vor">Vorher: Das Restaurant ist von 11:30 bis 21:00 Uhr geöffnet.</div>
@@ -974,7 +974,7 @@ async function zeichneVerlauf() {
           ['Freitag, 24. Oktober, 09.05 Uhr', '1 Änderung · Foto der Chäs- und Wystube getauscht', ''],
           ['Montag, 20. Oktober, 11.40 Uhr', '5 Änderungen · Metzgete im November, Preis der Gärschtesuppe', '']].map(([z, t, m], i) => `<div class="vl"><i class="vl__z">${ic(i ? 'zurueck' : 'welt')}</i><div><b>${z}</b><span>${t}</span></div>${m ? `<em class="vl__m">${m}</em>` : ''}<span class="kn kn--linie kn--klein" aria-disabled="true">In den Entwurf holen<i>${PF}</i></span></div>`).join('')}
           <p class="leise vl-bsp__satz">Eine ältere Fassung zurückholen: Sie kommt zuerst in den Entwurf. Dort sehen Sie vorher und nachher und veröffentlichen erst, wenn alles stimmt.</p></div>`) +
-    `<div class="vl vl--ursprung"><div><b>Ursprünglicher Stand</b><span>Die Website, wie Tasty Studios sie gebaut hat, ohne jede Änderung im Schreibtisch.</span></div><button class="kn kn--linie kn--klein" type="button" data-id="ursprung">In den Entwurf holen<i>${PF}</i></button></div>`;
+    `<div class="vl vl--ursprung"><div><b>Ursprünglicher Stand</b><span>Die Website, wie Tasty Studios sie gebaut hat, ohne jede Änderung in «Website bearbeiten».</span></div><button class="kn kn--linie kn--klein" type="button" data-id="ursprung">In den Entwurf holen<i>${PF}</i></button></div>`;
   $$('[data-id]').forEach(b => b.onclick = async () => {
     try { const r = await api('zurueckholen', { id: b.dataset.id }); S.offen = {}; await frisch(false); gehe('entwurf'); quit('Im Entwurf', `${r.offen} Änderung${r.offen === 1 ? '' : 'en'} gegenüber der Website. Prüfen, dann veröffentlichen.`, [], false, 6000); } catch (e) { fehler(e); }
   });
@@ -1000,7 +1000,7 @@ function fensterZu() { $('#fenster').hidden = true; $('#fenster').innerHTML = ''
     window.bureauMerk && window.bureauMerk('Start: ' + (e.message || e));
     return;
   }
-  /* Aus La Maison / Der Stube geöffnet: immer auf der Übersicht anfangen (Robert 16.10.2026), beim Neuladen bleibt die letzte Ansicht */
+  /* Aus «Kontrollpanel» / Der Stube geöffnet: immer auf der Übersicht anfangen (Robert 16.10.2026), beim Neuladen bleibt die letzte Ansicht */
   if ((/\/maison\/?(index\.html)?([?#].*)?$/.test(document.referrer) && ((performance.getEntriesByType('navigation')[0] || {}).type !== 'reload'))) try { localStorage.removeItem('bureau-ansicht'); } catch (e) { /* privat */ }
   else try { const m = JSON.parse(localStorage.getItem('bureau-ansicht') || 'null'); if (m) { S.ansicht = m.a || 'start'; S.bereich = m.b || ''; S.seite = m.s || ''; } } catch (e) { /* privat */ }
   if (S.ansicht === 'bereich' && !S.ue.bereiche.some(b => b.key === S.bereich)) S.ansicht = 'start';

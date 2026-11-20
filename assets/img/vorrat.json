@@ -1,0 +1,192 @@
+{
+ "motive": 73,
+ "rest": [
+  {
+   "name": "v-04",
+   "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035539_m.jpg",
+   "original": [
+    2496,
+    1664
+   ],
+   "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-07",
+   "quelle": "ruedihus/extern/myswitzerland/myswitzerland-00035542_m.jpg",
+   "original": [
+    1200,
+    900
+   ],
+   "rechte": "Schweiz Tourismus / HotellerieSuisse, vom Haus geliefert",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-11",
+   "quelle": "ruedihus/extern/booking/booking-18412939.jpg",
+   "original": [
+    881,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-13",
+   "quelle": "ruedihus/extern/booking/booking-18413005.jpg",
+   "original": [
+    1614,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-16",
+   "quelle": "ruedihus/extern/booking/booking-32302985.jpg",
+   "original": [
+    1625,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-17",
+   "quelle": "ruedihus/extern/booking/booking-32303000.jpg",
+   "original": [
+    1614,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-19",
+   "quelle": "ruedihus/extern/booking/booking-32311364.jpg",
+   "original": [
+    1620,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-29",
+   "quelle": "ruedihus/extern/booking/booking-336066708.jpg",
+   "original": [
+    1620,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-30",
+   "quelle": "ruedihus/extern/booking/booking-336066710.jpg",
+   "original": [
+    1620,
+    1080
+   ],
+   "rechte": "Booking.com, vom Haus eingestellt",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-32",
+   "quelle": "ruedihus/extern/wikipedia-commons/Kandersteg01.jpg",
+   "original": [
+    1492,
+    1052
+   ],
+   "rechte": "Wikimedia Commons, freie Lizenz mit Namensnennung (herkunft.json)",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-43",
+   "quelle": "website/mediathek/225849_P1215859-scaled.jpg",
+   "original": [
+    2560,
+    1707
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "Tal mit Wasserfall, Umgebung",
+   "fassungen": 1
+  },
+  {
+   "name": "v-44",
+   "quelle": "website/mediathek/225850_P1215860-scaled.jpg",
+   "original": [
+    2560,
+    1707
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "Blumenwiese, Umgebung",
+   "fassungen": 1
+  },
+  {
+   "name": "v-45",
+   "quelle": "website/mediathek/225851_P1215879-scaled.jpg",
+   "original": [
+    2560,
+    1707
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "Weg ins Tal, Umgebung",
+   "fassungen": 1
+  },
+  {
+   "name": "v-46",
+   "quelle": "website/mediathek/225854_P1142479-scaled.jpg",
+   "original": [
+    2560,
+    1707
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "kleines Holzhaus in der Wiese, vermutlich Hymmelrich",
+   "fassungen": 2
+  },
+  {
+   "name": "v-49",
+   "quelle": "website/mediathek/225928_5.jpg",
+   "original": [
+    1920,
+    1080
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "",
+   "fassungen": 1
+  },
+  {
+   "name": "v-55",
+   "quelle": "website/mediathek/226267_BE_Doldenhorn-KanderstegHUG_1270-min-scaled.jpeg",
+   "original": [
+    2560,
+    1678
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "Teller, Datei nennt nur «Doldenhorn-Kandersteg»",
+   "fassungen": 1
+  },
+  {
+   "name": "v-73",
+   "quelle": "website/mediathek/226815_b7375d8b-7f52-4a03-957e-5aa16ba45744.jpg",
+   "original": [
+    1022,
+    766
+   ],
+   "rechte": "Website des Hauses, Mediathek",
+   "hinweis": "",
+   "fassungen": 1
+  }
+ ]
+}

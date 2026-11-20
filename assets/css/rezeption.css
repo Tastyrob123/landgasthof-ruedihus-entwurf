@@ -1,5 +1,5 @@
 /* Seite «Rezeption im Chat» des Landgasthof Ruedihus (gast_landing.py, Vorlage _gast_landing/rezeption.css). Nicht hier ändern. */
-.rz{--rz-dunkel:var(--russ);--rz-zwei:var(--holz);--rz-tief:var(--tief);--rz-karte:var(--karte);--rz-akzent:var(--licht);--rz-akzent-hell:var(--balken);--rz-linie:243,205,148;--rz-blase:#4a2e17;--rz-antwort:#2e1c0e;--rz-gold:var(--kerze);--rz-tapete:url(../img/butzen-07.png?v=c43612cd);--rz-tapete-gr:56px 56px;--rz-tapete-op:.9}
+.rz{--rz-dunkel:var(--russ);--rz-zwei:var(--holz);--rz-tief:var(--tief);--rz-karte:var(--karte);--rz-akzent:var(--licht);--rz-akzent-hell:var(--balken);--rz-linie:243,205,148;--rz-blase:#4a2e17;--rz-antwort:#2e1c0e;--rz-gold:var(--kerze);--rz-tapete:url(../img/butzen-07.png);--rz-tapete-gr:56px 56px;--rz-tapete-op:.9}
 /* Seite «Rezeption im Chat» der Schwesterhäuser. Baut auf main.css des Hauses auf (Schriften, Knöpfe .kn, .wrap, .hell, .d1/.d2, Muster).
    Die Farben kommen aus dem Kopf, den gast_landing.py je Haus davorsetzt (--rz-…). Bewegt wird nur über transform und opacity. */
 body.rz{background:var(--rz-dunkel);color:var(--papier)}

@@ -604,7 +604,7 @@
     const M = DS.M, B = M.bilder || [], T = DS.LIVRE_TEXT, L = !!M.livre;
     const gr = ['Alle', ...(L ? Object.values(T.b).filter(g => B.some(b => b.gruppe === g)) : [...new Set(B.map(b => b.gruppe))])];
     $('#fotoZahl').textContent = B.length;
-    $('#fotoSatz').textContent = L ? `${B.length} Fotos aus dem Hausbuch, dem Markenbuch des Hauses: ${B.filter(b => b.herkunft === 'haus').length} vom Haus, ${B.filter(b => b.herkunft === 'frei').length} frei lizenziert, ${B.filter(b => b.ki).length} mit KI erzeugt. Ein Foto wählen, das Studio baut das Medium darum herum.`
+    $('#fotoSatz').textContent = L ? `${B.length} Fotos aus «Markenbuch», dem Markenbuch des Hauses: ${B.filter(b => b.herkunft === 'haus').length} vom Haus, ${B.filter(b => b.herkunft === 'frei').length} frei lizenziert, ${B.filter(b => b.ki).length} mit KI erzeugt. Ein Foto wählen, das Studio baut das Medium darum herum.`
       : `${B.length} Fotos des Hauses. Ein Foto wählen, das Studio baut das Medium darum herum.`;
     const reihe = (art, titel, werte) => `<div class="fo-reihe"><span class="fo-reihe__t">${titel}</span>${[['alle', 'Alle'], ...werte].map(([k, t]) => `<button data-f${art}="${k}" class="${fotoF[art] === k ? 'an' : ''}">${esc(t)}</button>`).join('')}</div>`;
     $('#fotoGruppen').innerHTML = `<div class="fo-reihe">${L ? '<span class="fo-reihe__t">Bereich</span>' : ''}${gr.map(g => `<button data-fgruppe="${esc(g)}" class="${g === fotoGruppe ? 'an' : ''}">${esc(g)}</button>`).join('')}</div>`
@@ -624,8 +624,8 @@
     const L = M.livre, LS = DS.livreSeite();
     const livreFarben = L ? `<div class="mb__p"><h3>Farben</h3><div class="mb__farben">${L.farben.map(c => `<span title="${esc(c.r || '')}"><i style="background:${c.h}"></i><b>${esc(c.n)}</b><small>${esc(c.h)}</small></span>`).join('')}</div></div>` : '';
     const livreDateien = L ? `<div class="mb__p mb__p--dateien"><h3>Logo, Zeichen, Wortmarke, Tapete</h3><div class="mb__dateien">${L.dateien.filter(d => d.var && d.var.length && d.var[0].dateien.some(x => /\.(svg|png|webp|jpe?g)$/i.test(x))).map(d => { const v = d.var[0], datei = v.dateien.find(x => x.endsWith('.svg')) || v.dateien[0]; return `<a class="mb__datei ${v.grund === 'dunkel' ? 'mb__datei--d' : ''}" href="${DS.livreUrl('dateien/')}${encodeURIComponent(v.dateien[v.dateien.length - 1])}" download><span${d.k === 'tapete' ? ` style="background-image:url('${DS.livreUrl('dateien/')}${encodeURIComponent(datei)}')"` : ''}>${d.k === 'tapete' ? '' : `<img src="${DS.livreUrl('dateien/')}${encodeURIComponent(datei)}" alt="" loading="lazy">`}</span><b>${esc({ logo: 'Logo', quer: 'Logo quer', zeichen: 'Zeichen', wortmarke: 'Wortmarke', tapete: 'Tapete' }[d.k] || d.k)}</b><small>${d.var.length} ${d.var.length === 1 ? 'Fassung' : 'Fassungen'}</small></a>`; }).join('')}</div></div>` : '';
-    $('#msMarke').innerHTML = `<div class="ms-titel"><h1>Marke des Hauses</h1><span class="ms-leise">${L ? 'Aus dem Hausbuch, dem Markenbuch des Hauses. ' : ''}Jedes Medium entsteht aus diesen Farben, Schriften, Zeichen und Fotos. Niemand muss sie kennen, das Studio hält sich daran.</span></div>
-      <a class="mb-livre" href="${LS}" target="_blank" rel="noopener"><span class="mb-livre__z">${DS.zeichenSvg(M, 'currentColor')}</span><span><b>Das Hausbuch öffnen</b><small>Das Markenbuch: alle ${L ? L.fotos.length : (M.bilder || []).length} Fotos in jeder Grösse, Logos, Farben, Tapete und die Markenprüfung</small></span><i>${PFEIL_SVG}</i></a>
+    $('#msMarke').innerHTML = `<div class="ms-titel"><h1>Marke des Hauses</h1><span class="ms-leise">${L ? 'Aus «Markenbuch», dem Markenbuch des Hauses. ' : ''}Jedes Medium entsteht aus diesen Farben, Schriften, Zeichen und Fotos. Niemand muss sie kennen, das Studio hält sich daran.</span></div>
+      <a class="mb-livre" href="${LS}" target="_blank" rel="noopener"><span class="mb-livre__z">${DS.zeichenSvg(M, 'currentColor')}</span><span><b>Markenbuch öffnen</b><small>Markenbuch: alle ${L ? L.fotos.length : (M.bilder || []).length} Fotos in jeder Grösse, Logos, Farben, Tapete und die Markenprüfung</small></span><i>${PFEIL_SVG}</i></a>
       <div class="mb">
         <div class="mb__p mb__p--zeichen"><span class="mb__z">${DS.zeichenSvg(M, 'currentColor')}</span><b>${esc(M.voll || M.name)}</b><small>${esc(M.zeile || '')}</small></div>
         ${L ? livreFarben : `<div class="mb__p"><h3>Farben</h3><div class="mb__farben">${Object.entries(F).map(([k, c]) => `<span><i style="background:${c}"></i><b>${esc(N[k] || k)}</b><small>${c}</small></span>`).join('')}</div></div>`}
@@ -1070,11 +1070,11 @@
     s.addEventListener('pointerleave', () => { if (kippt) loese(kippt); kippt = null; });
     $('#msKopfZeichen').innerHTML = DS.zeichenSvg(DS.M, 'currentColor');
     addEventListener('resize', () => { if (!s.hidden) gleite(); });
-    if (!q.has('demo') && !q.has('hilfe')) { zeige(); if (q.has('foto')) ausLivre(q); }   // jedes Öffnen beginnt auf der Startseite mit der Bibliothek (Robert 12.10.2026); aus Le Livre mit dem Foto
+    if (!q.has('demo') && !q.has('hilfe')) { zeige(); if (q.has('foto')) ausLivre(q); }   // jedes Öffnen beginnt auf der Startseite mit der Bibliothek (Robert 12.10.2026); aus «Markenbuch» mit dem Foto
 
     document.documentElement.classList.remove('start-gleich');
   }
-  /* Aus Le Livre hinüber (?foto=<key>&art=insta|story&x=&y=): fünf Gestaltungen mit diesem Foto und dem Ausschnitt aus Le Livre,
+  /* Aus «Markenbuch» hinüber (?foto=<key>&art=insta|story&x=&y=): fünf Gestaltungen mit diesem Foto und dem Ausschnitt aus «Markenbuch»,
      sofort und ohne KI; «Fünf neue Entwürfe» lässt danach die KI Texte dazu schreiben. */
   function ausLivre(q) {
     const k = q.get('foto'), b = DS.M.bildIndex[k]; if (!b) return false;
@@ -1086,7 +1086,7 @@
       d.seiten.forEach(s => s.el.forEach(e => { if (e.typ === 'bild' && e.bild === k) { e.fx = x; e.fy = y; } }));
       d.variante = titel; d.hinweise = b.ki ? [DS.LIVRE_TEXT.ki] : []; return d;
     });
-    const satz = `Foto aus dem Hausbuch: ${b.alt}`;
+    const satz = `Foto aus «Markenbuch»: ${b.alt}`;
     const nochmal = async () => {
       zu();
       const r = await st().entwerfen({ auftrag: `${fmt === 'story' ? 'Instagram-Story' : 'Instagram-Beitrag'} mit dem Foto «${b.alt}» (Schlüssel ${k}) als Hauptbild`, format: fmt, anzeige: satz, varianten: true });

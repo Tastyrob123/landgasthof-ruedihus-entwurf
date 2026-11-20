@@ -1,5 +1,5 @@
-/* L’Imprimerie des Landgasthof Ruedihus: Bühne über jeder Ansicht und Knopf zurück zu La Maison (Robert 15.10.2026).
-   «Heroes richtig schön, geil, luxuriös, edel», Vorbild Le Bureau der Häuser: blaue Tafel mit Tapete, Goldrahmen innen,
+/* Drucksachen & Feed des Landgasthof Ruedihus: Bühne über jeder Ansicht und Knopf zurück zu «Kontrollpanel» (Robert 15.10.2026).
+   «Heroes richtig schön, geil, luxuriös, edel», Vorbild Website bearbeiten der Häuser: blaue Tafel mit Tapete, Goldrahmen innen,
    Foto des Hauses rechts mit weichem Übergang, Titel links. Gleiche Sprache wie Grand Beau-Rivage/website/studio/buehne.js.
    «In allen Tools zurück in die Maison kommen» → runder Knopf mit Haus in beiden Kopfzeilen.
    Nur für dieses Haus geladen (index.html, HAUS_STIL). Entfernen = vorheriger Stand. */
@@ -8,10 +8,10 @@
   /* Foto je Ansicht (1200 px, haeuser/ruedihus/kopf/, gebaut von bau.py) */
   var FOTO = { msStart: 'haus-daemmerung', msEvents: 'fest-tafel', msAbteilungen: 'stube-tuer', msHinweise: 'haus-fassade', msNewsletter: 'stube-kerze',
     msFotos: 'garten-luft', msMarke: 'giebel', msLivre: 'butzen', msMeine: 'stube-rund', msFreigegeben: 'stube-lang', msNeu: 'ofestuebli', weg: 'haus-winter', entwuerfe: 'z-hochzeit' };
-  /* Die Stube (La Maison) des Ruedihus: lokal /_werkzeuge/maison/ auf dem Server des Hauses (:8917), online /maison/ (_werkzeuge/maison/online.json) */
-  var MAISON = location.port === '9026' ? 'http://localhost:8917/_werkzeuge/maison/' : /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';
+  /* Kontrollpanel des Ruedihus: lokal /_werkzeuge/maison/ auf dem Server des Hauses (:8917), online /maison/ (_werkzeuge/maison/online.json) */
+  var MAISON = location.port === '9026' ? '/_werkzeuge/maison/' : /\/_werkzeuge\//.test(location.pathname) ? '../maison/' : '/maison/';
   /* R05: die Website des Hauses (lokal auf dem Server des Hauses, online dieselbe Adresse) */
-  var WEBSITE = location.port === '9026' ? 'http://localhost:8917/' : '/';
+  var WEBSITE = location.port === '9026' ? '/' : '/';
   var WELT = '<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.6 5.2 3.6 8.5s-1 6.1-3.6 8.5c-2.6-2.4-3.6-5.2-3.6-8.5s1-6.1 3.6-8.5z"/></svg>';
   var HAUS = '<svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>';
 
@@ -57,7 +57,7 @@
   }
   function knopf(cls) {
     var a = document.createElement('a'); a.className = 'rund ' + cls; a.href = MAISON;
-    a.setAttribute('aria-label', 'Zurück zur Stube'); a.setAttribute('data-tip', 'Die Stube'); a.innerHTML = HAUS;
+    a.setAttribute('aria-label', 'Zurück zu «Kontrollpanel»'); a.setAttribute('data-tip', 'Kontrollpanel'); a.innerHTML = HAUS;
     return a;
   }
   function maison() {

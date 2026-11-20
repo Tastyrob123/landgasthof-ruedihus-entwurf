@@ -1,0 +1,28 @@
+{
+ "name": "Landgasthof Ruedihus",
+ "ort": "Kandersteg",
+ "tel": "+41 33 675 81 81",
+ "mail": "info@doldenhorn.ch",
+ "adresse": "Hinder de Büele 6, 3718 Kandersteg",
+ "zeiten": "Rezeption im Waldhotel Doldenhorn",
+ "fahrplan": "oeschinensee.ch, sunnbuel.ch und sbb.ch",
+ "kategorien": [],
+ "orte": [
+  [
+   "Kandersteg (1176 m)",
+   46.495,
+   7.675
+  ],
+  [
+   "Oeschinensee (1578 m)",
+   46.498,
+   7.727
+  ],
+  [
+   "Gemmipass (2314 m)",
+   46.398,
+   7.614
+  ]
+ ],
+ "muster": "Frage: Habt ihr Fondue?\nAntwort: Ja, in der Chäs- und Wystube im Parterre.\n- Friburger Original Chäsfondue: CHF 29.00\n- Tisch reservieren: +41 33 675 81 81\n\nFrage: Habt ihr einen Fitnessraum?\nAntwort: Dazu steht nichts in meinen Unterlagen. Die Rezeption hilft Ihnen gerne weiter:\n- Telefon: +41 33 675 81 81\n- E-Mail: info@doldenhorn.ch"
+}

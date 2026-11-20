@@ -1,0 +1,132 @@
+[
+ {
+  "vor": [
+   0,
+   9,
+   12
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Habt ihr Fondue?",
+  "antwort": "Ja, in der Chäs- und Wystube im Parterre, zum Beispiel:\n- Walliser Tomatefondue: CHF 35.00\n- Morchelfondue mit feine Spitzmorchle: CHF 39.00\n- Trüffelfondue: CHF 48.00\nTisch reservieren: (+41) 033 675 81 81.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   0,
+   11,
+   40
+  ],
+  "sprache": "en",
+  "belegt": true,
+  "frage": "When is the restaurant open?",
+  "antwort": "The restaurant is open from 11:30 to 21:00. To reserve a table: (+41) 033 675 81 81.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   8,
+   20
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Ist die Liebeslaube am Wochenende frei?",
+  "antwort": "Ob die Liebeslaube frei ist, zeigt die Buchungsmaske für Ihre Daten. Die Liebeslaube hat ein romantisches Himmelbett und ein Bad mit Badewanne und Dusche, für 1–2 Personen ab CHF 390.00 pro Nacht.",
+  "thema": "",
+  "buchung": true
+ },
+ {
+  "vor": [
+   1,
+   15,
+   5
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Kann ich als Gast das Spa benutzen?",
+  "antwort": "Hallenbad, Saunen und Massagen liegen im Waldhotel Doldenhorn, dem Schwesterhaus gleich gegenüber. Massagen buchen Sie direkt im Kalender des Spa, am einfachsten gleich vor der Anreise.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   1,
+   19,
+   30
+  ],
+  "sprache": "fr",
+  "belegt": true,
+  "frage": "Avez-vous un menu végétarien ?",
+  "antwort": "Oui. Dans la Egger- und Stettlerstube, le menu végétarien propose notamment une salade verte et des œufs pochés sur épinards avec une rösti au fromage. Dans la Chäs- und Wystube, la Bauernröschti (rösti sans lard, avec fromage à raboter) est végétarienne : CHF 24.00 la petite portion, CHF 29.00 la portion.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   10,
+   15
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Wie komme ich vom Bahnhof zu Ihnen?",
+  "antwort": "Der Bahnhof Kandersteg liegt 950 m Luftlinie vom Haus. Der Bus hält an der Haltestelle «Ruedi Hus», 100 m vom Haus. Die nächsten Abfahrten stehen auf der Seite Abreise.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   2,
+   13,
+   45
+  ],
+  "sprache": "en",
+  "belegt": false,
+  "frage": "What time is check-in?",
+  "antwort": "There is nothing about this in my documents. The reception will be happy to help:\n- Phone: +41 33 675 81 81\n- E-mail: info@doldenhorn.ch",
+  "thema": "Check-in",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   9,
+   2
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Wir möchten mit 20 Personen einen Geburtstag feiern.",
+  "antwort": "Dafür passt die Jungestube im Parterre mit 25 Sitzplätzen, «geeignet auch für Sitzungen und Familienfeste». Die Chäs- und Wystube hat 40 Sitzplätze. Einen ersten Richtpreis rechnet der Fest-Rechner auf der Seite Essen, die verbindliche Offerte schreibt Ihnen das Event-Team.",
+  "thema": "",
+  "buchung": false
+ },
+ {
+  "vor": [
+   3,
+   18,
+   25
+  ],
+  "sprache": "de",
+  "belegt": false,
+  "frage": "Haben Sie ein Kinderbett für unsere Tochter?",
+  "antwort": "Dazu steht nichts in meinen Unterlagen. Die Rezeption hilft Ihnen gerne weiter:\n- Telefon: +41 33 675 81 81\n- E-Mail: info@doldenhorn.ch",
+  "thema": "Kinderbett",
+  "buchung": false
+ },
+ {
+  "vor": [
+   4,
+   11,
+   5
+  ],
+  "sprache": "de",
+  "belegt": true,
+  "frage": "Kann ich einen Gutschein verschenken?",
+  "antwort": "Ja: ein Wertgutschein, ein Abend in der Stube oder der Gourmetaufenthalt. Sie bezahlen online, der Gutschein kommt als PDF. Der Gourmetaufenthalt kostet ab CHF 450.00 pro Person, mit 2 Übernachtungen im Ruedihus, einem rustikalen Nachtessen in der Biedermeierstube und einem Menu Gastronomique im Waldhotel Doldenhorn.",
+  "thema": "",
+  "buchung": false
+ }
+]

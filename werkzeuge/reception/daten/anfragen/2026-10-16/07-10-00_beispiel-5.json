@@ -1,0 +1,34 @@
+{
+ "zeit": "2026-10-16T07:10:00+02:00",
+ "art": "aufenthalt",
+ "name": "Ursula Bieri",
+ "kontakt": "ursula.bieri@example.com",
+ "datum": "Sonntag, 25. Oktober 2026, 14:00 Uhr",
+ "personen": 2,
+ "anliegen": "Abreise am Sonntag und Zmittag in der Stube",
+ "sprache": "de",
+ "gespraech": "beispiel-5",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Ihre Abreise): Name: Ursula Bieri\nZimmer oder Buchungsnummer: Hochzeitsstube\nAbreise: So., 25. Okt. 2026, 14:00 Uhr\nZmittag: Chäs- und Wystube, 12:00 Uhr, 2 Personen\nNachricht: Dürfen wir das Gepäck nach dem Auschecken bis zur Abfahrt stehen lassen?"
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "info@doldenhorn.ch",
+ "abteilung": "Rezeption",
+ "seite": "/abreise.html",
+ "seite_name": "Ihre Abreise",
+ "web": true,
+ "nachricht": "Name: Ursula Bieri\nZimmer oder Buchungsnummer: Hochzeitsstube\nAbreise: So., 25. Okt. 2026, 14:00 Uhr\nZmittag: Chäs- und Wystube, 12:00 Uhr, 2 Personen\nNachricht: Dürfen wir das Gepäck nach dem Auschecken bis zur Abfahrt stehen lassen?",
+ "formular": "abreise",
+ "entwurf": {
+  "betreff": "Ihr Zmittag vor der Abreise am Sonntag",
+  "text": "Liebe Frau Bieri\n\nvielen Dank für Ihre Nachricht. Vor Ihrer Fahrt decken wir Ihnen gern einen Tisch für zwei in der Chäs- und Wystube um 12:00 Uhr: [Tisch bestätigen].\n\nZu Ihrem Gepäck: [Aufbewahren bis zur Abfahrt bestätigen].\n\nDer Bus hält an der Haltestelle «Ruedi Hus» gleich beim Haus. Wir wünschen Ihnen schon jetzt eine gute Heimreise.\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nRezeption · Landgasthof Ruedihus",
+  "team": "Grundlage: abreise.html (Formular «Ihre Abreise», Haltestelle «Ruedi Hus»), essen.html (Restaurant 11:30 – 21:00 Uhr).\nOffen: Tisch 25.10. 12:00; Gepäck aufbewahren (steht nicht auf den Seiten).",
+  "vorlage": "02-anreise",
+  "absender": "info@doldenhorn.ch",
+  "zeit": "2026-10-16T07:10:00+02:00"
+ }
+}

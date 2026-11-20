@@ -1,0 +1,28 @@
+{
+ "name": "Kontrollpanel",
+ "hinweis": "Kontrollpanel ist statisch. python3 _werkzeuge/maison/bau.py baut bei jedem Lauf die lokale Fassung (_werkzeuge/maison/index.html) und die Online-Fassung (_werkzeuge/maison/online/: Adressen und Stand-Wege aus den online.json aller Werkzeuge, ohne Andock-Datei ins Kapitel Werkzeuge der Werkbank, nie localhost, nie Platzhalter; Bilder in online/img). Die Online-Fassung geht als Ordner nach /maison/. Deshalb VOR jedem Hochladen, wenn alle Werkzeuge angedockt sind, einmal bauen. Kein eingebettetes Skript (Sicherheitsregel online), Wege als application/json. ruedihus-maison, 17.10.2026",
+ "funktionen": {},
+ "lib": {},
+ "statik": {
+  "_werkzeuge/maison/online": "maison"
+ },
+ "umleitungen": [
+  {
+   "source": "/_werkzeuge/maison/",
+   "destination": "/maison/index.html"
+  },
+  {
+   "source": "/_werkzeuge/maison/:pfad*",
+   "destination": "/maison/:pfad*"
+  },
+  {
+   "source": "/werkzeuge/maison/:pfad*",
+   "destination": "/maison/:pfad*"
+  }
+ ],
+ "stand": "",
+ "pruefung": {
+  "weg": "/maison/",
+  "kurz": true
+ }
+}

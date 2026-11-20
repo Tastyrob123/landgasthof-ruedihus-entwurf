@@ -1,4 +1,4 @@
-/* Vorschaubilder in den Bildwänden des Schreibtischs (Robert 18.10.2026 ~13:38: «die bilder in den archiven müssen schneller laden überall»; Master M19).
+/* Vorschaubilder in den Bildwänden «Website bearbeiten» (Robert 18.10.2026 ~13:38: «die bilder in den archiven müssen schneller laden überall»; Master M19).
    Kacheln zeigen /assets/img/vs/<schlüssel>.webp (400 px); fehlt sie, bleibt das bisherige Bild. Das grosse Bild lädt erst beim Öffnen. */
 (function () {
   var WAND = '.mauer img, .bildwand img, #bw-l img, .bibl img, .fotos img';

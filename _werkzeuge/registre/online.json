@@ -1,0 +1,45 @@
+{
+ "name": "Besucher",
+ "hinweis": "Landgasthof Ruedihus, 17.10.2026 (Form wie Doldenhorn und Carlton _werkzeuge/registre/online.json; Name der Welt Landhaus, Weg und Dateinamen bleiben «registre»). Oberfläche statisch unter /werkzeuge/registre/ (Vorführung liest beispiel/*.json, braucht keinen Dienst); /api/registre für die Stube (Kontrollpanel, Beispielwerte, dieselbe Rechnung) und für echte Werte mit Schlüssel. Eigener Speicher nur über REGISTRE_READ_WRITE_TOKEN (fehlt er: /tmp/ruedihus-registre-demo, nie der gemeinsame Speicher). Braucht api/_speicher.py des gemeinsamen Online-Wegs (baut der Werkbank-Chat). Bühnenfotos aus /assets/img/ der Website (haus-daemmerung, schild, garten-luft, stube-kerze, stube-lang, haus-winter, z-himmelbett, giebel, je -s/-m.webp), Tapete /assets/img/butzen-07.png und butzen-09.png, Zeichen /assets/logo/zeichen.svg, Schriften /assets/fonts/ (gelasio-700, InstrumentSans, DMMono). Die Zählung der Website (assets/js/messung.js, Baustein vorschlag/messung.js) sendet an /api/registre.",
+ "funktionen": {
+  "api/registre.py": {
+   "von": "_werkzeuge/registre/online/registre.py",
+   "dauer": 30
+  }
+ },
+ "lib": {
+  "_werkzeuge/registre/registre.py": "api/_lib/registre/registre.py",
+  "_werkzeuge/registre/beispiel": "api/_lib/registre/beispiel"
+ },
+ "statik": {
+  "_werkzeuge/registre/index.html": "werkzeuge/registre/index.html",
+  "_werkzeuge/registre/registre.css": "werkzeuge/registre/registre.css",
+  "_werkzeuge/registre/registre.js": "werkzeuge/registre/registre.js",
+  "_werkzeuge/registre/auftakt.js": "werkzeuge/registre/auftakt.js",
+  "_werkzeuge/registre/rundgang.js": "werkzeuge/registre/rundgang.js",
+  "_werkzeuge/registre/zur-werkbank.js": "werkzeuge/registre/zur-werkbank.js",
+  "_werkzeuge/registre/fehler.js": "werkzeuge/registre/fehler.js",
+  "_werkzeuge/registre/seiten.json": "werkzeuge/registre/seiten.json",
+  "_werkzeuge/registre/anleitung.html": "werkzeuge/registre/anleitung.html",
+  "_werkzeuge/registre/anleitung.js": "werkzeuge/registre/anleitung.js",
+  "_werkzeuge/registre/anleitung": "werkzeuge/registre/anleitung",
+  "_werkzeuge/registre/beispiel": "werkzeuge/registre/beispiel",
+  "assets/oberflaeche": "assets/oberflaeche",
+  "_werkzeuge/registre/oberflaeche.css": "werkzeuge/registre/oberflaeche.css"
+ },
+ "umleitungen": [
+  {
+   "source": "/_werkzeuge/registre/",
+   "destination": "/werkzeuge/registre/index.html"
+  },
+  {
+   "source": "/_werkzeuge/registre/:pfad*",
+   "destination": "/werkzeuge/registre/:pfad*"
+  }
+ ],
+ "stand": "/api/registre?tage=30&beispiel=1",
+ "pruefung": {
+  "weg": "/werkzeuge/registre/",
+  "kurz": true
+ }
+}

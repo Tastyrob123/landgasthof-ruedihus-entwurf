@@ -1,0 +1,34 @@
+{
+ "zeit": "2026-10-16T09:33:00+02:00",
+ "art": "gutschein",
+ "name": "Sandra Wenger",
+ "kontakt": "sandra.wenger@example.com",
+ "datum": "zum Hochzeitstag im Dezember",
+ "personen": 2,
+ "anliegen": "Gutschein für die Liebeslaube",
+ "sprache": "de",
+ "gespraech": "beispiel-3",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Zimmer): Guten Tag, ich möchte meinen Eltern zum Hochzeitstag eine Nacht in der Liebeslaube schenken, mit Frühstück. Können Sie mir dafür einen Gutschein ausstellen?"
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "info@doldenhorn.ch",
+ "abteilung": "Rezeption",
+ "seite": "/zimmer.html",
+ "seite_name": "Zimmer",
+ "web": true,
+ "nachricht": "Guten Tag, ich möchte meinen Eltern zum Hochzeitstag eine Nacht in der Liebeslaube schenken, mit Frühstück. Können Sie mir dafür einen Gutschein ausstellen?",
+ "formular": "gutschein",
+ "entwurf": {
+  "betreff": "Ihr Gutschein für die Liebeslaube",
+  "text": "Liebe Frau Wenger\n\nvielen Dank für Ihre Anfrage. Was für ein schönes Geschenk zum Hochzeitstag Ihrer Eltern.\n\nEinen Gutschein für ein bestimmtes Zimmer stellen wir Ihnen gern aus, für eine Nacht in der Liebeslaube mit Frühstück: [Preis nennen]. Er kommt als PDF, mit Ihrer Widmung, zum Ausdrucken oder Weiterschicken.\n\nFragen dazu beantworten wir gern unter (+41) 033 675 81 81.\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nRezeption · Landgasthof Ruedihus",
+  "team": "Grundlage: zimmer.html (Geschenkgutscheine: «Für ein bestimmtes Zimmer nennt Ihnen die Familie am Telefon den Preis»), Mail «Ihr Gutschein ist da».\nOffen: Preis Liebeslaube mit Frühstück; Widmung erfragen; Zahlung.",
+  "vorlage": "03-gutschein",
+  "absender": "info@doldenhorn.ch",
+  "zeit": "2026-10-16T09:33:00+02:00"
+ }
+}

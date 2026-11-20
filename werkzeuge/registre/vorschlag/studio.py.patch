@@ -1,0 +1,41 @@
+--- a/studio.py
++++ b/studio.py
+@@ -1479,6 +1479,16 @@
+ 
+ 
+ # ------------------------------------------------------------------ Anfragen
++def _registre():
++    """Das Besucherbuch (_werkzeuge/registre/anschluss.py, 17.10.2026): Zählung der Website (assets/js/messung.js) und Stand für die Stube, wie online
++    /api/registre. Nach Pfad geladen, nie über den Namen (Werkzeug-Master F10)."""
++    if not hasattr(_registre, 'm'):
++        import importlib.util
++        sp = importlib.util.spec_from_file_location('registre_anschluss', os.path.join(os.path.dirname(os.path.abspath(__file__)), '_werkzeuge', 'registre', 'anschluss.py'))
++        m = importlib.util.module_from_spec(sp); sp.loader.exec_module(m); _registre.m = m
++    return _registre.m
++
++
+ class H(BaseHTTPRequestHandler):
+     server_version = 'Studio'
+     protocol_version = 'HTTP/1.1'
+@@ -1572,6 +1582,8 @@
+         if not self.adresse_ok():
+             return self.sende(421, b'Falsche Adresse.', 'text/plain; charset=utf-8')
+         u = urlparse(self.path)
++        if u.path == '/api/registre':   # Das Besucherbuch: Beispielwerte (Vorführung), echte Werte mit ?k=<Schlüssel>
++            return self.sende(*_registre().antwort_get(u.query))
+         if u.path in ('/api/dienste', '/api/zahlen'):   # Gäste-Funktionen (Tasty Studios 10.10.2026): Preise, Wetter, Zahlen wie online
+             return self.dienste_get(u)
+         teile = [t for t in posixpath.normpath(unquote(u.path)).split('/') if t and t not in ('.', '..')]
+@@ -1661,6 +1673,12 @@
+                 return self.sende(421, {'fehler': 'Falsche Adresse.'})
+             if u.path == '/api/zahlen':
+                 return self.zahlen_post(self.rfile.read(min(n, 2000)))
++            if u.path == '/api/registre':   # eine Zeile von assets/js/messung.js (höchstens 300 Zeichen; Herkunft prüft adresse_ok)
++                if n < 0 or n > 300:
++                    self.rfile.read(min(max(n, 0), 64 * 1024)); self.close_connection = True
++                    return self.sende(413, {'fehler': 'GROESSE · Eine Zeile hat höchstens 300 Zeichen.'})
++                code, d = _registre().antwort_post(u.query, self.rfile.read(n) if n else b'', self.client_address[0], self.headers.get('User-Agent') or '')
++                return self.sende(code, d if d is not None else b'', 'text/plain; charset=utf-8' if d is None else 'application/json; charset=utf-8')
+             if was is None or self.headers.get('X-Studio') != '1' or n > 32 * 1024 * 1024:
+                 self.rfile.read(min(n, 1024 * 1024))
+                 self.close_connection = True  # der Rest der Anfrage darf nicht als nächste Anfrage gelesen werden

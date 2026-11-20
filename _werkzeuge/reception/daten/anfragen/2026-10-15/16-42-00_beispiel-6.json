@@ -1,0 +1,34 @@
+{
+ "zeit": "2026-10-15T16:42:00+02:00",
+ "art": "nachricht",
+ "name": "Lena Zurbuchen",
+ "kontakt": "lena.zurbuchen@example.com",
+ "datum": "ab der Wintersaison",
+ "personen": null,
+ "anliegen": "Bewerbung im Service",
+ "sprache": "de",
+ "gespraech": "beispiel-6",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Das Haus): Guten Tag, ich arbeite seit drei Jahren im Service und würde gern ab der Wintersaison in Ihren Stuben arbeiten. Meinen Lebenslauf schicke ich Ihnen gern."
+  }
+ ],
+ "status": "gelesen",
+ "beispiel": true,
+ "an": "jobs@doldenhorn.ch",
+ "abteilung": "Personal",
+ "seite": "/haus.html",
+ "seite_name": "Das Haus",
+ "web": true,
+ "nachricht": "Guten Tag, ich arbeite seit drei Jahren im Service und würde gern ab der Wintersaison in Ihren Stuben arbeiten. Meinen Lebenslauf schicke ich Ihnen gern.",
+ "formular": "stelle",
+ "entwurf": {
+  "betreff": "Ihre Bewerbung im Service",
+  "text": "Liebe Frau Zurbuchen\n\nvielen Dank für Ihr Interesse an einer Stelle bei uns. Zurzeit suchen wir für das Ruedihus und das Waldhotel Doldenhorn unter anderem im Service (m/w/d).\n\nSchicken Sie uns Ihren Lebenslauf gern per E-Mail an jobs@doldenhorn.ch, ein paar Zeilen zu Ihnen reichen für den Anfang. Danach melden wir uns für ein Gespräch: [Termin vorschlagen].\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nPersonal · Landgasthof Ruedihus",
+  "team": "Grundlage: haus.html (Offene Stellen: Sous-Chef, Rezeptionist, Service, Koch; «Bewerbung per E-Mail an jobs@doldenhorn.ch»).\nOffen: Gespräch; Beginn Wintersaison; Wohnen, Dienste und Verpflegung stehen nicht auf der Website.",
+  "vorlage": "01-tisch",
+  "absender": "jobs@doldenhorn.ch",
+  "zeit": "2026-10-15T16:42:00+02:00"
+ }
+}

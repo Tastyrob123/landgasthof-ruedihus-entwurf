@@ -1,5 +1,5 @@
-/* Der Schreibtisch · Landgasthof Ruedihus: unverändert übernommen (über das Waldhotel Doldenhorn) aus dem Grand Beau-Rivage (studio/schweben.js dort, 16.10.2026; über das Carlton). */
-/* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in Le Registre). Gehört zu schweben.css.
+/* Website bearbeiten · Landgasthof Ruedihus: unverändert übernommen (über das Waldhotel Doldenhorn) aus dem Grand Beau-Rivage (studio/schweben.js dort, 16.10.2026; über das Carlton). */
+/* Schweben für die Werkzeuge (Gefühl der Carlton-Seiten, wie in «Besucher»). Gehört zu schweben.css.
    Einbinden am Ende der Seite: <script src="../studio/schweben.js" data-wurzel="#ansicht" data-blaetter="…" data-kacheln="…" data-zeilen="…" data-zahlen="…"></script>
    blaetter: einzelne Blätter, kacheln: Reihen von Kacheln (Staffel), zeilen: viele gleiche Zeilen (nur einblenden), zahlen: grosse Zahlen (Zoom).
    Tut etwas nur kurz nach dem Laden und nach einem Klick (Ansichtswechsel); alles, was beim Tippen oder Neuzeichnen später dazukommt, steht sofort ruhig da. */

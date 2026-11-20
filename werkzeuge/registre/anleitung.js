@@ -1,4 +1,4 @@
-/* Anleitung Das Besucherbuch · Landgasthof Ruedihus: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (Medaillon) aus assets/logo/zeichen.svg
+/* Anleitung Besucher · Landgasthof Ruedihus: Bild gross mit Klick, Esc schliesst; das Zeichen des Hauses (Medaillon) aus assets/logo/zeichen.svg
    (eigene Datei: online laufen eingebettete Skripte ohne Prüfsumme nicht). */
 (function () {
   var g = document.getElementById('gross'), im = g.querySelector('img');

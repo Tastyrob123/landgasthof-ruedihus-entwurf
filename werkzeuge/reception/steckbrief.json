@@ -1,0 +1,514 @@
+{
+ "stand": 1792217565.7089567,
+ "bereiche": [
+  {
+   "bereich": "Das Haus",
+   "gruppen": [
+    {
+     "gruppe": "Auf einen Blick",
+     "zeilen": [
+      {
+       "fid": "ebd4b78067",
+       "was": "Adresse",
+       "angabe": "Hinder de Büele 6, 3718 Kandersteg",
+       "beleg": "AdresseHinder de Büele 6 Ort3718 Kandersteg",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b75f262d66",
+       "was": "Telefon und E-Mail",
+       "angabe": "(+41) 033 675 81 81, info@doldenhorn.ch",
+       "beleg": "Telefon und E-Mail (+41) 033 675 81 81 info@doldenhorn.ch",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "60b41d9ba1",
+       "was": "Restaurant",
+       "angabe": "geöffnet 11:30 bis 21:00 Uhr",
+       "beleg": "Restaurant geöffnet 11:30 – 21:00 Uhr",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "8c0686d09e",
+       "was": "Dependance",
+       "angabe": "das Ruedihus ist die Dependance des Waldhotel Doldenhorn",
+       "beleg": "Das Ruedihus ist die Dependance unseres 4-Sterne",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "2440fcc729",
+       "was": "Lage",
+       "angabe": "einen Kilometer vom Zentrum Kanderstegs, gegenüber dem Waldhotel Doldenhorn",
+       "beleg": "Das Ruedihus liegt einen Kilometer vom Zentrum Kanderstegs, gegenüber dem Waldhotel Doldenhorn.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "68a91ad571",
+       "was": "Mitglied",
+       "angabe": "Swiss Historic Hotels",
+       "beleg": "MitgliedSwiss Historic Hotels",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Gastgeber und Team",
+     "zeilen": [
+      {
+       "fid": "ca593e3356",
+       "was": "Gastgeberin im Ruedihus",
+       "angabe": "Nellija Rakovska",
+       "beleg": "Im Ruedihus empfängt Sie als Gastgeberin Nellija Rakovska.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ede4c461f1",
+       "was": "Familie",
+       "angabe": "Anne und René Maeder, Sohn Partic Maeder mit Riana Maeder und Lisa Ziegler",
+       "beleg": "Wir, Anne, René Maeder, unser Sohn Partic Maeder mit Riana Maeder und Lisa Ziegler, freuen uns auf Ihren Besuch",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "77a689467a",
+       "was": "Team",
+       "angabe": "45 Mitarbeitende in den drei Häusern aus 15 Ländern, 8 davon im Ruedihus",
+       "beleg": "45Mitarbeitende in den drei Häusern 15Herkunftsländer 8von ihnen im Ruedihus",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Garten und Spa",
+     "zeilen": [
+      {
+       "fid": "460127ab6e",
+       "was": "Garten",
+       "angabe": "historischer Ziergarten; im Sommer stehen die Tische des Restaurants neben den Beeten",
+       "beleg": "Im Sommer stehen die Tische des Restaurants gleich neben den Beeten.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "a91c4b8b11",
+       "was": "Spa",
+       "angabe": "Hallenbad, Saunen und Massagen im Waldhotel Doldenhorn gegenüber",
+       "beleg": "Hallenbad, Saunen und Massagen liegen im Waldhotel Doldenhorn, dem Schwesterhaus gleich gegenüber.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "36587d2c4a",
+       "was": "Termin im Spa",
+       "angabe": "Massagen im Kalender des Spa buchen, am einfachsten vor der Anreise",
+       "beleg": "Massagen buchen Sie direkt im Kalender des Spa. Am einfachsten gleich vor der Anreise.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Zimmer",
+   "gruppen": [
+    {
+     "gruppe": "Die vier Zimmer",
+     "zeilen": [
+      {
+       "fid": "3329d63821",
+       "was": "Landhaus",
+       "angabe": "1–2 Personen, ab CHF 250 pro Nacht, zum Teil mit Himmelbett",
+       "beleg": "«Gemütliche Zimmer zum Teil mit Himmelbett» Ab: 250.00 CHF / Nacht1-2 Personen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "07ecb11df8",
+       "was": "Hochzeitsstube",
+       "angabe": "Salonzimmer mit Himmelbett, Bad, Dusche, WC; 1–2 Personen, ab CHF 300 pro Nacht",
+       "beleg": "«Geniessen Sie unsere Salonzimmer mit Himmelbett, Bad, Dusche, WC, um Ihren Aufenthalt unvergesslich zu machen» Ab: 300.00 CHF / Nacht1-2 Personen",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b08916ca2b",
+       "was": "Liebeslaube",
+       "angabe": "Himmelbett, Bad mit Badewanne und Dusche; 1–2 Personen, ab CHF 390 pro Nacht",
+       "beleg": "Ab: 390.00 CHF / Nacht1-2 Personen Zimmer ansehenBuchen4 Fotos ## Hymmelrich",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1d226047a4",
+       "was": "Hymmelrich",
+       "angabe": "Bad mit Badewanne und Dusche; 1–2 Personen, ab CHF 390 pro Nacht",
+       "beleg": "«Erleben Sie den Luxus und Komfort unseres Hymmelreich das mit einem romantischen Bett ausgestattet ist.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Was zum Zimmer gehört",
+     "zeilen": [
+      {
+       "fid": "446bee2ee9",
+       "was": "Nichtraucher",
+       "angabe": "alle Zimmer sind Nichtraucherzimmer",
+       "beleg": "Alle Zimmer sind Nichtraucherzimmer.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "68a40a09a4",
+       "was": "Inbegriffen",
+       "angabe": "Frühstück als Buffet, Parkplatz inbegriffen, WLAN inklusive",
+       "beleg": "Frühstück als BuffetParkplatz inbegriffenWLAN inklusive",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "726a160527",
+       "was": "Haustiere",
+       "angabe": "haustierfreundlich",
+       "beleg": "Haustierfreundlich",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b2c8deb066",
+       "was": "Buchung",
+       "angabe": "ein Buchungssystem für das Ruedihus und das Waldhotel Doldenhorn",
+       "beleg": "Es führt das Ruedihus und das Waldhotel Doldenhorn gemeinsam.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Gutscheine",
+     "zeilen": [
+      {
+       "fid": "7fc482f4f5",
+       "was": "Gutscheine online",
+       "angabe": "Wertgutschein, Abend in der Stube oder Gourmetaufenthalt, online bezahlt, als PDF",
+       "beleg": "Ein Wertgutschein, ein Abend in der Stube oder der Gourmetaufenthalt. Sie bezahlen online, der Gutschein kommt als PDF.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "0bc2b46b4e",
+       "was": "Gutschein für ein Zimmer",
+       "angabe": "Preis nennt die Familie am Telefon",
+       "beleg": "Für ein bestimmtes Zimmer nennt Ihnen die Familie am Telefon den Preis.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b4094584dd",
+       "was": "Gourmetaufenthalt",
+       "angabe": "ab CHF 450 pro Person: 2 Übernachtungen im Ruedihus, ein Nachtessen in der Biedermeierstube, ein Menu Gastronomique im Waldhotel Doldenhorn",
+       "beleg": "ab CHF 450.00 pro Person 2 Übernachtungen im RUEDIHUS 1 Rustikales Nachtessen in der Biedermeierstube",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Essen & Stuben",
+   "gruppen": [
+    {
+     "gruppe": "Die Stuben",
+     "zeilen": [
+      {
+       "fid": "643aab5243",
+       "was": "Im Parterre",
+       "angabe": "drei Stuben: Chäs- und Wystube (40 Plätze), Jungestube (25 Plätze), Ofestübli; Fondue, Raclette, Rösti",
+       "beleg": "Chäs-u Wystube40 Sitzplätze Jungestube25 Sitzplätze Ofestübli «Unsere drei rustikalen Stuben im Parterre laden Sie ein zu einem gemütlichen Fondue, Raclette oder einer Röstispezialität.»",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "1fc144fccf",
+       "was": "Im 1. Stock",
+       "angabe": "Egger- und Stettlerstube, zwei Biedermeierstuben, Berner Oberländer Küche",
+       "beleg": "«Lassen Sie sich verwöhnen in einer der beiden Biedermeierstuben im 1. Stock.»",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "bc597658bc",
+       "was": "Karte",
+       "angabe": "drei Karten ab 1.3.2026: Chäs- und Wystube, Egger- und Stettlerstube, Tagesteller",
+       "beleg": "Chäs- und WystubeEgger- und StettlerstubeTagesteller ## Schpiszettel",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "80a9bb5708",
+       "was": "Portionen",
+       "angabe": "zwei Preise bedeuten kleine Portion und Portion",
+       "beleg": "Zwei Preise bedeuten kleine Portion und Portion.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "ab4307b6dd",
+       "was": "Allergien",
+       "angabe": "Auskunft über Zutaten bei den Mitarbeitenden",
+       "beleg": "Über Zutaten in unseren Gerichten, die Allergien oder Intoleranzen auslösen können, informieren Sie unsere Mitarbeitenden auf Anfrage gerne.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Aus dem Schpiszettel",
+     "zeilen": [
+      {
+       "fid": "db79b9bf6c",
+       "was": "Raclette à discrétion",
+       "angabe": "CHF 36",
+       "beleg": "RACLETTE SO VIEL DR MÖGET36.00Raclette à discrétion",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "383713fe68",
+       "was": "Fondues",
+       "angabe": "Walliser Tomatefondue CHF 35, Morchelfondue CHF 39, Trüffelfondue CHF 48",
+       "beleg": "WALLISER TOMATEFONDUE35.00",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "MORCHELFONDUE MIT FEINE SPITZMORCHLE39.00",
+        "TRÜFFELFONDUE48.00"
+       ]
+      },
+      {
+       "fid": "80c2c18aee",
+       "was": "Bauernröschti",
+       "angabe": "vegetarisch, ohne Speck, mit Hobelkäse, CHF 24 / 29",
+       "beleg": "BAUERNRÖSCHTI Rösti mit Hobelchäs24.00 / 29.00Rösti (ohne Speck) mit Hobelkäse (vegetarisch)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "7e3c43042e",
+       "was": "Für di Chline",
+       "angabe": "gefüllte Röstitäschli oder Hörnli mit Pilzsauce, je CHF 9.50",
+       "beleg": "GFÜLLTI RÖSCHTITÄSCHLI9.50 HÖRNLI MIT PILZSOSSE9.50",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    },
+    {
+     "gruppe": "Aus der Schpis Charte",
+     "zeilen": [
+      {
+       "fid": "80a2b717d9",
+       "was": "Menu komplett",
+       "angabe": "CHF 80",
+       "beleg": "MENU KOMPLETT80.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "8dfabe168f",
+       "was": "Cüpli",
+       "angabe": "Mauler aus Môtiers, CHF 10",
+       "beleg": "CÜPLI10.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "763864a91a",
+       "was": "Chalbsläberli",
+       "angabe": "mit Rösti und Gemüse, CHF 46",
+       "beleg": "CHALBSLÄBERLI46.00",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c4074bf389",
+       "was": "Vegetarisches Menu",
+       "angabe": "unter anderem grüner Salat und pochierte Eier auf Blattspinat mit Chäsröschti",
+       "beleg": "GRÜNE SALAT US DER SCHÜSSLE POCHIERTI EIER MIT BLATTSPINET u uf ere Chäsröschti",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Feste im Haus",
+   "gruppen": [
+    {
+     "gruppe": "Stuben für Feste",
+     "zeilen": [
+      {
+       "fid": "457502362e",
+       "was": "Jungestube",
+       "angabe": "25 Sitzplätze, auch für Sitzungen und Familienfeste",
+       "beleg": "«JUNGENSTUBE mit 25 Sitzplätzen, geeignet auch für Sitzungen und Familienfeste.»",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "d30c65cd58",
+       "was": "Grössere Feste",
+       "angabe": "Hochzeiten, Bankette und Seminare im Waldhotel Doldenhorn gegenüber",
+       "beleg": "Die Stuben des Ruedihus fassen 25 und 40 Gäste. Hochzeiten, Bankette und Seminare richtet die Familie im Waldhotel Doldenhorn gleich gegenüber aus.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "464519b729",
+       "was": "Richtpreis",
+       "angabe": "Fest-Rechner auf der Seite Essen; erster Entwurf, die verbindliche Offerte schreibt das Event-Team",
+       "beleg": "Ein erster Entwurf, noch keine Offerte.Der Preis hängt von vielen Dingen ab: Menü und Getränke, Wein, Dauer und Ihre Wünsche.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Durchs Jahr",
+   "gruppen": [
+    {
+     "gruppe": "Anlässe",
+     "zeilen": [
+      {
+       "fid": "63ec5097d7",
+       "was": "Anlässe des Hauses",
+       "angabe": "Metzgete, Stubete, Ruedi-Tag; zurzeit kein neuer Termin eingetragen, Auskunft am Telefon",
+       "beleg": "Diese Anlässe standen zuletzt im Kalender des Hauses. Zurzeit ist dort kein neuer Termin eingetragen.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Geschichte",
+   "gruppen": [
+    {
+     "gruppe": "Das Haus von 1753",
+     "zeilen": [
+      {
+       "fid": "eb2ccb107e",
+       "was": "Gebaut",
+       "angabe": "1753 von Peter Germann, Spitzenleistung der Zimmermannskunst im 18. Jahrhundert",
+       "beleg": "«Das Ruedihus wurde 1753 durch Peter Germann erbaut. Es gilt als Spitzenleistung der Zimmermannskunst im 18. Jahrhundert.»",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "b3b2032d0b",
+       "was": "Name",
+       "angabe": "von Rudolf Reichen (ca. 1850), «ds rich Ruedi»",
+       "beleg": "«Der Name des Hauses muss wohl von jenem Rudolf Reichen stammen (ca. 1850)",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "93bfa44fa7",
+       "was": "Familie Maeder",
+       "angabe": "erwarb das Haus am 21. Dezember 1990, wiedereröffnet im Februar 1991",
+       "beleg": "«Am 21. Dezember 1990 konnten wir das Haus erwerben.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "c7a16279ab",
+       "was": "Auszeichnung",
+       "angabe": "historisches Hotel Restaurant des Jahres 2000",
+       "beleg": "historisches Hotel Restaurant des Jahres 2000",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Anreise & Abreise",
+   "gruppen": [
+    {
+     "gruppe": "Unterwegs",
+     "zeilen": [
+      {
+       "fid": "99eb1fbdfe",
+       "was": "Bahnhof",
+       "angabe": "Bahnhof Kandersteg, 950 m Luftlinie",
+       "beleg": "Bahnhof Kandersteg 950 m Luftlinie",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      },
+      {
+       "fid": "bd90a70a8a",
+       "was": "Bus",
+       "angabe": "Haltestelle «Ruedi Hus» beim Haus, 100 m",
+       "beleg": "Der Bus hält an der Haltestelle «Ruedi Hus» beim Haus.",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "Haltestelle «Ruedi Hus» 100 m Luftlinie"
+       ]
+      },
+      {
+       "fid": "bedca87053",
+       "was": "Vor der Anreise",
+       "angabe": "Ankunftszeit, Tisch und Wünsche an die Rezeption; sie bestätigt per E-Mail",
+       "beleg": "Die Rezeption bestätigt Ihnen alles per E-Mail.",
+       "datei": "gast_wissen.txt",
+       "mehr": []
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "bereich": "Kandersteg & Ausflüge",
+   "gruppen": [
+    {
+     "gruppe": "Bergbahnen",
+     "zeilen": [
+      {
+       "fid": "8fd505b415",
+       "was": "Gondelbahn Oeschinensee",
+       "angabe": "Erwachsene retour CHF 32; Zeiten und Preise vor der Fahrt auf oeschinensee.ch prüfen",
+       "beleg": "Gondelbahn - CHF 32.00 Erwachsene retour",
+       "datei": "gast_tal.txt",
+       "mehr": []
+      },
+      {
+       "fid": "3dfcdac25d",
+       "was": "Talstationen",
+       "angabe": "Sunnbüel 1,2 km, Oeschinensee 1,6 km Luftlinie",
+       "beleg": "5Talstation Sunnbüel1,2 km Luftlinie",
+       "datei": "gast_wissen.txt",
+       "mehr": [
+        "6Talstation Oeschinensee1,6 km Luftlinie"
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

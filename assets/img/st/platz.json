@@ -1,0 +1,1150 @@
+{
+ "index.html": {
+  "auftakt-sommer#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "familie-l#0": {
+   "sizes": "(max-width:360px) 88.9vw, (max-width:900px) 320px, (max-width:1512px) 17.0vw, (max-width:1920px) 250px, 250px",
+   "f": 0.75
+  },
+  "haus-sommer-l#0": {
+   "sizes": "(max-width:360px) 136.7vw, (max-width:600px) 492px, (max-width:900px) 50.8vw, (max-width:1280px) 57.4vw, (max-width:1512px) 51.3vw, (max-width:1920px) 747px, 747px",
+   "f": 0.75
+  },
+  "schild-l#0": {
+   "sizes": "(max-width:360px) 66.4vw, (max-width:390px) 239px, (max-width:900px) 39.1vw, (max-width:1024px) 18.4vw, (max-width:1512px) 21.5vw, (max-width:1680px) 18.6vw, (max-width:1920px) 311px, 311px",
+   "f": 0.75
+  },
+  "garten-gitter-l#0": {
+   "sizes": "(max-width:360px) 66.7vw, (max-width:390px) 240px, (max-width:900px) 39.1vw, (max-width:1024px) 18.4vw, (max-width:1512px) 21.5vw, (max-width:1680px) 18.6vw, (max-width:1920px) 311px, 311px",
+   "f": 0.75
+  },
+  "butzen-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1024px) 42.9vw, (max-width:1512px) 50.0vw, (max-width:1680px) 43.2vw, (max-width:1920px) 724px, 724px",
+   "f": 0.75
+  },
+  "fenster-butzen#0": {
+   "sizes": "(max-width:360px) 386.7vw, (max-width:768px) 1392px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "z-bauernstube-l#0": {
+   "sizes": "(max-width:1512px) 90.8vw, (max-width:1680px) 79.0vw, (max-width:1920px) 1328px, 1328px",
+   "f": 0.62
+  },
+  "stube-rund-l#0": {
+   "sizes": "(max-width:1512px) 90.8vw, (max-width:1680px) 79.0vw, (max-width:1920px) 1328px, 1328px",
+   "f": 0.62
+  },
+  "z-sofa-l#0": {
+   "sizes": "(max-width:1512px) 90.8vw, (max-width:1680px) 79.0vw, (max-width:1920px) 1328px, 1328px",
+   "f": 0.62
+  },
+  "fest-tafel-l#0": {
+   "sizes": "(max-width:1512px) 90.8vw, (max-width:1680px) 79.0vw, (max-width:1920px) 1328px, 1328px",
+   "f": 0.62
+  },
+  "z-bauernstube-l#1": {
+   "sizes": "(max-width:1512px) 22.0vw, (max-width:1680px) 18.8vw, (max-width:1920px) 316px, 316px",
+   "f": 0.75
+  },
+  "stube-rund-l#1": {
+   "sizes": "(max-width:1512px) 22.0vw, (max-width:1680px) 18.8vw, (max-width:1920px) 316px, 316px",
+   "f": 0.75
+  },
+  "z-sofa-l#1": {
+   "sizes": "(max-width:1512px) 22.0vw, (max-width:1680px) 18.8vw, (max-width:1920px) 316px, 316px",
+   "f": 0.75
+  },
+  "fest-tafel-l#1": {
+   "sizes": "(max-width:1512px) 22.0vw, (max-width:1680px) 18.8vw, (max-width:1920px) 316px, 316px",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 41.8vw, (max-width:1680px) 36.4vw, (max-width:1920px) 611px, 611px",
+   "f": 0.75
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 41.8vw, (max-width:1680px) 36.4vw, (max-width:1920px) 611px, 611px",
+   "f": 0.75
+  },
+  "z-landhaus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 41.8vw, (max-width:1680px) 36.4vw, (max-width:1920px) 611px, 611px",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 41.8vw, (max-width:1680px) 36.4vw, (max-width:1920px) 611px, 611px",
+   "f": 0.75
+  },
+  "fenster-brot#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "stube-lang-l#0": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "e-terrine-l#0": {
+   "sizes": "(max-width:900px) 42.3vw, (max-width:1512px) 16.5vw, (max-width:1680px) 14.3vw, (max-width:1920px) 241px, 241px",
+   "f": 0.75
+  },
+  "e-roesti-l#0": {
+   "sizes": "(max-width:900px) 42.3vw, (max-width:1512px) 16.5vw, (max-width:1680px) 14.3vw, (max-width:1920px) 241px, 241px",
+   "f": 0.75
+  },
+  "e-plaettli-l#0": {
+   "sizes": "(max-width:900px) 42.3vw, (max-width:1512px) 16.5vw, (max-width:1680px) 14.3vw, (max-width:1920px) 241px, 241px",
+   "f": 0.75
+  },
+  "e-suppe-m#0": {
+   "sizes": "(max-width:900px) 42.3vw, (max-width:1512px) 16.5vw, (max-width:1680px) 14.3vw, (max-width:1920px) 241px, 241px",
+   "f": 0.75
+  },
+  "kaffee-l#0": {
+   "sizes": "(max-width:900px) 43.0vw, (max-width:1512px) 16.5vw, (max-width:1680px) 14.3vw, (max-width:1920px) 241px, 241px",
+   "f": 0.75
+  },
+  "giebel-l#0": {
+   "sizes": "(max-width:900px) 88.1vw, (max-width:1512px) 30.1vw, (max-width:1680px) 25.9vw, (max-width:1920px) 433px, 433px",
+   "f": 0.75
+  },
+  "haus-fassade-l#0": {
+   "sizes": "(max-width:900px) 42.9vw, (max-width:1512px) 26.0vw, (max-width:1680px) 22.3vw, (max-width:1920px) 373px, 373px",
+   "f": 0.75
+  },
+  "holz-l#0": {
+   "sizes": "(max-width:900px) 42.9vw, (max-width:1512px) 26.0vw, (max-width:1680px) 22.3vw, (max-width:1920px) 373px, 373px",
+   "f": 0.75
+  },
+  "haus-winter-l#0": {
+   "sizes": "(max-width:900px) 42.9vw, (max-width:1512px) 26.0vw, (max-width:1680px) 22.3vw, (max-width:1920px) 373px, 373px",
+   "f": 0.75
+  },
+  "d-bilder-s#0": {
+   "sizes": "(max-width:900px) 42.9vw, (max-width:1512px) 26.0vw, (max-width:1680px) 22.3vw, (max-width:1920px) 373px, 373px",
+   "f": 0.75
+  },
+  "haus-blueten-l#0": {
+   "sizes": "(max-width:900px) 132.8vw, (max-width:1512px) 46.3vw, (max-width:1680px) 40.3vw, (max-width:1920px) 677px, 677px",
+   "f": 0.75
+  },
+  "e-zopf-l#0": {
+   "sizes": "(max-width:900px) 132.9vw, (max-width:1512px) 46.3vw, (max-width:1680px) 40.3vw, (max-width:1920px) 677px, 677px",
+   "f": 0.75
+  },
+  "balkon-l#0": {
+   "sizes": "(max-width:900px) 157.4vw, (max-width:1512px) 46.3vw, (max-width:1680px) 40.3vw, (max-width:1920px) 677px, 677px",
+   "f": 0.75
+  },
+  "terrasse-l#0": {
+   "sizes": "(max-width:900px) 132.9vw, (max-width:1512px) 46.3vw, (max-width:1680px) 40.3vw, (max-width:1920px) 677px, 677px",
+   "f": 0.75
+  },
+  "haus-wiese-l#0": {
+   "sizes": "(max-width:900px) 132.8vw, (max-width:1512px) 46.3vw, (max-width:1680px) 40.3vw, (max-width:1920px) 677px, 677px",
+   "f": 0.75
+  },
+  "spa-l#0": {
+   "sizes": "(max-width:900px) 132.8vw, (max-width:1512px) 46.3vw, (max-width:1680px) 40.3vw, (max-width:1920px) 677px, 677px",
+   "f": 0.75
+  },
+  "fenster-garten#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "booking.svg#0": {
+   "sizes": "(max-width:360px) 36.1vw, (max-width:900px) 130px, (max-width:1440px) 13.0vw, (max-width:1920px) 177px, 177px",
+   "f": 0.75
+  },
+  "google.svg#0": {
+   "sizes": "(max-width:360px) 18.1vw, (max-width:900px) 65px, (max-width:1024px) 67px, (max-width:1440px) 6.5vw, (max-width:1920px) 89px, 89px",
+   "f": 0.75
+  },
+  "schluss#0": {
+   "sizes": "(max-width:360px) 385.3vw, (max-width:390px) 352.3vw, (max-width:430px) 324.4vw, (max-width:600px) 194.7vw, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "zimmer.html": {
+  "kopf2-zimmer#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "z-landhaus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 62.4vw, (max-width:1680px) 54.2vw, (max-width:1920px) 911px, 911px",
+   "f": 0.75
+  },
+  "z-bauernstube-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1512px) 52.6vw, (max-width:1680px) 45.8vw, (max-width:1920px) 769px, 769px",
+   "f": 0.75
+  },
+  "lh-zwei-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1512px) 33.8vw, (max-width:1680px) 29.3vw, (max-width:1920px) 493px, 493px",
+   "f": 0.75
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 62.4vw, (max-width:1680px) 54.2vw, (max-width:1920px) 911px, 911px",
+   "f": 0.75
+  },
+  "z-hochzeit-2-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1512px) 52.6vw, (max-width:1680px) 45.8vw, (max-width:1920px) 769px, 769px",
+   "f": 0.75
+  },
+  "hz-bett-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1512px) 33.8vw, (max-width:1680px) 29.3vw, (max-width:1920px) 493px, 493px",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 62.4vw, (max-width:1680px) 54.2vw, (max-width:1920px) 911px, 911px",
+   "f": 0.75
+  },
+  "z-sofa-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1512px) 62.4vw, (max-width:1680px) 54.3vw, (max-width:1920px) 912px, 912px",
+   "f": 0.75
+  },
+  "ll-detail-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1024px) 61.6vw, (max-width:1512px) 33.8vw, (max-width:1680px) 29.3vw, (max-width:1920px) 493px, 493px",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 62.4vw, (max-width:1680px) 54.2vw, (max-width:1920px) 911px, 911px",
+   "f": 0.75
+  },
+  "hy-bett-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1512px) 52.6vw, (max-width:1680px) 45.8vw, (max-width:1920px) 769px, 769px",
+   "f": 0.75
+  },
+  "hy-bad-l#0": {
+   "sizes": "(max-width:900px) 44.7vw, (max-width:1024px) 61.6vw, (max-width:1512px) 33.8vw, (max-width:1680px) 29.3vw, (max-width:1920px) 493px, 493px",
+   "f": 0.75
+  },
+  "balkon-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 42.9vw, (max-width:1680px) 37.0vw, (max-width:1920px) 620px, 620px",
+   "f": 0.75
+  },
+  "z-bett-front-l#0": {
+   "sizes": "(max-width:900px) 50.7vw, (max-width:1024px) 38.0vw, (max-width:1512px) 23.6vw, (max-width:1680px) 20.4vw, (max-width:1920px) 341px, 341px",
+   "f": 0.75
+  },
+  "hz-detail-l#0": {
+   "sizes": "(max-width:900px) 39.0vw, (max-width:1024px) 32.0vw, (max-width:1512px) 29.5vw, (max-width:1680px) 26.0vw, (max-width:1920px) 436px, 436px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "balkon-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "essen.html": {
+  "kopf2-essen#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.7vw, (max-width:1680px) 38.9vw, (max-width:1920px) 653px, 653px",
+   "f": 0.75
+  },
+  "stube-lang-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.7vw, (max-width:1680px) 38.9vw, (max-width:1920px) 653px, 653px",
+   "f": 0.75
+  },
+  "ofestuebli-l#0": {
+   "sizes": "(max-width:360px) 4.4vw, (max-width:390px) 18px, (max-width:430px) 5.1vw, (max-width:600px) 5.7vw, (max-width:900px) 6.3vw, (max-width:1512px) 29.3vw, (max-width:1680px) 25.5vw, (max-width:1920px) 428px, 428px",
+   "f": 0.75
+  },
+  "stube-tuer-m#0": {
+   "sizes": "(max-width:360px) 4.4vw, (max-width:390px) 18px, (max-width:430px) 5.1vw, (max-width:600px) 5.7vw, (max-width:900px) 6.3vw, (max-width:1512px) 29.3vw, (max-width:1680px) 25.5vw, (max-width:1920px) 428px, 428px",
+   "f": 0.75
+  },
+  "stube-hoch-m#0": {
+   "sizes": "(max-width:360px) 4.4vw, (max-width:390px) 18px, (max-width:430px) 5.1vw, (max-width:600px) 5.7vw, (max-width:900px) 6.3vw, (max-width:1512px) 29.3vw, (max-width:1680px) 25.5vw, (max-width:1920px) 428px, 428px",
+   "f": 0.75
+  },
+  "fenster-brot#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "e-roesti-l#0": {
+   "sizes": "(max-width:430px) 63.0vw, (max-width:600px) 53.7vw, (max-width:900px) 322px, (max-width:1512px) 34.2vw, (max-width:1680px) 29.8vw, (max-width:1920px) 500px, 500px",
+   "f": 0.75
+  },
+  "e-plaettli-l#0": {
+   "sizes": "(max-width:430px) 63.0vw, (max-width:600px) 53.7vw, (max-width:900px) 322px, (max-width:1440px) 27.2vw, (max-width:1512px) 374px, (max-width:1920px) 372px, 372px",
+   "f": 0.75
+  },
+  "e-plaettli-l#1": {
+   "sizes": "(max-width:900px) 78.2vw, (max-width:1512px) 36.9vw, (max-width:1680px) 31.8vw, (max-width:1920px) 533px, 533px",
+   "f": 0.75
+  },
+  "e-terrine-l#1": {
+   "sizes": "(max-width:900px) 34.3vw, (max-width:1512px) 15.9vw, (max-width:1680px) 13.8vw, (max-width:1920px) 230px, 230px",
+   "f": 0.75
+  },
+  "kaffee-l#0": {
+   "sizes": "(max-width:900px) 31.6vw, (max-width:1512px) 14.7vw, (max-width:1680px) 12.6vw, (max-width:1920px) 211px, 211px",
+   "f": 0.75
+  },
+  "hk-grund#0": {
+   "sizes": "(max-width:900px) 58.0vw, (max-width:1024px) 20.1vw, (max-width:1512px) 29.5vw, (max-width:1680px) 25.1vw, (max-width:1920px) 21.7vw, 416px",
+   "f": 0.75
+  },
+  "ofestuebli-l#1": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:1024px) 44.6vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "e-plaettli-l#2": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:1024px) 44.6vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "schild-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:1024px) 44.6vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:1024px) 44.6vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "stube-kerze-l#2": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:1024px) 44.6vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "haus-winter-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:1024px) 44.6vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "fest-tafel-l#0": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "stube-kerze-l#3": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "haus.html": {
+  "kopf2-haus#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 42.9vw, (max-width:1680px) 37.0vw, (max-width:1920px) 620px, 620px",
+   "f": 0.75
+  },
+  "holz-l#0": {
+   "sizes": "(max-width:900px) 35.4vw, (max-width:1512px) 16.7vw, (max-width:1680px) 14.5vw, (max-width:1920px) 242px, 242px",
+   "f": 0.75
+  },
+  "d-knauf-l#0": {
+   "sizes": "(max-width:900px) 46.0vw, (max-width:1512px) 21.7vw, (max-width:1680px) 18.8vw, (max-width:1920px) 314px, 314px",
+   "f": 0.75
+  },
+  "giebel-l#0": {
+   "sizes": "(max-width:430px) 67.9vw, (max-width:600px) 57.0vw, (max-width:900px) 342px, (max-width:1024px) 39.2vw, (max-width:1280px) 32.2vw, (max-width:1920px) 412px, 412px",
+   "f": 0.75
+  },
+  "schild-l#0": {
+   "sizes": "(max-width:430px) 67.9vw, (max-width:600px) 57.0vw, (max-width:900px) 342px, (max-width:1024px) 39.2vw, (max-width:1280px) 32.2vw, (max-width:1920px) 412px, 412px",
+   "f": 0.75
+  },
+  "d-bilder-s#0": {
+   "sizes": "(max-width:430px) 67.9vw, (max-width:600px) 57.0vw, (max-width:900px) 342px, (max-width:1024px) 39.2vw, (max-width:1280px) 32.2vw, (max-width:1920px) 412px, 412px",
+   "f": 0.75
+  },
+  "haus-sommer-l#0": {
+   "sizes": "(max-width:430px) 67.9vw, (max-width:600px) 57.0vw, (max-width:900px) 342px, (max-width:1024px) 39.2vw, (max-width:1280px) 32.2vw, (max-width:1920px) 412px, 412px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:430px) 67.9vw, (max-width:600px) 57.0vw, (max-width:900px) 342px, (max-width:1024px) 39.2vw, (max-width:1280px) 32.2vw, (max-width:1920px) 412px, 412px",
+   "f": 0.75
+  },
+  "gast-bundesrat#0": {
+   "sizes": "(max-width:430px) 40.2vw, (max-width:900px) 44.8vw, (max-width:1440px) 12.4vw, (max-width:1512px) 180px, (max-width:1680px) 10.2vw, (max-width:1920px) 171px, 171px",
+   "f": 0.75
+  },
+  "gast-annan#0": {
+   "sizes": "(max-width:430px) 40.2vw, (max-width:900px) 44.8vw, (max-width:1440px) 12.4vw, (max-width:1512px) 180px, (max-width:1680px) 10.2vw, (max-width:1920px) 171px, 171px",
+   "f": 0.75
+  },
+  "gast-charles#0": {
+   "sizes": "(max-width:430px) 40.2vw, (max-width:900px) 44.8vw, (max-width:1440px) 12.4vw, (max-width:1512px) 180px, (max-width:1680px) 10.2vw, (max-width:1920px) 171px, 171px",
+   "f": 0.75
+  },
+  "gast-belgien#0": {
+   "sizes": "(max-width:900px) 88.2vw, (max-width:1512px) 27.3vw, (max-width:1680px) 23.0vw, (max-width:1920px) 386px, 386px",
+   "f": 0.75
+  },
+  "fenster-butzen#0": {
+   "sizes": "(max-width:360px) 386.7vw, (max-width:768px) 1392px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "familie-frei-s#0": {
+   "sizes": "(max-width:430px) 74.0vw, (max-width:900px) 81.8vw, (max-width:1512px) 38.0vw, (max-width:1680px) 32.1vw, (max-width:1920px) 27.9vw, 536px",
+   "f": 0.75
+  },
+  "garten-gitter-l#0": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "terrasse-l#0": {
+   "sizes": "(max-width:900px) 32.2vw, (max-width:1512px) 17.3vw, (max-width:1680px) 14.8vw, (max-width:1920px) 249px, 249px",
+   "f": 0.75
+  },
+  "haus-fassade-l#0": {
+   "sizes": "(max-width:900px) 32.2vw, (max-width:1512px) 17.3vw, (max-width:1680px) 14.8vw, (max-width:1920px) 249px, 249px",
+   "f": 0.75
+  },
+  "haus-blueten-l#0": {
+   "sizes": "(max-width:900px) 32.2vw, (max-width:1512px) 17.3vw, (max-width:1680px) 14.8vw, (max-width:1920px) 249px, 249px",
+   "f": 0.75
+  },
+  "spa-l#0": {
+   "sizes": "(max-width:900px) 88.8vw, (max-width:1512px) 49.0vw, (max-width:1680px) 42.4vw, (max-width:1920px) 36.9vw, 708px",
+   "f": 0.75
+  },
+  "haus-fassade-l#1": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "booking.svg#0": {
+   "sizes": "(max-width:360px) 36.1vw, (max-width:900px) 130px, (max-width:1440px) 13.0vw, (max-width:1920px) 177px, 177px",
+   "f": 0.75
+  },
+  "google.svg#0": {
+   "sizes": "(max-width:360px) 18.1vw, (max-width:900px) 65px, (max-width:1024px) 67px, (max-width:1440px) 6.5vw, (max-width:1920px) 89px, 89px",
+   "f": 0.75
+  },
+  "haus-baum-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "balkon-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "haus-winter-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "haus-wiese-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "rechtliches.html": {
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "anreise.html": {
+  "kopf2-anreise#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "spa-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 50.1vw, (max-width:1680px) 43.2vw, (max-width:1920px) 37.7vw, 723px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "zimmer-landhaus.html": {
+  "kopf2-zimmer-landhaus#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "z-bauernstube-l#0": {
+   "sizes": "(max-width:360px) 132.8vw, (max-width:430px) 478px, (max-width:900px) 60.2vw, (max-width:1920px) 31.6vw, 32.7vw",
+   "f": 0.75
+  },
+  "lh-fenster-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:900px) 29.6vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "lh-bad-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:900px) 29.6vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "z-landhaus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1920px) 47.7vw, 49.4vw",
+   "f": 0.75
+  },
+  "z-landhaus-l#1": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "lh-zwei-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "fenster-garten#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "butzen-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "zimmer-hochzeitsstube.html": {
+  "kopf2-zimmer-hochzeitsstube#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "z-hochzeit-2-l#0": {
+   "sizes": "(max-width:360px) 132.8vw, (max-width:430px) 478px, (max-width:900px) 60.2vw, (max-width:1920px) 31.6vw, 32.7vw",
+   "f": 0.75
+  },
+  "hz-bett-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:900px) 29.6vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "hz-bad-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:900px) 29.6vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1920px) 47.7vw, 49.4vw",
+   "f": 0.75
+  },
+  "z-hochzeit-l#1": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "hz-detail-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "fenster-butzen#0": {
+   "sizes": "(max-width:360px) 386.7vw, (max-width:768px) 1392px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "z-landhaus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "butzen-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "zimmer-liebeslaube.html": {
+  "kopf2-zimmer-liebeslaube#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:360px) 132.8vw, (max-width:430px) 478px, (max-width:900px) 60.2vw, (max-width:1024px) 56.3vw, (max-width:1920px) 31.6vw, 32.7vw",
+   "f": 0.75
+  },
+  "ll-detail-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:900px) 29.6vw, (max-width:1024px) 27.3vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "ll-bad-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:900px) 29.6vw, (max-width:1024px) 27.3vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "z-sofa-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1920px) 47.7vw, 49.4vw",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#1": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "haus-fassade-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "fenster-garten#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "z-landhaus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "butzen-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "zimmer-hymmelrich.html": {
+  "kopf2-zimmer-hymmelrich#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "hy-bett-l#0": {
+   "sizes": "(max-width:360px) 132.8vw, (max-width:430px) 478px, (max-width:1024px) 60.2vw, (max-width:1920px) 31.6vw, 32.7vw",
+   "f": 0.75
+  },
+  "hymmelrich-haus-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:1024px) 29.6vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "hy-bad-l#0": {
+   "sizes": "(max-width:360px) 64.2vw, (max-width:430px) 231px, (max-width:1024px) 29.6vw, (max-width:1920px) 15.4vw, 16.1vw",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1920px) 47.7vw, 49.4vw",
+   "f": 0.75
+  },
+  "z-hymmelrich-l#1": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 44.9vw, (max-width:1680px) 39.0vw, (max-width:1920px) 656px, 656px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "haus-fassade-l#0": {
+   "sizes": "(max-width:900px) 44.9vw, (max-width:1512px) 21.9vw, (max-width:1680px) 19.0vw, (max-width:1920px) 320px, 320px",
+   "f": 0.75
+  },
+  "fenster-butzen#0": {
+   "sizes": "(max-width:360px) 386.7vw, (max-width:768px) 1392px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "z-landhaus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.1vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "butzen-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "veranstaltungen.html": {
+  "kopf2-veranstaltungen#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "stube-lang-l#0": {
+   "sizes": "(max-width:1512px) 90.8vw, (max-width:1680px) 79.0vw, (max-width:1920px) 1328px, 1328px",
+   "f": 0.62
+  },
+  "ofestuebli-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 50.7vw, (max-width:1680px) 43.9vw, (max-width:1920px) 737px, 737px",
+   "f": 0.75
+  },
+  "e-plaettli-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 50.7vw, (max-width:1680px) 43.9vw, (max-width:1920px) 737px, 737px",
+   "f": 0.75
+  },
+  "schild-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 50.7vw, (max-width:1680px) 43.9vw, (max-width:1920px) 737px, 737px",
+   "f": 0.75
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1024px) 90.8vw, (max-width:1512px) 33.1vw, (max-width:1680px) 28.6vw, (max-width:1920px) 480px, 480px",
+   "f": 0.75
+  },
+  "stube-hoch-m#0": {
+   "sizes": "(max-width:1024px) 45.0vw, (max-width:1512px) 16.3vw, (max-width:1680px) 14.0vw, (max-width:1920px) 236px, 236px",
+   "f": 0.75
+  },
+  "e-suppe-m#0": {
+   "sizes": "(max-width:1024px) 45.0vw, (max-width:1512px) 16.3vw, (max-width:1680px) 14.0vw, (max-width:1920px) 236px, 236px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 50.7vw, (max-width:1680px) 43.9vw, (max-width:1920px) 737px, 737px",
+   "f": 0.75
+  },
+  "haus-winter-l#0": {
+   "sizes": "(max-width:1024px) 90.8vw, (max-width:1512px) 33.1vw, (max-width:1680px) 28.6vw, (max-width:1920px) 480px, 480px",
+   "f": 0.75
+  },
+  "stube-tuer-m#0": {
+   "sizes": "(max-width:1024px) 45.0vw, (max-width:1512px) 16.3vw, (max-width:1680px) 14.0vw, (max-width:1920px) 236px, 236px",
+   "f": 0.75
+  },
+  "kaffee-l#0": {
+   "sizes": "(max-width:1024px) 45.0vw, (max-width:1512px) 16.3vw, (max-width:1680px) 14.0vw, (max-width:1920px) 236px, 236px",
+   "f": 0.75
+  },
+  "stube-lang-l#1": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "fest-tafel-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#1": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "geschichte.html": {
+  "kopf2-geschichte#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "giebel-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 42.9vw, (max-width:1680px) 37.0vw, (max-width:1920px) 620px, 620px",
+   "f": 0.75
+  },
+  "haus-wiese-l#0": {
+   "sizes": "(max-width:1512px) 89.9vw, (max-width:1680px) 78.2vw, (max-width:1920px) 1314px, 1314px",
+   "f": 0.62
+  },
+  "schild-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 35.8vw, (max-width:1680px) 30.8vw, (max-width:1920px) 517px, 517px",
+   "f": 0.75
+  },
+  "d-bilder-s#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 29.2vw, (max-width:1680px) 25.2vw, (max-width:1920px) 424px, 424px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 42.9vw, (max-width:1680px) 37.0vw, (max-width:1920px) 620px, 620px",
+   "f": 0.75
+  },
+  "ofestuebli-l#0": {
+   "sizes": "(max-width:900px) 35.4vw, (max-width:1512px) 16.7vw, (max-width:1680px) 14.5vw, (max-width:1920px) 242px, 242px",
+   "f": 0.75
+  },
+  "d-knauf-l#0": {
+   "sizes": "(max-width:900px) 46.0vw, (max-width:1512px) 21.7vw, (max-width:1680px) 18.8vw, (max-width:1920px) 314px, 314px",
+   "f": 0.75
+  },
+  "gast-bundesrat#0": {
+   "sizes": "(max-width:430px) 40.2vw, (max-width:900px) 44.8vw, (max-width:1440px) 12.4vw, (max-width:1512px) 180px, (max-width:1680px) 10.2vw, (max-width:1920px) 171px, 171px",
+   "f": 0.75
+  },
+  "gast-annan#0": {
+   "sizes": "(max-width:430px) 40.2vw, (max-width:900px) 44.8vw, (max-width:1440px) 12.4vw, (max-width:1512px) 180px, (max-width:1680px) 10.2vw, (max-width:1920px) 171px, 171px",
+   "f": 0.75
+  },
+  "gast-charles#0": {
+   "sizes": "(max-width:430px) 40.2vw, (max-width:900px) 44.8vw, (max-width:1440px) 12.4vw, (max-width:1512px) 180px, (max-width:1680px) 10.2vw, (max-width:1920px) 171px, 171px",
+   "f": 0.75
+  },
+  "gast-belgien#0": {
+   "sizes": "(max-width:900px) 88.2vw, (max-width:1512px) 27.3vw, (max-width:1680px) 23.0vw, (max-width:1920px) 386px, 386px",
+   "f": 0.75
+  },
+  "fenster-butzen#0": {
+   "sizes": "(max-width:360px) 386.7vw, (max-width:768px) 1392px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "stube-lang-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "zu-zweit.html": {
+  "kopf2-zu-zweit#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "z-hochzeit-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 55.3vw, (max-width:1680px) 47.9vw, (max-width:1920px) 804px, 804px",
+   "f": 0.75
+  },
+  "hz-bett-l#0": {
+   "sizes": "(max-width:900px) 63.6vw, (max-width:1512px) 31.6vw, (max-width:1680px) 27.4vw, (max-width:1920px) 460px, 460px",
+   "f": 0.75
+  },
+  "z-liebeslaube-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 55.3vw, (max-width:1680px) 47.9vw, (max-width:1920px) 804px, 804px",
+   "f": 0.75
+  },
+  "ll-bad-l#0": {
+   "sizes": "(max-width:900px) 63.6vw, (max-width:1512px) 31.6vw, (max-width:1680px) 27.4vw, (max-width:1920px) 460px, 460px",
+   "f": 0.75
+  },
+  "hymmelrich-haus-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 35.8vw, (max-width:1680px) 30.8vw, (max-width:1920px) 517px, 517px",
+   "f": 0.75
+  },
+  "stube-kerze-l#0": {
+   "sizes": "(max-width:900px) 90.8vw, (max-width:1512px) 50.9vw, (max-width:1680px) 44.0vw, (max-width:1920px) 740px, 740px",
+   "f": 0.75
+  },
+  "spa-l#0": {
+   "sizes": "(max-width:900px) 88.8vw, (max-width:1512px) 49.0vw, (max-width:1680px) 42.4vw, (max-width:1920px) 36.9vw, 708px",
+   "f": 0.75
+  },
+  "fenster-garten#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "stube-rund-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ },
+ "abreise.html": {
+  "kopf2-abreise#0": {
+   "sizes": "(max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.62
+  },
+  "e-zopf-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:768px) 42.8vw, (max-width:900px) 329px, (max-width:1024px) 44.8vw, (max-width:1512px) 40.6vw, (max-width:1920px) 600px, 600px",
+   "f": 0.75
+  },
+  "stube-rund-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:768px) 42.8vw, (max-width:900px) 329px, (max-width:1024px) 44.8vw, (max-width:1512px) 40.7vw, (max-width:1920px) 602px, 602px",
+   "f": 0.75
+  },
+  "spa-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:768px) 42.8vw, (max-width:900px) 329px, (max-width:1024px) 44.8vw, (max-width:1512px) 40.5vw, (max-width:1920px) 600px, 600px",
+   "f": 0.75
+  },
+  "kaffee-l#0": {
+   "sizes": "(max-width:600px) 90.8vw, (max-width:768px) 42.8vw, (max-width:900px) 329px, (max-width:1024px) 44.8vw, (max-width:1512px) 21.8vw, (max-width:1680px) 18.9vw, (max-width:1920px) 317px, 317px",
+   "f": 0.75
+  },
+  "fenster-garten#0": {
+   "sizes": "(max-width:360px) 435.0vw, (max-width:900px) 1566px, (max-width:1920px) 100.0vw, 100.0vw",
+   "f": 0.5
+  },
+  "haus-winter-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-daemmerung-l#0": {
+   "sizes": "(max-width:1280px) 90.8vw, (max-width:1512px) 76.9vw, (max-width:1680px) 64.8vw, (max-width:1920px) 1088px, 1088px",
+   "f": 0.62
+  },
+  "haus-doldenhorn#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-gasterntal#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "haus-carlton#0": {
+   "sizes": "(max-width:600px) 87.2vw, (max-width:1024px) 42.3vw, (max-width:1280px) 26.2vw, (max-width:1512px) 22.8vw, (max-width:1680px) 19.2vw, (max-width:1920px) 322px, 322px",
+   "f": 0.75
+  },
+  "gast-familie#0": {
+   "sizes": "(max-width:360px) 12.2vw, (max-width:1920px) 44px, 44px",
+   "f": 0.75
+  }
+ }
+}

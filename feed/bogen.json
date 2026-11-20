@@ -1,5 +1,5 @@
 {
- "reihen": 9,
+ "reihen": 20,
  "stuecke": [
   {
    "id": "haus-gruen",
@@ -198,6 +198,303 @@
    "h": 1,
    "art": "foto",
    "bild": "balkon"
+  },
+  {
+   "id": "stube-tuer",
+   "r": 10,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-tuer"
+  },
+  {
+   "id": "schrift-e-plaettli",
+   "r": 10,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "geranien-fenster",
+   "r": 10,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../Carlton-Europe Interlaken/_quelle/doldenhorn-ruedihus/ruedihus/extern/booking/booking-32311364.jpg"
+  },
+  {
+   "id": "schrift-haus-sommer",
+   "r": 11,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "z-himmelbett",
+   "r": 11,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-himmelbett"
+  },
+  {
+   "id": "e-brot",
+   "r": 11,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-brot"
+  },
+  {
+   "id": "hz-bett",
+   "r": 12,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "hz-bett"
+  },
+  {
+   "id": "stube-hoch",
+   "r": 12,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "stube-hoch"
+  },
+  {
+   "id": "schrift-d-knauf",
+   "r": 12,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "blumenwiese",
+   "r": 13,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../Carlton-Europe Interlaken/_quelle/doldenhorn-ruedihus/website/mediathek/225850_P1215860-scaled.jpg"
+  },
+  {
+   "id": "schrift-z-morgen",
+   "r": 13,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "film-wasser",
+   "r": 13,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "_werkbank/feed_quellen/film-wasser.png"
+  },
+  {
+   "id": "schrift-garten-luft",
+   "r": 14,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "z-sofa",
+   "r": 14,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-sofa"
+  },
+  {
+   "id": "hz-bad",
+   "r": 14,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "hz-bad"
+  },
+  {
+   "id": "z-hymmelrich",
+   "r": 15,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-hymmelrich"
+  },
+  {
+   "id": "schrift-haus-winter",
+   "r": 15,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "e-suppe",
+   "r": 15,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "e-suppe"
+  },
+  {
+   "id": "fest-tafel",
+   "r": 16,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "fest-tafel"
+  },
+  {
+   "id": "holzhaus-geranien",
+   "r": 16,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../Carlton-Europe Interlaken/_quelle/doldenhorn-ruedihus/website/mediathek/225846_P1142484-scaled.jpg"
+  },
+  {
+   "id": "schrift-kandersteg",
+   "r": 16,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "schrift-heimatgefuehl",
+   "r": 17,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "teller",
+   "r": 17,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../Carlton-Europe Interlaken/_quelle/doldenhorn-ruedihus/website/mediathek/226267_BE_Doldenhorn-KanderstegHUG_1270-min-scaled.jpeg"
+  },
+  {
+   "id": "film-vorhang",
+   "r": 17,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "_werkbank/feed_quellen/film-vorhang.png"
+  },
+  {
+   "id": "holz-sonne",
+   "r": 18,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "../Carlton-Europe Interlaken/_quelle/doldenhorn-ruedihus/ruedihus/extern/booking/booking-18413005.jpg"
+  },
+  {
+   "id": "hy-bad",
+   "r": 18,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "hy-bad"
+  },
+  {
+   "id": "schrift-ouge",
+   "r": 18,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "z-hochzeit-2",
+   "r": 19,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-hochzeit-2"
+  },
+  {
+   "id": "schrift-haus-wiese",
+   "r": 19,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "html",
+   "bild": ""
+  },
+  {
+   "id": "ll-bad",
+   "r": 19,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "ll-bad"
+  },
+  {
+   "id": "z-bauernstube",
+   "r": 20,
+   "c": 1,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "z-bauernstube"
+  },
+  {
+   "id": "haus-blueten",
+   "r": 20,
+   "c": 2,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "haus-blueten"
+  },
+  {
+   "id": "lh-bad",
+   "r": 20,
+   "c": 3,
+   "w": 1,
+   "h": 1,
+   "art": "foto",
+   "bild": "lh-bad"
   }
  ]
 }

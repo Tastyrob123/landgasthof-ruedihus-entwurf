@@ -1,0 +1,353 @@
+/* Landgasthof Ruedihus — Konzept-Board und Bildauswahl · Tasty Studios
+   Zwei Farbwelten als Variablen: A «Stube bei Kerzenlicht» (Standard) und B «Fassade und Giebel» (html.gruen).
+   Jeder Ton ist aus einem Bild des Hauses gemessen (siehe _recherche/farben.json). */
+
+/* ---------- Schriften: Titel aus der Wortmarke (Georgia Bold → Gelasio), Lesetext Instrument Sans, kleine Marken DM Mono ---------- */
+@font-face{font-family:"Gelasio";src:url(../fonts/gelasio-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Gelasio";src:url(../fonts/gelasio-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Instrument Sans";src:url(../fonts/InstrumentSans-normal-400_600.woff2) format("woff2");font-weight:400 600;font-display:swap}
+@font-face{font-family:"DM Mono";src:url(../fonts/DMMono-normal-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"V-SourceSerif";src:url(../fonts/sourceserif4-700.woff2) format("woff2");font-weight:700}
+@font-face{font-family:"V-Caslon";src:url(../fonts/librecaslon-700.woff2) format("woff2");font-weight:700}
+@font-face{font-family:"V-PTSerif";src:url(../fonts/ptserif-700.woff2) format("woff2");font-weight:700}
+@font-face{font-family:"V-NotoSerif";src:url(../fonts/notoserif-700.woff2) format("woff2");font-weight:700}
+@font-face{font-family:"V-Bitter";src:url(../fonts/bitter-700.woff2) format("woff2");font-weight:700}
+
+:root,.farbe-a{
+  /* Farbwelt A «Stube bei Kerzenlicht» */
+  --russ:#1f1209;      /* Stube, Schatten am Boden */
+  --holz:#321f10;      /* Stube, dunkles Wandholz */
+  --balken:#6d431f;    /* Stube, Balken im Lampenlicht */
+  --zweit:#6d431f;
+  --kerze:#c98543;     /* Kerzenlicht auf dem Tischtuch */
+  --gold:#b78f51;      /* Gold des Zeichens auf den Karten */
+  --papier:#efe4d3;    /* aufgehellt aus der hellen Wand der Liebeslaube #d8c2ad */
+  --leinen:#d8c2ad;
+  --geranie:#c42e13;   /* Geranien an der Fassade, nur als Punkt */
+  --tinte:#2a1a0e; --blatt:#fbf5ea; --tief:#170d06; --karte:#2a180a;
+  --ld:50,31,16; --lh:239,228,211;
+  --kn-a:#f6ecdc; --kn-b:#e7d7c0; --kn-c:#d6c2a6; --kn-licht:#fffaf0; --kn-kante:#b89f7f;
+  --kf-a:#4a2e17; --kf-b:#2a180a; --kf-licht:#7b5330; --kf-kante:#140a03;
+  --kd-a:#55361c; --kd-b:#3a2412; --kd-licht:#84603c;
+  --muster:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cg fill='none' stroke='%23c98543' stroke-opacity='.075' stroke-width='1.4'%3E%3Ccircle cx='28' cy='28' r='21'/%3E%3Ccircle cx='28' cy='28' r='5'/%3E%3Cpath d='M0 0h56v56H0z'/%3E%3C/g%3E%3C/svg%3E");
+}
+.gruen,.farbe-b{
+  /* Farbwelt B «Fassade und Giebel»: jeder Ton gemessen an Fassade, Giebelmalerei und Kachelofen */
+  --russ:#1b1b19;      /* Fassade, sonnenverbranntes Holz */
+  --holz:#31380d;      /* Kachelofen im Ofestübli, dunkles Grün */
+  --balken:#506e2e;    /* Giebelmalerei, Grün */
+  --zweit:#724230;     /* Giebelmalerei, Ochsenblut */
+  --kerze:#94af68;     /* Giebelmalerei, helles Grün */
+  --gold:#b78f51;      /* Gold des Zeichens auf den Karten */
+  --papier:#e9ecdf;    /* aufgehellt aus dem hellen Giebelfeld #d7e1cb */
+  --leinen:#d7e1cb;
+  --geranie:#f45137;
+  --tinte:#1b1b19; --blatt:#f6f7ef; --tief:#141412; --karte:#333528;
+  --ld:27,27,25; --lh:233,236,223;
+  --kn-a:#f3f5ea; --kn-b:#dfe3d0; --kn-c:#c9cfb6; --kn-licht:#ffffff; --kn-kante:#a3a98d;
+  --kf-a:#4b5417; --kf-b:#262b08; --kf-licht:#7c853c; --kf-kante:#111402;
+  --kd-a:#5b5e1e; --kd-b:#3a400f; --kd-licht:#8a8d45;
+  --muster:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56'%3E%3Cg fill='none' stroke='%2394af68' stroke-opacity='.075' stroke-width='1.4'%3E%3Ccircle cx='28' cy='28' r='21'/%3E%3Ccircle cx='28' cy='28' r='5'/%3E%3Cpath d='M0 0h56v56H0z'/%3E%3C/g%3E%3C/svg%3E");
+}
+:root{
+  --rand:clamp(20px,4.6vw,76px);
+  --ein:cubic-bezier(.16,1,.3,1);
+  --knopf:cubic-bezier(.32,.72,0,1);
+  --titel:"Gelasio",Georgia,"Times New Roman",serif;
+  --text:"Instrument Sans",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:"DM Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--russ);color:var(--papier);font:400 18px/1.62 var(--text);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:1480px;margin:0 auto;padding-inline:var(--rand)}
+h1,h2,h3{font-family:var(--titel);font-weight:700;margin:0;line-height:1.1;letter-spacing:-.005em}
+h1{font-size:clamp(2.3rem,5.2vw,4.7rem)}
+h2{font-size:clamp(1.85rem,3.5vw,3.15rem)}
+h3{font-size:clamp(1.35rem,2vw,1.8rem);line-height:1.2}
+p{margin:0 0 1em}
+.gold{color:var(--gold)}
+.hell .gold{color:var(--balken)}
+.leise{opacity:.72}
+.eng{max-width:62ch}
+
+/* ---------- Flächen im Wechsel: Russ, Holz, Papier ---------- */
+.fl{padding-block:clamp(64px,8.5vw,128px);position:relative}
+.fl--holz{background:var(--holz)}
+.fl--russ{background:var(--russ)}
+.hell{background:var(--papier);color:var(--tinte)}
+/* Muster des Hauses, Ton in Ton: die Butzenscheiben der Fensterreihe */
+.butzen{background-image:var(--muster)}
+
+/* ---------- Bewegung: nur transform und opacity ---------- */
+.z{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.z>span{display:block;transform:translateY(108%);transition:transform 1.25s var(--ein);transition-delay:calc(var(--i,0)*90ms)}
+.da .z>span,.still .z>span{transform:none}
+[data-r]{opacity:0;transform:translateY(30px);transition:opacity 1.1s var(--ein),transform 1.3s var(--ein);transition-delay:calc(var(--i,0)*90ms)}
+[data-r].da,.still [data-r]{opacity:1;transform:none}
+[data-r="schweb"]{transform:translateY(90px) scale(.9)}
+.linie{display:block;height:1px;background:currentColor;opacity:.28;transform:scaleX(0);transform-origin:left;transition:transform 1.4s var(--ein)}
+.da .linie,.linie.da,.still .linie{transform:none}
+@media (prefers-reduced-motion:reduce){.z>span,[data-r],.linie{transition:none;transform:none;opacity:1}}
+
+/* ---------- Kapitelzeile: Nummer in der Titelschrift, Strich, Wort ---------- */
+.kapitel{display:flex;align-items:center;gap:16px;font:700 1.05rem/1 var(--titel);color:var(--gold);margin:0 0 26px}
+.kapitel i{width:64px;height:1px;background:currentColor;opacity:.7}
+.hell .kapitel{color:var(--zweit)}
+
+/* ---------- Knopf mit Tiefe: Pille, Lichtkante oben, Schattenkante unten, runder Knauf mit Pfeil ---------- */
+.kn{display:inline-flex;align-items:center;gap:14px;height:54px;padding:0 7px 0 26px;border-radius:99px;border:0;cursor:pointer;text-decoration:none;
+  font:400 11.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;color:var(--tinte);
+  background:linear-gradient(var(--kn-a),var(--kn-b) 55%,var(--kn-c));box-shadow:inset 0 1px 0 var(--kn-licht),inset 0 -2px 0 var(--kn-kante),0 10px 22px -10px rgba(0,0,0,.7);
+  transition:transform .5s var(--knopf)}
+.kn i{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(var(--kf-a),var(--kf-b));box-shadow:inset 0 1px 0 var(--kf-licht),inset 0 -2px 0 var(--kf-kante)}
+.kn svg{width:15px;height:15px;stroke:var(--papier);fill:none;stroke-width:1.5}
+.kn:hover{transform:translateY(-2px)} .kn:active{transform:translateY(1px)}
+.kn--dunkel{color:var(--papier);background:linear-gradient(var(--kd-a),var(--kd-b) 55%,var(--kf-b));box-shadow:inset 0 1px 0 var(--kd-licht),inset 0 -2px 0 var(--kf-kante),0 10px 22px -10px rgba(0,0,0,.6)}
+.kn--dunkel i{background:linear-gradient(var(--kn-a),var(--kn-c));box-shadow:inset 0 1px 0 var(--kn-licht),inset 0 -2px 0 var(--kn-kante)}
+.kn--dunkel svg{stroke:var(--tinte)}
+
+/* ---------- Bildrahmen: doppelter Rand, 7 px Polster, feine Innenlinie ---------- */
+.rahmen{display:block;padding:7px;border-radius:34px;background:rgba(var(--lh),.07);box-shadow:inset 0 0 0 1px rgba(var(--lh),.16)}
+.rahmen>span{display:block;position:relative;border-radius:27px;overflow:hidden}
+.rahmen img{width:100%;height:100%;object-fit:cover}
+.hell .rahmen{background:rgba(var(--ld),.06);box-shadow:inset 0 0 0 1px rgba(var(--ld),.18)}
+.q32 img{aspect-ratio:3/2}.q43 img{aspect-ratio:4/3}.q11 img{aspect-ratio:1}.q34 img{aspect-ratio:3/4}.q169 img{aspect-ratio:16/9}
+/* Bild ohne Rahmen: runde Ecken, weicher Schatten, Name mittig darunter */
+.frei{margin:0}
+.frei img{border-radius:26px;box-shadow:0 26px 44px -26px rgba(0,0,0,.75);width:100%;object-fit:cover}
+.frei figcaption{text-align:center;padding-top:16px;font:700 1.25rem/1.2 var(--titel)}
+.frei figcaption small{display:block;font:400 .95rem/1.4 var(--text);opacity:.7;padding-top:4px}
+/* Einkerbung als Namensschild in der Bildecke */
+.kerbe{position:absolute;left:-1px;bottom:-1px;padding:13px 24px 12px 20px;border-top-right-radius:24px;background:var(--holz);color:var(--papier);font:700 1.15rem/1.15 var(--titel)}
+.hell .kerbe{background:var(--papier);color:var(--tinte)}
+
+/* ---------- Kopf des Boards ---------- */
+.kopf{position:relative;min-height:100svh;display:flex;align-items:flex-end;isolation:isolate}
+.kopf__bild{position:absolute;inset:0;z-index:-1}
+.kopf__bild img{width:100%;height:100%;object-fit:cover;object-position:50% 46%}
+.kopf__in{width:100%;padding-block:clamp(28px,3.4vw,54px);text-shadow:0 2px 26px rgba(8,10,20,.85),0 0 60px rgba(8,10,20,.6)}
+.kopf__marke{position:absolute;top:26px;left:var(--rand);display:flex;align-items:center;gap:14px;font:700 1rem/1.1 var(--titel);letter-spacing:.06em;text-shadow:0 1px 14px rgba(0,0,0,.8)}
+.kopf__marke svg{width:46px;height:auto}
+.kopf__marke small{display:block;font:400 10.5px/1 var(--mono);letter-spacing:.17em;opacity:.8;padding-top:5px}
+.kopf p{font-size:clamp(1.05rem,1.4vw,1.25rem);max-width:60ch;margin:14px 0 0}
+.kopf h1{font-size:clamp(2.2rem,4.6vw,4.2rem)}
+/* Sprungmarken als schmale Zeile unter dem Kopf */
+.sprungleiste{background:var(--tief);border-bottom:1px solid rgba(var(--lh),.12)}
+.sprungleiste .wrap{display:flex;flex-wrap:wrap;gap:6px 30px;padding-block:18px;font:700 1.02rem/1.3 var(--titel)}
+.sprungleiste a{text-decoration:none;border-bottom:1px solid rgba(var(--lh),.4);padding-bottom:2px}
+
+/* Schalter zwischen den zwei Fassungen des Boards */
+.sprungleiste .wahl{margin-left:auto;display:flex;gap:8px;align-items:center}
+.sprungleiste .wahl a{border:0;padding:9px 16px 8px;border-radius:99px;font:400 11px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;box-shadow:inset 0 0 0 1px rgba(var(--lh),.3)}
+.sprungleiste .wahl a[aria-current]{background:var(--papier);color:var(--tinte);box-shadow:none}
+@media (max-width:980px){.sprungleiste .wahl{margin-left:0;width:100%;padding-top:8px}}
+
+/* ---------- Werte auf einer Linie: Wert gross in der Titelschrift, Angabe klein darunter ---------- */
+.werte{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0 clamp(18px,3vw,48px);border-top:1px solid rgba(var(--lh),.22);margin-top:54px}
+.werte div{padding-top:22px}
+.werte b{display:block;font:700 clamp(1.7rem,2.9vw,2.7rem)/1 var(--titel);white-space:nowrap}
+.werte span{display:block;font-size:.98rem;opacity:.78;padding-top:9px;max-width:26ch}
+.hell .werte{border-color:rgba(var(--ld),.22)}
+
+/* ---------- Idee: Text und Schaubild nebeneinander, jede Idee anders ausgelegt ---------- */
+.idee{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,88px);align-items:center}
+.idee--um{grid-template-columns:minmax(0,7fr) minmax(0,5fr)}
+.idee--um>.idee__t{order:2}
+/* Kopfzeile eines Abschnitts: Titel links, Text rechts, beide stehen unten bündig */
+.idee--kopf{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end}
+.idee--kopf h2{margin-bottom:0}
+.idee--kopf .idee__t h2{margin-bottom:24px}
+.idee>*,.zimmer>*{min-width:0}
+.idee__t p{max-width:54ch}
+.idee__t h2{margin-bottom:24px}
+.merk{margin-top:22px;padding-top:18px;border-top:1px solid rgba(var(--lh),.2);font-size:.98rem}
+.hell .merk{border-color:rgba(var(--ld),.2)}
+.merk b{font-family:var(--titel)}
+.von{display:inline-block;font:400 10.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:6px 9px 5px;border-radius:6px;background:color-mix(in srgb,var(--kerze) 20%,transparent);color:var(--kerze);vertical-align:middle;margin-left:8px}
+.hell .von{background:color-mix(in srgb,var(--balken) 14%,transparent);color:var(--balken)}
+
+/* Erzählfaden: fünf Stationen als Bildband, Linie zieht sich darunter */
+.faden{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px}
+.faden figure{margin:0}
+.faden img{aspect-ratio:3/4;object-fit:cover;border-radius:22px;width:100%}
+.faden figcaption{padding-top:14px}
+.faden b{display:block;font:700 1.22rem/1.2 var(--titel)}
+.faden span{display:block;font-size:.95rem;opacity:.75;padding-top:4px}
+
+/* Erster Moment: drei Standbilder der Bewegung */
+.moment{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+.moment figure{margin:0}
+.moment .schirm{position:relative;aspect-ratio:16/10;border-radius:20px;overflow:hidden;background:#000;box-shadow:0 24px 44px -26px #000}
+.moment .schirm>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.moment .innen{position:absolute;border-radius:8px;overflow:hidden;box-shadow:0 0 0 2px rgba(243,205,148,.9),0 0 34px 6px rgba(201,133,67,.55)}
+.moment .innen img{width:100%;height:100%;object-fit:cover}
+.moment .t{position:absolute;left:5%;bottom:22%;font:700 clamp(1.1rem,2.3vw,2.3rem)/1.08 var(--titel);text-shadow:0 2px 14px #000,0 0 30px rgba(0,0,0,.8)}
+.moment .leiste{position:absolute;left:5%;right:5%;bottom:6%;height:11%;border-radius:8px;background:linear-gradient(var(--kn-a),var(--kn-c));box-shadow:inset 0 1px 0 #fff,0 8px 16px -8px #000}
+.moment figcaption{padding-top:13px;font-size:.95rem;opacity:.8}
+.moment figcaption b{font-family:var(--titel);opacity:1}
+
+/* Fragen an den Gast: vier Bildkarten, darunter die Antwort */
+.fragen{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.antwort{margin-top:26px;padding:26px 30px;border-radius:26px;background:linear-gradient(var(--kn-a),var(--kn-b));color:var(--tinte);display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;box-shadow:inset 0 1px 0 var(--kn-licht),0 22px 40px -26px #000}
+.antwort h3{margin-bottom:6px}
+.antwort p{margin:0;font-size:1rem}
+
+/* Stuben: zwei Stockwerke */
+.stock{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.stock--2{grid-template-columns:repeat(2,1fr)}
+.karte{border-radius:28px;overflow:hidden;background:var(--karte);box-shadow:inset 0 0 0 1px rgba(var(--lh),.12),0 26px 40px -30px #000}
+.karte img{aspect-ratio:4/3;object-fit:cover;width:100%}
+.karte div{padding:20px 22px 24px}
+.karte h3{font-size:1.4rem}
+.karte p{margin:8px 0 0;font-size:.98rem;opacity:.82}
+.hell .karte{background:var(--blatt);box-shadow:inset 0 0 0 1px rgba(var(--ld),.14),0 26px 40px -30px rgba(var(--ld),.5)}
+.treppe{display:flex;align-items:center;gap:18px;margin:44px 0 30px;font:700 1.35rem/1 var(--titel)}
+.treppe i{flex:1;height:1px;background:currentColor;opacity:.3}
+
+/* Blatt Papier auf dunklem Grund: die Karte */
+.blatt{background:var(--blatt);color:var(--tinte);border-radius:10px;padding:clamp(26px,3.6vw,54px);box-shadow:0 1px 0 #fff inset,0 40px 60px -34px #000;position:relative}
+.blatt h3{font-size:clamp(1.9rem,3vw,2.7rem);color:var(--balken)}
+.blatt .unter{font:400 10.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;opacity:.6;margin:10px 0 22px}
+.gang{display:grid;grid-template-columns:1fr auto;gap:2px 20px;padding:13px 0;border-top:1px solid rgba(var(--ld),.16)}
+.gang b{font:700 1.08rem/1.25 var(--titel)}
+.gang em{font:700 1.08rem/1.25 var(--titel);font-style:normal}
+.gang span{grid-column:1/-1;font-size:.93rem;opacity:.72}
+.boegen{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 18px;align-content:start}
+.bogen{margin:0;text-align:center}
+.bogen img{aspect-ratio:3/4;object-fit:cover;border-radius:999px 999px 18px 18px;width:100%}
+.bogen figcaption{padding-top:12px;font:700 1.08rem/1.2 var(--titel)}
+.bogen small{display:block;font:400 .9rem/1.3 var(--text);opacity:.7;padding-top:3px}
+
+/* ---------- Fenster: ein stehendes Bild, die Seite zieht darüber (clip-path, kein Skript) ---------- */
+.bruch{position:relative;height:58vh;clip-path:inset(0);display:grid;place-items:center;text-align:center}
+.bruch__bild{position:fixed;inset:0;z-index:-1}
+.bruch__bild img{width:100%;height:100%;object-fit:cover}
+.bruch__t{position:fixed;left:0;right:0;top:50%;transform:translateY(-50%);padding-inline:var(--rand)}
+.bruch__t p{font:700 clamp(1.5rem,3.3vw,3rem)/1.18 var(--titel);max-width:24ch;margin:0 auto;text-shadow:0 2px 22px rgba(0,0,0,.9),0 0 70px rgba(0,0,0,.8)}
+.bruch__t small{display:block;margin-top:16px;font:400 10.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;text-shadow:0 1px 10px #000}
+@media (max-width:860px){.bruch{height:54vh}}
+
+/* Zimmer: jedes einzeln und gross, Flächen im Wechsel */
+.zimmer{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(24px,4vw,64px);align-items:end;padding-block:34px}
+.zimmer--um{grid-template-columns:minmax(0,4fr) minmax(0,7fr)}
+.zimmer--um .zimmer__b{order:2}
+.zimmer h3{font-size:clamp(1.8rem,3vw,2.7rem);margin-bottom:12px}
+.zimmer .preis{font:700 1.3rem/1.2 var(--titel);margin:16px 0 22px}
+.uebergang{display:flex;align-items:center;gap:20px;color:var(--gold);opacity:.8}
+.uebergang i{flex:1;height:1px;background:currentColor;opacity:.5}
+.uebergang svg{width:34px;height:auto}
+
+/* Grosse Jahre: steigen aus einer Linie */
+.jahre{display:grid;grid-template-columns:repeat(4,1fr);gap:0 clamp(14px,2.4vw,40px);border-block:3px double rgba(var(--lh),.3);padding-block:44px;margin-top:44px}
+.jahre div+div{border-left:1px solid rgba(var(--lh),.16);padding-left:clamp(14px,2.4vw,40px)}
+.jahre b{display:block;font:700 clamp(2.6rem,7.4vw,7.6rem)/.95 var(--titel);color:var(--papier)}
+.jahre span{display:block;padding-top:16px;font-size:.98rem;opacity:.8;max-width:28ch}
+
+/* Zeichen und Muster */
+.zeichen-gross{color:var(--gold);width:min(100%,360px);margin-inline:auto}
+.muster{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.muster figure{margin:0}
+.muster .feld{aspect-ratio:4/3;border-radius:22px;background-color:var(--holz);display:grid;place-items:center;overflow:hidden;position:relative;box-shadow:inset 0 0 0 1px rgba(var(--lh),.12)}
+.muster figcaption{padding-top:12px;font-size:.95rem;opacity:.8}
+.fries{height:14px;width:100%;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 20px);opacity:.75;position:relative}
+.fries::before,.fries::after{content:"";position:absolute;left:0;right:0;height:1px;background:var(--gold)}
+.fries::before{top:-6px}.fries::after{bottom:-6px}
+
+/* Tabelle: wo welche Bewegung sitzt */
+.plan{width:100%;border-collapse:collapse;font-size:1rem}
+.plan th{text-align:left;font:400 10.5px/1 var(--mono);letter-spacing:.17em;text-transform:uppercase;opacity:.65;padding:0 18px 14px 0}
+.plan td{padding:15px 18px 15px 0;border-top:1px solid rgba(var(--ld),.16);vertical-align:top}
+.plan td:first-child{font:700 1.1rem/1.3 var(--titel);white-space:nowrap}
+.rollt{overflow-x:auto}
+
+/* Farbwelten zur Wahl */
+.welten{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.6vw,40px);margin-top:44px}
+.welt{border-radius:30px;overflow:hidden;box-shadow:0 34px 60px -36px #000}
+.welt__kopf{position:relative;aspect-ratio:16/10}
+.welt__kopf img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.welt__kopf div{position:absolute;inset:auto 0 0 0;padding:26px 28px;text-shadow:0 2px 20px #000,0 0 50px rgba(0,0,0,.8)}
+.welt__kopf h3{font-size:clamp(1.5rem,2.6vw,2.4rem)}
+.welt__kopf h3 span{color:var(--w-gold)}
+.welt__dunkel{background:var(--w-grund);color:var(--w-hell);padding:28px}
+.welt__hell{background:var(--w-hell);color:var(--w-grund);padding:28px}
+.welt__zeile{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-top:1px solid color-mix(in srgb,currentColor 18%,transparent);font:700 1.05rem/1.25 var(--titel)}
+.welt .kn{margin-top:18px}
+.toene{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:6px}
+.ton i{display:block;aspect-ratio:5/3;border-radius:12px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.ton b{display:block;font:400 11.5px/1.2 var(--mono);padding-top:8px}
+.ton span{display:block;font-size:.8rem;line-height:1.3;opacity:.72;padding-top:3px}
+.welt--a{--w-grund:#1f1209;--w-zwei:#321f10;--w-hell:#efe4d3;--w-gold:#c98543}
+.welt--b{--w-grund:#1b1b19;--w-zwei:#31380d;--w-hell:#e9ecdf;--w-gold:#b78f51}
+.welt--b .welt__dunkel{background:linear-gradient(#1b1b19,#22240f)}
+
+/* Schriftvergleich */
+.schriften{display:grid;gap:0;margin-top:34px}
+.schrift{display:grid;grid-template-columns:230px 1fr 1fr;gap:24px;align-items:center;padding:20px 0;border-top:1px solid rgba(var(--lh),.16)}
+.schrift small{font:400 11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.schrift .wm{font-size:clamp(1.3rem,2.3vw,2.1rem);line-height:1;letter-spacing:.01em;font-weight:700}
+.schrift .ti{font-size:clamp(1.3rem,2.3vw,2.1rem);line-height:1.1;font-weight:700}
+.schrift--wahl{background:color-mix(in srgb,var(--kerze) 11%,transparent);margin-inline:-18px;padding-inline:18px;border-radius:16px;border-top-color:transparent}
+.wortmarke{background:#000;border-radius:16px;padding:22px 28px;display:inline-block}
+.wortmarke img{height:92px;width:auto}
+
+/* Seitenliste */
+.seiten{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.seite{border-radius:26px;padding:26px 26px 28px;background:var(--blatt);box-shadow:inset 0 0 0 1px rgba(var(--ld),.14)}
+.seite h3{margin-bottom:10px}
+.seite p{font-size:.97rem;margin:0}
+.seite ul{margin:12px 0 0;padding:0;list-style:none;font-size:.97rem}
+.seite li{padding:8px 0;border-top:1px solid rgba(var(--ld),.14)}
+
+/* Offene Punkte */
+.offen{display:grid;grid-template-columns:repeat(2,1fr);gap:0 clamp(24px,4vw,64px);margin-top:34px}
+.offen div{padding:20px 0;border-top:1px solid rgba(var(--lh),.18)}
+.offen b{display:block;font:700 1.2rem/1.25 var(--titel);margin-bottom:6px}
+.offen p{margin:0;font-size:.98rem;opacity:.85}
+
+/* Bildauswahl */
+.auswahl{display:grid;grid-template-columns:repeat(4,1fr);gap:22px 16px;margin-top:30px}
+.auswahl figure{margin:0}
+.auswahl img{border-radius:18px;width:100%;aspect-ratio:4/3;object-fit:cover;background:#120a04}
+.auswahl figcaption{padding-top:10px;font-size:.9rem;line-height:1.4}
+.auswahl b{display:block;font:700 1.02rem/1.25 var(--titel)}
+.auswahl code{display:block;font:400 10.5px/1.45 var(--mono);opacity:.62;word-break:break-all;padding-top:4px}
+.luecken{columns:2;column-gap:clamp(24px,4vw,64px);margin-top:26px;padding:0;list-style:none}
+.luecken li{break-inside:avoid;padding:14px 0;border-top:1px solid rgba(var(--ld),.16)}
+.luecken b{font-family:var(--titel)}
+
+.fuss{padding-block:40px 60px;font:400 10.5px/1.7 var(--mono);letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+
+/* ---------- Kleinere Schirme ---------- */
+@media (max-width:980px){
+  .idee,.idee--um,.idee--kopf,.zimmer,.zimmer--um{grid-template-columns:1fr}
+  .idee--kopf h2{margin-bottom:6px}
+  .idee--um>.idee__t,.zimmer--um .zimmer__b{order:0}
+  .faden{grid-template-columns:repeat(2,1fr);gap:22px 14px}
+  .faden figure:first-child{grid-column:1/-1}
+  .faden figure:first-child img{aspect-ratio:3/2}
+  .schrift--wahl{margin-inline:0;padding-inline:12px}
+  /* Handy: Bild oben, Text darunter auf dem dunklen Grund (das Haus steht in der Bildmitte, Schrift hätte dort keinen Platz) */
+  .kopf{min-height:0;display:block}
+  .kopf__bild{position:relative;inset:auto;z-index:0}
+  .kopf__bild img{aspect-ratio:1/1;object-position:54% 50%}
+  .kopf__in{text-shadow:none;padding-block:26px 34px}
+  .moment,.stock,.stock--2,.muster,.welten{grid-template-columns:1fr}
+  .fragen,.seiten,.auswahl{grid-template-columns:repeat(2,1fr)}
+  .werte,.jahre{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:26px}
+  .werte b{font-size:clamp(1.45rem,6.4vw,2.2rem)}
+  .jahre div+div{border-left:0;padding-left:0}
+  .offen{grid-template-columns:1fr}
+  .schrift{grid-template-columns:1fr;gap:8px}
+  .antwort{grid-template-columns:1fr}
+  .luecken{columns:1}
+  .boegen{margin-top:26px}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .seiten{grid-template-columns:1fr}
+  .toene{grid-template-columns:repeat(2,1fr)}
+  .kopf__marke small{display:none}
+}

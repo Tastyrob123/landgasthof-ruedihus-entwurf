@@ -30,7 +30,7 @@ a{color:inherit;text-decoration:none}
 [hidden]{display:none!important}
 ::selection{background:var(--gold);color:var(--tinte)}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
-.mono{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--leise)}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--leise)}
 .zt{display:block;width:22px;height:32px;fill:currentColor}
 /* Butzenscheiben als leichte Tapete auf Wandholz (Datei butzen-09.png der Website, wie im Fuss der Seiten: main.css .fuss::before) */
 .tapete{background:var(--nacht) url(../../assets/img/butzen-09.png);background-size:56px 56px}
@@ -39,7 +39,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 
 /* ---------- Knöpfe wie auf der Website: Pille mit rundem Knauf ---------- */
 .kn{position:relative;overflow:hidden;isolation:isolate;display:inline-flex;align-items:center;justify-content:space-between;gap:12px;height:48px;padding:0 5px 0 22px;border-radius:999px;white-space:nowrap;
-  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--tinte);
+  font-family:var(--mono);font-size:13px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--tinte);
   background:linear-gradient(#f6ecdc,#e7d7c0 55%,#d6c2a6);box-shadow:inset 0 1px 0 #fffaf0,inset 0 -2px 0 #b89f7f,0 12px 22px -12px rgba(0,0,0,.6);
   transition:transform .5s var(--e2),opacity .3s}
 .kn i{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(#4a2e17,#2a180a);box-shadow:inset 0 1px 0 #7b5330,inset 0 -2px 0 #140a03;color:var(--papier);transition:transform .5s var(--e2)}
@@ -54,9 +54,9 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .kn--linie::after{display:none}
 .kn--linie:hover{opacity:1}
 .kn--linie i{background:none;box-shadow:none;color:inherit;width:28px}
-.kn--klein{height:40px;padding:0 4px 0 16px;font-size:10px;gap:9px}
+.kn--klein{height:40px;padding:0 4px 0 16px;font-size:13px;gap:9px}
 .kn--klein i{width:32px;height:32px}
-.link{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);border-bottom:1px solid currentColor;padding-bottom:2px;transition:color .3s}
+.link{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);border-bottom:1px solid currentColor;padding-bottom:2px;transition:color .3s}
 .link:hover{color:var(--tinte)}
 
 /* ---------- Kopf: Wandholz mit Butzenscheiben, Marke links, Titel und Stand in der Mitte, Knöpfe rechts ---------- */
@@ -66,17 +66,17 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .kopf__z{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;flex:none;color:var(--hellgold);background:var(--karte);box-shadow:inset 0 0 0 1px rgba(243,205,148,.42)}
 .kopf__z .zt{width:16px;height:24px}
 .kopf__marke b{display:block;font-family:var(--titel);font-weight:700;font-size:1.28rem;line-height:1;letter-spacing:.01em}
-.kopf__marke small{display:block;margin-top:5px;font-family:var(--mono);font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:rgba(243,205,148,.8);white-space:nowrap}
+.kopf__marke small{display:block;margin-top:5px;font-family:var(--mono);font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:rgba(243,205,148,.8);white-space:nowrap}
 .kopf__mitte{min-width:0;display:grid;gap:3px;text-align:center;padding:6px 18px;border-radius:14px;background:var(--nacht)}
 .kopf__titel{font-family:var(--titel);font-weight:700;font-size:1.3rem;line-height:1.05;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.kopf__stand{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,205,148,.82);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kopf__stand{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,205,148,.82);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kopf__werk{display:flex;align-items:center;gap:10px;justify-self:end}
 .kopf__trenn{width:1px;height:28px;margin:0 4px;background:linear-gradient(180deg,rgba(243,205,148,0),rgba(243,205,148,.55),rgba(243,205,148,0))}
 .rund{position:relative;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:rgba(255,255,255,.86);background:var(--karte);box-shadow:inset 0 0 0 1px rgba(255,255,255,.22);transition:color .3s,transform .4s var(--e2)}
 .rund:hover{color:var(--hellgold)}
 .rund:active{transform:scale(.92)}
 .rund svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
-.rund::after{content:attr(data-tip);position:absolute;top:calc(100% + 10px);right:0;padding:6px 9px;border-radius:7px;background:var(--hellgold);color:var(--tinte);font:500 10px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .2s,transform .3s var(--e1);z-index:5}
+.rund::after{content:attr(data-tip);position:absolute;top:calc(100% + 10px);right:0;padding:6px 9px;border-radius:7px;background:var(--hellgold);color:var(--tinte);font:500 13px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;opacity:0;transform:translateY(-4px);pointer-events:none;transition:opacity .2s,transform .3s var(--e1);z-index:5}
 .rund:hover::after,.rund:focus-visible::after{opacity:1;transform:none}
 
 /* ---------- Aufbau: Rand hell (Karte auf Papier), Raum Papier, Leiste Wandholz ---------- */
@@ -84,22 +84,22 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .rand{position:relative;isolation:isolate;display:flex;flex-direction:column;padding:22px 16px 18px 18px;overflow:auto;min-height:0}
 .rand::before{content:'';position:absolute;inset:14px 0 14px 12px;z-index:-1;border-radius:24px;background:var(--weiss);box-shadow:inset 0 0 0 1px var(--linie),0 22px 40px -34px rgba(42,26,14,.45)}
 .rand__kopf{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px 4px}
-.rand__titel{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
+.rand__titel{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold)}
 .rand__titel::before{content:'';width:22px;height:1px;background:var(--gold)}
 .rand__auf{display:none}
 .rand__nav{display:grid;gap:2px;padding:0 4px}
-.rand__gruppe{display:flex;align-items:center;gap:10px;padding:16px 12px 6px;font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--leise)}
+.rand__gruppe{display:flex;align-items:center;gap:10px;padding:16px 12px 6px;font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--leise)}
 .rand__gruppe::after{content:'';flex:1;height:1px;background:var(--linie)}
 .rand__nav a{display:flex;align-items:center;gap:12px;height:40px;padding:0 12px;border-radius:13px;color:var(--tinte);font-size:14.5px;transition:background-color .3s,color .3s}
 .rand__nav a:hover{background:rgba(42,26,14,.045)}
 .rand__nav a.an{background:var(--nacht);color:#fff;box-shadow:inset 0 1px 0 rgba(255,255,255,.1),inset 0 -2px 0 #140a03}
 .rand__nav a.an span::before{content:'';display:inline-block;width:5px;height:5px;margin:0 10px 2px 0;border-radius:50%;background:var(--hellgold);vertical-align:middle}
-.rand__nav a b{margin-left:auto;min-width:24px;height:24px;padding:0 8px;border-radius:12px;background:var(--gold);color:var(--tinte);font-family:var(--mono);font-size:11px;font-weight:500;display:grid;place-items:center}
+.rand__nav a b{margin-left:auto;min-width:24px;height:24px;padding:0 8px;border-radius:12px;background:var(--gold);color:var(--tinte);font-family:var(--mono);font-size:13px;font-weight:500;display:grid;place-items:center}
 .rand__fuss{margin-top:auto;padding:22px 16px 6px;display:grid;gap:11px;font-size:13.5px;color:rgba(42,26,14,.72)}
 .rand__fuss a{display:flex;align-items:center;justify-content:space-between;gap:9px;transition:color .3s}
 .rand__fuss a:hover{color:var(--tinte)}
 .rand__fuss svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.3}
-.rand__haus{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:10px;border-top:1px solid var(--linie)}
+.rand__haus{font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);padding-top:10px;border-top:1px solid var(--linie)}
 .haupt{display:grid;grid-template-rows:minmax(0,1fr) auto;min-height:0;min-width:0}
 .flaeche{overflow:auto;position:relative;overscroll-behavior:contain}
 .flaeche:focus{outline:0}
@@ -112,7 +112,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
   display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(18px,2.6vw,40px);padding:clamp(14px,1.4vw,18px);color:var(--weiss);
   background:var(--nacht) url(../../assets/img/butzen-07.png);background-size:56px 56px;box-shadow:0 40px 60px -40px rgba(23,13,6,.7),inset 0 0 0 1px rgba(243,205,148,.22)}
 .buehne__in{grid-column:1;grid-row:1;align-self:end;min-width:0;padding:clamp(16px,2.6vw,38px) 0 clamp(14px,2vw,26px) clamp(14px,2.4vw,36px);position:relative;z-index:1}
-.buehne__mono{display:inline-flex;align-items:center;gap:14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--hellgold);animation:rg-auf 1s var(--e1) .1s backwards}
+.buehne__mono{display:inline-flex;align-items:center;gap:14px;font-family:var(--mono);font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--hellgold);animation:rg-auf 1s var(--e1) .1s backwards}
 .buehne__mono i{display:block;width:44px;height:1px;background:var(--gold);transform-origin:0 50%;animation:rg-linie 1.4s var(--e1) .2s backwards}
 .buehne h1{margin-top:16px;font-size:clamp(2.2rem,4.2vw,3.9rem);line-height:1.04;color:var(--weiss);text-wrap:balance}
 .buehne h1 em{color:var(--hellgold)}
@@ -122,7 +122,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .buehne__chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;animation:rg-auf 1.2s var(--e1) 1s backwards}
 .buehne__chips li{display:inline-flex;align-items:baseline;gap:9px;padding:9px 15px;border-radius:10px;background:var(--karte);box-shadow:inset 0 0 0 1px rgba(243,205,148,.42),inset 0 0 0 4px var(--karte),inset 0 0 0 5px rgba(243,205,148,.18)}
 .buehne__chips b{font-family:var(--titel);font-weight:700;font-size:1.3rem;line-height:1;color:var(--hellgold);font-variant-numeric:lining-nums tabular-nums}
-.buehne__chips span{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,250,241,.78)}
+.buehne__chips span{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,250,241,.78)}
 /* das Fenster: Foto mit Goldlinie innen, Zeichen in Gold */
 .buehne__fenster{grid-column:2;grid-row:1 / span 2;position:relative;border-radius:22px;overflow:hidden;min-height:260px;background:var(--karte);box-shadow:0 26px 40px -26px #000}
 .buehne__bild{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;animation:rg-bild 2.6s var(--feder-leise) backwards;transform-origin:50% 50%}
@@ -145,7 +145,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .wahl3 button.an{background:var(--nacht);color:#fff}
 .wahl3--filter{margin:0 0 18px;flex-wrap:wrap}
 .bsp-band{display:block;margin:0 0 22px;padding:12px 16px 12px 46px;border-radius:14px;background:rgba(183,143,81,.2);color:#5a3d1d;font-size:14px;line-height:1.45;position:relative;box-shadow:inset 0 0 0 1px rgba(183,143,81,.35)}
-.bsp-band::before{content:'B';position:absolute;left:13px;top:11px;width:22px;height:22px;border-radius:50%;background:var(--nacht);color:var(--hellgold);font:500 11px/22px var(--mono);text-align:center}
+.bsp-band::before{content:'B';position:absolute;left:13px;top:11px;width:22px;height:22px;border-radius:50%;background:var(--nacht);color:var(--hellgold);font:500 13px/22px var(--mono);text-align:center}
 .bsp-band b{color:var(--tinte)}
 .zw{font-size:1.65rem;line-height:1.1;margin:46px 0 16px}
 
@@ -177,13 +177,13 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .rang{display:grid;gap:9px}
 .rang li{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(60px,1fr) auto 42px;gap:12px;align-items:center;font-size:14.5px}
 .rang__n{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.rang__n small{display:block;font-size:12px;color:var(--leise);overflow:hidden;text-overflow:ellipsis}
+.rang__n small{display:block;font-size:13px;color:var(--leise);overflow:hidden;text-overflow:ellipsis}
 .rang__b{display:block;height:8px;border-radius:4px;background:rgba(42,26,14,.07);overflow:hidden}
 .rang__b i{display:block;height:100%;width:100%;border-radius:4px;background:linear-gradient(90deg,var(--nacht),var(--stahl));transform-origin:0 50%;transform:scaleX(var(--w));transition:transform 1.4s var(--feder-leise);transition-delay:calc(var(--i,0) * 90ms + 200ms)}
 [data-r]:not(.rg-los) .rang__b i{transform:scaleX(0)}
 .rang li:first-child .rang__b i{background:linear-gradient(180deg,#f3cd94,var(--gold) 55%,#8f6a35)}
 .rang li b{font-family:var(--mono);font-size:13px;font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
-.rang li em{font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--leise);text-align:right}
+.rang li em{font-style:normal;font-family:var(--mono);font-size:13px;color:var(--leise);text-align:right}
 
 /* Säulen */
 .saeulen{--h0:180px;display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:3px;height:var(--h0);align-items:end;padding-bottom:22px;position:relative}
@@ -194,8 +194,8 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .saeulen--vgl .s i{left:22%;right:22%}
 [data-r]:not(.rg-los) .saeulen .s i,[data-r]:not(.rg-los) .saeulen .s u{transform:scaleY(0)}
 .saeulen .s:hover i{background:linear-gradient(180deg,#f3cd94,var(--kerze))}
-.saeulen .s span{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:6px;font-family:var(--mono);font-size:10px;color:var(--leise);white-space:nowrap}
-.saeulen .s::after{content:attr(data-t);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translate(-50%,4px);background:var(--nacht);color:#fff;font-size:12px;padding:6px 9px;border-radius:7px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:2}
+.saeulen .s span{position:absolute;top:100%;left:50%;transform:translateX(-50%);margin-top:6px;font-family:var(--mono);font-size:13px;color:var(--leise);white-space:nowrap}
+.saeulen .s::after{content:attr(data-t);position:absolute;bottom:calc(100% + 6px);left:50%;transform:translate(-50%,4px);background:var(--nacht);color:#fff;font-size:13px;padding:6px 9px;border-radius:7px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:2}
 .saeulen .s:hover::after{opacity:1;transform:translate(-50%,0)}
 .saeulen .s:nth-child(-n+3)::after{left:0;transform:translate(0,4px)}
 .saeulen .s:nth-child(-n+3):hover::after{transform:none}
@@ -208,7 +208,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .raster{display:grid;grid-template-columns:30px repeat(24,minmax(0,1fr));gap:3px;align-items:center}
 .raster i{display:block;aspect-ratio:1;max-height:30px;border-radius:4px;background:var(--nacht);opacity:calc(.06 + var(--a) * .94);position:relative;transition:transform .2s}
 .raster i:hover{transform:scale(1.25);z-index:2}
-.raster__w,.raster__h{font-family:var(--mono);font-size:10px;color:var(--leise)}
+.raster__w,.raster__h{font-family:var(--mono);font-size:13px;color:var(--leise)}
 .raster__h{text-align:left}
 
 /* Besuche: Kreis mit Ländercode als Schild (Wandholz, Kerzenlicht) */
@@ -216,16 +216,16 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .besuch{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:center;text-align:left;padding:13px 16px;border-radius:16px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie);transition:background-color .3s,box-shadow .3s,transform .4s var(--e2)}
 .besuch:hover{background:#fff;transform:translateY(-1px)}
 .besuch.aktiv{background:#fff;box-shadow:inset 0 0 0 1.5px var(--gold)}
-.besuch__l{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--nacht);color:var(--hellgold);font-family:var(--mono);font-size:12px;letter-spacing:.06em;box-shadow:inset 0 0 0 3px var(--nacht),inset 0 0 0 4px rgba(243,205,148,.4)}
+.besuch__l{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--nacht);color:var(--hellgold);font-family:var(--mono);font-size:13px;letter-spacing:.06em;box-shadow:inset 0 0 0 3px var(--nacht),inset 0 0 0 4px rgba(243,205,148,.4)}
 .besuch.gold .besuch__l{background:var(--gold);color:var(--tinte);box-shadow:inset 0 0 0 3px var(--gold),inset 0 0 0 4px rgba(42,26,14,.25)}
 .besuch__n{min-width:0}
 .besuch__n b{display:block;font-weight:500;font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .besuch__n small{display:block;font-size:12.5px;color:var(--leise);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.besuch__z{text-align:right;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinte)}
-.besuch__z small{display:block;text-transform:none;letter-spacing:0;font-family:var(--sans);font-size:12px;color:var(--leise)}
+.besuch__z{text-align:right;font-family:var(--mono);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--tinte)}
+.besuch__z small{display:block;text-transform:none;letter-spacing:0;font-family:var(--sans);font-size:13px;color:var(--leise)}
 .besuch.gold .besuch__z{color:#8a6230}
 .mehr{margin-top:20px}
-.tagzeile{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--leise);padding:12px 4px 2px}
+.tagzeile{font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--leise);padding:12px 4px 2px}
 .tagzeile:first-child{padding-top:0}
 .weitere{justify-self:start;margin:8px 4px}
 .eingang{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;align-items:start}
@@ -241,9 +241,9 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .besuchsblatt::before{content:'';position:absolute;inset:8px;border-radius:16px;border:1px solid rgba(183,143,81,.32);pointer-events:none}
 .besuchsblatt__kopf{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
 .besuchsblatt h2{font-size:1.7rem;line-height:1.1;margin-top:6px}
-.siegel{flex:none;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;background:var(--nacht);color:var(--hellgold);border-radius:999px;padding:7px 12px}
+.siegel{flex:none;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;background:var(--nacht);color:var(--hellgold);border-radius:999px;padding:7px 12px}
 .angaben{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 18px;margin:20px 0 6px;padding:16px 0;border-top:1px solid var(--linie);border-bottom:1px solid var(--linie)}
-.angaben dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.angaben dt{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
 .angaben dd{font-size:15px;font-weight:500;margin-top:2px}
 .wegtitel{font-size:1.15rem;margin:18px 0 10px}
 .weg{display:grid;gap:0;position:relative}
@@ -252,12 +252,12 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .weg li::after{content:'';position:absolute;left:6.5px;top:29px;bottom:-13px;width:1px;background:rgba(183,143,81,.45)}
 .weg li:last-child::after{display:none}
 .weg li:last-child{border-bottom:0}
-.weg time{font-family:var(--mono);font-size:12px;color:var(--leise);padding-top:2px}
+.weg time{font-family:var(--mono);font-size:13px;color:var(--leise);padding-top:2px}
 .weg b{font-weight:500}
-.weg small{font-size:12px;color:var(--leise);margin-left:6px}
+.weg small{font-size:13px;color:var(--leise);margin-left:6px}
 .weg p{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
-.weg em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--leise);padding-top:2px}
-.ereignis{font-size:12px;padding:3px 9px;border-radius:999px;background:rgba(42,26,14,.07)}
+.weg em{font-style:normal;font-family:var(--mono);font-size:13px;color:var(--leise);padding-top:2px}
+.ereignis{font-size:13px;padding:3px 9px;border-radius:999px;background:rgba(42,26,14,.07)}
 .ereignis.gold{background:var(--hellgold)}
 .leer-hinweis{padding:20px;border-radius:16px;background:rgba(42,26,14,.05);color:var(--leise)}
 .leer-hinweis b{color:var(--tinte)}
@@ -270,7 +270,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .tabelle{padding:10px 26px}
 .zeile{display:grid;grid-template-columns:minmax(0,2fr) 70px minmax(60px,1.4fr) 110px 90px;gap:14px;align-items:center;padding:11px 0;border-bottom:1px solid var(--linie);font-size:14.5px}
 .zeile:last-child{border-bottom:0}
-.zeile--kopf{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.zeile--kopf{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
 .zeile__n b{font-weight:500}
 .zeile__z{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
 .zeile>span:nth-child(4),.zeile>span:nth-child(5){font-family:var(--mono);font-size:12.5px;color:var(--leise)}
@@ -281,17 +281,17 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .vergleich .vz:last-child{border-bottom:0}
 .vz b{font-family:var(--mono);font-weight:500;font-size:13.5px;text-align:right}
 .vz em{font-style:normal;font-family:var(--mono);font-size:13px;color:var(--leise);text-align:right}
-.vz--kopf b,.vz--kopf em{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);font-weight:400}
+.vz--kopf b,.vz--kopf em{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);font-weight:400}
 .wochen{display:grid;gap:9px}
 .wochen li{display:grid;grid-template-columns:118px minmax(50px,1fr) 44px 80px;gap:12px;align-items:center;font-size:13.5px}
-.wochen li>span:first-child{font-family:var(--mono);font-size:12px}
-.wochen small{display:block;font-size:11px;color:var(--leise)}
+.wochen li>span:first-child{font-family:var(--mono);font-size:13px}
+.wochen small{display:block;font-size:13px;color:var(--leise)}
 .wochen b{font-family:var(--mono);font-weight:500;font-size:13px;text-align:right}
-.wochen em{font-style:normal;font-size:12px;color:var(--leise);text-align:right}
+.wochen em{font-style:normal;font-size:13px;color:var(--leise);text-align:right}
 .laenderverlauf{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 26px}
 .lv{display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px;align-items:center}
 .lv>span{font-size:14.5px;display:grid}
-.lv>span b{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--leise)}
+.lv>span b{font-family:var(--mono);font-size:13px;font-weight:400;color:var(--leise)}
 .lv svg{width:100%;height:54px;display:block}
 .lv__l{fill:none;stroke:var(--nacht);stroke-width:1.6;vector-effect:non-scaling-stroke;stroke-linejoin:round}
 .lv__f{fill:rgba(183,143,81,.28)}
@@ -308,7 +308,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .trichter li::before{content:'';position:absolute;inset:0;z-index:-2;background:rgba(42,26,14,.06)}
 .trichter span{font-size:14.5px;color:#fff;mix-blend-mode:difference}
 .trichter b{font-family:var(--mono);font-weight:500;text-align:right;color:#fff;mix-blend-mode:difference}
-.trichter em{grid-column:1/-1;font-style:normal;font-size:12px;color:#fff;mix-blend-mode:difference}
+.trichter em{grid-column:1/-1;font-style:normal;font-size:13px;color:#fff;mix-blend-mode:difference}
 
 /* So wird gezählt */
 .liste-txt h3{margin-bottom:12px}
@@ -389,12 +389,12 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
   .kopf{position:sticky;top:0;height:var(--kopf);padding:0 14px;gap:10px}
   .kopf__z{width:38px;height:38px}
   .kopf__marke b{font-size:1.12rem}
-  .kopf__marke small{font-size:8.5px;letter-spacing:.16em}
+  .kopf__marke small{font-size:13px;letter-spacing:.16em}
   .app{display:block}
   .rand{position:sticky;top:var(--kopf);z-index:20;padding:10px 12px;overflow:visible;background:var(--papier)}
   .rand::before{inset:6px 6px}
   .rand__kopf{padding:4px 8px}
-  .rand__auf{display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px;border-radius:999px;background:var(--nacht);color:var(--hellgold);font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase}
+  .rand__auf{display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px;border-radius:999px;background:var(--nacht);color:var(--hellgold);font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
   .rand__auf i{width:8px;height:8px;border-right:1.3px solid currentColor;border-bottom:1.3px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .3s}
   .rand.auf .rand__auf i{transform:translateY(2px) rotate(225deg)}
   .rand__nav,.rand__fuss{display:none}
@@ -426,7 +426,7 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 @media (max-width:620px){
   .werte{grid-template-columns:minmax(0,1fr)}
   .saeulen{--h0:150px;gap:2px}
-  .saeulen .s span{font-size:9px}
+  .saeulen .s span{font-size:13px}
   .saeulen--uhr .s:not(:nth-child(6n+1)) span{display:none}
   .raster{grid-template-columns:24px repeat(24,minmax(0,1fr));gap:1.5px}
   .raster i{border-radius:2px}
@@ -442,8 +442,8 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
   .wochen li em{display:none}
   .lv{grid-template-columns:110px minmax(0,1fr)}
   .besuch{grid-template-columns:38px minmax(0,1fr) auto;gap:10px;padding:11px 12px}
-  .besuch__l{width:38px;height:38px;font-size:11px}
-  .kn--klein{font-size:9.5px}
+  .besuch__l{width:38px;height:38px;font-size:13px}
+  .kn--klein{font-size:13px}
   .kopf__marke small{display:none}
 }
 /* Kleine Handys (320 px, Master F45): Website-Knopf nur als Knauf, Filter brechen um, nichts verrutscht seitlich */
@@ -462,11 +462,11 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
   .kopf__z{width:34px;height:34px}
   .kopf__marke b{font-size:1rem}
   .rund{width:34px;height:34px}
-  .rand__titel{font-size:8.5px;letter-spacing:.16em}
+  .rand__titel{font-size:13px;letter-spacing:.16em}
   .rand__titel::before{width:12px}
   .buehne__chips li{padding:8px 11px}
   .wahl3 button{padding:0 11px}
-  .besuch__z{font-size:9.5px}
+  .besuch__z{font-size:13px}
 }
 
 /* ---------- Ruedihus (17.10.2026): was dieses Haus vom Doldenhorn und vom Carlton unterscheidet ----------
@@ -515,12 +515,12 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--gold)}
 .besuch{grid-template-columns:76px minmax(0,1fr) auto}
 .besuch__b{position:relative;display:block;width:76px;height:57px}
 .besuch__b .sbild{width:76px;height:57px;border-radius:11px}
-.besuch__b .besuch__l{position:absolute;right:-8px;bottom:-8px;width:32px;height:32px;font-size:10px}
+.besuch__b .besuch__l{position:absolute;right:-8px;bottom:-8px;width:32px;height:32px;font-size:13px}
 @media (max-width:600px){
   .sbild{width:44px;height:33px;border-radius:7px}.mit-bild{gap:9px}
   .besuch{grid-template-columns:60px minmax(0,1fr) auto}
   .besuch__b,.besuch__b .sbild{width:60px;height:45px}
-  .besuch__b .besuch__l{width:28px;height:28px;font-size:9.5px;right:-6px;bottom:-6px}
+  .besuch__b .besuch__l{width:28px;height:28px;font-size:13px;right:-6px;bottom:-6px}
 }
 
 /* Querprüfung 21.10.2026 (Fehlerbuch 10a, Schäfli): Listenbilder in der Grösse des Werkzeug-Masters, 104 × 78, Handy 72 × 54 (vorher 56 × 42 und 76 × 57) */
@@ -550,3 +550,8 @@ html:not(#q1):not(#q2):not(#q3) .zwei>*{min-width:0}
   html:not(#q1):not(#q2):not(#q3) .wochen li em{grid-column:2/-1;text-align:left}
 }
 @media (max-width:700px){html:not(#q1):not(#q2):not(#q3) .wahl3.wahl3--filter:has(>button:nth-child(4):last-child)>button:first-child{grid-column:auto}}   /* vier Wahlen: zwei mal zwei, keine allein */
+
+/* Prüfung 20.11.2026: «Woher die Gäste kommen» (6 Zeilen) neben «Am meisten angesehen» (6 Zeilen mit Bild) liess links eine halb leere Tafel und kürzte rechts die Seitennamen. Ungleich viel Inhalt: untereinander, jede so hoch wie ihr Inhalt. */
+.zwei--stapel{grid-template-columns:minmax(0,1fr)}
+/* Prüfung 20.11.2026, Punkt 37: am Handy bricht die Zeile unter dem Besuch um, statt mit … gekürzt zu werden */
+@media (max-width:700px){.besuch__n small{white-space:normal;overflow:visible;text-overflow:clip}}

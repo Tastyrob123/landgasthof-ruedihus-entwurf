@@ -91,3 +91,8 @@ wie von Hand geschrieben */
 .wo-re .wo-zahl{display:block;height:auto;padding:7px;line-height:1;text-align:center;text-box:trim-both cap alphabetic}
 .ansicht>button,.wahl3>button{text-box:trim-both cap alphabetic}
 @supports not (text-box:trim-both cap alphabetic){.wo-kn>span,.wo-re>span,.wo-kopf__ber>span{position:relative;top:.05em}}
+
+/* Prüfung 20.11.2026, Punkt 17 (Schrift mindestens 13 px): Stand im Kopf, kleine Knöpfe und Knöpfe in der Seitenleiste */
+.wo-kopf__mitte small{font-size:13px;letter-spacing:.18em}
+.wo-kn--klein{font-size:13px}
+.wo-kn{font-size:13px}

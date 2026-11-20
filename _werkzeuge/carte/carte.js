@@ -1,4 +1,4 @@
-/* La Carte · Landgasthof Ruedihus, im Landhaus «Die Tafel» — Bedienung (17.10.2026, Kopie aus der Tafel des Waldhotel Doldenhorn, dort aus La Carte
+/* Karten & Preislisten · Landgasthof Ruedihus, im Landhaus «Karten & Preislisten» — Bedienung (17.10.2026, Kopie aus «Karten & Preislisten» des Waldhotel Doldenhorn, dort aus «Karten & Preislisten»
    des Carlton-Europe, dort nach mc.js des Grand Beau-Rivage). Ruedihus wie Doldenhorn: die Karten sind ein Baum aus dem Satz der Unterlagen des Hauses (satz/satz.js); Einträge, Rubriken und Texte erkennt SATZ.art(),
    die Felder eines Eintrags SATZ.felder(). Zwei Wege «Einfach» (Liste und Fenster) und
    «Fortgeschritten» (direkt in der Karte schreiben), jede Änderung zuerst als Entwurf, Veröffentlichen druckt PDF und prüft sie gegen die Daten.
@@ -23,18 +23,18 @@ const SYM = {
 /* Hauswerte Landgasthof Ruedihus: Foto je Karte (Kachel im Rand und Bühne, aus den Fotos der Website: assets/img/<name>-l.webp), Seite der Website */
 const FOTO = { 'chaes-und-wystube': 'stube-rund', 'egger-und-stettlerstube': 'stube-kerze', tagesteller: 'e-roesti', 'nos-menus': 'fest-tafel' };
 const ROLLEN = { kueche: 'Küche', service: 'Service', direktion: 'Direktion' };
-/* Namen der Landhaus-Welt (_Werkzeuge/stamm/welt.js): La Carte heisst hier «Die Tafel», La Maison «Die Stube», Le Bureau «Der Schreibtisch» */
-const NAME = 'Die Tafel', STUBE = 'Die Stube', SCHREIBTISCH = 'Der Schreibtisch';
-/* Die Website und die anderen Werkzeuge des Hauses: lokal auf dem Server der Website (8917), online auf derselben Adresse wie La Carte */
+/* Namen der Landhaus-Welt (_Werkzeuge/stamm/welt.js): Karten & Preislisten heisst hier «Karten & Preislisten», Kontrollpanel «Kontrollpanel», Website bearbeiten «Website bearbeiten» */
+const NAME = 'Karten & Preislisten', STUBE = 'Kontrollpanel', SCHREIBTISCH = 'Website bearbeiten';
+/* Die Website und die anderen Werkzeuge des Hauses: lokal auf dem Server der Website (8917), online auf derselben Adresse wie Karten & Preislisten */
 const HAUS = location.port ? location.protocol + '//' + location.hostname + ':8917/' : '/';
-/* Wege der Oberfläche (kleid/ruedihus.js): lokal auf dem Hausserver, online auf derselben Adresse wie die Tafel */
+/* Wege der Oberfläche (kleid/ruedihus.js): lokal auf dem Hausserver, online auf derselben Adresse wie «Karten & Preislisten» */
 if (window.WO && WO.haus && WO.haus.wege && location.port) Object.keys(WO.haus.wege).forEach(k => { if (k !== 'karten') WO.haus.wege[k] = HAUS + WO.haus.wege[k].replace(/^\//, ''); });
 const API = '/_werkzeuge/carte/api/';   // lokal (serve.py) und online (vercel.json → api/carte.py) derselbe Weg
 const SEITE_DER_KARTE = { 'chaes-und-wystube': 'essen.html', 'egger-und-stettlerstube': 'essen.html', tagesteller: 'essen.html', 'nos-menus': 'veranstaltungen.html' };
 const ORT_DER_KARTE = { 'essen.html': 'Essen', 'veranstaltungen.html': 'Feste' };
 /* Bildzeichen an Gerichten hat der Satz des Ruedihus keine: «BIO» und «Swiss PrimGourmet» stehen als Schrift (Feld «Marke») */
 const SYMBOLE = [];
-/* Die PDF, auf die die Website verweist (Kopien in assets/pdf/, Angaben link.k1pdf … in Le Bureau) */
+/* Die PDF, auf die die Website verweist (Kopien in assets/pdf/, Angaben link.k1pdf … in «Website bearbeiten») */
 const PDF_DER_WEBSITE = { 'chaes-und-wystube': 'landgasthof-ruedihus-chaes-und-wystube.pdf', 'egger-und-stettlerstube': 'landgasthof-ruedihus-egger-und-stettlerstube.pdf', tagesteller: 'landgasthof-ruedihus-tagesteller.pdf', 'nos-menus': 'landgasthof-ruedihus-menuvorschlaege-2023.pdf' };
 
 let NEU_KARTE = false, ANSICHT = 'karte';
@@ -271,7 +271,7 @@ function liste() {
 
 // ---------------------------------------------------------------- Vorschau (Rahmen blatt.html)
 /* Ansicht «Website» (wie GBR): die Seite der Website, auf der diese Karte hängt; die Stelle mit der PDF blinkt. Die Website ist abgenommen,
-   La Carte ändert sie nur mit dem Anschluss (PDF), deshalb zeigt die Ansicht die Seite, wie sie heute ist. */
+   Karten & Preislisten ändert sie nur mit dem Anschluss (PDF), deshalb zeigt die Ansicht die Seite, wie sie heute ist. */
 function website() {
   const an = ANSICHT === 'website';
   $('#vf').hidden = an; $('#web').hidden = !an;
@@ -363,7 +363,7 @@ function waehleAusVorschau(pfad) {   // aus der Karte: Liste links springt hin, 
   const r = markiere(np); if (!r) return;
   blitzRechts(np, linksMitte(r));
 }
-/* ---------------------------------------------------------------- Freie Anordnung und Gestalten (Fortgeschritten), 1:1 nach La Carte des Grand Beau-Rivage
+/* ---------------------------------------------------------------- Freie Anordnung und Gestalten (Fortgeschritten), 1:1 nach «Karten & Preislisten» des Grand Beau-Rivage
    (anordnen.js, 15./16.10.2026). Gewählt, gezogen und gezeigt wird in der Vorschau (blatt.js, ANR); hier liegen die Daten, der Verlauf für ⌘Z / ⌘⇧Z
    und die Seitenleiste «Gestalten» rechts (öffnet beim Wählen, × oder Esc schliesst, nie über der Karte).
    Wo die lage steht: Eintrag (Pfad «seiten.…») → n.lage, seine Linie («…:lin») → n.lage.lin; Bankett-Zeile → u.lage; Teile der Seite
@@ -423,7 +423,7 @@ function entf(id) {   // Entf: Einträge gehen von der Karte (wie «Ausblenden»
 }
 function abwaehlen() { WAHLID = null; WAHLINFO = null; GST_OFFEN = false; seitenleiste(); const f = $('#vf'); if (f && f.contentWindow) f.contentWindow.postMessage({ carte: 'abwaehlen' }, location.origin); }
 
-/* Seitenleiste «Gestalten» (GBR: «Schriftarten, Schriftgrösse und Textart ändern … so ein kleines Side-Menü»), Begriffe wie in L’Imprimerie */
+/* Seitenleiste «Gestalten» (GBR: «Schriftarten, Schriftgrösse und Textart ändern … so ein kleines Side-Menü»), Begriffe wie in «Drucksachen & Feed» */
 const SCHRIFTEN = [['gelasio', 'Gelasio'], ['instrument', 'Instrument Sans'], ['mono', 'DM Mono']];
 const TEXTART = [['normal', 'Normal'], ['kursiv', 'Kursiv'], ['versal', 'Versalien'], ['medium', 'Medium']];
 const AUSR = [['links', 'Links'], ['mitte', 'Mitte'], ['rechts', 'Rechts']];
@@ -799,11 +799,11 @@ const VERLAUF_BSP = '<p class="leise" style="margin:14px 0 6px">In der Vorführu
   [['Veröffentlicht', 'Di 4.11.2026 · 16:20 · Metzgete ab 7. November, Preis der Gärschtesuppe', 'Neueste'],
    ['Verworfener Entwurf', 'Fr 24.10.2026 · 09:05 · Raclette-Teller doppelt, nicht übernommen', ''],
    ['Veröffentlicht', 'Mo 20.10.2026 · 11:40 · Ruhetage im November eingetragen', '']].map(([a, z, m]) =>
-    `<div class="verlauf__z" style="opacity:.82"><div><b>${a}</b> <span class="mono" style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.7">· Beispiel${m ? ' · ' + m : ''}</span><br><span class="mono">${z}</span></div><div><button class="kn kn--klein kn--hell" type="button" disabled>In den Entwurf holen</button></div></div>`).join('');
+    `<div class="verlauf__z" style="opacity:.82"><div><b>${a}</b> <span class="mono" style="font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.7">· Beispiel${m ? ' · ' + m : ''}</span><br><span class="mono">${z}</span></div><div><button class="kn kn--klein kn--hell" type="button" disabled>In den Entwurf holen</button></div></div>`).join('');
 async function verlaufFenster() {
   let l = [];
   try { l = (await api('verlauf?z=' + Z)).liste; } catch (e) { return fehlerSagen('Verlauf nicht lesbar', e); }
-  fenster(`<h2>Frühere <em>Fassungen.</em></h2><p class="satz">Jede veröffentlichte Fassung bleibt aufbewahrt, dazu jeder verworfene Entwurf und der Stand, mit dem die Tafel begonnen hat. Eine Fassung zurückholen legt sie in den Entwurf; die PDF ändert sich erst beim Veröffentlichen. Zurückholen darf die Direktion.</p>
+  fenster(`<h2>Frühere <em>Fassungen.</em></h2><p class="satz">Jede veröffentlichte Fassung bleibt aufbewahrt, dazu jeder verworfene Entwurf und der Stand, mit dem «Karten & Preislisten» begonnen hat. Eine Fassung zurückholen legt sie in den Entwurf; die PDF ändert sich erst beim Veröffentlichen. Zurückholen darf die Direktion.</p>
     <div class="verlauf"><div class="verlauf__z"><div><b>Ursprünglicher Stand</b><br><span class="mono">so, wie die Karte eingelesen wurde</span></div><div><button class="kn kn--klein kn--hell" type="button" data-d="grundstand">In den Entwurf holen</button></div></div>
     ${l.map(x => `<div class="verlauf__z"><div><b>${x.art === 'verworfen' ? 'Verworfener Entwurf' : 'Veröffentlicht'}</b><br><span class="mono">${h(x.zeit)}${x.wer ? ' · ' + h(x.wer) : ''}</span></div><div>${x.pdf ? `<a class="kn kn--klein kn--hell" href="${API}pdf?z=${Z}&q=live" style="display:none"></a>` : ''}<button class="kn kn--klein kn--hell" type="button" data-d="${h(x.datei)}">In den Entwurf holen</button></div></div>`).join('') || VERLAUF_BSP}</div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button></div>`);
@@ -849,15 +849,15 @@ async function gesundFenster() {
   const z = (t, ok) => `<div><span>${h(t)}</span><b class="${ok ? 'ja' : 'nein'}">${ok ? 'in Ordnung' : 'fehlt'}</b></div>`;
   const W = { node: 'Druck der PDF', playwright: 'Druckprogramm', pdftotext: 'Prüfung der PDF', speicher: 'Speicher', druck: 'Druck der PDF', pdfpruefung: 'Prüfung der PDF' };
   const bf = (g.browserfehler || [])[0];
-  fenster(`<h2>Ist alles <em>in Ordnung?</em></h2><p class="satz">Der Zustand der Tafel, direkt vom Server gelesen.${g.vorfuehrung ? ' Vorführ-Betrieb: Gespeichertes hält nicht.' : ''}</p><div class="gesund">${Object.entries(g.karten).map(([k, ok]) => z('Daten ' + ((LISTE.find(x => x.ziel === k) || {}).name || k), ok)).join('')}${Object.entries(g.werkzeug).map(([k, ok]) => z(W[k] || k, ok)).join('')}
-    <div><span>Speicher der Tafel</span><b>${g.speicher_mb} MB</b></div><div><span>Läuft seit</span><b>${Math.round(g.seit / 60)} Min.</b></div>${g.fehler.length ? `<div><span>Letzter Fehler im Server</span><b class="nein">${h(g.fehler[g.fehler.length - 1].slice(0, 160))}</b></div>` : ''}${bf ? `<div><span>Letzter Fehler im Browser</span><b class="nein">${h(bf.zeit + ' · ' + bf.text.slice(0, 120))}</b></div>` : ''}</div>
+  fenster(`<h2>Ist alles <em>in Ordnung?</em></h2><p class="satz">Der Zustand «Karten & Preislisten», direkt vom Server gelesen.${g.vorfuehrung ? ' Vorführ-Betrieb: Gespeichertes hält nicht.' : ''}</p><div class="gesund">${Object.entries(g.karten).map(([k, ok]) => z('Daten ' + ((LISTE.find(x => x.ziel === k) || {}).name || k), ok)).join('')}${Object.entries(g.werkzeug).map(([k, ok]) => z(W[k] || k, ok)).join('')}
+    <div><span>Speicher «Karten & Preislisten»</span><b>${g.speicher_mb} MB</b></div><div><span>Läuft seit</span><b>${Math.round(g.seit / 60)} Min.</b></div>${g.fehler.length ? `<div><span>Letzter Fehler im Server</span><b class="nein">${h(g.fehler[g.fehler.length - 1].slice(0, 160))}</b></div>` : ''}${bf ? `<div><span>Letzter Fehler im Browser</span><b class="nein">${h(bf.zeit + ' · ' + bf.text.slice(0, 120))}</b></div>` : ''}</div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><a class="kn" href="/_werkzeuge/carte/pruefung.html" target="_blank" rel="noopener">Prüfung öffnen<i>${PF}</i></a></div>`);
 }
 async function einstFenster() {
   const s = (await api('status')).einstellungen; EINST = s;
   if (s.demo) return fenster(`<h2>Anschluss an die <em>Website.</em></h2><p class="satz"><b>Demo.</b> In der Demo arbeitet die Karte für sich: «Veröffentlichen» setzt die Karte und ihre PDF hier im Werkzeug, die Website bleibt, wie sie ist. Mit dem Auftrag wird der Anschluss eingeschaltet; dann erscheinen veröffentlichte Karten auch auf der Website.</p>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button></div>`);   // Querprüfung 21.10.2026: Demo-Sperre
-  fenster(`<h2>Anschluss an die <em>Website.</em></h2><p class="satz">Die Website des Hauses verweist auf ihre eigene PDF der Karte. Solange der Anschluss aus ist, bleibt sie dabei und die Tafel arbeitet für sich. Mit Anschluss kopiert «Veröffentlichen» die neue PDF auf die Website und setzt die Zeilen der Karte auf der Seite «Essen» neu; die vorigen Fassungen werden vorher gesichert. Nur die Direktion darf das ändern.</p>
+  fenster(`<h2>Anschluss an die <em>Website.</em></h2><p class="satz">Die Website des Hauses verweist auf ihre eigene PDF der Karte. Solange der Anschluss aus ist, bleibt sie dabei und «Karten & Preislisten» arbeitet für sich. Mit Anschluss kopiert «Veröffentlichen» die neue PDF auf die Website und setzt die Zeilen der Karte auf der Seite «Essen» neu; die vorigen Fassungen werden vorher gesichert. Nur die Direktion darf das ändern.</p>
     <div class="felder" style="margin-top:20px"><div class="feld"><span class="schalter" role="switch" tabindex="0" aria-checked="${!!s.anschluss_pdf}" id="e-a"><b></b>Veröffentlichte PDF auf die Website übernehmen</span></div></div>
     <div class="fenster__kn"><button class="kn kn--hell" type="button" data-zu>Schliessen</button><button class="kn" type="button" id="e-ok">Speichern<i>${PF}</i></button></div>`);
   const sw = $('#e-a'); const um = () => sw.setAttribute('aria-checked', sw.getAttribute('aria-checked') !== 'true'); sw.addEventListener('click', um); sw.addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); um(); } });
@@ -1015,7 +1015,7 @@ window.addEventListener('beforeunload', ev => { if (OFFEN) { ev.preventDefault()
     await lade(z);
     api('gesund').then(g => { STATUS_ROT = !g.ok; oben(); }).catch(() => { STATUS_ROT = true; oben(); });
   } catch (e) {
-    document.body.innerHTML = `<div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#1f1209;color:#efe4d3;font-family:system-ui,sans-serif;text-align:center"><div><p style="font-size:1.4rem;margin:0 0 10px">Die Tafel startet nicht.</p><p style="margin:0 0 22px;color:rgba(239,228,211,.7)">${h(e.message)}</p><a href="/_werkzeuge/carte/pruefung.html" style="display:inline-block;padding:12px 22px;border-radius:99px;background:#f3cd94;color:#1f1209;text-decoration:none;font-weight:600">Prüfung öffnen</a></div></div>`;
+    document.body.innerHTML = `<div style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#1f1209;color:#efe4d3;font-family:system-ui,sans-serif;text-align:center"><div><p style="font-size:1.4rem;margin:0 0 10px">Karten & Preislisten startet nicht.</p><p style="margin:0 0 22px;color:rgba(239,228,211,.7)">${h(e.message)}</p><a href="/_werkzeuge/carte/pruefung.html" style="display:inline-block;padding:12px 22px;border-radius:99px;background:#f3cd94;color:#1f1209;text-decoration:none;font-weight:600">Prüfung öffnen</a></div></div>`;
     if (window.carteMerk) window.carteMerk('Start: ' + e.message);
   }
 })();

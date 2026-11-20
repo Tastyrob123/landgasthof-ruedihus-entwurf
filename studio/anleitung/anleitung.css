@@ -23,7 +23,7 @@ ol,ul{list-style:none}
 :focus-visible{outline:1.5px solid var(--gold);outline-offset:4px;border-radius:6px}
 .in{max-width:var(--max);margin:0 auto;position:relative}
 .tapete{background:var(--tapete)}
-.mono{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase}
+.mono{font-family:var(--mono);font-size:13px;letter-spacing:.13em;text-transform:uppercase}
 
 /* Schrift */
 .t1,.t2{font-family:var(--serif);font-weight:400;line-height:1.08;text-wrap:balance}
@@ -39,7 +39,7 @@ ol,ul{list-style:none}
 .kap b{font-weight:400}
 .kap i{flex:none;width:clamp(40px,5vw,84px);height:1px;background:currentColor;opacity:.75;transform-origin:left;transform:scaleX(0);transition:transform 1.2s var(--e1) .25s}
 .kap.da i{transform:none}
-.kap span{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.kap span{font-family:var(--mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
 .lauf{font-size:clamp(1.04rem,1.2vw,1.2rem);line-height:1.68;max-width:56ch;color:rgba(255,255,255,.8)}
 .kopfzeile{display:grid;gap:clamp(22px,3vw,48px);align-items:end;margin-bottom:clamp(40px,5vw,80px)}
 @media(min-width:960px){.kopfzeile{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr)}}
@@ -78,17 +78,17 @@ ol,ul{list-style:none}
 .insel__m img{width:44px;height:auto;filter:drop-shadow(0 1px 0 rgba(61,36,14,.9)) drop-shadow(0 3px 8px rgba(0,0,0,.55))}
 .insel__m span{font:400 13px/1.1 var(--serif);letter-spacing:.24em;text-transform:uppercase;background:linear-gradient(180deg,#f8e6c8,#e6d4a6 34%,#d29d5c 52%,#8a5f2c 62%,#dcc79a 80%,#f6dcb0);-webkit-background-clip:text;background-clip:text;color:transparent}
 .insel nav{display:flex;gap:clamp(12px,1.5vw,24px)}
-.insel nav a{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72);padding:10px 0;position:relative;transition:color .4s}
+.insel nav a{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.72);padding:10px 0;position:relative;transition:color .4s}
 .insel nav a::after{content:'';position:absolute;left:0;right:0;bottom:4px;height:1px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--e1)}
 .insel nav a:hover{color:#fff}.insel nav a:hover::after{transform:scaleX(1);transform-origin:left}
-.glanz{position:relative;border:1px solid transparent;border-radius:999px;color:var(--papier);display:inline-flex;align-items:center;gap:11px;height:44px;padding:0 20px 0 22px;font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;
+.glanz{position:relative;border:1px solid transparent;border-radius:999px;color:var(--papier);display:inline-flex;align-items:center;gap:11px;height:44px;padding:0 20px 0 22px;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;
   background:linear-gradient(180deg,#5a3a1e,#1f1209) padding-box,conic-gradient(from var(--ga),transparent,var(--gold) 6%,#fff 12%,var(--messing) 18%,transparent 24%) border-box;animation:ga 4s linear infinite;transition:transform .5s var(--e2)}
 .glanz:active{transform:translateY(1px)}
 .glanz svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.4;transition:transform .5s var(--e2)}
 .glanz:hover svg{transform:translate(3px,-3px)}
 @keyframes ga{to{--ga:360deg}}
 @media(max-width:900px){.insel nav{display:none}}
-@media(max-width:560px){.insel{height:56px;gap:12px;padding-left:14px}.insel__m img{width:36px}.insel__m span{font-size:11px;letter-spacing:.18em}.glanz{height:40px;padding:0 14px;font-size:10px}}
+@media(max-width:560px){.insel{height:56px;gap:12px;padding-left:14px}.insel__m img{width:36px}.insel__m span{font-size:13px;letter-spacing:.18em}.glanz{height:40px;padding:0 14px;font-size:13px}}
 
 /* Auftakt: Wandholz mit Butzenscheiben, rechts der Schreibtisch */
 .auftakt{--vz:120ms;position:relative;padding:clamp(140px,16vh,200px) var(--rand) calc(clamp(80px,9vw,150px) + var(--rund));overflow:hidden}
@@ -110,14 +110,14 @@ ol,ul{list-style:none}
 @media(min-width:960px){.inhalt__g{grid-template-columns:300px minmax(0,1fr);align-items:start}}
 .inhalt__k b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,2.3vw,2.3rem);line-height:1.08}
 .inhalt__k span{display:block;margin-top:8px;font-size:.98rem;color:rgba(42,26,14,.66);max-width:28ch;line-height:1.45}
-.inhalt__k i{display:inline-block;margin-top:12px;font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.inhalt__k i{display:inline-block;margin-top:12px;font-style:normal;font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
 .inhalt__l{display:grid}
 .inhalt__l a{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:4px 16px;align-items:center;padding:14px 10px 14px 0;border-top:1px solid rgba(42,26,14,.09);border-radius:12px;transition:background-color .3s,padding .5s var(--e2)}
 .inhalt__l a:first-child{border-top:0}
 .inhalt__l a:hover{background:var(--weiss);padding-left:12px}
-.inhalt__l i{grid-column:1;grid-row:1/3;font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--taupe)}
+.inhalt__l i{grid-column:1;grid-row:1/3;font-style:normal;font-family:var(--mono);font-size:13px;letter-spacing:.2em;color:var(--taupe)}
 .inhalt__l b{grid-column:2;grid-row:1;font-family:var(--serif);font-weight:400;font-size:clamp(1.12rem,1.4vw,1.4rem);line-height:1.15}
-.inhalt__l span{grid-column:2;grid-row:2;font-family:var(--mono);font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
+.inhalt__l span{grid-column:2;grid-row:2;font-family:var(--mono);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--taupe)}
 .inhalt__l em{grid-column:3;grid-row:1/3;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--gold);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .5s var(--e2)}
 .inhalt__l em svg{width:12px;height:12px;stroke:currentColor;fill:none;stroke-width:1.4}
 .inhalt__l a:hover em{opacity:1;transform:none}
@@ -133,11 +133,11 @@ ol,ul{list-style:none}
 .kapitel .lauf{margin-top:18px}
 .schritte2{margin-top:clamp(22px,2.6vw,34px);display:grid;gap:10px;max-width:60ch}
 .schritte2 li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:start;font-size:1.01rem;line-height:1.55}
-.schritte2 i{width:34px;height:34px;border-radius:50%;background:linear-gradient(180deg,#5a3a1e,#1f1209);color:var(--gold);display:grid;place-items:center;font-style:normal;font-family:var(--mono);font-size:12px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}
+.schritte2 i{width:34px;height:34px;border-radius:50%;background:linear-gradient(180deg,#5a3a1e,#1f1209);color:var(--gold);display:grid;place-items:center;font-style:normal;font-family:var(--mono);font-size:13px;box-shadow:inset 0 1px 0 rgba(255,255,255,.2)}
 /* «Gut zu wissen» als Tafel des Hauses: Wandholz, Goldrand innen (wie die Lage im Schreibtisch) */
 .tipp{position:relative;isolation:isolate;margin-top:clamp(20px,2.4vw,30px);padding:16px 22px 16px 22px;border-radius:16px;background:linear-gradient(180deg,#321f10,#2a180a 62%,#1f1209);font-size:.98rem;line-height:1.5;color:rgba(251,245,234,.84);max-width:60ch;box-shadow:inset 0 -2px 0 #0e0803,0 18px 30px -22px rgba(18,10,4,.8)}
 .tipp::before{content:'';position:absolute;inset:6px;z-index:-1;border-radius:11px;box-shadow:inset 0 0 0 1px rgba(243,205,148,.34);pointer-events:none}
-.tipp b{display:block;font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+.tipp b{display:block;font-family:var(--mono);font-weight:400;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
 
 /* Bild im Fenster, Rahmen in Messing */
 .kino{border-radius:18px;overflow:hidden;background:var(--tief);box-shadow:0 0 0 1px rgba(183,143,81,.4),0 50px 60px -40px rgba(42,26,14,.7)}
@@ -145,10 +145,10 @@ ol,ul{list-style:none}
 .kino--hoch{max-width:380px;margin:0 auto}
 .fen__k{position:relative;height:34px;display:flex;align-items:center;gap:6px;padding:0 14px;background:linear-gradient(180deg,#3a2412,#1f1209)}
 .fen__k i{width:8px;height:8px;border-radius:50%;background:rgba(220,198,143,.45)}
-.fen__k span{margin-left:10px;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;color:rgba(255,255,255,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fen__k span{margin-left:10px;font-family:var(--mono);font-size:13px;letter-spacing:.12em;color:rgba(255,255,255,.6);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .kino__s{position:relative;background:var(--tief);cursor:zoom-in}
 .kino--bild img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.kino__lupe{position:absolute;right:14px;bottom:14px;z-index:2;height:34px;padding:0 14px;border-radius:999px;background:var(--navy);color:var(--papier);display:grid;place-items:center;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;box-shadow:inset 0 0 0 1px rgba(220,198,143,.35);transition:opacity .3s}
+.kino__lupe{position:absolute;right:14px;bottom:14px;z-index:2;height:34px;padding:0 14px;border-radius:999px;background:var(--navy);color:var(--papier);display:grid;place-items:center;font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;box-shadow:inset 0 0 0 1px rgba(220,198,143,.35);transition:opacity .3s}
 .kino--gross{position:fixed;left:50%;top:50%;z-index:90;width:min(92vw,calc((100vh - 80px)*1.6));max-width:none;transform:translate(-50%,-50%);box-shadow:0 60px 120px -40px #000}
 .kino--gross.kino--hoch{width:min(92vw,calc((100vh - 80px)*.46))}
 .kino--gross .kino__s{cursor:zoom-out}
@@ -167,7 +167,7 @@ body.kino-offen{overflow:hidden}
 .fuss b{display:block;font-family:var(--serif);font-weight:400;font-size:1.4rem;color:#fff;margin-bottom:6px}
 .fuss .r{display:flex;flex-wrap:wrap;gap:8px 26px}
 .fuss .r a:hover{color:#fff}
-@media(max-width:560px){.kn{height:50px;padding-left:20px;font-size:11.5px}.kn i{width:36px;height:36px}.t1{font-size:2.35rem}}
+@media(max-width:560px){.kn{height:50px;padding-left:20px;font-size:13px}.kn i{width:36px;height:36px}.t1{font-size:2.35rem}}
 
 /* Kleid des Ruedihus: das Medaillon als Zeichen der Insel */
 .insel__m .rhz{display:inline-block;width:16px;aspect-ratio:1044/1398;background:linear-gradient(180deg,#fbe7c6,#d29d5c 62%,#8a5f2c);-webkit-mask:url('/assets/logo/zeichen.svg') center/contain no-repeat;mask:url('/assets/logo/zeichen.svg') center/contain no-repeat}

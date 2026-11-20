@@ -31,13 +31,13 @@
     M.basis = basis;
     M.eigeneMini = new Set(M.bilder.map(b => b.key));
     const L = await DS.ladeLivre();
-    if (L) {   // Le Livre ist die eine Quelle: welche Fotos, Titel, Bereich, Saison, Format, Herkunft, KI
+    if (L) {   // Markenbuch ist die eine Quelle: welche Fotos, Titel, Bereich, Saison, Format, Herkunft, KI
       M.livre = L;
-      /* Le Livre nennt die Grösse des Originals; gedruckt wird die Datei unter dem Weg «fl» von Le Livre, deren Mass in marke.json steht.
+      /* Markenbuch nennt die Grösse des Originals; gedruckt wird die Datei unter dem Weg «fl» von «Markenbuch», deren Mass in marke.json steht.
          Mit dem Original rechnete die Druckprüfung zu viele dpi (haus-winter: 186 statt 88 dpi auf A3). */
       const px = Object.fromEntries(M.bilder.map(b => [b.key, b]));
       const ruedihus = /Ruedihus/.test(L.haus || '');
-      if (ruedihus) {   // Das Hausbuch des Ruedihus (_werkzeuge/livre/bau.py BEREICHE); die Dateien liegen dort, wohin «fl» und «fs» von Le Livre aus zeigen
+      if (ruedihus) {   // Markenbuch des Ruedihus (_werkzeuge/livre/bau.py BEREICHE); die Dateien liegen dort, wohin «fl» und «fs» von «Markenbuch» aus zeigen
         DS.LIVRE_TEXT.b = { zimmer: 'Zimmer', stuben: 'Stuben', essen: 'Essen und Trinken', aussen: 'Von aussen', einzelheiten: 'Einzelheiten', spa: 'Spa im Doldenhorn', geschichte: 'Geschichte', familie: 'Familie' };
       }
       M.bilder = L.fotos.map(f => ({ key: f.k, alt: (f.t && (f.t.de || Object.values(f.t)[0])) || f.k, w: (px[f.k] || f).w, h: (px[f.k] || f).h, gruppe: DS.LIVRE_TEXT.b[f.b] || 'Haus',
@@ -60,13 +60,13 @@
   };
 
   DS.farbe = (M, f) => (M.farben[f] || f || '#000');
-  /* Fotos: aus Le Livre (/assets/img/<key>-l.webp, 2000 px) unter derselben Adresse; kleine Vorschauen aus dem eigenen 520-px-Satz, weil Le Livre
-     nur 900 px anbietet (vierfaches Gewicht je Vorschau). Ohne Le Livre alles aus der eigenen Kopie. */
+  /* Fotos: aus «Markenbuch» (/assets/img/<key>-l.webp, 2000 px) unter derselben Adresse; kleine Vorschauen aus dem eigenen 520-px-Satz, weil Markenbuch
+     nur 900 px anbietet (vierfaches Gewicht je Vorschau). Ohne Markenbuch alles aus der eigenen Kopie. */
   DS.bildUrl = (M, key, mini) => M.bildIndex && M.bildIndex[key] && M.bildIndex[key].datei ? (mini ? M.bildIndex[key].miniUrl : M.bildIndex[key].url)
     : M.livre && M.bildIndex && M.bildIndex[key] && M.bildIndex[key].fl && !(mini && M.eigeneMini.has(key)) ? DS.livreUrl(mini ? M.bildIndex[key].fs : M.bildIndex[key].fl)
-    : M.basis + (mini ? 'mini/' : 'bilder/') + key + '.webp';   // alle Fotos liegen auch in der eigenen Kopie (bau.py übernimmt die von Le Livre)
+    : M.basis + (mini ? 'mini/' : 'bilder/') + key + '.webp';   // alle Fotos liegen auch in der eigenen Kopie (bau.py übernimmt die von «Markenbuch»)
 
-  /* ---------- Le Livre: Markenbuch des Hauses (Fotos, Farben, Dateien) ---------- */
+  /* ---------- Markenbuch: Markenbuch des Hauses (Fotos, Farben, Dateien) ---------- */
   DS.LIVRE_TEXT = {
     b: { zimmer: 'Zimmer', restaurants: 'Restaurants', bar: 'Bar', spa: 'Spa', saal: 'Saal', haus: 'Haus', region: 'Region' },
     s: { jahr: 'Ganzjährig', sommer: 'Sommer', winter: 'Winter' },
@@ -74,15 +74,15 @@
     h: { haus: 'Fotos des Hauses', frei: 'Frei lizenziert', ki: 'Mit KI erzeugt' },
     ki: 'Dieses Bild ist mit KI erzeugt und zeigt kein echtes Gericht oder Getränk des Hauses. Für Werbung nur mit diesem Hinweis oder nach einem echten Foto.',
   };
-  // Le Livre liegt neben L’Imprimerie: lokal /_werkzeuge/livre/ auf dem Server des Hauses (:8917), online /werkzeuge/livre/. Auf dem Prüfserver (:9026)
-  // liest L’Imprimerie dieselben Dateien unter demselben Weg; die Seite von Le Livre öffnet dann auf dem Server des Hauses.
-  // Unter drucksachen-studio.vercel.app steht L’Imprimerie allein, ohne Le Livre daneben: dort keine Abfrage (gab bei jedem Öffnen eine 404-Meldung,
-  // Aussen-Prüfung 14.10.2026), und «Le Livre öffnen» führt zum Markenbuch unter der Adresse des Hauses.
+  // Markenbuch liegt neben Drucksachen & Feed: lokal /_werkzeuge/livre/ auf dem Server des Hauses (:8917), online /werkzeuge/livre/. Auf dem Prüfserver (:9026)
+  // liest Drucksachen & Feed dieselben Dateien unter demselben Weg; die Seite von «Markenbuch» öffnet dann auf dem Server des Hauses.
+  // Unter drucksachen-studio.vercel.app steht Drucksachen & Feed allein, ohne Markenbuch daneben: dort keine Abfrage (gab bei jedem Öffnen eine 404-Meldung,
+  // Aussen-Prüfung 14.10.2026), und «Markenbuch öffnen» führt zum Markenbuch unter der Adresse des Hauses.
   DS.ALLEIN = location.hostname === 'drucksachen-studio.vercel.app';
   DS.LIVRE = '../livre/';
   DS.livreUrl = p => new URL(p, new URL(DS.LIVRE, location.href)).href;
-  DS.livreSeite = () => location.port === '9026' ? 'http://localhost:8917/_werkzeuge/livre/' : DS.ALLEIN ? 'https://ruedihus.tastystudios.ch/werkzeuge/livre/' : DS.LIVRE;
-  /* Logo, Logo quer und Wortmarke aus Le Livre: Bildschirm SVG, Blatt und PDF PNG (bis 3000 px, mit Transparenz) */
+  DS.livreSeite = () => location.port === '9026' ? '/_werkzeuge/livre/' : DS.ALLEIN ? 'https://ruedihus.tastystudios.ch/werkzeuge/livre/' : DS.LIVRE;
+  /* Logo, Logo quer und Wortmarke aus «Markenbuch»: Bildschirm SVG, Blatt und PDF PNG (bis 3000 px, mit Transparenz) */
   DS.livreDateien = M => (M.livre ? M.livre.dateien : []).filter(d => ['logo', 'quer', 'wortmarke'].includes(d.k) && d.var).flatMap(d => {
     const vb = (d.vb || '0 0 4 3').split(' ').map(Number), N = { logo: 'Logo', quer: 'Logo quer', wortmarke: 'Wortmarke' }[d.k];
     return d.var.map(v => { const svg0 = v.dateien.find(x => x.endsWith('.svg')), png = v.dateien.find(x => x.endsWith('.png')) || svg0, svg = svg0 || png;   // manche Fassungen gibt es nur als SVG

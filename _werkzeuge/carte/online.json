@@ -1,0 +1,64 @@
+{
+ "name": "Karten & Preislisten",
+ "hinweis": "ruedihus-carte, 17.10.2026 (Kopie der Andock-Datei «Karten & Preislisten» des Waldhotel Doldenhorn, dort aus «Karten & Preislisten» des Carlton-Europe). Python-Funktion api/carte.py (Ablage «carte» im privaten Blob, PDFs einzeln unter carte/pdf/…), Node-Funktion api/carte_druck.js (Chromium, nur von api/carte.py gerufen). Oberfläche unter /_werkzeuge/carte/ wie lokal (Umleitung auf werkzeuge/carte/). Satz, Schriften und Fotos liegen im Werkzeug selbst (satz/, fonts/, nos-menus/, kachel/). Fotos der Bühne aus assets/img der Website. Anschluss an die Website online aus. Braucht die gemeinsame Speicher-Schicht api/_speicher.py und _speicher.cjs (wie Carlton _werkzeuge/online/api), PyMuPDF, @sparticuz/chromium-min und playwright-core.",
+ "funktionen": {
+  "api/carte.py": {
+   "von": "_werkzeuge/carte/online/carte.py",
+   "dauer": 300
+  },
+  "api/carte_druck.js": {
+   "von": "_werkzeuge/carte/online/carte_druck.js",
+   "dauer": 180
+  }
+ },
+ "lib": {
+  "_werkzeuge/carte/carte.py": "api/_lib/carte/carte.py",
+  "_werkzeuge/carte/_daten/stand": "api/_lib/carte/_daten/stand",
+  "_werkzeuge/carte/_daten/grundstand": "api/_lib/carte/_daten/grundstand"
+ },
+ "statik": {
+  "assets/oberflaeche": "assets/oberflaeche",
+  "_werkzeuge/carte/index.html": "werkzeuge/carte/index.html",
+  "_werkzeuge/carte/anleitung.html": "werkzeuge/carte/anleitung.html",
+  "_werkzeuge/carte/pruefung.html": "werkzeuge/carte/pruefung.html",
+  "_werkzeuge/carte/auftakt.js": "werkzeuge/carte/auftakt.js",
+  "_werkzeuge/carte/blatt.js": "werkzeuge/carte/blatt.js",
+  "_werkzeuge/carte/carte.js": "werkzeuge/carte/carte.js",
+  "_werkzeuge/carte/fehlermelder.js": "werkzeuge/carte/fehlermelder.js",
+  "_werkzeuge/carte/pruefung.js": "werkzeuge/carte/pruefung.js",
+  "_werkzeuge/carte/rundgang.js": "werkzeuge/carte/rundgang.js",
+  "_werkzeuge/carte/schweben.js": "werkzeuge/carte/schweben.js",
+  "_werkzeuge/carte/zur-werkbank.js": "werkzeuge/carte/zur-werkbank.js",
+  "_werkzeuge/carte/blatt.css": "werkzeuge/carte/blatt.css",
+  "_werkzeuge/carte/carte.css": "werkzeuge/carte/carte.css",
+  "_werkzeuge/carte/schweben.css": "werkzeuge/carte/schweben.css",
+  "_werkzeuge/carte/satz": "werkzeuge/carte/satz",
+  "_werkzeuge/carte/fonts": "werkzeuge/carte/fonts",
+  "_werkzeuge/carte/nos-menus": "werkzeuge/carte/nos-menus",
+  "_werkzeuge/carte/kachel": "werkzeuge/carte/kachel",
+  "_werkzeuge/carte/tafel.css": "werkzeuge/carte/tafel.css"
+ },
+ "umleitungen": [
+  {
+   "source": "/_werkzeuge/carte/api/:pfad*",
+   "destination": "/api/carte?__weg=/_werkzeuge/carte/api/:pfad*"
+  },
+  {
+   "source": "/_werkzeuge/carte",
+   "destination": "/werkzeuge/carte/index.html"
+  },
+  {
+   "source": "/_werkzeuge/carte/",
+   "destination": "/werkzeuge/carte/index.html"
+  },
+  {
+   "source": "/_werkzeuge/carte/:pfad*",
+   "destination": "/werkzeuge/carte/:pfad*"
+  }
+ ],
+ "stand": "/_werkzeuge/carte/api/status",
+ "pruefung": {
+  "weg": "/_werkzeuge/carte/",
+  "kurz": false
+ }
+}

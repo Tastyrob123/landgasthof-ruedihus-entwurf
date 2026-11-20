@@ -1,0 +1,39 @@
+{
+ "zeit": "2026-10-14T20:11:00+02:00",
+ "art": "zimmer",
+ "name": "Reto und Anna Lüthi",
+ "kontakt": "reto.luethi@example.com",
+ "datum": "5. bis 7. Februar 2027",
+ "personen": 2,
+ "anliegen": "Zwei Nächte im Himmelbett zum Hochzeitstag.",
+ "sprache": "de",
+ "gespraech": "beispiel-8",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Wir feiern im Februar unseren Hochzeitstag und suchen ein Zimmer mit Himmelbett für zwei Nächte."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Wie schön. Die Hochzeitsstube ist ein Salonzimmer mit Himmelbett, Bad, Dusche und WC, ab CHF 300.00 pro Nacht für 1–2 Personen. Möchten Sie ein persönliches Angebot? Dann brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+  },
+  {
+   "rolle": "user",
+   "text": "Reto Lüthi, reto.luethi@example.com, vom 5. bis 7. Februar."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Danke, Herr Lüthi. Ihre Anfrage liegt beim Team, das Haus meldet sich persönlich bei Ihnen."
+  }
+ ],
+ "status": "erledigt",
+ "beispiel": true,
+ "entwurf": {
+  "betreff": "Ihr Hochzeitstag in der Hochzeitsstube, 5. bis 7. Februar 2027",
+  "text": "Lieber Herr Lüthi, liebe Frau Lüthi\n\nvielen Dank für Ihre Anfrage und herzliche Gratulation zum Hochzeitstag.\n\nDie Hochzeitsstube ist ein Salonzimmer mit Himmelbett, Bad, Dusche und WC, ab CHF 300.00 pro Nacht. Für Ihre Daten [Verfügbarkeit prüfen].\n\nAm Abend deckt Ihnen die Küche gern einen Tisch in einer der beiden Biedermeierstuben im 1. Stock: [Tisch anbieten].\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nRezeption · Landgasthof Ruedihus",
+  "team": "Grundlage: zimmer.html (Hochzeitsstube ab 300.00, Salonzimmer mit Himmelbett), essen.html (Biedermeierstuben im 1. Stock).\nOffen: Hochzeitsstube 5.–7.2.; Tisch am Abend.",
+  "vorlage": "02-anreise",
+  "absender": "info@doldenhorn.ch",
+  "zeit": "2026-10-14T20:11:00+02:00"
+ }
+}

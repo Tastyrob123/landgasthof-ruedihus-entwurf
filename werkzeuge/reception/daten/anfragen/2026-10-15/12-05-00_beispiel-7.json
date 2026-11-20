@@ -1,0 +1,50 @@
+{
+ "zeit": "2026-10-15T12:05:00+02:00",
+ "art": "tisch",
+ "name": "Élise Dubois",
+ "kontakt": "elise.dubois@example.com",
+ "datum": "vendredi 30 octobre 2026, 19 h",
+ "personen": 2,
+ "anliegen": "Raclette à discrétion pour deux, vendredi soir.",
+ "sprache": "fr",
+ "gespraech": "beispiel-7",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Bonsoir, est-ce que vous servez de la raclette ? Nous serions deux vendredi soir."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Oui, dans la Chäs- und Wystube au rez-de-chaussée : raclette à discrétion pour CHF 36.00. Souhaitez-vous que l’équipe vous réserve une table ? Il me faut votre nom et une adresse e-mail ou un numéro de téléphone."
+  },
+  {
+   "rolle": "user",
+   "text": "Élise Dubois, elise.dubois@example.com, vendredi 30 octobre vers 19 h."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Merci, Madame Dubois. Votre demande est transmise à l’équipe, la maison vous répondra personnellement."
+  }
+ ],
+ "status": "erledigt",
+ "beispiel": true,
+ "entwurf": {
+  "betreff": "Votre table pour la raclette, vendredi 30 octobre",
+  "text": "Chère Madame Dubois\n\nMerci beaucoup pour votre demande. Nous vous réservons volontiers une table pour deux dans la Chäs- und Wystube, vendredi 30 octobre à 19 h : [confirmer la table].\n\nLa raclette à discrétion coûte CHF 36.00 par personne.\n\nChaleureusement, la famille Maeder et son équipe\n\n[Name]\nRéception · Landgasthof Ruedihus",
+  "team": "Grundlage: essen.html (Schpiszettel: Raclette so viel dr möget 36.00).\nOffen: Tisch 30.10. 19 Uhr.",
+  "vorlage": "01-tisch",
+  "absender": "info@doldenhorn.ch",
+  "zeit": "2026-10-15T12:05:00+02:00",
+  "deutsch": {
+   "betreff": "Ihr Tisch für das Raclette, Freitag, 30. Oktober",
+   "text": "Liebe Frau Dubois\n\nvielen Dank für Ihre Anfrage. Gern reservieren wir Ihnen einen Tisch für zwei in der Chäs- und Wystube, Freitag, 30. Oktober um 19 Uhr: [Tisch bestätigen].\n\nDas Raclette à discrétion kostet CHF 36.00 pro Person.\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nRezeption · Landgasthof Ruedihus",
+   "quelle": "af01144a0162"
+  }
+ },
+ "verlauf_de": [
+  "Guten Abend, servieren Sie Raclette? Wir wären am Freitagabend zu zweit.",
+  "Ja, in der Chäs- und Wystube im Parterre: Raclette à discrétion für CHF 36.00. Soll das Team Ihnen einen Tisch reservieren? Dann brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer.",
+  "Élise Dubois, elise.dubois@example.com, Freitag, 30. Oktober gegen 19 Uhr.",
+  "Danke, Frau Dubois. Ihre Anfrage liegt beim Team, das Haus meldet sich persönlich bei Ihnen."
+ ]
+}

@@ -1,4 +1,4 @@
-/* L’Imprimerie · Landgasthof Ruedihus · Katalog des Hauses. GESCHRIEBEN VON _qa/vorlagen_ruedihus.py, nicht von Hand ändern.
+/* Drucksachen & Feed · Landgasthof Ruedihus · Katalog des Hauses. GESCHRIEBEN VON _qa/vorlagen_ruedihus.py, nicht von Hand ändern.
    Rund 250 fertig gesetzte Vorlagen nur aus Anlässen dieses Hauses (Website, Schpiszettel der Chäs- und Wystube, Schpis Charte der
    Egger- und Stettlerstube, Tagesteller, alle ab 1.3.2026), jede öffnet ohne KI und ohne Kosten.
    Jeder Satz, jede Uhrzeit, jeder Preis, jede Telefonnummer ist gegen api/_daten/ruedihus-wissen.txt geprüft. Was das Haus pro Fall einträgt, steht in [eckigen Klammern]. */

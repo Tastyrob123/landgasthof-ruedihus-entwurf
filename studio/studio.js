@@ -1,13 +1,13 @@
 /* Studio · Landgasthof Ruedihus. Das Werkzeug, mit dem das Haus seine Seite pflegt. Ohne Bibliothek. Aufbau nach dem Studio von Salt & Silver (07./08.10.2026). */
 (() => {
 'use strict';
-/* Der Schreibtisch (17.10.2026): dieses frühere Studio läuft als alt.html weiter; der Schreibtisch bettet seine Ansichten ein (Listen, Karten der Website, Bilder,
-   Besuche, Zugang). Eingebettet ohne Rand und Leiste; jede gespeicherte Änderung meldet es an den Schreibtisch, dann stimmen Leiste, Rand und Zahlen dort sofort. */
+/* Website bearbeiten (17.10.2026): dieses frühere Studio läuft als alt.html weiter; «Website bearbeiten» bettet seine Ansichten ein (Listen, Karten der Website, Bilder,
+   Besuche, Zugang). Eingebettet ohne Rand und Leiste; jede gespeicherte Änderung meldet es an «Website bearbeiten», dann stimmen Leiste, Rand und Zahlen dort sofort. */
 const EIN = new URLSearchParams(location.search).has('eingebettet') && window.parent !== window;
 if (EIN) document.documentElement.classList.add('eingebettet');
 const melden = () => { if (EIN) window.parent.postMessage({ bureau: 'geaendert' }, '*'); };
-/* Ist Die Tafel (La Carte) angeschlossen, pflegt sie Gerichte, Preise, Rubriken und PDF der drei Karten (Notiz der Tafel 17.10.2026); in der Kartenansicht bleibt
-   hier nur das Tagesmenu, damit nie zwei Werkzeuge dieselben Zeilen ändern. Der Schreibtisch öffnet die Ansicht dann mit ?tafel=1. */
+/* Ist Karten & Preislisten angeschlossen, pflegt sie Gerichte, Preise, Rubriken und PDF der drei Karten (Notiz «Karten & Preislisten» 17.10.2026); in der Kartenansicht bleibt
+   hier nur das Tagesmenu, damit nie zwei Werkzeuge dieselben Zeilen ändern. Website bearbeiten öffnet die Ansicht dann mit ?tafel=1. */
 const TAFEL = EIN && new URLSearchParams(location.search).has('tafel');
 if (TAFEL) document.documentElement.classList.add('tafel');
 // Fehler im Browser festhalten: die Kontrolle (/studio/kontrolle.html) liest sie aus, auch wenn dieses Skript danach nicht mehr läuft.
@@ -133,7 +133,7 @@ function rand() {
   const n = Zt.aenderungen.length, teil = location.hash.split('/')[1] || 'uebersicht', an = teil === 'seite' ? 'seiten' : teil;
   $('#rand').innerHTML = `<a class="rand__marke" href="#/uebersicht">${HZ()}<div><b>RUEDIHUS</b><span>Studio</span></div></a>
   <nav aria-label="Bereiche">${NAV.map(p => p ? `<a href="#/${p[0]}" class="${an === p[0] ? 'an' : ''}">${Z[p[2]]}${p[1]}${p[0] === 'aenderungen' && n ? `<b>${n}</b>` : ''}</a>` : '<div class="rand__trenn"></div>').join('')}</nav>
-  <div class="rand__fuss"><a href="/live/index.html" target="_blank" rel="noopener">Website ansehen ${PF2}</a>${OFFEN || PROBE ? '' : '<button type="button" data-akt="abmelden">Abmelden</button>'}</div>`;
+  <div class="rand__fuss"><a href="/" target="_blank" rel="noopener">Website ansehen ${PF2}</a>${OFFEN || PROBE ? '' : '<button type="button" data-akt="abmelden">Abmelden</button>'}</div>`;
   const aktiv = $('#rand nav a.an');
   if (aktiv && innerWidth <= 860) aktiv.scrollIntoView({ block: 'nearest', inline: 'nearest' });
 }
@@ -209,7 +209,7 @@ function leiste() {
   el.innerHTML = n ? `<button class="leiste__l" type="button" data-akt="lade" aria-label="Liste der Änderungen zeigen"><i class="leiste__z">${n}</i><span><b>${n === 1 ? 'Änderung' : 'Änderungen'} im Entwurf</b><small>Zuletzt: ${h(neueste.satz)}${neueste.zeit ? ' · ' + vor(neueste.zeit) : ''}</small></span></button>
     <div class="leiste__r"><button class="kn kn--klein kn--linie" type="button" data-akt="lade">Liste zeigen</button><a class="kn kn--klein kn--linie" href="/entwurf/${W ? encodeURIComponent(W.datei) : 'index.html'}" target="_blank" rel="noopener">Entwurf ansehen</a><button class="kn kn--klein" type="button" data-akt="raus">Veröffentlichen<i>${PF}</i></button></div>`
     : `<div class="leiste__l"><i class="leiste__z ok">${HAKEN}</i><span><b>Alles veröffentlicht</b><small>${zuletzt ? 'Stand vom ' + datum(zuletzt.zeit) : 'Die Website zeigt den neuesten Stand.'}</small></span></div>
-    <div class="leiste__r"><a class="kn kn--klein kn--linie" href="/live/index.html" target="_blank" rel="noopener">Website ansehen</a></div>`;
+    <div class="leiste__r"><a class="kn kn--klein kn--linie" href="/" target="_blank" rel="noopener">Website ansehen</a></div>`;
   if (letzteZahl !== null && letzteZahl !== n && n) $('.leiste__z', el).classList.add('hupf');
   letzteZahl = n;
   if (!$('#lade').hidden) lade();
@@ -322,7 +322,7 @@ function seiten() {
 // ---------------------------------------------------------------- Seite bearbeiten
 const RSTIL = `.studio-hov,.studio-an{position:absolute;z-index:2147483000;pointer-events:none;border-radius:5px;display:none;box-sizing:border-box}
 .studio-hov{outline:calc(1.5px*var(--studio-k,1)) dashed #c42e13;outline-offset:calc(4px*var(--studio-k,1))}
-.studio-hov::before{content:attr(data-w);position:absolute;left:-4px;bottom:calc(100% + 9px*var(--studio-k,1));background:#c42e13;color:#fff;font:500 10px/1 'DM Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;border-radius:5px;white-space:nowrap;transform:scale(var(--studio-k,1));transform-origin:0 100%}
+.studio-hov::before{content:attr(data-w);position:absolute;left:-4px;bottom:calc(100% + 9px*var(--studio-k,1));background:#c42e13;color:#fff;font:500 13px/1 'DM Mono',ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;border-radius:5px;white-space:nowrap;transform:scale(var(--studio-k,1));transform-origin:0 100%}
 .studio-hov[data-w=""]::before{display:none}
 .studio-an{outline:calc(2px*var(--studio-k,1)) solid #c42e13;outline-offset:calc(4px*var(--studio-k,1));background:rgba(196,46,19,.07)}
 .studio-werk [data-e]{cursor:text;pointer-events:auto!important}.studio-werk img[data-b]{cursor:pointer;pointer-events:auto!important}.studio-werk .lupe{display:none!important}`;  // auch Stellen in Schildern, die die Seite selbst nicht anklickbar macht (Namensschild in der Bildecke)
@@ -719,7 +719,7 @@ function karte(kid) {
   sicht.innerHTML = `<div class="in">${kopf('Die drei <em>Karten.</em>', 'Wählen Sie eine Karte. Mit «Bearbeiten» öffnen Sie ein Gericht, mit «Gericht hinzufügen» legen Sie ein neues an. Jede Änderung wird bestätigt und steht danach auf der Seite «Essen». Die Karte als PDF laden Sie unten getrennt hoch.',
       `<a class="kn kn--linie" href="/entwurf/essen.html#karte" target="_blank" rel="noopener">Karte im Entwurf ansehen</a><button class="kn" type="button" data-akt="neu-oben">Gericht hinzufügen<i>${PF}</i></button>`)}
     <div class="kartenwahl">${Object.entries(Zt.kartennamen).map(([k, n]) => `<a class="kw${k === kid ? ' an' : ''}" href="#/karte/${k}"><b>${h(n.split(' · ')[0])}</b><span>${h(n.split(' · ')[1] || '')}${n.split(' · ')[1] ? ' · ' : ''}${mal(Object.values(Zt.karte).filter(g => g.karte === k).reduce((a, g) => a + g.liste.filter(x => !x.aus).length, 0), 'Gericht', 'Gerichte')}</span></a>`).join('')}</div>
-    ${TAFEL ? '<p class="tafel-hin">Gerichte, Preise, Rubriken und PDF dieser Karten pflegt Die Tafel (Knopf oben im Schreibtisch). Hier bleibt das Tagesmenu der Egger- und Stettlerstube.</p>' : ''}
+    ${TAFEL ? '<p class="tafel-hin">Gerichte, Preise, Rubriken und PDF dieser Karten pflegt Karten & Preislisten (Knopf oben in «Website bearbeiten»). Hier bleibt das Tagesmenu der Egger- und Stettlerstube.</p>' : ''}
     ${alle.map(gruppe).join('')}
     ${kid === 'k2' ? `<h2 class="reiheT">Tagesmenu</h2>${listeBlatt('tagesmenu')}` : ''}
     <h2 class="reiheT">Rubriken & PDF</h2>${gruppenBlatt(kid)}
@@ -732,7 +732,7 @@ function karte(kid) {
     const b = ev.target.closest('[data-akt]');
     if (!b) return;
     const akt = b.dataset.akt;
-    if (TAFEL && !b.closest('[data-l]')) { sag('Gerichte, Preise, Rubriken und PDF dieser Karten pflegt Die Tafel. Hier bleibt das Tagesmenu.'); return; }
+    if (TAFEL && !b.closest('[data-l]')) { sag('Gerichte, Preise, Rubriken und PDF dieser Karten pflegt Karten & Preislisten. Hier bleibt das Tagesmenu.'); return; }
     if (akt === 'neu-oben') return gerichtFenster({ karte: kid });
     if (akt === 'pdf') return pdfHoch('link.' + kid + 'pdf');
     if (gruppenKlick(ev, kid)) return;
@@ -1147,7 +1147,7 @@ function veroeffentlichen() {
       leiste();
       fenster(`<div class="erfolg"><i>${HAKEN}</i><h2>Veröffent<em>licht.</em></h2><p>Die Website zeigt jetzt den neuen Stand. Das ist live:</p></div>
         <ul class="quittliste ok">${cs.map(c => `<li><i>${HAKEN}</i><span>${h(c.satz)}</span></li>`).join('')}</ul>
-        <div class="fenster__kn"><a class="kn kn--linie" href="/live/index.html" target="_blank" rel="noopener">Website ansehen</a><button class="kn kn--dunkel" type="button" data-zu>Fertig<i>${PF}</i></button></div>`);
+        <div class="fenster__kn"><a class="kn kn--linie" href="/" target="_blank" rel="noopener">Website ansehen</a><button class="kn kn--dunkel" type="button" data-zu>Fertig<i>${PF}</i></button></div>`);
       if (W) neuLaden({}); else zeige(true);
     } catch (e) { sag(e.message, true); ev.target.disabled = false; ev.target.firstChild.textContent = 'Jetzt veröffentlichen'; }
   });

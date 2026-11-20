@@ -1,0 +1,34 @@
+{
+ "zeit": "2026-10-17T08:14:00+02:00",
+ "art": "tisch",
+ "name": "Martina Huber",
+ "kontakt": "martina.huber@example.com",
+ "datum": "Samstag, 24. Oktober 2026, 19:00 Uhr",
+ "personen": 4,
+ "anliegen": "Tisch in der Chäs- und Wystube",
+ "sprache": "de",
+ "gespraech": "beispiel-1",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Über ein Formular der Website (Seite Essen): Stube: Chäs- und Wystube\nTag: Samstag, 24.10.2026\nUhrzeit: 19:00\nPersonen: 4\nMenü: Fondue oder Raclette Menu\nWünsche: Unsere Tochter isst lieber Rösti als Fondue."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "an": "info@doldenhorn.ch",
+ "abteilung": "Rezeption",
+ "seite": "/essen.html",
+ "seite_name": "Essen",
+ "web": true,
+ "nachricht": "Stube: Chäs- und Wystube\nTag: Samstag, 24.10.2026\nUhrzeit: 19:00\nPersonen: 4\nMenü: Fondue oder Raclette Menu\nWünsche: Unsere Tochter isst lieber Rösti als Fondue.",
+ "formular": "tisch",
+ "entwurf": {
+  "betreff": "Ihr Tisch in der Chäs- und Wystube, Samstag, 24. Oktober",
+  "text": "Liebe Frau Huber\n\nvielen Dank für Ihre Anfrage. Wir schauen in unser Buch und halten Ihnen gern einen Tisch für vier Personen um 19:00 Uhr in der Chäs- und Wystube frei: [Tisch bestätigen].\n\nFür Ihre Tochter steht die Bauernröschti mit Hobelchäs auf dem Schpiszettel, als kleine Portion für CHF 24.00.\n\nGeht etwas schneller am Telefon, erreichen Sie uns unter (+41) 033 675 81 81.\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nRezeption · Landgasthof Ruedihus",
+  "team": "Grundlage: essen.html (Schpiszettel Chäs- und Wystube ab 1.3.2026: Bauernröschti 24.00 / 29.00), Mail «Ihr Tisch in der Stube».\nOffen: Tisch 24.10. 19:00 für vier.",
+  "vorlage": "01-tisch",
+  "absender": "info@doldenhorn.ch",
+  "zeit": "2026-10-17T08:14:00+02:00"
+ }
+}

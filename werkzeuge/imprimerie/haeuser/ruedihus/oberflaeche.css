@@ -23,7 +23,7 @@ button.wo-marke-w{border:0;background:none;padding:0;cursor:pointer;text-align:l
 #start .ms-leiste{background:var(--wo-weiss)!important;border-radius:var(--wo-r1)!important;box-shadow:inset 0 1px 0 #fff,inset 0 0 0 1px var(--wo-linie),0 26px 40px -30px rgba(0,0,0,.4)!important}
 #start .ms-nav button span{font:500 14.5px/1.3 var(--wo-sans);letter-spacing:0;color:var(--wo-tinte)}
 #start .ms-nav button.an span{font:var(--wo-titel-g) 19px/1.2 var(--wo-titel);color:var(--wo-weiss)}
-#start .ms-nav button em{font:400 10px/1 var(--wo-mono);letter-spacing:.06em;color:var(--wo-leise)}
+#start .ms-nav button em{font:400 13px/1 var(--wo-mono);letter-spacing:.06em;color:var(--wo-leise)}
 #start .ms-marke{display:none}
 
 /* Startbilder: Werte von .wo-sb im Rahmen «Die Bühne» */

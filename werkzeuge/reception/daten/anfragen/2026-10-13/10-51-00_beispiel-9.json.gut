@@ -1,0 +1,39 @@
+{
+ "zeit": "2026-10-13T10:51:00+02:00",
+ "art": "tagung",
+ "name": "Daniel Ogi",
+ "kontakt": "daniel.ogi@example.com",
+ "datum": "Donnerstag, 19. November 2026, 18 Uhr",
+ "personen": 14,
+ "anliegen": "Vereinssitzung mit 14 Personen, danach ein Znacht in der Stube.",
+ "sprache": "de",
+ "gespraech": "beispiel-9",
+ "verlauf": [
+  {
+   "rolle": "user",
+   "text": "Unser Verein möchte im November eine Sitzung bei Ihnen halten, 14 Personen, und danach zusammen essen. Geht das?"
+  },
+  {
+   "rolle": "assistant",
+   "text": "Die Jungestube im Parterre hat 25 Sitzplätze und ist «geeignet auch für Sitzungen und Familienfeste». Soll das Event-Team Ihnen ein Angebot schicken? Dann brauche ich Ihren Namen und eine E-Mail-Adresse oder Telefonnummer."
+  },
+  {
+   "rolle": "user",
+   "text": "Daniel Ogi, daniel.ogi@example.com, Donnerstag, 19. November ab 18 Uhr."
+  },
+  {
+   "rolle": "assistant",
+   "text": "Danke, Herr Ogi. Ihre Anfrage liegt beim Team, das Haus meldet sich persönlich bei Ihnen."
+  }
+ ],
+ "status": "neu",
+ "beispiel": true,
+ "entwurf": {
+  "betreff": "Ihre Vereinssitzung am Donnerstag, 19. November",
+  "text": "Lieber Herr Ogi\n\nvielen Dank für Ihre Anfrage. Ihr Verein ist bei uns herzlich willkommen.\n\nFür 14 Personen passt die Jungestube im Parterre mit 25 Sitzplätzen. Für Ihr Datum [Verfügbarkeit prüfen].\n\nZum Znacht danach empfehlen wir aus unseren Stuben ein Fondue, ein Raclette oder eine Röstispezialität: [Menü vorschlagen].\n\nHerzlich, Familie Maeder und ihre Crew\n\n[Name]\nEvent-Team · Landgasthof Ruedihus",
+  "team": "Grundlage: essen.html (Jungestube 25 Sitzplätze, «geeignet auch für Sitzungen und Familienfeste»; Stuben im Parterre: Fondue, Raclette, Rösti).\nOffen: Jungestube 19.11. ab 18 Uhr; Menü und Getränke.",
+  "vorlage": "01-tisch",
+  "absender": "event@doldenhorn.ch",
+  "zeit": "2026-10-13T10:51:00+02:00"
+ }
+}

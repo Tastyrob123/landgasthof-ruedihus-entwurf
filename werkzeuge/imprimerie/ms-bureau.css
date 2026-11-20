@@ -15,7 +15,7 @@
 .ms-kopf-name{display:block;min-width:200px;margin-right:auto}
 .ms-kopf-name b{display:block;font:400 15px/1.1 var(--caps);letter-spacing:.24em;text-transform:uppercase;
   background:linear-gradient(180deg,#fbf0cf 0%,#ead39c 34%,#c9a764 52%,#9c7b43 62%,#dcc189 80%,#f3e3b6 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.6))}
-.ms-kopf-name small{display:block;margin-top:6px;font:9.5px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:rgba(240,227,194,.7)}
+.ms-kopf-name small{display:block;margin-top:6px;font:13px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:rgba(240,227,194,.7)}
 .start.ms .ms-frei{display:none}
 .start.ms .ms-suche{margin-right:auto;background:linear-gradient(180deg,#1f1209,#2a180a);color:rgba(240,227,194,.8);box-shadow:inset 0 2px 5px rgba(0,0,0,.55),0 0 0 1px rgba(210,179,132,.25)}
 .start.ms .ms-suche input[type=search]{color:#fbf4e4}

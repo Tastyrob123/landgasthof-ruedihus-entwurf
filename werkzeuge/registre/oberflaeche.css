@@ -5,9 +5,9 @@
 .rg .flaeche:focus{outline:0}
 .rg .in{max-width:none;margin:0;padding:0 0 40px}
 .rg .wo-raum{min-height:60vh}
-.rg .rand__titel{margin:4px 8px 10px;font-size:9.5px}
+.rg .rand__titel{margin:4px 8px 10px;font-size:13px}
 .rg .rand__titel::before{display:none}
-.rg .rand__haus{margin:14px 10px 2px;padding-top:12px;font:400 9.5px/1.5 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-leise)}
+.rg .rand__haus{margin:14px 10px 2px;padding-top:12px;font:400 13px/1.5 var(--wo-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--wo-leise)}
 /* Startbild: Kennzahlen als Holztafeln wie bisher, Zeitraum dunkel, Knöpfe in einer Reihe */
 .rg-sb{margin-bottom:34px}   /* Fehlerbuch 10a: mindestens 30 px unter der Bühne */
 .rg-sb .wo-sb__kn{align-items:center;flex-wrap:wrap}

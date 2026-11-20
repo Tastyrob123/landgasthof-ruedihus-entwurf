@@ -1,0 +1,170 @@
+{
+ "bestand": [
+  "ig-01.jpg",
+  "ig-02.jpg",
+  "ig-03.jpg",
+  "ig-04.jpg",
+  "ig-05.jpg",
+  "ig-06.jpg",
+  "ig-07.jpg",
+  "ig-08.jpg",
+  "ig-09.jpg",
+  "ig-10.jpg",
+  "ig-11.jpg",
+  "ig-12.jpg"
+ ],
+ "ausnahmen": [],
+ "fotos": {
+  "haus": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ofestuebli": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "e": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "garten": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "hz": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "lh": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "z": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "stube": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "ll": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "hymmelrich": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "hy": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "d": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "terrasse": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "kaffee": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "balkon": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "booking": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "225850_P1215860": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "film": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "fest": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "225846_P1142484": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "225849_P1215859": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "225854_P1142479": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "226267_BE_Doldenhorn-KanderstegHUG_1270-min": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "225851_P1215879": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  },
+  "z-hochzeit": {
+   "im_feed": true,
+   "ausnahme": false,
+   "gepostet": "",
+   "grund": ""
+  }
+ },
+ "doppelt": []
+}

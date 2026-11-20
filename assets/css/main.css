@@ -2096,8 +2096,8 @@ html:not(#a) .gg2__karte.da .gg2__foto,html:not(#a) .still .gg2__foto{transform:
 .lader .bruch:not(.nah) .bruch__bild img{display:none}
 .lader .bruch.weg .bruch__bild{visibility:hidden}
 /* Butzen-Muster als fertige Kachel statt SVG im Stil (gleiches Bild): ein SVG-Muster über ganze Abschnitte muss der Browser bei jedem Neuzeichnen rechnen (Lehre Doldenhorn: lange Bilder beim Scrollen von 15 auf 0) */
-.butzen{background-image:url("../img/butzen-07.png?v=c43612cd");background-size:56px 56px}
-.fuss::before{background-image:url("../img/butzen-09.png?v=c1bc2af5");background-size:56px 56px}
+.butzen{background-image:url("../img/butzen-07.png");background-size:56px 56px}
+.fuss::before{background-image:url("../img/butzen-09.png");background-size:56px 56px}
 
 /* Gastgeber: schwarzer Galerierahmen statt Messing (Robert 10.10.2026: «moderner, Oldschool-Vibe, aber nicht kitschig»).
    Mattschwarzes Holz mit feiner Kante, breites helles Passepartout mit Schrägschnitt, Schild auf der rotbraunen Platte des Hauses (Robert 10.10.2026). */
@@ -2374,8 +2374,8 @@ html:not(#a) .rh-warte>span:not(.los) img{transform:scale(1.12)}
 
 /* ZIMMER AUF HOLZ (17.10.2026, Robert: Nr. 20 aus varianten-zimmer-start5.html), zholz() in bau.py.
    Abschnitt auf dem Holz des Hauses, abgedunkelt; vier Hochformate mit hellem Rand, Namen hell. Ersetzt «ZIMMER RANDLOS» auf der Startseite. */
-.zholz{color:var(--creme);background:linear-gradient(rgba(31,18,9,.74),rgba(31,18,9,.8)),url("../img/st/holz-l-2000.webp?v=52c53ecf") center top/cover var(--russ)}
-@media (max-width:900px){.zholz{background-image:linear-gradient(rgba(31,18,9,.74),rgba(31,18,9,.8)),url("../img/st/holz-l-1008.webp?v=073280ac")}}
+.zholz{color:var(--creme);background:linear-gradient(rgba(31,18,9,.74),rgba(31,18,9,.8)),url("../img/st/holz-l-2000.webp") center top/cover var(--russ)}
+@media (max-width:900px){.zholz{background-image:linear-gradient(rgba(31,18,9,.74),rgba(31,18,9,.8)),url("../img/st/holz-l-1008.webp")}}
 .zholz .d2{color:var(--creme)}
 .zholz__kopf{max-width:760px;margin:0 auto clamp(36px,4vw,60px);text-align:center}
 .zholz__kopf p{margin-top:18px;font:400 1.02rem/1.6 var(--sans);color:rgba(247,236,220,.72)}
@@ -2397,7 +2397,7 @@ html:not(#a) .rh-warte>span:not(.los) img{transform:scale(1.12)}
 .zrv__rahmen{position:absolute;left:34px;top:34px;right:-34px;bottom:0;border:1px solid rgba(161,122,62,.75);border-radius:var(--r-l)}
 .zrv__z--r .zrv__rahmen{left:-34px;right:34px}
 .zrl__b.zrv__b{position:relative;z-index:1;display:block;aspect-ratio:4/3;overflow:hidden;border-radius:var(--r-l);background:var(--leinen)}
-.zrv__n{position:absolute;left:64px;bottom:30px}.zrv__z--r .zrv__n{left:-4px}
+.zrv__n{position:absolute;left:64px;bottom:30px}.zrv__z--r .zrv__n{left:0}
 .zrv__n b{display:block;font:700 clamp(1.25rem,1.7vw,1.7rem)/1.1 var(--titel);color:var(--tinte)}
 .zrv__p{position:absolute;right:0;bottom:26px;text-align:right;font:400 .88rem/1.45 var(--sans);color:rgba(42,26,14,.66)}.zrv__z--r .zrv__p{right:64px}
 @media (max-width:900px){

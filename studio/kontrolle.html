@@ -24,15 +24,15 @@ body.eingebettet .in{padding-top:34px}
 h1{font-family:var(--titel);font-weight:700;font-size:clamp(2.1rem,4vw,3.3rem);line-height:1.06;letter-spacing:-.005em;margin:0}
 h1 em{font-style:normal;color:var(--balken)}
 h2{font-family:var(--titel);font-weight:700;font-size:1.45rem;line-height:1.1;margin:44px 0 16px;display:flex;align-items:baseline;gap:12px}
-h2 span{font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+h2 span{font-family:var(--mono);font-weight:400;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
 p{margin:0}
 .kopf{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:28px}
 .kopf p{margin-top:12px;max-width:60ch;color:rgba(42,26,14,.74);font-size:16px}
 .kopf__r{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.kn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 22px;border-radius:999px;font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;color:var(--tinte);box-shadow:inset 0 0 0 1px rgba(50,31,16,.35);background:none;transition:transform .35s,box-shadow .35s}
+.kn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 22px;border-radius:999px;font:600 13px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;cursor:pointer;border:0;color:var(--tinte);box-shadow:inset 0 0 0 1px rgba(50,31,16,.35);background:none;transition:transform .35s,box-shadow .35s}
 .kn:hover{transform:translateY(-2px);box-shadow:inset 0 0 0 1px var(--tinte)}
 .kn--dunkel{color:var(--papier);background:linear-gradient(#55361c,#3a2412 55%,#2a180a);box-shadow:inset 0 1px 0 #846046}
-.kn--klein{height:38px;padding:0 16px;font-size:10px}
+.kn--klein{height:38px;padding:0 16px;font-size:13px}
 .kn[disabled]{opacity:.4;pointer-events:none}
 .ampel{display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:center;padding:24px 28px;border-radius:22px;background:var(--russ);color:var(--papier);margin-bottom:10px}
 .ampel i{width:54px;height:54px;border-radius:50%;display:block;box-shadow:inset 0 2px 4px rgba(0,0,0,.35),0 0 0 6px rgba(239,228,211,.08)}
@@ -42,7 +42,7 @@ p{margin:0}
 .ampel.grau i{background:radial-gradient(circle at 35% 30%,#bbb,#666 70%)}
 .ampel b{display:block;font-family:var(--titel);font-weight:700;font-size:1.6rem;line-height:1.1}
 .ampel span{display:block;margin-top:6px;color:rgba(239,228,211,.72);font-size:14px}
-.zahlen{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 0;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
+.zahlen{display:flex;gap:16px;flex-wrap:wrap;margin:14px 0 0;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise)}
 .zahlen b{font-family:var(--titel);font-size:1.1rem;letter-spacing:0;text-transform:none;color:var(--tinte);margin-right:4px}
 .liste{display:grid;gap:10px}
 .punkt{display:grid;grid-template-columns:18px minmax(0,1fr) auto;gap:16px;align-items:start;padding:18px 22px;border-radius:18px;background:var(--blatt);box-shadow:inset 0 0 0 1px var(--linie)}
@@ -52,9 +52,9 @@ p{margin:0}
 .punkt p{margin-top:3px;font-size:14px;color:rgba(42,26,14,.78)}
 .punkt .abhilfe{margin-top:8px;font-size:13.5px;color:var(--leise);display:none}
 .punkt.warn .abhilfe,.punkt.fehler .abhilfe{display:block}
-.punkt .abhilfe b{display:inline;font-family:var(--mono);font-weight:400;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);margin-right:6px}
+.punkt .abhilfe b{display:inline;font-family:var(--mono);font-weight:400;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);margin-right:6px}
 .punkt details{margin-top:8px;font-size:13px;color:var(--leise)}
-.punkt summary{cursor:pointer;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+.punkt summary{cursor:pointer;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
 .punkt ul{margin:8px 0 0;padding-left:18px}
 .punkt li{margin:2px 0;overflow-wrap:anywhere}
 .punkt .r{display:grid;gap:8px;justify-items:end}
@@ -65,7 +65,7 @@ p{margin:0}
 .lex summary::before{content:'';width:8px;height:8px;border-right:1.5px solid var(--leise);border-bottom:1.5px solid var(--leise);transform:rotate(-45deg);transition:transform .25s;flex:none}
 .lex details[open] summary::before{transform:rotate(45deg)}
 .lex dl{margin:12px 0 2px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;font-size:14px}
-.lex dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);padding-top:3px}
+.lex dt{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--leise);padding-top:3px}
 .lex dd{margin:0;color:rgba(42,26,14,.82)}
 .meld{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);padding:12px 18px;border-radius:999px;background:var(--russ);color:var(--papier);font-size:14px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);opacity:0;transition:opacity .3s;pointer-events:none;max-width:calc(100vw - 40px)}
 .meld.an{opacity:1}
@@ -75,7 +75,7 @@ p{margin:0}
 code{font-family:var(--mono);font-size:12.5px}
 @media(max-width:680px){.punkt{grid-template-columns:18px minmax(0,1fr)}.punkt .r{grid-column:2;justify-items:start}.ampel{grid-template-columns:1fr}}
 </style>
-<script src="/besuch.js?v=3c4c57a56e" defer></script><script src="/verweil.js?v=5881fd455d" defer></script></head>
+</head>
 <body>
 <div class="in">
   <header class="kopf">
@@ -240,5 +240,5 @@ $('#k-kopie').addEventListener('click', async () => {
 pruefen();
 })();
 </script>
-<script src="/werkzeuge/demo-aus.js" defer></script></body>
+<script src="/besuch.js?v=3c4c57a56e" defer></script></body>
 </html>

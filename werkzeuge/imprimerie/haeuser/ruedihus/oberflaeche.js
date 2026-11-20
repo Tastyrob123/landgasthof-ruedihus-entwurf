@@ -1,5 +1,5 @@
-/* Die Werkstatt des Landgasthof Ruedihus: Werkzeug-Oberfläche «Die Bühne» (Werkbank-Chat 17.10.2026, UMSTELLUNG.md im Stamm, Paket assets/oberflaeche).
-   Die Werkstatt hat ein eigenes Gerüst (Übersicht #start mit .ms-leiste/.ms-kopf, Arbeitsfläche mit header.kopf/aside.links); der Kern
+/* Drucksachen & Feed des Landgasthof Ruedihus: Werkzeug-Oberfläche «Die Bühne» (Werkbank-Chat 17.10.2026, UMSTELLUNG.md im Stamm, Paket assets/oberflaeche).
+   Drucksachen & Feed hat ein eigenes Gerüst (Übersicht #start mit .ms-leiste/.ms-kopf, Arbeitsfläche mit header.kopf/aside.links); der Kern
    (_Drucksachen-Studio, über Carlton und Doldenhorn) bleibt unberührt. Diese Hausschicht legt nur an, was in allen Werkzeugen des Hauses gleich ist:
    die Marke im Kopf (Zeichen, Name in der Titelschrift, Unterzeile), die runden Knöpfe und «Website ansehen» als goldene Pille, die Startbilder
    (Übersicht «voll» mit dem Haus, jede Ansicht «buehne» mit ihrem Raum). Ids, Knoten und Handler bleiben: Knöpfe und Felder werden nur umgehängt.
@@ -9,7 +9,7 @@
   var BASIS = 'haeuser/ruedihus/kopf/';
   var FOTO = { msEvents: 'fest-tafel', msAbteilungen: 'stube-tuer', msHinweise: 'haus-fassade', msNewsletter: 'stube-kerze', msFotos: 'garten-luft', msMarke: 'giebel',
     msLivre: 'butzen', msMeine: 'stube-rund', msFreigegeben: 'stube-lang', msNeu: 'ofestuebli' };
-  var WEBSITE = location.port === '9026' ? 'http://localhost:8917/' : '/';
+  var WEBSITE = location.port === '9026' ? '/' : '/';
   var MARKE = function () { return WO.zeichen() + '<span><b>' + WO.esc(WO.name('druck')) + '</b><small>Drucksachen · ' + WO.esc(WO.haus.name) + '</small></span>'; };
 
   /* Marke, runde Knöpfe und Website-Pille in beiden Köpfen */
@@ -25,7 +25,7 @@
     if (ms && !ms.__wo) {
       var z = ms.querySelector('#msKopfZeichen'), n = ms.querySelector('.ms-kopf-name');
       if (z && n) {
-        var b = document.createElement('button'); b.type = 'button'; b.className = 'wo-marke-w ws-marke'; b.setAttribute('data-ansicht', 'start'); b.setAttribute('aria-label', 'Die Werkstatt, Übersicht');
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'wo-marke-w ws-marke'; b.setAttribute('data-ansicht', 'start'); b.setAttribute('aria-label', 'Drucksachen & Feed, Übersicht');
         b.innerHTML = MARKE(); ms.insertBefore(b, z); z.hidden = true; n.hidden = true; ms.__wo = 1;
       }
     }
