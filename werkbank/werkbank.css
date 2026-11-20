@@ -2440,3 +2440,6 @@ main>.fl:not(:nth-child(5),:nth-child(9),:nth-child(12),:nth-child(15),:nth-chil
 
 /* schatten_hover (Robert 14.11.2026, «wenn ich die ersten Male über die Kacheln gehe … Kanten von den Schatten»): die Ebene des schwebenden Stücks nur für den Auftritt, danach trägt das Bild selbst die Ebene mit seinem Schatten, damit Safari den Schatten nicht an der Kante der Elternebene abschneidet */
 .pk__b>.da{will-change:auto}.kleb img.frei,.kleb img{will-change:transform}
+
+/* Prüfung 20.11.2026: Am Handy ragte die vierte Unterlage im Fächer über den rechten Rand und die Namen wurden gekappt. Unter 900 px dieselbe 2×2-Anordnung wie am Rechner, die Namen brechen um. */
+@media(max-width:899px){#unterlagen .faecher--4{aspect-ratio:1/1.12}#unterlagen .faecher--4 .blattk--1{left:0;top:3%;width:54%}#unterlagen .faecher--4 .blattk--2{left:56%;top:0;width:42%}#unterlagen .faecher--4 .blattk--3{left:4%;top:38%;width:42%}#unterlagen .faecher--4 .blattk--4{left:52%;top:46%;width:44%}#unterlagen .faecher--4 .blattk span{white-space:normal;letter-spacing:.06em;padding:9px 10px;flex-wrap:wrap}}
