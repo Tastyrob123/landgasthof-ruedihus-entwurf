@@ -956,3 +956,6 @@ svg.m-fuss__siegel{width:50px;height:auto;aspect-ratio:1044/1398;color:var(--hau
 .fk-gruss{margin-top:20px}
 .m-f5__ort{margin-bottom:.7em}
 .dh-st h1.dh-st__h{line-height:1.14}
+
+/* Prüfung 20.11.2026: Am Handy liefen die Saaltitel («Karten & Preislisten») und die Zeile in den Bildschirmen über den Rand. Dort brechen sie jetzt um. */
+@media (max-width:700px){html body .m-titel{white-space:normal;font-size:clamp(2.2rem,10vw,2.9rem)}html body .m-schirm__leiste span,html body .m-schirme .m-schirm__leiste span{white-space:normal;text-align:center;letter-spacing:.1em;line-height:1.3}}
