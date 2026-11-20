@@ -152,3 +152,6 @@
 /* Ruedihus Kacheln ruhig (Robert 18.10.2026, M21) */
 .etk li img{transition:transform 1.1s cubic-bezier(.22,1,.36,1)!important}
 .etk li:hover img{transform:translateY(-3px)!important}
+
+/* Prüfung 20.11.2026: Die breite Karte (Rechnungsmappe) liess unter dem Bild eine leere Fläche. Das Bildfeld läuft jetzt über die ganze Höhe der Karte. */
+.kachel.gross3{align-items:stretch}.kachel.gross3 .kachel__b{align-self:stretch;height:auto}
